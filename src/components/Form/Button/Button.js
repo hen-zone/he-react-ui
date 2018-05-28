@@ -1,27 +1,32 @@
 /**
-*
-* Button
-*
-*/
+ *
+ * Button
+ *
+ */
 
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import Icon from '../../Icon'
 import style from './Button.scss'
-
+import ButtonSpinner from './ButtonSpinner'
 class Button extends React.Component {
   static propTypes = {
     submit: PropTypes.bool,
     color: PropTypes.oneOf(['teal', 'blue', 'green', 'red', 'white']),
     link: PropTypes.bool,
     small: PropTypes.bool,
+    large: PropTypes.bool,
     onClick: PropTypes.func,
     keyline: PropTypes.bool,
     children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
     disabled: PropTypes.bool,
     icon: PropTypes.string,
+    iconLeft: PropTypes.element,
+    iconRight: PropTypes.element,
     squared: PropTypes.bool,
+    submitting: PropTypes.bool,
+    done: PropTypes.bool,
     className: PropTypes.string
   }
 
@@ -36,34 +41,82 @@ class Button extends React.Component {
     onClick: () => null
   }
 
-  handleClick = (event) => {
+  handleClick = event => {
     if (!this.props.disabled) {
       this.props.onClick(event)
     }
   }
 
   render () {
-    const { children, className, color, disabled, icon, keyline, link, onClick, small, squared, submit, ...rest } = this.props
-    const classes = classnames(style.button, {
-      [style[color]]: color,
-      [style.small]: small,
+    const {
+      children,
+      className,
+      color,
+      disabled,
+      icon,
+      iconLeft,
+      iconRight,
+      keyline,
+      link,
+      onClick,
+      small,
+      large,
+      squared,
+      submit,
+      submitting,
+      done,
+      ...rest
+    } = this.props
+
+    const buttonClasses = classnames(style.button, {
+      [style[color]]: color && !done,
       [style.disabled]: disabled,
       [style.keyline]: keyline,
       [style.link]: link,
       [style.squared]: squared,
-      [className]: className})
+      [style.submitting]: submitting,
+      [className]: className,
+      [style.done]: done
+    })
+
+    const containerClasses = classnames(style.buttonContainer, {
+      [style.small]: small,
+      [style.large]: large
+    })
+
+    const statusIcon = done ? (
+      <div className={style.iconCenter}>
+        <Icon name="Tick" />
+      </div>
+    ) : submitting ? (
+      <div className={style.iconCenter}>
+        <ButtonSpinner />
+      </div>
+    ) : null
 
     return (
-      <button
-        className={classes}
-        type={submit ? 'submit' : 'button'}
-        onClick={this.handleClick}
-        {...rest}>
-        {children}
-        {icon && <Icon
-          className={style.icon}
-          name={icon} />}
-      </button>
+      <div className={containerClasses}>
+        <button
+          className={buttonClasses}
+          type={submit ? 'submit' : 'button'}
+          onClick={this.handleClick}
+          {...rest}
+        >
+          {statusIcon || (
+            <Fragment>
+              {iconLeft && <div className={style.iconLeft}>{iconLeft}</div>}
+
+              <div className={style.content}>
+                {children}
+
+                {icon && <Icon className={style.legacyIcon} name={icon} />}
+              </div>
+
+              {iconRight && <div className={style.iconRight}>{iconRight}</div>}
+            </Fragment>
+          )}
+        </button>
+      </div>
     )
   }
 }

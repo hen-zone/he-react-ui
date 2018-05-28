@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> rendered correctly with squared fixture 1`] = `
+<Button
+  color="teal"
+  disabled={false}
+  done={false}
+  icon=""
+  keyline={false}
+  link={false}
+  onClick={[Function]}
+  squared={true}
+  submit={false}
+  submitting={false}
+>
+  <div
+    className="buttonContainer"
+  >
+    <button
+      className="button teal squared"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="content"
+      >
+        Button
+      </div>
+    </button>
+  </div>
+</Button>
+`;

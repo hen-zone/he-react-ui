@@ -5,5 +5,6 @@ export default {
   props: {
     small: true
   },
-  children: 'Button'
+  children: 'Button',
+  simulateSubmission: true
 }

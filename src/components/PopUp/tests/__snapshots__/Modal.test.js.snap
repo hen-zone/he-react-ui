@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PopUp /> rendered correctly with Modal fixture 1`] = `
+<PopUp
+  modal={true}
+  noPadding={false}
+  onClose={[Function]}
+  onOpen={[Function]}
+  showing={true}
+>
+  <div
+    className="outer showing"
+    onOpen={[Function]}
+  >
+    <div
+      className="overlay"
+      onClick={[Function]}
+    />
+    <div
+      className="popup popupWithPadding"
+    >
+      <div>
+        <Paragraph>
+          <p
+            className="paragraph"
+          >
+            This modal popup can't be closed without a parent interfering.
+          </p>
+        </Paragraph>
+        <Paragraph>
+          <p
+            className="paragraph"
+          >
+            If only the 'showing' property were set to false.
+          </p>
+        </Paragraph>
+      </div>
+    </div>
+  </div>
+</PopUp>
+`;

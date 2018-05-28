@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextField /> rendered correctly with Value fixture 1`] = `
+<TextField
+  disabled={false}
+  id="demo"
+  inline={false}
+  isValid={true}
+  label="First Name"
+  marker={false}
+  name="demo"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  value="Oscar"
+>
+  <div
+    className="outer"
+  >
+    <div
+      className="block"
+    >
+      <label
+        className="label floating"
+        htmlFor="demo"
+      >
+        First Name
+      </label>
+      <input
+        className="input"
+        disabled={false}
+        id="demo"
+        name="demo"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        value="Oscar"
+      />
+    </div>
+  </div>
+</TextField>
+`;

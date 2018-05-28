@@ -1,0 +1,77 @@
+.loadingContainer {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.pulseButton,
+.pulseButton2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  font-size: 1.3em;
+  font-weight: light;
+  font-family: "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 100px;
+  letter-spacing: -1px;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(#efefef, 0.5);
+  padding-right: 10px;
+  box-sizing: border-box;
+  background: #fafafa;
+  opacity: 0.8;
+}
+.pulseButton:hover {
+  -webkit-animation: none;
+}
+.pulseButton {
+  -webkit-animation: pulse 1.5s infinite;
+}
+.pulseButton2 {
+  -webkit-animation: pulse2 1.5s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+  }
+  40% {
+    box-shadow: 0 0 0 0 rgba(#eeeeee, 0.5);
+  }
+  75% {
+    box-shadow: 0 0 0 70px rgba(#eeeeee, 0);
+  }
+  90% {
+    box-shadow: 0 0 0 0 rgba(#eeeeee, 0);
+  }
+}
+@-webkit-keyframes pulse2 {
+  0% {
+    transform: scale(0.9);
+  }
+  60% {
+    transform: scale(1);
+    box-shadow: 0 0 0 50px rgba(#eeeeee, 0);
+  }
+  80% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(#eeeeee, 0);
+  }
+}

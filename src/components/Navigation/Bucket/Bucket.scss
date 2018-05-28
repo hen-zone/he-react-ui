@@ -21,6 +21,7 @@ $bucket-width: 76px;
   }
   &:active {
     background-color: $navy_2_dark_40;
+    color: $white;
     opacity: 1;
   }
   &.current {

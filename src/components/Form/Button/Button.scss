@@ -1,30 +1,73 @@
 @import '../../../styles/base';
 
+.buttonContainer {
+  display: flex;
+  height: 48px;  
+  width: 180px;
+  margin: auto;
+
+  align-items: center;
+  justify-content: center;
+
+  &.small {
+    height: 30px;
+    width: 100px;
+  }
+  
+  &.large {
+    width: 280px;
+  }
+}
+
 .button {
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  flex-basis: 48px;  
+  white-space: nowrap;
   cursor: pointer;
   color: $white;
-  padding: 0 24px;
+  padding: 0 36px;
   border: none;
   border-radius: 48px;
   text-align: left;
-  height: 48px;
-  margin: auto;
   position: relative;
   font-size: $input-size;
   font-family: $font-stack;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   outline: none;
   font-weight: $semi-bold;
   user-select: none;
-  &:not(.disabled):hover {
+  align-items: center;
+  justify-content: center;
+
+  transition-property: flex-grow;
+  transition-duration: 0.3s;
+
+  &.submitting {
+    flex-grow: 0.01; // working around a chrome bug
+    padding: 0;
+    pointer-events: none;
+  }
+
+  &.done {
+    background-color: $sp_green;
+    pointer-events: none;
+  }
+
+  &:not(.disabled):not(.submitting):not(.done):hover {
     filter: brightness(92%);
   }
-  &:not(.disabled):active {
+  &:not(.disabled):not(.submitting):not(.done):active {
     filter: brightness(84%);
   }
 }
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .teal {
   background: $teal_1;
@@ -62,6 +105,8 @@
   }
 }
 
+
+
 .keyline {
   &:not(:hover):not(:active) {
     border: solid 1px;
@@ -80,6 +125,8 @@
 }
 
 .link, .keyline:not(:hover):not(:active) {
+  border-width: 2px;
+
   &.teal {
     color: $teal_1;
     border-color: $teal_1;
@@ -110,11 +157,36 @@
   border-radius: 2px;
 }
 
-.small {
-  height: 40px;
+.iconContainer {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  margin-top: -12px;
+  top: 50%;
+
+  >* {
+    width: 100%;
+    height: 100%;
+  }
 }
 
-.icon {
+.iconLeft {
+  @extend .iconContainer;
+  left: 12px;
+}
+
+.iconRight {
+  @extend .iconContainer;
+  right: 12px;
+}
+
+.iconCenter {
+  @extend .iconContainer;
+  left: 50%;
+  margin-left: -12px;
+}
+
+.legacyIcon {
   fill: currentColor;
   height: 24px;
   margin-left: 12px;

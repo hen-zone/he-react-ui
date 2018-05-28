@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Paragraph /> rendered correctly with Loading fixture 1`] = `
+<Paragraph>
+  <div>
+    <LoadingStrip
+      className="loading"
+    >
+      <div
+        className="outer loading"
+      >
+        <div
+          className="inner"
+        />
+      </div>
+    </LoadingStrip>
+    <LoadingStrip
+      className="loading"
+    >
+      <div
+        className="outer loading"
+      >
+        <div
+          className="inner"
+        />
+      </div>
+    </LoadingStrip>
+    <LoadingStrip
+      className="loading"
+    >
+      <div
+        className="outer loading"
+      >
+        <div
+          className="inner"
+        />
+      </div>
+    </LoadingStrip>
+  </div>
+</Paragraph>
+`;

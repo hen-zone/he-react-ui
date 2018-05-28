@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextField /> rendered correctly with Error fixture 1`] = `
+<TextField
+  disabled={false}
+  error="Something isn't right"
+  id="demo"
+  inline={false}
+  isValid={true}
+  label="First Name"
+  marker={false}
+  name="demo"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  validateFunc={[MockFunction]}
+  value=""
+>
+  <div
+    className="outer"
+    validateFunc={[MockFunction]}
+  >
+    <div
+      className="block"
+    >
+      <label
+        className="label"
+        htmlFor="demo"
+      >
+        First Name
+      </label>
+      <input
+        className="input"
+        disabled={false}
+        id="demo"
+        name="demo"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        value=""
+      />
+    </div>
+    <label
+      className="description"
+      htmlFor="demo"
+    >
+      Something isn't right
+    </label>
+  </div>
+</TextField>
+`;

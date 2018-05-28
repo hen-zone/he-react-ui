@@ -12,6 +12,15 @@ export default {
     bottomKeys: [ 'HELP', 'SETTINGS' ],
     items: [
       {
+        key: 'HOME',
+        label: 'Home',
+        icon: 'Home',
+        title: 'Homepage',
+        items: null,
+        route: '/',
+        exact: true
+      },
+      {
         key: 'BUCKET1',
         label: 'Bucket 1',
         icon: 'Engage',

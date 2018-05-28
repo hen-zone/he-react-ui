@@ -1,0 +1,1071 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SingleDatePicker /> rendered correctly with error fixture 1`] = `
+<SingleDatePicker
+  anchorDirection="right"
+  disabled={false}
+  displayFormat="DD/MM/YYYY"
+  error="That wasn't the best choice"
+  id="demo"
+  inline={false}
+  name="demo"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  placeholder="Select date"
+  readOnly={true}
+>
+  <div
+    className="outer error"
+  >
+    <div
+      className="inner"
+    >
+      <Media
+        defaultMatches={true}
+        query={
+          Object {
+            "maxWidth": 767,
+          }
+        }
+      >
+        <withStyles(SingleDatePicker)
+          anchorDirection="right"
+          appendToBody={false}
+          block={false}
+          calendarInfoPosition="bottom"
+          className="picker"
+          customCloseIcon={null}
+          customInputIcon={null}
+          date={null}
+          daySize={28}
+          disableScroll={false}
+          disabled={false}
+          displayFormat="DD/MM/YYYY"
+          enableOutsideDays={false}
+          firstDayOfWeek={null}
+          focused={false}
+          hideKeyboardShortcutsPanel={false}
+          horizontalMargin={0}
+          id="demo"
+          initialVisibleMonth={null}
+          inputIconPosition="before"
+          isDayBlocked={[Function]}
+          isDayHighlighted={[Function]}
+          isOutsideRange={[Function]}
+          isRTL={false}
+          keepFocusOnInput={false}
+          keepOpenOnDateSelect={false}
+          monthFormat="MMMM YYYY"
+          name="demo"
+          navNext={
+            <Icon
+              name="ChevronRight"
+            />
+          }
+          navPrev={
+            <Icon
+              name="ChevronLeft"
+            />
+          }
+          noBorder={false}
+          numberOfMonths={2}
+          onBlur={[Function]}
+          onClose={[Function]}
+          onDateChange={[Function]}
+          onFocus={[Function]}
+          onFocusChange={[Function]}
+          onNextMonthClick={[Function]}
+          onPrevMonthClick={[Function]}
+          openDirection="down"
+          orientation="horizontal"
+          phrases={
+            Object {
+              "calendarLabel": "Calendar",
+              "chooseAvailableDate": [Function],
+              "clearDate": "Clear Date",
+              "closeDatePicker": "Close",
+              "dateIsSelected": [Function],
+              "dateIsUnavailable": [Function],
+              "enterKey": "Enter key",
+              "escape": "Escape key",
+              "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+              "homeEnd": "Home and end keys",
+              "jumpToNextMonth": "Move forward to switch to the next month.",
+              "jumpToPrevMonth": "Move backward to switch to the previous month.",
+              "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+              "keyboardShortcuts": "Keyboard Shortcuts",
+              "leftArrowRightArrow": "Right and left arrow keys",
+              "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+              "moveFocusByOneMonth": "Switch months.",
+              "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+              "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+              "openThisPanel": "Open this panel.",
+              "pageUpPageDown": "page up and page down keys",
+              "questionMark": "Question mark",
+              "returnFocusToInput": "Return to the date input field.",
+              "selectFocusedDate": "Select the date in focus.",
+              "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+              "upArrowDownArrow": "up and down arrow keys",
+            }
+          }
+          placeholder="Select date"
+          readOnly={true}
+          regular={false}
+          renderCalendarInfo={null}
+          renderDayContents={null}
+          renderMonth={null}
+          reopenPickerOnClearDate={false}
+          required={false}
+          screenReaderInputMessage=""
+          showClearDate={false}
+          showDefaultInputIcon={false}
+          small={false}
+          verticalHeight={null}
+          verticalSpacing={22}
+          weekDayFormat="dd"
+          withFullScreenPortal={false}
+          withPortal={false}
+        >
+          <SingleDatePicker
+            anchorDirection="right"
+            appendToBody={false}
+            block={false}
+            calendarInfoPosition="bottom"
+            className="picker"
+            css={[Function]}
+            customCloseIcon={null}
+            customInputIcon={null}
+            date={null}
+            daySize={28}
+            disableScroll={false}
+            disabled={false}
+            displayFormat="DD/MM/YYYY"
+            enableOutsideDays={false}
+            firstDayOfWeek={null}
+            focused={false}
+            hideKeyboardShortcutsPanel={false}
+            horizontalMargin={0}
+            id="demo"
+            initialVisibleMonth={null}
+            inputIconPosition="before"
+            isDayBlocked={[Function]}
+            isDayHighlighted={[Function]}
+            isOutsideRange={[Function]}
+            isRTL={false}
+            keepFocusOnInput={false}
+            keepOpenOnDateSelect={false}
+            monthFormat="MMMM YYYY"
+            name="demo"
+            navNext={
+              <Icon
+                name="ChevronRight"
+              />
+            }
+            navPrev={
+              <Icon
+                name="ChevronLeft"
+              />
+            }
+            noBorder={false}
+            numberOfMonths={2}
+            onBlur={[Function]}
+            onClose={[Function]}
+            onDateChange={[Function]}
+            onFocus={[Function]}
+            onFocusChange={[Function]}
+            onNextMonthClick={[Function]}
+            onPrevMonthClick={[Function]}
+            openDirection="down"
+            orientation="horizontal"
+            phrases={
+              Object {
+                "calendarLabel": "Calendar",
+                "chooseAvailableDate": [Function],
+                "clearDate": "Clear Date",
+                "closeDatePicker": "Close",
+                "dateIsSelected": [Function],
+                "dateIsUnavailable": [Function],
+                "enterKey": "Enter key",
+                "escape": "Escape key",
+                "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                "homeEnd": "Home and end keys",
+                "jumpToNextMonth": "Move forward to switch to the next month.",
+                "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+                "keyboardShortcuts": "Keyboard Shortcuts",
+                "leftArrowRightArrow": "Right and left arrow keys",
+                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+                "moveFocusByOneMonth": "Switch months.",
+                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+                "openThisPanel": "Open this panel.",
+                "pageUpPageDown": "page up and page down keys",
+                "questionMark": "Question mark",
+                "returnFocusToInput": "Return to the date input field.",
+                "selectFocusedDate": "Select the date in focus.",
+                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                "upArrowDownArrow": "up and down arrow keys",
+              }
+            }
+            placeholder="Select date"
+            readOnly={true}
+            regular={false}
+            renderCalendarInfo={null}
+            renderDayContents={null}
+            renderMonth={null}
+            reopenPickerOnClearDate={false}
+            required={false}
+            screenReaderInputMessage=""
+            showClearDate={false}
+            showDefaultInputIcon={false}
+            small={false}
+            styles={
+              Object {
+                "SingleDatePicker": "SingleDatePicker",
+                "SingleDatePicker__block": "SingleDatePicker__block",
+                "SingleDatePicker_closeButton": "SingleDatePicker_closeButton",
+                "SingleDatePicker_closeButton_svg": "SingleDatePicker_closeButton_svg",
+                "SingleDatePicker_picker": "SingleDatePicker_picker",
+                "SingleDatePicker_picker__directionLeft": "SingleDatePicker_picker__directionLeft",
+                "SingleDatePicker_picker__directionRight": "SingleDatePicker_picker__directionRight",
+                "SingleDatePicker_picker__fullScreenPortal": "SingleDatePicker_picker__fullScreenPortal",
+                "SingleDatePicker_picker__portal": "SingleDatePicker_picker__portal",
+                "SingleDatePicker_picker__rtl": "SingleDatePicker_picker__rtl",
+              }
+            }
+            theme={
+              Object {
+                "reactDates": Object {
+                  "border": Object {
+                    "input": Object {
+                      "border": 0,
+                      "borderBottom": "2px solid transparent",
+                      "borderBottomFocused": "2px solid #008489",
+                      "borderFocused": 0,
+                      "borderLeft": 0,
+                      "borderLeftFocused": 0,
+                      "borderRight": 0,
+                      "borderRightFocused": 0,
+                      "borderTop": 0,
+                      "borderTopFocused": 0,
+                      "outlineFocused": 0,
+                    },
+                  },
+                  "color": Object {
+                    "background": "#fff",
+                    "backgroundDark": "#f2f2f2",
+                    "backgroundFocused": "#fff",
+                    "blocked_calendar": Object {
+                      "backgroundColor": "#cacccd",
+                      "backgroundColor_active": "#cacccd",
+                      "backgroundColor_hover": "#cacccd",
+                      "borderColor": "#cacccd",
+                      "borderColor_active": "#cacccd",
+                      "borderColor_hover": "#cacccd",
+                      "color": "#82888a",
+                      "color_active": "#82888a",
+                      "color_hover": "#82888a",
+                    },
+                    "blocked_out_of_range": Object {
+                      "backgroundColor": "#fff",
+                      "backgroundColor_active": "#fff",
+                      "backgroundColor_hover": "#fff",
+                      "borderColor": "#e4e7e7",
+                      "borderColor_active": "#e4e7e7",
+                      "borderColor_hover": "#e4e7e7",
+                      "color": "#cacccd",
+                      "color_active": "#cacccd",
+                      "color_hover": "#cacccd",
+                    },
+                    "core": Object {
+                      "border": "#dbdbdb",
+                      "borderBright": "#f4f5f5",
+                      "borderLight": "#e4e7e7",
+                      "borderLighter": "#eceeee",
+                      "borderMedium": "#c4c4c4",
+                      "gray": "#565a5c",
+                      "grayLight": "#82888a",
+                      "grayLighter": "#cacccd",
+                      "grayLightest": "#f2f2f2",
+                      "primary": "#00a699",
+                      "primaryShade_1": "#33dacd",
+                      "primaryShade_2": "#66e2da",
+                      "primaryShade_3": "#80e8e0",
+                      "primaryShade_4": "#b2f1ec",
+                      "primary_dark": "#008489",
+                      "secondary": "#007a87",
+                      "white": "#fff",
+                      "yellow": "#ffe8bc",
+                      "yellow_dark": "#ffce71",
+                    },
+                    "disabled": "#f2f2f2",
+                    "highlighted": Object {
+                      "backgroundColor": "#ffe8bc",
+                      "backgroundColor_active": "#ffce71",
+                      "backgroundColor_hover": "#ffce71",
+                      "color": "#565a5c",
+                      "color_active": "#565a5c",
+                      "color_hover": "#565a5c",
+                    },
+                    "hoveredSpan": Object {
+                      "backgroundColor": "#b2f1ec",
+                      "backgroundColor_active": "#80e8e0",
+                      "backgroundColor_hover": "#b2f1ec",
+                      "borderColor": "#80e8e0",
+                      "borderColor_active": "#80e8e0",
+                      "borderColor_hover": "#80e8e0",
+                      "color": "#007a87",
+                      "color_active": "#007a87",
+                      "color_hover": "#007a87",
+                    },
+                    "minimumNights": Object {
+                      "backgroundColor": "#fff",
+                      "backgroundColor_active": "#fff",
+                      "backgroundColor_hover": "#fff",
+                      "borderColor": "#eceeee",
+                      "color": "#cacccd",
+                      "color_active": "#cacccd",
+                      "color_hover": "#cacccd",
+                    },
+                    "outside": Object {
+                      "backgroundColor": "#fff",
+                      "backgroundColor_active": "#fff",
+                      "backgroundColor_hover": "#fff",
+                      "color": "#565a5c",
+                      "color_active": "#565a5c",
+                      "color_hover": "#565a5c",
+                    },
+                    "placeholderText": "#757575",
+                    "selected": Object {
+                      "backgroundColor": "#00a699",
+                      "backgroundColor_active": "#00a699",
+                      "backgroundColor_hover": "#00a699",
+                      "borderColor": "#00a699",
+                      "borderColor_active": "#00a699",
+                      "borderColor_hover": "#00a699",
+                      "color": "#fff",
+                      "color_active": "#fff",
+                      "color_hover": "#fff",
+                    },
+                    "selectedSpan": Object {
+                      "backgroundColor": "#66e2da",
+                      "backgroundColor_active": "#33dacd",
+                      "backgroundColor_hover": "#33dacd",
+                      "borderColor": "#33dacd",
+                      "borderColor_active": "#00a699",
+                      "borderColor_hover": "#00a699",
+                      "color": "#fff",
+                      "color_active": "#fff",
+                      "color_hover": "#fff",
+                    },
+                    "text": "#565a5c",
+                    "textDisabled": "#dbdbdb",
+                    "textFocused": "#007a87",
+                  },
+                  "font": Object {
+                    "captionSize": 18,
+                    "input": Object {
+                      "lineHeight": "24px",
+                      "lineHeight_small": "18px",
+                      "size": 18,
+                      "size_small": 14,
+                      "styleDisabled": "italic",
+                    },
+                    "size": 14,
+                  },
+                  "sizing": Object {
+                    "arrowWidth": 24,
+                    "arrowWidth_small": 19,
+                    "inputWidth": 130,
+                    "inputWidth_small": 90,
+                  },
+                  "spacing": Object {
+                    "captionPaddingBottom": 37,
+                    "captionPaddingTop": 22,
+                    "displayTextPaddingBottom": 11,
+                    "displayTextPaddingBottom_small": 6,
+                    "displayTextPaddingHorizontal": undefined,
+                    "displayTextPaddingHorizontal_small": undefined,
+                    "displayTextPaddingLeft": 12,
+                    "displayTextPaddingLeft_small": 8,
+                    "displayTextPaddingRight": 12,
+                    "displayTextPaddingRight_small": 8,
+                    "displayTextPaddingTop": 13,
+                    "displayTextPaddingTop_small": 8,
+                    "displayTextPaddingVertical": undefined,
+                    "displayTextPaddingVertical_small": undefined,
+                    "inputPadding": 0,
+                  },
+                  "zIndex": 0,
+                },
+              }
+            }
+            verticalHeight={null}
+            verticalSpacing={22}
+            weekDayFormat="dd"
+            withFullScreenPortal={false}
+            withPortal={false}
+          >
+            <div
+              className="SingleDatePicker SingleDatePicker_1"
+            >
+              <OutsideClickHandler
+                onOutsideClick={[Function]}
+              >
+                <div>
+                  <withStyles(SingleDatePickerInput)
+                    block={false}
+                    customCloseIcon={null}
+                    customInputIcon={null}
+                    disabled={false}
+                    displayValue={null}
+                    focused={false}
+                    id="demo"
+                    inputIconPosition="before"
+                    isFocused={false}
+                    isRTL={false}
+                    noBorder={false}
+                    onChange={[Function]}
+                    onClearDate={[Function]}
+                    onFocus={[Function]}
+                    onKeyDownArrowDown={[Function]}
+                    onKeyDownQuestionMark={[Function]}
+                    onKeyDownShiftTab={[Function]}
+                    onKeyDownTab={[Function]}
+                    openDirection="down"
+                    phrases={
+                      Object {
+                        "calendarLabel": "Calendar",
+                        "chooseAvailableDate": [Function],
+                        "clearDate": "Clear Date",
+                        "closeDatePicker": "Close",
+                        "dateIsSelected": [Function],
+                        "dateIsUnavailable": [Function],
+                        "enterKey": "Enter key",
+                        "escape": "Escape key",
+                        "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                        "homeEnd": "Home and end keys",
+                        "jumpToNextMonth": "Move forward to switch to the next month.",
+                        "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                        "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+                        "keyboardShortcuts": "Keyboard Shortcuts",
+                        "leftArrowRightArrow": "Right and left arrow keys",
+                        "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+                        "moveFocusByOneMonth": "Switch months.",
+                        "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+                        "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+                        "openThisPanel": "Open this panel.",
+                        "pageUpPageDown": "page up and page down keys",
+                        "questionMark": "Question mark",
+                        "returnFocusToInput": "Return to the date input field.",
+                        "selectFocusedDate": "Select the date in focus.",
+                        "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                        "upArrowDownArrow": "up and down arrow keys",
+                      }
+                    }
+                    placeholder="Select date"
+                    readOnly={true}
+                    regular={false}
+                    required={false}
+                    screenReaderMessage=""
+                    showCaret={true}
+                    showClearDate={false}
+                    showDefaultInputIcon={false}
+                    small={false}
+                    verticalSpacing={22}
+                  >
+                    <SingleDatePickerInput
+                      block={false}
+                      css={[Function]}
+                      customCloseIcon={null}
+                      customInputIcon={null}
+                      disabled={false}
+                      displayValue={null}
+                      focused={false}
+                      id="demo"
+                      inputIconPosition="before"
+                      isFocused={false}
+                      isRTL={false}
+                      noBorder={false}
+                      onChange={[Function]}
+                      onClearDate={[Function]}
+                      onFocus={[Function]}
+                      onKeyDownArrowDown={[Function]}
+                      onKeyDownQuestionMark={[Function]}
+                      onKeyDownShiftTab={[Function]}
+                      onKeyDownTab={[Function]}
+                      openDirection="down"
+                      phrases={
+                        Object {
+                          "calendarLabel": "Calendar",
+                          "chooseAvailableDate": [Function],
+                          "clearDate": "Clear Date",
+                          "closeDatePicker": "Close",
+                          "dateIsSelected": [Function],
+                          "dateIsUnavailable": [Function],
+                          "enterKey": "Enter key",
+                          "escape": "Escape key",
+                          "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                          "homeEnd": "Home and end keys",
+                          "jumpToNextMonth": "Move forward to switch to the next month.",
+                          "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                          "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+                          "keyboardShortcuts": "Keyboard Shortcuts",
+                          "leftArrowRightArrow": "Right and left arrow keys",
+                          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+                          "moveFocusByOneMonth": "Switch months.",
+                          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+                          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+                          "openThisPanel": "Open this panel.",
+                          "pageUpPageDown": "page up and page down keys",
+                          "questionMark": "Question mark",
+                          "returnFocusToInput": "Return to the date input field.",
+                          "selectFocusedDate": "Select the date in focus.",
+                          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                          "upArrowDownArrow": "up and down arrow keys",
+                        }
+                      }
+                      placeholder="Select date"
+                      readOnly={true}
+                      regular={false}
+                      required={false}
+                      screenReaderMessage=""
+                      showCaret={true}
+                      showClearDate={false}
+                      showDefaultInputIcon={false}
+                      small={false}
+                      styles={
+                        Object {
+                          "SingleDatePickerInput": "SingleDatePickerInput",
+                          "SingleDatePickerInput__block": "SingleDatePickerInput__block",
+                          "SingleDatePickerInput__disabled": "SingleDatePickerInput__disabled",
+                          "SingleDatePickerInput__rtl": "SingleDatePickerInput__rtl",
+                          "SingleDatePickerInput__showClearDate": "SingleDatePickerInput__showClearDate",
+                          "SingleDatePickerInput__withBorder": "SingleDatePickerInput__withBorder",
+                          "SingleDatePickerInput_calendarIcon": "SingleDatePickerInput_calendarIcon",
+                          "SingleDatePickerInput_calendarIcon_svg": "SingleDatePickerInput_calendarIcon_svg",
+                          "SingleDatePickerInput_clearDate": "SingleDatePickerInput_clearDate",
+                          "SingleDatePickerInput_clearDate__default": "SingleDatePickerInput_clearDate__default",
+                          "SingleDatePickerInput_clearDate__hide": "SingleDatePickerInput_clearDate__hide",
+                          "SingleDatePickerInput_clearDate__small": "SingleDatePickerInput_clearDate__small",
+                          "SingleDatePickerInput_clearDate_svg": "SingleDatePickerInput_clearDate_svg",
+                          "SingleDatePickerInput_clearDate_svg__small": "SingleDatePickerInput_clearDate_svg__small",
+                        }
+                      }
+                      theme={
+                        Object {
+                          "reactDates": Object {
+                            "border": Object {
+                              "input": Object {
+                                "border": 0,
+                                "borderBottom": "2px solid transparent",
+                                "borderBottomFocused": "2px solid #008489",
+                                "borderFocused": 0,
+                                "borderLeft": 0,
+                                "borderLeftFocused": 0,
+                                "borderRight": 0,
+                                "borderRightFocused": 0,
+                                "borderTop": 0,
+                                "borderTopFocused": 0,
+                                "outlineFocused": 0,
+                              },
+                            },
+                            "color": Object {
+                              "background": "#fff",
+                              "backgroundDark": "#f2f2f2",
+                              "backgroundFocused": "#fff",
+                              "blocked_calendar": Object {
+                                "backgroundColor": "#cacccd",
+                                "backgroundColor_active": "#cacccd",
+                                "backgroundColor_hover": "#cacccd",
+                                "borderColor": "#cacccd",
+                                "borderColor_active": "#cacccd",
+                                "borderColor_hover": "#cacccd",
+                                "color": "#82888a",
+                                "color_active": "#82888a",
+                                "color_hover": "#82888a",
+                              },
+                              "blocked_out_of_range": Object {
+                                "backgroundColor": "#fff",
+                                "backgroundColor_active": "#fff",
+                                "backgroundColor_hover": "#fff",
+                                "borderColor": "#e4e7e7",
+                                "borderColor_active": "#e4e7e7",
+                                "borderColor_hover": "#e4e7e7",
+                                "color": "#cacccd",
+                                "color_active": "#cacccd",
+                                "color_hover": "#cacccd",
+                              },
+                              "core": Object {
+                                "border": "#dbdbdb",
+                                "borderBright": "#f4f5f5",
+                                "borderLight": "#e4e7e7",
+                                "borderLighter": "#eceeee",
+                                "borderMedium": "#c4c4c4",
+                                "gray": "#565a5c",
+                                "grayLight": "#82888a",
+                                "grayLighter": "#cacccd",
+                                "grayLightest": "#f2f2f2",
+                                "primary": "#00a699",
+                                "primaryShade_1": "#33dacd",
+                                "primaryShade_2": "#66e2da",
+                                "primaryShade_3": "#80e8e0",
+                                "primaryShade_4": "#b2f1ec",
+                                "primary_dark": "#008489",
+                                "secondary": "#007a87",
+                                "white": "#fff",
+                                "yellow": "#ffe8bc",
+                                "yellow_dark": "#ffce71",
+                              },
+                              "disabled": "#f2f2f2",
+                              "highlighted": Object {
+                                "backgroundColor": "#ffe8bc",
+                                "backgroundColor_active": "#ffce71",
+                                "backgroundColor_hover": "#ffce71",
+                                "color": "#565a5c",
+                                "color_active": "#565a5c",
+                                "color_hover": "#565a5c",
+                              },
+                              "hoveredSpan": Object {
+                                "backgroundColor": "#b2f1ec",
+                                "backgroundColor_active": "#80e8e0",
+                                "backgroundColor_hover": "#b2f1ec",
+                                "borderColor": "#80e8e0",
+                                "borderColor_active": "#80e8e0",
+                                "borderColor_hover": "#80e8e0",
+                                "color": "#007a87",
+                                "color_active": "#007a87",
+                                "color_hover": "#007a87",
+                              },
+                              "minimumNights": Object {
+                                "backgroundColor": "#fff",
+                                "backgroundColor_active": "#fff",
+                                "backgroundColor_hover": "#fff",
+                                "borderColor": "#eceeee",
+                                "color": "#cacccd",
+                                "color_active": "#cacccd",
+                                "color_hover": "#cacccd",
+                              },
+                              "outside": Object {
+                                "backgroundColor": "#fff",
+                                "backgroundColor_active": "#fff",
+                                "backgroundColor_hover": "#fff",
+                                "color": "#565a5c",
+                                "color_active": "#565a5c",
+                                "color_hover": "#565a5c",
+                              },
+                              "placeholderText": "#757575",
+                              "selected": Object {
+                                "backgroundColor": "#00a699",
+                                "backgroundColor_active": "#00a699",
+                                "backgroundColor_hover": "#00a699",
+                                "borderColor": "#00a699",
+                                "borderColor_active": "#00a699",
+                                "borderColor_hover": "#00a699",
+                                "color": "#fff",
+                                "color_active": "#fff",
+                                "color_hover": "#fff",
+                              },
+                              "selectedSpan": Object {
+                                "backgroundColor": "#66e2da",
+                                "backgroundColor_active": "#33dacd",
+                                "backgroundColor_hover": "#33dacd",
+                                "borderColor": "#33dacd",
+                                "borderColor_active": "#00a699",
+                                "borderColor_hover": "#00a699",
+                                "color": "#fff",
+                                "color_active": "#fff",
+                                "color_hover": "#fff",
+                              },
+                              "text": "#565a5c",
+                              "textDisabled": "#dbdbdb",
+                              "textFocused": "#007a87",
+                            },
+                            "font": Object {
+                              "captionSize": 18,
+                              "input": Object {
+                                "lineHeight": "24px",
+                                "lineHeight_small": "18px",
+                                "size": 18,
+                                "size_small": 14,
+                                "styleDisabled": "italic",
+                              },
+                              "size": 14,
+                            },
+                            "sizing": Object {
+                              "arrowWidth": 24,
+                              "arrowWidth_small": 19,
+                              "inputWidth": 130,
+                              "inputWidth_small": 90,
+                            },
+                            "spacing": Object {
+                              "captionPaddingBottom": 37,
+                              "captionPaddingTop": 22,
+                              "displayTextPaddingBottom": 11,
+                              "displayTextPaddingBottom_small": 6,
+                              "displayTextPaddingHorizontal": undefined,
+                              "displayTextPaddingHorizontal_small": undefined,
+                              "displayTextPaddingLeft": 12,
+                              "displayTextPaddingLeft_small": 8,
+                              "displayTextPaddingRight": 12,
+                              "displayTextPaddingRight_small": 8,
+                              "displayTextPaddingTop": 13,
+                              "displayTextPaddingTop_small": 8,
+                              "displayTextPaddingVertical": undefined,
+                              "displayTextPaddingVertical_small": undefined,
+                              "inputPadding": 0,
+                            },
+                            "zIndex": 0,
+                          },
+                        }
+                      }
+                      verticalSpacing={22}
+                    >
+                      <div
+                        className="SingleDatePickerInput SingleDatePickerInput_1 SingleDatePickerInput__withBorder SingleDatePickerInput__withBorder_2"
+                      >
+                        <withStyles(DateInput)
+                          block={false}
+                          disabled={false}
+                          displayValue={null}
+                          focused={false}
+                          id="demo"
+                          isFocused={false}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          onKeyDownArrowDown={[Function]}
+                          onKeyDownQuestionMark={[Function]}
+                          onKeyDownShiftTab={[Function]}
+                          onKeyDownTab={[Function]}
+                          openDirection="down"
+                          placeholder="Select date"
+                          readOnly={true}
+                          regular={false}
+                          required={false}
+                          screenReaderMessage="Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates."
+                          showCaret={true}
+                          small={false}
+                          verticalSpacing={22}
+                        >
+                          <DateInput
+                            block={false}
+                            css={[Function]}
+                            disabled={false}
+                            displayValue={null}
+                            focused={false}
+                            id="demo"
+                            isFocused={false}
+                            onChange={[Function]}
+                            onFocus={[Function]}
+                            onKeyDownArrowDown={[Function]}
+                            onKeyDownQuestionMark={[Function]}
+                            onKeyDownShiftTab={[Function]}
+                            onKeyDownTab={[Function]}
+                            openDirection="down"
+                            placeholder="Select date"
+                            readOnly={true}
+                            regular={false}
+                            required={false}
+                            screenReaderMessage="Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates."
+                            showCaret={true}
+                            small={false}
+                            styles={
+                              Object {
+                                "DateInput": "DateInput",
+                                "DateInput__block": "DateInput__block",
+                                "DateInput__disabled": "DateInput__disabled",
+                                "DateInput__small": "DateInput__small",
+                                "DateInput_fang": "DateInput_fang",
+                                "DateInput_fangShape": "DateInput_fangShape",
+                                "DateInput_fangStroke": "DateInput_fangStroke",
+                                "DateInput_input": "DateInput_input",
+                                "DateInput_input__disabled": "DateInput_input__disabled",
+                                "DateInput_input__focused": "DateInput_input__focused",
+                                "DateInput_input__readOnly": "DateInput_input__readOnly",
+                                "DateInput_input__regular": "DateInput_input__regular",
+                                "DateInput_input__small": "DateInput_input__small",
+                                "DateInput_screenReaderMessage": "DateInput_screenReaderMessage",
+                              }
+                            }
+                            theme={
+                              Object {
+                                "reactDates": Object {
+                                  "border": Object {
+                                    "input": Object {
+                                      "border": 0,
+                                      "borderBottom": "2px solid transparent",
+                                      "borderBottomFocused": "2px solid #008489",
+                                      "borderFocused": 0,
+                                      "borderLeft": 0,
+                                      "borderLeftFocused": 0,
+                                      "borderRight": 0,
+                                      "borderRightFocused": 0,
+                                      "borderTop": 0,
+                                      "borderTopFocused": 0,
+                                      "outlineFocused": 0,
+                                    },
+                                  },
+                                  "color": Object {
+                                    "background": "#fff",
+                                    "backgroundDark": "#f2f2f2",
+                                    "backgroundFocused": "#fff",
+                                    "blocked_calendar": Object {
+                                      "backgroundColor": "#cacccd",
+                                      "backgroundColor_active": "#cacccd",
+                                      "backgroundColor_hover": "#cacccd",
+                                      "borderColor": "#cacccd",
+                                      "borderColor_active": "#cacccd",
+                                      "borderColor_hover": "#cacccd",
+                                      "color": "#82888a",
+                                      "color_active": "#82888a",
+                                      "color_hover": "#82888a",
+                                    },
+                                    "blocked_out_of_range": Object {
+                                      "backgroundColor": "#fff",
+                                      "backgroundColor_active": "#fff",
+                                      "backgroundColor_hover": "#fff",
+                                      "borderColor": "#e4e7e7",
+                                      "borderColor_active": "#e4e7e7",
+                                      "borderColor_hover": "#e4e7e7",
+                                      "color": "#cacccd",
+                                      "color_active": "#cacccd",
+                                      "color_hover": "#cacccd",
+                                    },
+                                    "core": Object {
+                                      "border": "#dbdbdb",
+                                      "borderBright": "#f4f5f5",
+                                      "borderLight": "#e4e7e7",
+                                      "borderLighter": "#eceeee",
+                                      "borderMedium": "#c4c4c4",
+                                      "gray": "#565a5c",
+                                      "grayLight": "#82888a",
+                                      "grayLighter": "#cacccd",
+                                      "grayLightest": "#f2f2f2",
+                                      "primary": "#00a699",
+                                      "primaryShade_1": "#33dacd",
+                                      "primaryShade_2": "#66e2da",
+                                      "primaryShade_3": "#80e8e0",
+                                      "primaryShade_4": "#b2f1ec",
+                                      "primary_dark": "#008489",
+                                      "secondary": "#007a87",
+                                      "white": "#fff",
+                                      "yellow": "#ffe8bc",
+                                      "yellow_dark": "#ffce71",
+                                    },
+                                    "disabled": "#f2f2f2",
+                                    "highlighted": Object {
+                                      "backgroundColor": "#ffe8bc",
+                                      "backgroundColor_active": "#ffce71",
+                                      "backgroundColor_hover": "#ffce71",
+                                      "color": "#565a5c",
+                                      "color_active": "#565a5c",
+                                      "color_hover": "#565a5c",
+                                    },
+                                    "hoveredSpan": Object {
+                                      "backgroundColor": "#b2f1ec",
+                                      "backgroundColor_active": "#80e8e0",
+                                      "backgroundColor_hover": "#b2f1ec",
+                                      "borderColor": "#80e8e0",
+                                      "borderColor_active": "#80e8e0",
+                                      "borderColor_hover": "#80e8e0",
+                                      "color": "#007a87",
+                                      "color_active": "#007a87",
+                                      "color_hover": "#007a87",
+                                    },
+                                    "minimumNights": Object {
+                                      "backgroundColor": "#fff",
+                                      "backgroundColor_active": "#fff",
+                                      "backgroundColor_hover": "#fff",
+                                      "borderColor": "#eceeee",
+                                      "color": "#cacccd",
+                                      "color_active": "#cacccd",
+                                      "color_hover": "#cacccd",
+                                    },
+                                    "outside": Object {
+                                      "backgroundColor": "#fff",
+                                      "backgroundColor_active": "#fff",
+                                      "backgroundColor_hover": "#fff",
+                                      "color": "#565a5c",
+                                      "color_active": "#565a5c",
+                                      "color_hover": "#565a5c",
+                                    },
+                                    "placeholderText": "#757575",
+                                    "selected": Object {
+                                      "backgroundColor": "#00a699",
+                                      "backgroundColor_active": "#00a699",
+                                      "backgroundColor_hover": "#00a699",
+                                      "borderColor": "#00a699",
+                                      "borderColor_active": "#00a699",
+                                      "borderColor_hover": "#00a699",
+                                      "color": "#fff",
+                                      "color_active": "#fff",
+                                      "color_hover": "#fff",
+                                    },
+                                    "selectedSpan": Object {
+                                      "backgroundColor": "#66e2da",
+                                      "backgroundColor_active": "#33dacd",
+                                      "backgroundColor_hover": "#33dacd",
+                                      "borderColor": "#33dacd",
+                                      "borderColor_active": "#00a699",
+                                      "borderColor_hover": "#00a699",
+                                      "color": "#fff",
+                                      "color_active": "#fff",
+                                      "color_hover": "#fff",
+                                    },
+                                    "text": "#565a5c",
+                                    "textDisabled": "#dbdbdb",
+                                    "textFocused": "#007a87",
+                                  },
+                                  "font": Object {
+                                    "captionSize": 18,
+                                    "input": Object {
+                                      "lineHeight": "24px",
+                                      "lineHeight_small": "18px",
+                                      "size": 18,
+                                      "size_small": 14,
+                                      "styleDisabled": "italic",
+                                    },
+                                    "size": 14,
+                                  },
+                                  "sizing": Object {
+                                    "arrowWidth": 24,
+                                    "arrowWidth_small": 19,
+                                    "inputWidth": 130,
+                                    "inputWidth_small": 90,
+                                  },
+                                  "spacing": Object {
+                                    "captionPaddingBottom": 37,
+                                    "captionPaddingTop": 22,
+                                    "displayTextPaddingBottom": 11,
+                                    "displayTextPaddingBottom_small": 6,
+                                    "displayTextPaddingHorizontal": undefined,
+                                    "displayTextPaddingHorizontal_small": undefined,
+                                    "displayTextPaddingLeft": 12,
+                                    "displayTextPaddingLeft_small": 8,
+                                    "displayTextPaddingRight": 12,
+                                    "displayTextPaddingRight_small": 8,
+                                    "displayTextPaddingTop": 13,
+                                    "displayTextPaddingTop_small": 8,
+                                    "displayTextPaddingVertical": undefined,
+                                    "displayTextPaddingVertical_small": undefined,
+                                    "inputPadding": 0,
+                                  },
+                                  "zIndex": 0,
+                                },
+                              }
+                            }
+                            verticalSpacing={22}
+                          >
+                            <div
+                              className="DateInput DateInput_1"
+                            >
+                              <input
+                                aria-describedby="DateInput__screen-reader-message-demo"
+                                aria-label="Select date"
+                                autoComplete="off"
+                                className="DateInput_input DateInput_input_1 DateInput_input__readOnly DateInput_input__readOnly_2"
+                                disabled={false}
+                                id="demo"
+                                name="demo"
+                                onChange={[Function]}
+                                onFocus={[Function]}
+                                onKeyDown={[Function]}
+                                placeholder="Select date"
+                                readOnly={true}
+                                required={false}
+                                type="text"
+                                value=""
+                              />
+                              <p
+                                className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+                                id="DateInput__screen-reader-message-demo"
+                              >
+                                Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+                              </p>
+                            </div>
+                          </DateInput>
+                        </withStyles(DateInput)>
+                      </div>
+                    </SingleDatePickerInput>
+                  </withStyles(SingleDatePickerInput)>
+                </div>
+              </OutsideClickHandler>
+            </div>
+          </SingleDatePicker>
+        </withStyles(SingleDatePicker)>
+      </Media>
+      <Icon
+        className="icon"
+        name="Calendar"
+      >
+        <Calendar
+          className="icon icon"
+        >
+          <svg
+            className="icon icon"
+            version="1.1"
+            viewBox="0 0 26 26"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              transform="translate(5.000000, 5.000000)"
+            >
+              <path
+                d="M4,2.5 L12,2.5 L12,1.5 C12,0.94771525 12.4477153,0.5 13,0.5 C13.5522847,0.5 14,0.94771525 14,1.5 L14,2.5 C15.1045695,2.5 16,3.3954305 16,4.5 L16,6 L16,14 C16,14.8284271 15.3284271,15.5 14.5,15.5 L1.5,15.5 C0.671572875,15.5 0,14.8284271 0,14 L0,6 L0,4.5 C-2.22044605e-16,3.3954305 0.8954305,2.5 2,2.5 L2,1.5 C2,0.94771525 2.44771525,0.5 3,0.5 C3.55228475,0.5 4,0.94771525 4,1.5 L4,2.5 Z M14,7.5 L2,7.5 L2,13.5 L14,13.5 L14,7.5 Z"
+              />
+            </g>
+          </svg>
+        </Calendar>
+      </Icon>
+    </div>
+    <Label
+      className="errorMessage"
+      error={true}
+      htmlFor="demo"
+      onChange={[Function]}
+    >
+      <div
+        className="label error errorMessage"
+        onChange={[Function]}
+      >
+        <Icon
+          className="icon"
+          name="Alert"
+        >
+          <Alert
+            className="icon icon"
+          >
+            <svg
+              className="icon icon"
+              version="1.1"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                transform="translate(2.000000, 3.000000)"
+              >
+                <path
+                  d="M8.88235294,0.654411765 L15.2156863,12.5294118 C15.475585,13.0167218 15.2912316,13.6224542 14.8039216,13.8823529 C14.6590914,13.9595957 14.4974742,14 14.3333333,14 L1.66666667,14 C1.11438192,14 0.666666667,13.5522847 0.666666667,13 C0.666666667,12.8358592 0.70707098,12.6742419 0.784313725,12.5294118 L7.11764706,0.654411765 C7.37754576,0.167101691 7.98327816,-0.017251647 8.47058824,0.242647059 C8.6456522,0.336014504 8.7889855,0.479347805 8.88235294,0.654411765 Z M7.25,5 L7.25,7.5 C7.25,7.91421356 7.58578644,8.25 8,8.25 C8.41421356,8.25 8.75,7.91421356 8.75,7.5 L8.75,5 C8.75,4.58578644 8.41421356,4.25 8,4.25 C7.58578644,4.25 7.25,4.58578644 7.25,5 Z M8,12 C8.55228475,12 9,11.5522847 9,11 C9,10.4477153 8.55228475,10 8,10 C7.44771525,10 7,10.4477153 7,11 C7,11.5522847 7.44771525,12 8,12 Z"
+                />
+              </g>
+            </svg>
+          </Alert>
+        </Icon>
+        <label
+          htmlFor="demo"
+        >
+          That wasn't the best choice
+        </label>
+      </div>
+    </Label>
+  </div>
+</SingleDatePicker>
+`;

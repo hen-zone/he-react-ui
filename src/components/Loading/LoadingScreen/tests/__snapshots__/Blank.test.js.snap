@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoadingScreen /> rendered correctly with blank fixture 1`] = `
+<LoadingScreen>
+  <div
+    className="loadingContainer"
+  >
+    <div
+      className="pulseButton"
+    />
+    <div
+      className="pulseButton2"
+    />
+  </div>
+</LoadingScreen>
+`;

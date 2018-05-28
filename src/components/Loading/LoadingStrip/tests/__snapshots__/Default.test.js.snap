@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoadingStrip /> rendered correctly with Default fixture 1`] = `
+<LoadingStrip>
+  <div
+    className="outer"
+  >
+    <div
+      className="inner"
+    />
+  </div>
+</LoadingStrip>
+`;

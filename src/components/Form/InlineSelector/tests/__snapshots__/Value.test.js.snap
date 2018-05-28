@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InlineSelector /> rendered correctly with Value fixture 1`] = `
+<InlineSelector
+  id="demo"
+  name="demo"
+  onChange={[Function]}
+  options={
+    Array [
+      Object {
+        "label": "Any",
+        "value": "1",
+      },
+      Object {
+        "label": "AM",
+        "value": "2",
+      },
+      Object {
+        "label": "PM",
+        "value": "3",
+      },
+      Object {
+        "label": "After Hours",
+        "value": "4",
+      },
+    ]
+  }
+  value="2"
+  vertical={false}
+>
+  <div
+    className="outer"
+    id="demo"
+    name="demo"
+  >
+    <div
+      className="options"
+    >
+      <div
+        className="option"
+        key="0"
+        onClick={[Function]}
+      >
+        Any
+      </div>
+      <div
+        className="option selected"
+        key="1"
+        onClick={[Function]}
+      >
+        AM
+      </div>
+      <div
+        className="option"
+        key="2"
+        onClick={[Function]}
+      >
+        PM
+      </div>
+      <div
+        className="option"
+        key="3"
+        onClick={[Function]}
+      >
+        After Hours
+      </div>
+    </div>
+  </div>
+</InlineSelector>
+`;

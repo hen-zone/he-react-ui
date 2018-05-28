@@ -5,7 +5,7 @@ const { mount, getWrapper } = createTestContext({ fixture })
 
 beforeEach(mount)
 
-test('<PrimaryNavigation /> rendered correctly with fixture', () => {
+test('<PrimaryNavigation /> rendered correctly with loading fixture', () => {
   let wrapper = getWrapper()
 
   expect(wrapper).toMatchSnapshot()

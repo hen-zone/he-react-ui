@@ -72,16 +72,21 @@ $slider-width: 264px;
 
 .outer {
   display: flex;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 .spacer {
-  width: $bucket-width;
-  height: 100%;
+  flex: 0 0 $bucket-width;
   content: ' ';
 }
 
 .content {
+  display: flex;
   flex-grow: 1;
+  height: 100%;
+  flex-direction: column;
 }
 
 .loadingBucket {
@@ -94,4 +99,11 @@ $slider-width: 264px;
     bottom: 16px;
     position: absolute;
   }
+}
+
+.children {
+  background-color: $n_grey_3;
+  flex-grow: 1;
+  height: 100%;
+  overflow-y: auto;
 }

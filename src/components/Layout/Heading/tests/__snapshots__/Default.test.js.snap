@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading /> rendered correctly with Default fixture 1`] = `
+<Heading
+  h1={true}
+  h2={false}
+  h3={false}
+  h4={false}
+  nav={false}
+>
+  <h1
+    className="heading h1"
+  >
+    Heading
+  </h1>
+</Heading>
+`;

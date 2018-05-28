@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> rendered correctly with disabled fixture 1`] = `
+<Button
+  color="teal"
+  disabled={true}
+  icon=""
+  keyline={false}
+  link={false}
+  onClick={[Function]}
+  squared={false}
+  submit={false}
+>
+  <div
+    className="buttonContainer"
+  >
+    <button
+      className="button teal disabled"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="content"
+      >
+        Button
+      </div>
+    </button>
+  </div>
+</Button>
+`;

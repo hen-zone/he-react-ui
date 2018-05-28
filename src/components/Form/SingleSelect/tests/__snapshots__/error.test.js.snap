@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OnClickOutside(SingleSelect) /> rendered correctly with error fixture 1`] = `
+<OnClickOutside(SingleSelect)
+  error="That selection wasn't great"
+  eventTypes={
+    Array [
+      "mousedown",
+      "touchstart",
+    ]
+  }
+  excludeScrollbar={false}
+  id="demo"
+  name="demo"
+  options={
+    Array [
+      Object {
+        "label": "Option 1",
+        "value": "1",
+      },
+      Object {
+        "label": "Option 2",
+        "value": "2",
+      },
+      Object {
+        "label": "Option 3",
+        "value": "3",
+      },
+    ]
+  }
+  outsideClickIgnoreClass="ignore-react-onclickoutside"
+  placeholder="Select from the list"
+  preventDefault={false}
+  stopPropagation={false}
+>
+  <SingleSelect
+    disableOnClickOutside={[Function]}
+    disabled={false}
+    enableOnClickOutside={[Function]}
+    error="That selection wasn't great"
+    eventTypes={
+      Array [
+        "mousedown",
+        "touchstart",
+      ]
+    }
+    id="demo"
+    inline={false}
+    name="demo"
+    onChange={[Function]}
+    options={
+      Array [
+        Object {
+          "label": "Option 1",
+          "value": "1",
+        },
+        Object {
+          "label": "Option 2",
+          "value": "2",
+        },
+        Object {
+          "label": "Option 3",
+          "value": "3",
+        },
+      ]
+    }
+    outsideClickIgnoreClass="ignore-react-onclickoutside"
+    placeholder="Select from the list"
+    preventDefault={false}
+    stopPropagation={false}
+    value={null}
+  >
+    <div
+      className="outer"
+      options={
+        Array [
+          Object {
+            "label": "Option 1",
+            "value": "1",
+          },
+          Object {
+            "label": "Option 2",
+            "value": "2",
+          },
+          Object {
+            "label": "Option 3",
+            "value": "3",
+          },
+        ]
+      }
+    >
+      <div
+        className="select error"
+        id="demo"
+        onClick={[Function]}
+      >
+        <span>
+          Select from the list
+        </span>
+        <Icon
+          className="caret"
+          name="DropDown"
+        >
+          <DropDown
+            className="icon caret"
+          >
+            <svg
+              className="icon caret"
+              version="1.1"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                transform="translate(15.000000, 7.000000) rotate(90.000000)"
+              >
+                <path
+                  d="M2,6.93247919 L2,-0.932479194 C2,-1.20862157 2.22385763,-1.43247919 2.5,-1.43247919 C2.61696825,-1.43247919 2.7302347,-1.39147108 2.8200922,-1.31658983 L7.53906723,2.61588936 C7.75120568,2.7926714 7.77986771,3.10795375 7.60308567,3.3200922 C7.58372606,3.34332373 7.56229876,3.36475103 7.53906723,3.38411064 L2.8200922,7.31658983 C2.60795375,7.49337187 2.2926714,7.46470984 2.11588936,7.25257139 C2.04100811,7.16271389 2,7.04944745 2,6.93247919 Z"
+                />
+              </g>
+            </svg>
+          </DropDown>
+        </Icon>
+      </div>
+      <ul
+        className="options"
+      >
+        <li
+          className="option"
+          key="1"
+          onClick={[Function]}
+        >
+          Option 1
+        </li>
+        <li
+          className="option"
+          key="2"
+          onClick={[Function]}
+        >
+          Option 2
+        </li>
+        <li
+          className="option"
+          key="3"
+          onClick={[Function]}
+        >
+          Option 3
+        </li>
+      </ul>
+      <Label
+        className="errorMessage"
+        error={true}
+        htmlFor="demo"
+        onChange={[Function]}
+      >
+        <div
+          className="label error errorMessage"
+          onChange={[Function]}
+        >
+          <Icon
+            className="icon"
+            name="Alert"
+          >
+            <Alert
+              className="icon icon"
+            >
+              <svg
+                className="icon icon"
+                version="1.1"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  transform="translate(2.000000, 3.000000)"
+                >
+                  <path
+                    d="M8.88235294,0.654411765 L15.2156863,12.5294118 C15.475585,13.0167218 15.2912316,13.6224542 14.8039216,13.8823529 C14.6590914,13.9595957 14.4974742,14 14.3333333,14 L1.66666667,14 C1.11438192,14 0.666666667,13.5522847 0.666666667,13 C0.666666667,12.8358592 0.70707098,12.6742419 0.784313725,12.5294118 L7.11764706,0.654411765 C7.37754576,0.167101691 7.98327816,-0.017251647 8.47058824,0.242647059 C8.6456522,0.336014504 8.7889855,0.479347805 8.88235294,0.654411765 Z M7.25,5 L7.25,7.5 C7.25,7.91421356 7.58578644,8.25 8,8.25 C8.41421356,8.25 8.75,7.91421356 8.75,7.5 L8.75,5 C8.75,4.58578644 8.41421356,4.25 8,4.25 C7.58578644,4.25 7.25,4.58578644 7.25,5 Z M8,12 C8.55228475,12 9,11.5522847 9,11 C9,10.4477153 8.55228475,10 8,10 C7.44771525,10 7,10.4477153 7,11 C7,11.5522847 7.44771525,12 8,12 Z"
+                  />
+                </g>
+              </svg>
+            </Alert>
+          </Icon>
+          <label
+            htmlFor="demo"
+          >
+            That selection wasn't great
+          </label>
+        </div>
+      </Label>
+    </div>
+  </SingleSelect>
+</OnClickOutside(SingleSelect)>
+`;

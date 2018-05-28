@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> rendered correctly with green fixture 1`] = `
+<Button
+  color="green"
+  disabled={false}
+  done={false}
+  icon=""
+  keyline={false}
+  link={false}
+  onClick={[Function]}
+  squared={false}
+  submit={false}
+  submitting={false}
+>
+  <div
+    className="buttonContainer"
+  >
+    <button
+      className="button green"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="content"
+      >
+        Button
+      </div>
+    </button>
+  </div>
+</Button>
+`;

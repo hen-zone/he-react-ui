@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading /> rendered correctly with Loading fixture 1`] = `
+<Heading
+  h1={true}
+  h2={false}
+  h3={false}
+  h4={false}
+  nav={false}
+>
+  <h1
+    className="heading h1"
+  >
+    <LoadingStrip
+      className="loading"
+    >
+      <div
+        className="outer loading"
+      >
+        <div
+          className="inner"
+        />
+      </div>
+    </LoadingStrip>
+  </h1>
+</Heading>
+`;

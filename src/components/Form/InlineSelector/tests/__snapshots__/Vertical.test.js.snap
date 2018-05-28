@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InlineSelector /> rendered correctly with Vertical fixture 1`] = `
+<InlineSelector
+  id="demo"
+  name="demo"
+  onChange={[Function]}
+  options={
+    Array [
+      Object {
+        "label": "General Exam and Clean",
+        "value": "1",
+      },
+      Object {
+        "label": "Toothache",
+        "value": "2",
+      },
+      Object {
+        "label": "Loose Filling",
+        "value": "3",
+      },
+      Object {
+        "label": "Loose Crown",
+        "value": "4",
+      },
+      Object {
+        "label": "Teeth Whitening",
+        "value": "5",
+      },
+    ]
+  }
+  value={null}
+  vertical={true}
+>
+  <div
+    className="outer vertical"
+    id="demo"
+    name="demo"
+  >
+    <div
+      className="options"
+    >
+      <div
+        className="option"
+        key="0"
+        onClick={[Function]}
+      >
+        General Exam and Clean
+      </div>
+      <div
+        className="option"
+        key="1"
+        onClick={[Function]}
+      >
+        Toothache
+      </div>
+      <div
+        className="option"
+        key="2"
+        onClick={[Function]}
+      >
+        Loose Filling
+      </div>
+      <div
+        className="option"
+        key="3"
+        onClick={[Function]}
+      >
+        Loose Crown
+      </div>
+      <div
+        className="option"
+        key="4"
+        onClick={[Function]}
+      >
+        Teeth Whitening
+      </div>
+    </div>
+  </div>
+</InlineSelector>
+`;

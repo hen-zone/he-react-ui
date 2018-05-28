@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PopUp /> rendered correctly with Styled fixture 1`] = `
+<PopUp
+  modal={true}
+  noPadding={false}
+  onClose={[Function]}
+  onOpen={[Function]}
+  showing={true}
+  style={
+    Object {
+      "backgroundImage": "url('https://i.imgur.com/5JGZrYe.jpg')",
+      "backgroundPosition": "center center",
+      "backgroundRepeat": "no-repeat",
+      "backgroundSize": "cover",
+      "borderRadius": "100%",
+      "color": "#00F9",
+      "fontSize": "22px",
+      "fontWeight": "bolder",
+      "height": "200px",
+      "padding": "10%",
+      "width": "200px",
+    }
+  }
+>
+  <div
+    className="outer showing"
+    onOpen={[Function]}
+  >
+    <div
+      className="overlay"
+      onClick={[Function]}
+    />
+    <div
+      className="popup popupWithPadding"
+      style={
+        Object {
+          "backgroundImage": "url('https://i.imgur.com/5JGZrYe.jpg')",
+          "backgroundPosition": "center center",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+          "borderRadius": "100%",
+          "color": "#00F9",
+          "fontSize": "22px",
+          "fontWeight": "bolder",
+          "height": "200px",
+          "padding": "10%",
+          "width": "200px",
+        }
+      }
+    >
+      <div>
+        <p>
+          Wow!
+        </p>
+        <p>
+          Look how versatile you can make the pop-up window.
+        </p>
+      </div>
+    </div>
+  </div>
+</PopUp>
+`;

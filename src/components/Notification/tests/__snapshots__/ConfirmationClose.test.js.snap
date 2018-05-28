@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Notification /> rendered correctly with ConfirmationClose fixture 1`] = `
+<Notification
+  canClose={true}
+  closed={false}
+  onClose={[Function]}
+  type="confirmation"
+>
+  <div
+    className="notification confirmation"
+  >
+    <Tick
+      className="icon confirmation"
+    >
+      <svg
+        className="icon confirmation"
+        version="1.1"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          transform="translate(4.000000, 3.000000) translate(7.915660, 7.415660) rotate(45.000000) translate(-7.915660, -7.415660)"
+        >
+          <path
+            d="M9.74204164,1.7591673 C9.74184193,1.20688259 10.1893953,0.759005475 10.74168,0.75880577 C11.2939647,0.758606065 11.7418418,1.20615939 11.7420415,1.75844411 L11.7461325,13.0721526 C11.7463323,13.6245785 11.2985585,14.0725142 10.7461326,14.0725142 L5.08518732,14.0725142 C4.53290257,14.0725142 4.08518732,13.624799 4.08518732,13.0725142 C4.08518732,12.5202295 4.53290257,12.0725142 5.08518732,12.0725142 L9.74577092,12.0725142 L9.74204164,1.7591673 Z"
+          />
+        </g>
+      </svg>
+    </Tick>
+    <div
+      className="message"
+    >
+      Confirmation text. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.
+    </div>
+    <Cross
+      className="closeIcon confirmation"
+      onClick={[Function]}
+    >
+      <svg
+        className="closeIcon confirmation"
+        onClick={[Function]}
+        version="1.1"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          transform="translate(7.000000, 7.000000)"
+        >
+          <path
+            d="M5,3.58578644 L8.29289322,0.292893219 C8.68341751,-0.0976310729 9.31658249,-0.0976310729 9.70710678,0.292893219 C10.0976311,0.683417511 10.0976311,1.31658249 9.70710678,1.70710678 L6.41421356,5 L9.70710678,8.29289322 C10.0976311,8.68341751 10.0976311,9.31658249 9.70710678,9.70710678 C9.31658249,10.0976311 8.68341751,10.0976311 8.29289322,9.70710678 L5,6.41421356 L1.70710678,9.70710678 C1.31658249,10.0976311 0.683417511,10.0976311 0.292893219,9.70710678 C-0.0976310729,9.31658249 -0.0976310729,8.68341751 0.292893219,8.29289322 L3.58578644,5 L0.292893219,1.70710678 C-0.0976310729,1.31658249 -0.0976310729,0.683417511 0.292893219,0.292893219 C0.683417511,-0.0976310729 1.31658249,-0.0976310729 1.70710678,0.292893219 L5,3.58578644 Z"
+          />
+        </g>
+      </svg>
+    </Cross>
+  </div>
+</Notification>
+`;

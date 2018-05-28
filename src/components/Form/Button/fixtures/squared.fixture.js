@@ -5,5 +5,6 @@ export default {
   props: {
     squared: true
   },
-  children: 'Button'
+  children: 'Button',
+  simulateSubmission: true
 }

@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OnClickOutside(ActionSet) /> rendered correctly with Expanded fixture 1`] = `
+<OnClickOutside(ActionSet)
+  eventTypes={
+    Array [
+      "mousedown",
+      "touchstart",
+    ]
+  }
+  excludeScrollbar={false}
+  expanded={true}
+  outsideClickIgnoreClass="ignore-react-onclickoutside"
+  preventDefault={false}
+  stopPropagation={false}
+>
+  <ActionSet
+    className=""
+    disableOnClickOutside={[Function]}
+    enableOnClickOutside={[Function]}
+    eventTypes={
+      Array [
+        "mousedown",
+        "touchstart",
+      ]
+    }
+    expanded={true}
+    outsideClickIgnoreClass="ignore-react-onclickoutside"
+    preventDefault={false}
+    stopPropagation={false}
+  >
+    <div
+      className="outer"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <div
+        className="actions"
+      >
+        <div
+          className="action"
+          key="0"
+          onClick={[Function]}
+        >
+          <ActionIcon
+            className=""
+            color="red"
+            disabled={false}
+            icon="Delete"
+            onClick={[Function]}
+            title="Delete"
+          >
+            <button
+              className="button red"
+              onClick={[Function]}
+              title="Delete"
+              type="button"
+            >
+              <Icon
+                className="icon"
+                name="Delete"
+              >
+                <Delete
+                  className="icon icon"
+                >
+                  <svg
+                    className="icon icon"
+                    version="1.1"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      transform="translate(2.000000, 2.000000)"
+                    >
+                      <path
+                        d="M5.5,3.5 L5.5,1 C5.5,0.44771525 5.94771525,0 6.5,0 L13.5,0 C14.0522847,0 14.5,0.44771525 14.5,1 L14.5,3.5 L19,3.5 C19.5522847,3.5 20,3.94771525 20,4.5 C20,5.05228475 19.5522847,5.5 19,5.5 L17.5,5.5 L17.5,19.5 C17.5,20.0522847 17.0522847,20.5 16.5,20.5 L3.5,20.5 C2.94771525,20.5 2.5,20.0522847 2.5,19.5 L2.5,5.5 L1,5.5 C0.44771525,5.5 0,5.05228475 0,4.5 C0,3.94771525 0.44771525,3.5 1,3.5 L5.5,3.5 Z M13.5,5.5 L6.5,5.5 L4.5,5.5 L4.5,18.5 L15.5,18.5 L15.5,5.5 L13.5,5.5 Z M9,9 C9,8.44771525 9.44771525,8 10,8 C10.5522847,8 11,8.44771525 11,9 L11,14 C11,14.5522847 10.5522847,15 10,15 C9.44771525,15 9,14.5522847 9,14 L9,9 Z M6,9 C6,8.44771525 6.44771525,8 7,8 C7.55228475,8 8,8.44771525 8,9 L8,14 C8,14.5522847 7.55228475,15 7,15 C6.44771525,15 6,14.5522847 6,14 L6,9 Z M12,9 C12,8.44771525 12.4477153,8 13,8 C13.5522847,8 14,8.44771525 14,9 L14,14 C14,14.5522847 13.5522847,15 13,15 C12.4477153,15 12,14.5522847 12,14 L12,9 Z M7.5,3.5 L12.5,3.5 L12.5,2 L7.5,2 L7.5,3.5 Z"
+                      />
+                    </g>
+                  </svg>
+                </Delete>
+              </Icon>
+            </button>
+          </ActionIcon>
+        </div>
+        <div
+          className="action"
+          key="1"
+          onClick={[Function]}
+        >
+          <ActionIcon
+            className=""
+            color="teal"
+            disabled={false}
+            icon="Edit"
+            onClick={[Function]}
+            title="Edit"
+          >
+            <button
+              className="button teal"
+              onClick={[Function]}
+              title="Edit"
+              type="button"
+            >
+              <Icon
+                className="icon"
+                name="Edit"
+              >
+                <Edit
+                  className="icon icon"
+                >
+                  <svg
+                    className="icon icon"
+                    version="1.1"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      transform="translate(2.000000, 2.000000)"
+                    >
+                      <path
+                        d="M15.5,8.08578644 L17.0857864,6.5 L13.5,2.91421356 L11.9142136,4.5 L15.5,8.08578644 Z M14.0857864,9.5 L10.5,5.91421356 L2.5,13.9142136 L2.5,17.5 L6.08578644,17.5 L14.0857864,9.5 Z M6.5,19.5 L1.5,19.5 C0.94771525,19.5 0.5,19.0522847 0.5,18.5 L0.5,13.5 C0.5,13.2347835 0.60535684,12.9804296 0.792893219,12.7928932 L12.7928932,0.792893219 C13.1834175,0.402368927 13.8165825,0.402368927 14.2071068,0.792893219 L19.2071068,5.79289322 C19.5976311,6.18341751 19.5976311,6.81658249 19.2071068,7.20710678 L7.20710678,19.2071068 C7.0195704,19.3946432 6.76521649,19.5 6.5,19.5 Z"
+                      />
+                    </g>
+                  </svg>
+                </Edit>
+              </Icon>
+            </button>
+          </ActionIcon>
+        </div>
+        <div
+          className="action"
+          key="2"
+          onClick={[Function]}
+        >
+          <ActionIcon
+            className=""
+            color="green"
+            disabled={false}
+            icon="Sync"
+            onClick={[Function]}
+            title="Sync"
+          >
+            <button
+              className="button green"
+              onClick={[Function]}
+              title="Sync"
+              type="button"
+            >
+              <Icon
+                className="icon"
+                name="Sync"
+              >
+                <Sync
+                  className="icon icon"
+                >
+                  <svg
+                    className="icon icon"
+                    version="1.1"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      transform="translate(2.000000, 2.000000)"
+                    >
+                      <path
+                        d="M2.36917446,16.4552542 L1.99018113,19.1397903 C1.9129771,19.6866522 1.40707166,20.0673852 0.860209722,19.9901811 C0.313347782,19.9129771 -0.0673851726,19.4070717 0.00981886594,18.8602097 L0.715701219,13.8602097 C0.792202913,13.3183227 1.29007775,12.9385856 1.8329053,13.0081002 L7.12702295,13.6860663 C7.67483407,13.7562192 8.06205262,14.2571779 7.99189978,14.804989 C7.92174694,15.3528002 7.42078817,15.7400187 6.87297705,15.6698659 L4.0154168,15.303926 C5.47809315,16.9864419 7.64246933,18 10.005291,18 C14.3999645,18 18,14.3978468 18,10 C18,9.44771525 18.4477153,9 19,9 C19.5522847,9 20,9.44771525 20,10 C20,15.5021532 15.5047974,20 10.005291,20 C6.98114954,20 4.20695022,18.6646377 2.36917446,16.4552542 Z M17.6308255,3.54474576 L18.0098189,0.860209722 C18.0870229,0.313347782 18.5929283,-0.0673851726 19.1397903,0.00981886594 C19.6866522,0.0870229045 20.0673852,0.592928338 19.9901811,1.13979028 L19.2842988,6.13979028 C19.2077971,6.68167728 18.7099222,7.06141442 18.1670947,6.99189978 L12.8729771,6.31393368 C12.3251659,6.24378084 11.9379474,5.74282207 12.0081002,5.19501095 C12.0782531,4.64719983 12.5792118,4.25998128 13.1270229,4.33013412 L15.9845832,4.69607404 C14.5219069,3.01355812 12.3575307,2 9.99470899,2 C5.60003548,2 2,5.60215315 2,10 C2,10.5522847 1.55228475,11 1,11 C0.44771525,11 5.42101086e-20,10.5522847 5.42101086e-20,10 C5.42101086e-20,4.49784685 4.49520261,0 9.99470899,0 C13.0188505,0 15.7930498,1.33536232 17.6308255,3.54474576 Z"
+                      />
+                    </g>
+                  </svg>
+                </Sync>
+              </Icon>
+            </button>
+          </ActionIcon>
+        </div>
+      </div>
+    </div>
+  </ActionSet>
+</OnClickOutside(ActionSet)>
+`;

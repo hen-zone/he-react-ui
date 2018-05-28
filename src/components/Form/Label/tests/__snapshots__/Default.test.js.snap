@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Label /> rendered correctly with Default fixture 1`] = `
+<Label
+  error={false}
+  htmlFor="demo"
+  onChange={[Function]}
+>
+  <div
+    className="label"
+    onChange={[Function]}
+  >
+    <label
+      htmlFor="demo"
+    >
+      Label
+    </label>
+  </div>
+</Label>
+`;

@@ -1,0 +1,1021 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OnClickOutside(TimeSelector) /> rendered correctly with Default fixture 1`] = `
+<OnClickOutside(TimeSelector)
+  eventTypes={
+    Array [
+      "mousedown",
+      "touchstart",
+    ]
+  }
+  excludeScrollbar={false}
+  hourly={false}
+  id="demo"
+  name="demo"
+  onChange={[Function]}
+  outsideClickIgnoreClass="ignore-react-onclickoutside"
+  preventDefault={false}
+  stopPropagation={false}
+  value=""
+>
+  <TimeSelector
+    disableOnClickOutside={[Function]}
+    disabled={false}
+    enableOnClickOutside={[Function]}
+    error=""
+    eventTypes={
+      Array [
+        "mousedown",
+        "touchstart",
+      ]
+    }
+    hourly={false}
+    hours={
+      Array [
+        Object {
+          "label": "0",
+          "value": "0",
+        },
+        Object {
+          "label": "1",
+          "value": "1",
+        },
+        Object {
+          "label": "2",
+          "value": "2",
+        },
+        Object {
+          "label": "3",
+          "value": "3",
+        },
+        Object {
+          "label": "4",
+          "value": "4",
+        },
+        Object {
+          "label": "5",
+          "value": "5",
+        },
+        Object {
+          "label": "6",
+          "value": "6",
+        },
+        Object {
+          "label": "7",
+          "value": "7",
+        },
+        Object {
+          "label": "8",
+          "value": "8",
+        },
+        Object {
+          "label": "9",
+          "value": "9",
+        },
+        Object {
+          "label": "10",
+          "value": "10",
+        },
+        Object {
+          "label": "11",
+          "value": "11",
+        },
+        Object {
+          "label": "12",
+          "value": "12",
+        },
+        Object {
+          "label": "13",
+          "value": "13",
+        },
+        Object {
+          "label": "14",
+          "value": "14",
+        },
+        Object {
+          "label": "15",
+          "value": "15",
+        },
+        Object {
+          "label": "16",
+          "value": "16",
+        },
+        Object {
+          "label": "17",
+          "value": "17",
+        },
+        Object {
+          "label": "18",
+          "value": "18",
+        },
+        Object {
+          "label": "19",
+          "value": "19",
+        },
+        Object {
+          "label": "20",
+          "value": "20",
+        },
+        Object {
+          "label": "21",
+          "value": "21",
+        },
+        Object {
+          "label": "22",
+          "value": "22",
+        },
+        Object {
+          "label": "23",
+          "value": "23",
+        },
+      ]
+    }
+    id="demo"
+    inline={false}
+    minutes={
+      Array [
+        Object {
+          "label": "00",
+          "value": "00",
+        },
+        Object {
+          "label": "01",
+          "value": "01",
+        },
+        Object {
+          "label": "02",
+          "value": "02",
+        },
+        Object {
+          "label": "03",
+          "value": "03",
+        },
+        Object {
+          "label": "04",
+          "value": "04",
+        },
+        Object {
+          "label": "05",
+          "value": "05",
+        },
+        Object {
+          "label": "06",
+          "value": "06",
+        },
+        Object {
+          "label": "07",
+          "value": "07",
+        },
+        Object {
+          "label": "08",
+          "value": "08",
+        },
+        Object {
+          "label": "09",
+          "value": "09",
+        },
+        Object {
+          "label": "10",
+          "value": "10",
+        },
+        Object {
+          "label": "11",
+          "value": "11",
+        },
+        Object {
+          "label": "12",
+          "value": "12",
+        },
+        Object {
+          "label": "13",
+          "value": "13",
+        },
+        Object {
+          "label": "14",
+          "value": "14",
+        },
+        Object {
+          "label": "15",
+          "value": "15",
+        },
+        Object {
+          "label": "16",
+          "value": "16",
+        },
+        Object {
+          "label": "17",
+          "value": "17",
+        },
+        Object {
+          "label": "18",
+          "value": "18",
+        },
+        Object {
+          "label": "19",
+          "value": "19",
+        },
+        Object {
+          "label": "20",
+          "value": "20",
+        },
+        Object {
+          "label": "21",
+          "value": "21",
+        },
+        Object {
+          "label": "22",
+          "value": "22",
+        },
+        Object {
+          "label": "23",
+          "value": "23",
+        },
+        Object {
+          "label": "24",
+          "value": "24",
+        },
+        Object {
+          "label": "25",
+          "value": "25",
+        },
+        Object {
+          "label": "26",
+          "value": "26",
+        },
+        Object {
+          "label": "27",
+          "value": "27",
+        },
+        Object {
+          "label": "28",
+          "value": "28",
+        },
+        Object {
+          "label": "29",
+          "value": "29",
+        },
+        Object {
+          "label": "30",
+          "value": "30",
+        },
+        Object {
+          "label": "31",
+          "value": "31",
+        },
+        Object {
+          "label": "32",
+          "value": "32",
+        },
+        Object {
+          "label": "33",
+          "value": "33",
+        },
+        Object {
+          "label": "34",
+          "value": "34",
+        },
+        Object {
+          "label": "35",
+          "value": "35",
+        },
+        Object {
+          "label": "36",
+          "value": "36",
+        },
+        Object {
+          "label": "37",
+          "value": "37",
+        },
+        Object {
+          "label": "38",
+          "value": "38",
+        },
+        Object {
+          "label": "39",
+          "value": "39",
+        },
+        Object {
+          "label": "40",
+          "value": "40",
+        },
+        Object {
+          "label": "41",
+          "value": "41",
+        },
+        Object {
+          "label": "42",
+          "value": "42",
+        },
+        Object {
+          "label": "43",
+          "value": "43",
+        },
+        Object {
+          "label": "44",
+          "value": "44",
+        },
+        Object {
+          "label": "45",
+          "value": "45",
+        },
+        Object {
+          "label": "46",
+          "value": "46",
+        },
+        Object {
+          "label": "47",
+          "value": "47",
+        },
+        Object {
+          "label": "48",
+          "value": "48",
+        },
+        Object {
+          "label": "49",
+          "value": "49",
+        },
+        Object {
+          "label": "50",
+          "value": "50",
+        },
+        Object {
+          "label": "51",
+          "value": "51",
+        },
+        Object {
+          "label": "52",
+          "value": "52",
+        },
+        Object {
+          "label": "53",
+          "value": "53",
+        },
+        Object {
+          "label": "54",
+          "value": "54",
+        },
+        Object {
+          "label": "55",
+          "value": "55",
+        },
+        Object {
+          "label": "56",
+          "value": "56",
+        },
+        Object {
+          "label": "57",
+          "value": "57",
+        },
+        Object {
+          "label": "58",
+          "value": "58",
+        },
+        Object {
+          "label": "59",
+          "value": "59",
+        },
+      ]
+    }
+    name="demo"
+    onChange={[Function]}
+    outsideClickIgnoreClass="ignore-react-onclickoutside"
+    preventDefault={false}
+    required={false}
+    stopPropagation={false}
+    value=""
+  >
+    <div
+      className="outer"
+    >
+      <div
+        className="select"
+        onClick={[Function]}
+      >
+        <span>
+          0:00
+        </span>
+        <Icon
+          className="clock"
+          name="Clock"
+        >
+          <Clock
+            className="icon clock"
+          >
+            <svg
+              className="icon clock"
+              version="1.1"
+              viewBox="0 0 26 26"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                transform="translate(0.500000, 0.500000)"
+              >
+                <path
+                  d="M11.25,8.75 L11.25,5 C11.25,4.30964406 10.6903559,3.75 10,3.75 C9.30964406,3.75 8.75,4.30964406 8.75,5 L8.75,10 C8.75,10.6903559 9.30964406,11.25 10,11.25 L15,11.25 C15.6903559,11.25 16.25,10.6903559 16.25,10 C16.25,9.30964406 15.6903559,8.75 15,8.75 L11.25,8.75 Z M10,19.375 C4.82233047,19.375 0.625,15.1776695 0.625,10 C0.625,4.82233047 4.82233047,0.625 10,0.625 C15.1776695,0.625 19.375,4.82233047 19.375,10 C19.375,15.1776695 15.1776695,19.375 10,19.375 Z"
+                  id="path-1"
+                />
+              </g>
+            </svg>
+          </Clock>
+        </Icon>
+      </div>
+      <div
+        className="options"
+      >
+        <ul>
+          <li
+            className="option"
+            key="0"
+            onClick={[Function]}
+          >
+            0
+          </li>
+          <li
+            className="option"
+            key="1"
+            onClick={[Function]}
+          >
+            1
+          </li>
+          <li
+            className="option"
+            key="2"
+            onClick={[Function]}
+          >
+            2
+          </li>
+          <li
+            className="option"
+            key="3"
+            onClick={[Function]}
+          >
+            3
+          </li>
+          <li
+            className="option"
+            key="4"
+            onClick={[Function]}
+          >
+            4
+          </li>
+          <li
+            className="option"
+            key="5"
+            onClick={[Function]}
+          >
+            5
+          </li>
+          <li
+            className="option"
+            key="6"
+            onClick={[Function]}
+          >
+            6
+          </li>
+          <li
+            className="option"
+            key="7"
+            onClick={[Function]}
+          >
+            7
+          </li>
+          <li
+            className="option"
+            key="8"
+            onClick={[Function]}
+          >
+            8
+          </li>
+          <li
+            className="option"
+            key="9"
+            onClick={[Function]}
+          >
+            9
+          </li>
+          <li
+            className="option"
+            key="10"
+            onClick={[Function]}
+          >
+            10
+          </li>
+          <li
+            className="option"
+            key="11"
+            onClick={[Function]}
+          >
+            11
+          </li>
+          <li
+            className="option"
+            key="12"
+            onClick={[Function]}
+          >
+            12
+          </li>
+          <li
+            className="option"
+            key="13"
+            onClick={[Function]}
+          >
+            13
+          </li>
+          <li
+            className="option"
+            key="14"
+            onClick={[Function]}
+          >
+            14
+          </li>
+          <li
+            className="option"
+            key="15"
+            onClick={[Function]}
+          >
+            15
+          </li>
+          <li
+            className="option"
+            key="16"
+            onClick={[Function]}
+          >
+            16
+          </li>
+          <li
+            className="option"
+            key="17"
+            onClick={[Function]}
+          >
+            17
+          </li>
+          <li
+            className="option"
+            key="18"
+            onClick={[Function]}
+          >
+            18
+          </li>
+          <li
+            className="option"
+            key="19"
+            onClick={[Function]}
+          >
+            19
+          </li>
+          <li
+            className="option"
+            key="20"
+            onClick={[Function]}
+          >
+            20
+          </li>
+          <li
+            className="option"
+            key="21"
+            onClick={[Function]}
+          >
+            21
+          </li>
+          <li
+            className="option"
+            key="22"
+            onClick={[Function]}
+          >
+            22
+          </li>
+          <li
+            className="option"
+            key="23"
+            onClick={[Function]}
+          >
+            23
+          </li>
+        </ul>
+        <ul>
+          <li
+            className="option"
+            key="00"
+            onClick={[Function]}
+          >
+            00
+          </li>
+          <li
+            className="option"
+            key="01"
+            onClick={[Function]}
+          >
+            01
+          </li>
+          <li
+            className="option"
+            key="02"
+            onClick={[Function]}
+          >
+            02
+          </li>
+          <li
+            className="option"
+            key="03"
+            onClick={[Function]}
+          >
+            03
+          </li>
+          <li
+            className="option"
+            key="04"
+            onClick={[Function]}
+          >
+            04
+          </li>
+          <li
+            className="option"
+            key="05"
+            onClick={[Function]}
+          >
+            05
+          </li>
+          <li
+            className="option"
+            key="06"
+            onClick={[Function]}
+          >
+            06
+          </li>
+          <li
+            className="option"
+            key="07"
+            onClick={[Function]}
+          >
+            07
+          </li>
+          <li
+            className="option"
+            key="08"
+            onClick={[Function]}
+          >
+            08
+          </li>
+          <li
+            className="option"
+            key="09"
+            onClick={[Function]}
+          >
+            09
+          </li>
+          <li
+            className="option"
+            key="10"
+            onClick={[Function]}
+          >
+            10
+          </li>
+          <li
+            className="option"
+            key="11"
+            onClick={[Function]}
+          >
+            11
+          </li>
+          <li
+            className="option"
+            key="12"
+            onClick={[Function]}
+          >
+            12
+          </li>
+          <li
+            className="option"
+            key="13"
+            onClick={[Function]}
+          >
+            13
+          </li>
+          <li
+            className="option"
+            key="14"
+            onClick={[Function]}
+          >
+            14
+          </li>
+          <li
+            className="option"
+            key="15"
+            onClick={[Function]}
+          >
+            15
+          </li>
+          <li
+            className="option"
+            key="16"
+            onClick={[Function]}
+          >
+            16
+          </li>
+          <li
+            className="option"
+            key="17"
+            onClick={[Function]}
+          >
+            17
+          </li>
+          <li
+            className="option"
+            key="18"
+            onClick={[Function]}
+          >
+            18
+          </li>
+          <li
+            className="option"
+            key="19"
+            onClick={[Function]}
+          >
+            19
+          </li>
+          <li
+            className="option"
+            key="20"
+            onClick={[Function]}
+          >
+            20
+          </li>
+          <li
+            className="option"
+            key="21"
+            onClick={[Function]}
+          >
+            21
+          </li>
+          <li
+            className="option"
+            key="22"
+            onClick={[Function]}
+          >
+            22
+          </li>
+          <li
+            className="option"
+            key="23"
+            onClick={[Function]}
+          >
+            23
+          </li>
+          <li
+            className="option"
+            key="24"
+            onClick={[Function]}
+          >
+            24
+          </li>
+          <li
+            className="option"
+            key="25"
+            onClick={[Function]}
+          >
+            25
+          </li>
+          <li
+            className="option"
+            key="26"
+            onClick={[Function]}
+          >
+            26
+          </li>
+          <li
+            className="option"
+            key="27"
+            onClick={[Function]}
+          >
+            27
+          </li>
+          <li
+            className="option"
+            key="28"
+            onClick={[Function]}
+          >
+            28
+          </li>
+          <li
+            className="option"
+            key="29"
+            onClick={[Function]}
+          >
+            29
+          </li>
+          <li
+            className="option"
+            key="30"
+            onClick={[Function]}
+          >
+            30
+          </li>
+          <li
+            className="option"
+            key="31"
+            onClick={[Function]}
+          >
+            31
+          </li>
+          <li
+            className="option"
+            key="32"
+            onClick={[Function]}
+          >
+            32
+          </li>
+          <li
+            className="option"
+            key="33"
+            onClick={[Function]}
+          >
+            33
+          </li>
+          <li
+            className="option"
+            key="34"
+            onClick={[Function]}
+          >
+            34
+          </li>
+          <li
+            className="option"
+            key="35"
+            onClick={[Function]}
+          >
+            35
+          </li>
+          <li
+            className="option"
+            key="36"
+            onClick={[Function]}
+          >
+            36
+          </li>
+          <li
+            className="option"
+            key="37"
+            onClick={[Function]}
+          >
+            37
+          </li>
+          <li
+            className="option"
+            key="38"
+            onClick={[Function]}
+          >
+            38
+          </li>
+          <li
+            className="option"
+            key="39"
+            onClick={[Function]}
+          >
+            39
+          </li>
+          <li
+            className="option"
+            key="40"
+            onClick={[Function]}
+          >
+            40
+          </li>
+          <li
+            className="option"
+            key="41"
+            onClick={[Function]}
+          >
+            41
+          </li>
+          <li
+            className="option"
+            key="42"
+            onClick={[Function]}
+          >
+            42
+          </li>
+          <li
+            className="option"
+            key="43"
+            onClick={[Function]}
+          >
+            43
+          </li>
+          <li
+            className="option"
+            key="44"
+            onClick={[Function]}
+          >
+            44
+          </li>
+          <li
+            className="option"
+            key="45"
+            onClick={[Function]}
+          >
+            45
+          </li>
+          <li
+            className="option"
+            key="46"
+            onClick={[Function]}
+          >
+            46
+          </li>
+          <li
+            className="option"
+            key="47"
+            onClick={[Function]}
+          >
+            47
+          </li>
+          <li
+            className="option"
+            key="48"
+            onClick={[Function]}
+          >
+            48
+          </li>
+          <li
+            className="option"
+            key="49"
+            onClick={[Function]}
+          >
+            49
+          </li>
+          <li
+            className="option"
+            key="50"
+            onClick={[Function]}
+          >
+            50
+          </li>
+          <li
+            className="option"
+            key="51"
+            onClick={[Function]}
+          >
+            51
+          </li>
+          <li
+            className="option"
+            key="52"
+            onClick={[Function]}
+          >
+            52
+          </li>
+          <li
+            className="option"
+            key="53"
+            onClick={[Function]}
+          >
+            53
+          </li>
+          <li
+            className="option"
+            key="54"
+            onClick={[Function]}
+          >
+            54
+          </li>
+          <li
+            className="option"
+            key="55"
+            onClick={[Function]}
+          >
+            55
+          </li>
+          <li
+            className="option"
+            key="56"
+            onClick={[Function]}
+          >
+            56
+          </li>
+          <li
+            className="option"
+            key="57"
+            onClick={[Function]}
+          >
+            57
+          </li>
+          <li
+            className="option"
+            key="58"
+            onClick={[Function]}
+          >
+            58
+          </li>
+          <li
+            className="option"
+            key="59"
+            onClick={[Function]}
+          >
+            59
+          </li>
+        </ul>
+      </div>
+    </div>
+  </TimeSelector>
+</OnClickOutside(TimeSelector)>
+`;

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> rendered correctly with large fixture 1`] = `
+<Button
+  color="teal"
+  disabled={false}
+  done={false}
+  icon=""
+  keyline={false}
+  large={true}
+  link={false}
+  onClick={[Function]}
+  squared={false}
+  submit={false}
+  submitting={false}
+>
+  <div
+    className="buttonContainer large"
+  >
+    <button
+      className="button teal"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="content"
+      >
+        Button
+      </div>
+    </button>
+  </div>
+</Button>
+`;

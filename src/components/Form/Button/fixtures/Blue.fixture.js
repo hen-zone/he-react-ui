@@ -5,5 +5,6 @@ export default {
   props: {
     color: 'blue'
   },
-  children: 'Button'
+  children: 'Button',
+  simulateSubmission: true
 }

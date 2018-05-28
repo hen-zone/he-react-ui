@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TabView /> rendered correctly with Default fixture 1`] = `
+<TabView
+  heading="Heading"
+  tabs={
+    Array [
+      Object {
+        "exact": true,
+        "route": "/",
+        "title": "Root",
+      },
+      Object {
+        "route": "/somewhere",
+        "title": "Somewhere",
+      },
+      Object {
+        "route": "/elsewhere",
+        "title": "Elsewhere",
+      },
+    ]
+  }
+>
+  <div>
+    <div
+      className="barOuter"
+    >
+      <div
+        className="barInner"
+      >
+        <Heading
+          className="heading"
+          h1={true}
+          h2={false}
+          h3={false}
+          h4={false}
+          nav={true}
+        >
+          <h1
+            className="heading h1 nav heading"
+          >
+            Heading
+          </h1>
+        </Heading>
+        <div
+          className="tabs"
+        >
+          <NavLink
+            activeClassName="selected"
+            ariaCurrent="true"
+            className="tab"
+            exact={true}
+            key="0"
+            title="Root"
+            to="/"
+          >
+            <Route
+              exact={true}
+              path="/"
+            >
+              <Link
+                aria-current="true"
+                className="tab selected"
+                replace={false}
+                style={Object {}}
+                title="Root"
+                to="/"
+              >
+                <a
+                  aria-current="true"
+                  className="tab selected"
+                  href="/"
+                  onClick={[Function]}
+                  style={Object {}}
+                  title="Root"
+                >
+                  <span>
+                    Root
+                  </span>
+                </a>
+              </Link>
+            </Route>
+          </NavLink>
+          <NavLink
+            activeClassName="selected"
+            ariaCurrent="true"
+            className="tab"
+            key="1"
+            title="Somewhere"
+            to="/somewhere"
+          >
+            <Route
+              path="/somewhere"
+            >
+              <Link
+                aria-current={false}
+                className="tab"
+                replace={false}
+                title="Somewhere"
+                to="/somewhere"
+              >
+                <a
+                  aria-current={false}
+                  className="tab"
+                  href="/somewhere"
+                  onClick={[Function]}
+                  title="Somewhere"
+                >
+                  <span>
+                    Somewhere
+                  </span>
+                </a>
+              </Link>
+            </Route>
+          </NavLink>
+          <NavLink
+            activeClassName="selected"
+            ariaCurrent="true"
+            className="tab"
+            key="2"
+            title="Elsewhere"
+            to="/elsewhere"
+          >
+            <Route
+              path="/elsewhere"
+            >
+              <Link
+                aria-current={false}
+                className="tab"
+                replace={false}
+                title="Elsewhere"
+                to="/elsewhere"
+              >
+                <a
+                  aria-current={false}
+                  className="tab"
+                  href="/elsewhere"
+                  onClick={[Function]}
+                  title="Elsewhere"
+                >
+                  <span>
+                    Elsewhere
+                  </span>
+                </a>
+              </Link>
+            </Route>
+          </NavLink>
+        </div>
+      </div>
+    </div>
+    <div
+      className="contentPusher"
+    />
+  </div>
+</TabView>
+`;

@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InlineSelector /> rendered correctly with label fixture 1`] = `
+<InlineSelector
+  id="demo"
+  label="What time of day?"
+  name="demo"
+  onChange={[Function]}
+  options={
+    Array [
+      Object {
+        "label": "Any",
+        "value": "1",
+      },
+      Object {
+        "label": "AM",
+        "value": "2",
+      },
+      Object {
+        "label": "PM",
+        "value": "3",
+      },
+      Object {
+        "label": "After Hours",
+        "value": "4",
+      },
+    ]
+  }
+  value={null}
+  vertical={false}
+>
+  <div
+    className="outer"
+    id="demo"
+    name="demo"
+  >
+    <Label
+      className="label"
+      error={false}
+      htmlFor="demo"
+      onChange={[Function]}
+    >
+      <div
+        className="label label"
+        onChange={[Function]}
+      >
+        <label
+          htmlFor="demo"
+        >
+          What time of day?
+        </label>
+      </div>
+    </Label>
+    <div
+      className="options"
+    >
+      <div
+        className="option"
+        key="0"
+        onClick={[Function]}
+      >
+        Any
+      </div>
+      <div
+        className="option"
+        key="1"
+        onClick={[Function]}
+      >
+        AM
+      </div>
+      <div
+        className="option"
+        key="2"
+        onClick={[Function]}
+      >
+        PM
+      </div>
+      <div
+        className="option"
+        key="3"
+        onClick={[Function]}
+      >
+        After Hours
+      </div>
+    </div>
+  </div>
+</InlineSelector>
+`;

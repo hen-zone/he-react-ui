@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Popover /> rendered correctly with Default fixture 1`] = `
+<Popover
+  placement="bottom"
+  positionLeft={200}
+  positionTop={50}
+>
+  <div
+    className="popover bottom"
+    role="tooltip"
+    style={
+      Object {
+        "display": "block",
+        "left": 200,
+        "top": 50,
+      }
+    }
+  >
+    <div
+      className="arrow"
+      style={
+        Object {
+          "left": undefined,
+          "top": undefined,
+        }
+      }
+    />
+    <div
+      className="content"
+    >
+      The patient associated with this recall does not have a valid Australian mobile number.
+    </div>
+  </div>
+</Popover>
+`;

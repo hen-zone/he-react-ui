@@ -1,14 +1,40 @@
 language: js
+
 cache:
   yarn: true
   directories:
-  - node_modules
+    - node_modules
+
 script:
-- yarn
-- yarn lint
-- yarn coverage
-after_script:
-  - COVERALLS_REPO_TOKEN=$coveralls_repo_token yarn coveralls
+  - yarn
+  - yarn lint
+  - yarn coverage
+
+after_success:
+  - yarn coveralls
+
+before_deploy:
+  - yarn cosmos-export
+
+deploy:
+  - provider: pages
+    verbose: true
+    skip-cleanup: true
+    keep-history: true
+    github-token:
+      secure: PMWctL2zK1Jzu38B+PcXKOS3KNClcBpvmuEen5mqcteZXjKKIc/PpbesOohHElYv5XB7cEGxFheJjFgLE4x3BrxDG0EaSTzBYTr773E+TOOOOTeEqxDM5ndWDp9r7KyuM+6R83jj9UTJePOvogEDBCa28WnoKLvSEb0qwJOZV2Vq/ZWh2XiLQBFGGyipFd0gSJZ2CQcjQnrPkjj8iRANTbims3F2WWNylroX1JqOaHr83WL76CrpqRAmEdB7kSXX7scXdpoaZO0BRMPgTsL8NGtkwpofx4ZWgIX3eYteI5Gc0LwRxXHA8cf1RGAZkV8XALgCXzDmlY3fbEIo076+sPFeG0/BsWOLo1QKkAs/snITOxz3kjVTHzdISqxAtdSMBro4YIi98hNq9PQk/KtUpr55PFHTqlYxYW1wqxebaV6TmlALwgwR7wEHjWDodmYGbyY04nh9o8YkCCCO59UYV5Hb8ccj7pGFp3Amg/sEPj3cGWLypEtgHm2aZJ3a2eXu3hdWKwnAaCpnrlwtEv9RNPVcKhu0iEih4WzQ0+hjlbILE5huWpwuhUhAPL70Wg7tLqnG2H9YEQpImEvGtBKxj0Nv0+KvOb9LESzF5P8AFXz+EqsA+Hag8Z0hnu4eDrjaoVOBqjR4TH7vLh8xwlyfYZPXoQP9G9x+/GjelnplKMM=
+    local-dir: cosmos-export
+    on:
+      branch: master
+  - provider: npm
+    verbose: true
+    email: developers@healthengine.com.au
+    api_key:
+      secure: Srf53BKj0RaIrOTkhiI5wwGEgf1YZ/RIxvTfd3lYpJrPa0ooGSIdVlniwhLR7aAq+y8PyCrW/J2rdR/Z0uihSJsz1YDDxMdHv2RUIhI/IiV+aOU/DQeSMn0f9tyMbom9D2HIzDEiwu7wKLAhJU0i6g2WjUfcFJoUUZqPXJW8jWbeOhfS1Ye9rVzMHIJvDaM4IN0RhjkCNocVjXnavkPX6+nsrwMo8kWOxDHR9uSrWiPHVCQqzOVD3EeoGEg+NuB7rRIYsU3jepkdqvPmZq5ynjX3d6D084m9K11f2Z8rDAexB2bQY1Rd8GvFAT6T6ZLGTIoHicbSMgtlcsmmjgrvRo3Q6CmSeUxJNzirdA/DnaNMQp6VOag1vbdt9yY4Q8ljGnpt5pM2jHZkFXrAkT6ePsaqVFkuOmzRVf4OrxGAp15qna9jwWEc8CrWvFyU2NwvCGhlRz3+t50Z8I+hxhiE1t3U0z4aSaGj6pkBXrr8APbprkuR9UUrpaHt7sKLepXKyBKxV/NerN2XlXsOgQw+Igti8dVixO16Aem9eXKbqfLuzHlFSXIGMOHy1/BHQ4zDJAQxXvcDkGvXCMnlbG3HNzWMhJ3y6UUAqMaqoaTYr4bfHyD9SMr9SFedbnBfYGuVvhfRPNGiB5D1GCa3vu8qi/DGjJhgKGdCt1Mr/QbVMes=
+    on:
+      tags: true
+    skip-cleanup: true
+
 notifications:
   slack:
     secure: vqLBHGlx4cZ9bzVN59w9HGztu03tDX/vMVt/C9s+qDZFOv1+VCRaEzInBw99vpxgGBnm364VgXtYXFk6H1GAuFe8j20ydaqi/mVUnHRRb8akC5YpyL6aar7ACs6LDHuUvmIjCV4QVZxHWHl+ppRgZ0XZHvHuKG+bpiLMPpwQEDFHajxaFdghtxFxeTO4BaSSB2/rD1WXPshLOixCo2tK78h9IJndhXo4PFUNSC+wgYHdaVoVRDmRLUDf3dnRswLXP2GbQFW4yZU8rqnkDT/Y2tCV1cLA0flqOez4DEVHrs1jgghJ5FBzwLCVvHAwbFsESbAl0bMA7dgErJQVMkvujTBl7+SW/X94OicwmjTxOUb3S9sEb3F3+WZMaolHnksZydmexyD+Vw4p3JuDZHICaYdjqYayvSgOanVcfyY+NawE8RmjepiTY2QDlaNCeQ82r8hakoh3xITVO8/Htm5n5e9m+m2voieiGtIGeNHGYzYlQj28qwb20+K9Xh0PRi2ZMhY/qowh15mBtbLKJZDCFZ1waIIBjq+hAgkVpaBrdS5vi2uJQgGayfmsYcHJ6qxUd1Q9Vz2DChu/GUfX7WoAU28CCliHbSpmk+wYkRRZ4gL22V8uSEKtg7dUmjG9QQx4nw5GEAqtjHG6XYnnVz86UliuntmP7P+bw1qWvRDYjGw=
