@@ -7,7 +7,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
-import onClickOutside from 'react-onclickoutside'
+import Select from 'react-select'
 
 import Icon from '../../Icon'
 import Label from '../Label'
@@ -80,8 +80,23 @@ class SingleSelect extends React.Component {
     this.hideExpand()
   }
 
-  selectOption = (option) => {
+  selectOption2 = (option) => {
     const oldValue = this.props.value
+    this.setState({
+      expanded: false
+    })
+    if (oldValue !== option.value) {
+      const event = {
+        value: option.value,
+        props: this.props
+      }
+
+      this.props.onChange(event)
+    }
+  }
+
+  selectOption (data) {
+    const onChange = this.props.onChange
     this.setState({
       expanded: false
     })
@@ -117,7 +132,11 @@ class SingleSelect extends React.Component {
     })
   }
 
-  render () {
+  onChange (data) {
+    console.log('data')
+  }
+
+  oldRender () {
     const { id, name, className, required, disabled, error, inline, label, placeholder, onChange, value,
       eventTypes, outsideClickIgnoreClass, preventDefault, stopPropagation, disableOnClickOutside, enableOnClickOutside,
       ...restProps } = this.props
@@ -146,6 +165,20 @@ class SingleSelect extends React.Component {
       </div>
     )
   }
+
+  render () {
+    const { id, name, className, required, disabled, error, inline, label, placeholder, onChange, value, options,
+      eventTypes, outsideClickIgnoreClass, preventDefault, stopPropagation, disableOnClickOutside, enableOnClickOutside,
+      ...restProps } = this.props
+    return (
+      <div
+        className={classnames({[className]: className})}
+        {...restProps}>
+        {label && <Label className={style.label} htmlFor={id}>{label}</Label>}
+        <Select options={options} className={classnames(style.select)} value={this.value} onChange={onChange} />
+      </div>
+    )
+  }
 }
 
-export default onClickOutside(SingleSelect)
+export default SingleSelect

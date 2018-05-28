@@ -7,9 +7,16 @@ export default {
     id: 'demo',
     name: 'demo',
     options: [
-      {label: 'Option 1', value: '1'},
-      {label: 'Option 2', value: '2'},
-      {label: 'Option 3', value: '3'}
+      {label: 'Apple', value: '1'},
+      {label: 'Banana', value: '2'},
+      {label: 'Cabbage', value: '3'},
+      {label: 'Date', value: '4'},
+      {label: 'Elephant ear', value: '5'},
+      {label: 'Fig', value: '6'},
+      {label: 'Grape', value: '7'},
+      {label: 'Hive (bee)', value: '8'},
+      {label: 'Ivy', value: '9'},
+      {label: 'Jackfruit', value: '10'}
     ]
   }
 }

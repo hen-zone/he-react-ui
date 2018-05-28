@@ -1,20 +1,5 @@
 @import '../../../styles/base';
 
-.outer {
-  font-family: $font-stack;
-  padding-bottom: 12px;
-  position: relative;
-  user-select: none;
-  width: 280px;
-  @include breakpoint(small) {
-    width: 100%;
-  }
-}
-
-.inline {
-  @include inline-block;
-}
-
 .label {
   margin-bottom: 12px;
 }
@@ -24,6 +9,7 @@
 }
 
 .select {
+  font-family: $font-stack;
   background-color: $white;
   border: solid 1px $n_grey_2;
   border-radius: 4px;
@@ -33,18 +19,50 @@
   font-weight: $regular;
   margin-bottom: 12px;
   position: relative;
-  width: 100%;
+  width: 280px;
+  @include breakpoint(small) {
+    width: 100%;
+  }
   &:hover {
-    border-color: $teal_2;
+    border-color: $teal_1;
     color: $navy_2;
   }
-  span {
-    display: block;
-    padding: 12px;
-    padding-right: 42px;
-    user-select: none;
-  }
   @include transition(all 0.2s);
+
+  // React-select styles
+
+  :global {
+    .Select-control {
+      height: 48px;
+      padding: 0px 16px;
+    }
+    .Select-menu-outer {
+      max-height: 240px;
+      overflow: scroll;
+    }
+    .Select-placeholder {
+      position: absolute;
+      top: 0px;
+      left: 16px;
+      font-size: 16px;
+      line-height: 48px;
+      color: $navy_1;
+    }
+    .Select-option {
+      color: $navy_1;
+      padding: 8px 16px;
+      &.is-focused {
+        background-color: $n_grey_4;
+        color: $navy_2;
+      }
+    }
+    input[role=combobox] {
+      font-size: 16px;
+      color: $navy_1;
+      border: 0 none;
+    }
+  }
+
 }
 
 .expanded {
@@ -131,12 +149,9 @@
 }
 
 .option {
-  color: $navy_1;
   padding: 12px;
   user-select: none;
   &:hover {
-    background-color: $n_grey_4;
-    color: $navy_2;
   }
   @include transition(all 0.2s);
 }
