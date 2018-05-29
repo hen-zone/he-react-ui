@@ -9,6 +9,7 @@ script:
   - yarn
   - yarn lint
   - yarn coverage
+  - yarn build
 
 after_success:
   - yarn coveralls
