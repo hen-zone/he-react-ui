@@ -142,10 +142,10 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with loading fixture 1
                         name="Logout"
                       >
                         <Logout
-                          className="icon icon"
+                          className="icon defaultSize icon"
                         >
                           <svg
-                            className="icon icon"
+                            className="icon defaultSize icon"
                             version="1.1"
                             viewBox="0 1 16 16"
                             xmlns="http://www.w3.org/2000/svg"

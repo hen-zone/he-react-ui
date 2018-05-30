@@ -65,10 +65,10 @@ exports[`<Radio /> rendered correctly with Default fixture 1`] = `
           name="RadioUnchecked"
         >
           <RadioUnchecked
-            className="icon icon empty"
+            className="icon defaultSize icon empty"
           >
             <svg
-              className="icon icon empty"
+              className="icon defaultSize icon empty"
               version="1.1"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -84,10 +84,10 @@ exports[`<Radio /> rendered correctly with Default fixture 1`] = `
           name="RadioChecked"
         >
           <RadioChecked
-            className="icon icon full"
+            className="icon defaultSize icon full"
           >
             <svg
-              className="icon icon full"
+              className="icon defaultSize icon full"
               version="1.1"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -122,10 +122,10 @@ exports[`<Radio /> rendered correctly with Default fixture 1`] = `
           name="RadioUnchecked"
         >
           <RadioUnchecked
-            className="icon icon empty"
+            className="icon defaultSize icon empty"
           >
             <svg
-              className="icon icon empty"
+              className="icon defaultSize icon empty"
               version="1.1"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -141,10 +141,10 @@ exports[`<Radio /> rendered correctly with Default fixture 1`] = `
           name="RadioChecked"
         >
           <RadioChecked
-            className="icon icon full"
+            className="icon defaultSize icon full"
           >
             <svg
-              className="icon icon full"
+              className="icon defaultSize icon full"
               version="1.1"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -179,10 +179,10 @@ exports[`<Radio /> rendered correctly with Default fixture 1`] = `
           name="RadioUnchecked"
         >
           <RadioUnchecked
-            className="icon icon empty"
+            className="icon defaultSize icon empty"
           >
             <svg
-              className="icon icon empty"
+              className="icon defaultSize icon empty"
               version="1.1"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -198,10 +198,10 @@ exports[`<Radio /> rendered correctly with Default fixture 1`] = `
           name="RadioChecked"
         >
           <RadioChecked
-            className="icon icon full"
+            className="icon defaultSize icon full"
           >
             <svg
-              className="icon icon full"
+              className="icon defaultSize icon full"
               version="1.1"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"

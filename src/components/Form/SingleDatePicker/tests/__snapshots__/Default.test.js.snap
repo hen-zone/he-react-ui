@@ -1006,10 +1006,10 @@ exports[`<SingleDatePicker /> rendered correctly with Default fixture 1`] = `
         name="Calendar"
       >
         <Calendar
-          className="icon icon"
+          className="icon defaultSize icon"
         >
           <svg
-            className="icon icon"
+            className="icon defaultSize icon"
             version="1.1"
             viewBox="0 0 26 26"
             xmlns="http://www.w3.org/2000/svg"

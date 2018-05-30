@@ -102,10 +102,10 @@ exports[`<OnClickOutside(SingleSelect) /> rendered correctly with disabled fixtu
           name="DropDown"
         >
           <DropDown
-            className="icon caret"
+            className="icon defaultSize caret"
           >
             <svg
-              className="icon caret"
+              className="icon defaultSize caret"
               version="1.1"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"

@@ -474,11 +474,11 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                       name="HealthEngine"
                     >
                       <HealthEngine
-                        className="icon logo"
+                        className="icon defaultSize logo"
                         inverted={true}
                       >
                         <svg
-                          className="icon logo"
+                          className="icon defaultSize logo"
                           version="1.1"
                           viewBox="0 0 48 38"
                           xmlns="http://www.w3.org/2000/svg"
@@ -637,10 +637,10 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                           name="Home"
                         >
                           <Help
-                            className="icon icon"
+                            className="icon defaultSize icon"
                           >
                             <svg
-                              className="icon icon"
+                              className="icon defaultSize icon"
                               version="1.1"
                               viewBox="0 0 24 24"
                               xmlns="http://www.w3.org/2000/svg"
@@ -841,10 +841,10 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                     name="Engage"
                   >
                     <Engage
-                      className="icon icon"
+                      className="icon defaultSize icon"
                     >
                       <svg
-                        className="icon icon"
+                        className="icon defaultSize icon"
                         version="1.1"
                         viewBox="0 0 26 26"
                         xmlns="http://www.w3.org/2000/svg"
@@ -1063,10 +1063,10 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                     name="Megaphone"
                   >
                     <Megaphone
-                      className="icon icon"
+                      className="icon defaultSize icon"
                     >
                       <svg
-                        className="icon icon"
+                        className="icon defaultSize icon"
                         version="1.1"
                         viewBox="0 0 23 23"
                         xmlns="http://www.w3.org/2000/svg"
@@ -1180,10 +1180,10 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                     name="Help"
                   >
                     <Help
-                      className="icon icon"
+                      className="icon defaultSize icon"
                     >
                       <svg
-                        className="icon icon"
+                        className="icon defaultSize icon"
                         version="1.1"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
@@ -1408,10 +1408,10 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                     name="Settings"
                   >
                     <Settings
-                      className="icon icon"
+                      className="icon defaultSize icon"
                     >
                       <svg
-                        className="icon icon"
+                        className="icon defaultSize icon"
                         version="1.1"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
@@ -2367,10 +2367,10 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                                     name="DropDown"
                                   >
                                     <DropDown
-                                      className="icon caret"
+                                      className="icon defaultSize caret"
                                     >
                                       <svg
-                                        className="icon caret"
+                                        className="icon defaultSize caret"
                                         version="1.1"
                                         viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -2444,10 +2444,10 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                                     name="Logout"
                                   >
                                     <Logout
-                                      className="icon icon"
+                                      className="icon defaultSize icon"
                                     >
                                       <svg
-                                        className="icon icon"
+                                        className="icon defaultSize icon"
                                         version="1.1"
                                         viewBox="0 1 16 16"
                                         xmlns="http://www.w3.org/2000/svg"

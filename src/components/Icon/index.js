@@ -5,12 +5,12 @@ import classnames from 'classnames'
 import Add from './Add'
 import Alarm from './Alarm'
 import Alert from './Alert'
-import {ArrowLeft, ArrowRight, ArrowUp, ArrowDown} from './Arrows'
+import { ArrowLeft, ArrowRight, ArrowUp, ArrowDown } from './Arrows'
 import Bookings from './Bookings'
 import Calendar from './Calendar'
 import CaretRight from './CaretRight'
-import {CheckBoxChecked, CheckBoxUnchecked, RadioChecked, RadioUnchecked} from './CheckBoxes'
-import {ChevronLeft, ChevronRight, ChevronUp, ChevronDown} from './Chevrons'
+import { CheckBoxChecked, CheckBoxUnchecked, RadioChecked, RadioUnchecked } from './CheckBoxes'
+import { ChevronLeft, ChevronRight, ChevronUp, ChevronDown } from './Chevrons'
 import Clock from './Clock'
 import Cross from './Cross'
 import Delete from './Delete'
@@ -34,7 +34,7 @@ import style from './Icon.scss'
 
 function createIcon (iconProps) {
   const { width, height, color, className, name, ...restProps } = iconProps
-  const classes = classnames(style.icon, {
+  const classes = classnames(style.defaultSize, {
     [style[color]]: color,
     [className]: className
   })
@@ -132,9 +132,48 @@ createIcon.propTypes = {
 export default class Icon extends React.Component {
   static defaultProps = {
     name: 'Cross'
-  }
+  };
 
   render () {
     return createIcon(this.props)
   }
+}
+
+export {
+  Add,
+  Alarm,
+  Alert,
+  ArrowLeft,
+  ArrowRight,
+  ArrowUp,
+  ArrowDown,
+  Bookings,
+  Calendar,
+  CaretRight,
+  CheckBoxChecked,
+  CheckBoxUnchecked,
+  ChevronLeft,
+  ChevronRight,
+  ChevronUp,
+  ChevronDown,
+  Clock,
+  Cross,
+  Delete,
+  DropDown,
+  Edit,
+  Engage,
+  HealthEngine,
+  Help,
+  Home,
+  Megaphone,
+  Patients,
+  Ellipsis,
+  Logout,
+  RadioChecked,
+  RadioUnchecked,
+  Search,
+  Settings,
+  Sync,
+  Tick,
+  View
 }

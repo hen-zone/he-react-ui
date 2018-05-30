@@ -88,11 +88,11 @@ exports[`<PrimaryNavigation /> rendered correctly with loading fixture 1`] = `
                       name="HealthEngine"
                     >
                       <HealthEngine
-                        className="icon logo"
+                        className="icon defaultSize logo"
                         inverted={true}
                       >
                         <svg
-                          className="icon logo"
+                          className="icon defaultSize logo"
                           version="1.1"
                           viewBox="0 0 48 38"
                           xmlns="http://www.w3.org/2000/svg"
@@ -312,10 +312,10 @@ exports[`<PrimaryNavigation /> rendered correctly with loading fixture 1`] = `
                                 name="Logout"
                               >
                                 <Logout
-                                  className="icon icon"
+                                  className="icon defaultSize icon"
                                 >
                                   <svg
-                                    className="icon icon"
+                                    className="icon defaultSize icon"
                                     version="1.1"
                                     viewBox="0 1 16 16"
                                     xmlns="http://www.w3.org/2000/svg"

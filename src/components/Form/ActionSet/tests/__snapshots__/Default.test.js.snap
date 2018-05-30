@@ -41,13 +41,13 @@ exports[`<OnClickOutside(ActionSet) /> rendered correctly with Default fixture 1
         width={36}
       >
         <Ellipsis
-          className="icon ellipsis"
+          className="icon defaultSize ellipsis"
           height={36}
           onClick={[Function]}
           width={36}
         >
           <svg
-            className="icon ellipsis"
+            className="icon defaultSize ellipsis"
             height={36}
             onClick={[Function]}
             version="1.1"
@@ -104,10 +104,10 @@ exports[`<OnClickOutside(ActionSet) /> rendered correctly with Default fixture 1
                 name="Delete"
               >
                 <Delete
-                  className="icon icon"
+                  className="icon defaultSize icon"
                 >
                   <svg
-                    className="icon icon"
+                    className="icon defaultSize icon"
                     version="1.1"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -149,10 +149,10 @@ exports[`<OnClickOutside(ActionSet) /> rendered correctly with Default fixture 1
                 name="Edit"
               >
                 <Edit
-                  className="icon icon"
+                  className="icon defaultSize icon"
                 >
                   <svg
-                    className="icon icon"
+                    className="icon defaultSize icon"
                     version="1.1"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -194,10 +194,10 @@ exports[`<OnClickOutside(ActionSet) /> rendered correctly with Default fixture 1
                 name="Sync"
               >
                 <Sync
-                  className="icon icon"
+                  className="icon defaultSize icon"
                 >
                   <svg
-                    className="icon icon"
+                    className="icon defaultSize icon"
                     version="1.1"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"

@@ -1,7 +1,10 @@
-@import '../../styles/base';
+@import "../../styles/base";
 
 .icon {
   fill: currentColor;
+}
+
+.defaultSize {
   height: 32px;
   width: 32px;
 }

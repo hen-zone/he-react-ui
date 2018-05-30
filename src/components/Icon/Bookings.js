@@ -1,11 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
+import { icon } from './Icon.scss'
 
 export default function Bookings (props) {
   const {className, ...restProps} = props
 
   return (
-    <svg className={className} {...restProps} viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <svg className={classNames(className, icon)} {...restProps} viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <g transform="translate(1.000000, 1.000000)">
         <path d="M -0.015625,6.9863281 A 1.0001,1.0001 0 0 0 -1,8 v 14 a 1.0001,1.0001 0 0 0 1,1 h 22 a 1.0001,1.0001 0 0 0 1,-1 V 8 A 1.0001,1.0001 0 1 0 21,8 V 21 H 1 V 8 A 1.0001,1.0001 0 0 0 -0.015625,6.9863281 Z" />
         <path d="M 0,1 A 1.0001,1.0001 0 0 0 -1,2 V 8 A 1.0001,1.0001 0 0 0 0,9 H 22 A 1.0001,1.0001 0 0 0 23,8 V 2 A 1.0001,1.0001 0 0 0 22,1 Z M 1,3 H 21 V 7 H 1 Z" />

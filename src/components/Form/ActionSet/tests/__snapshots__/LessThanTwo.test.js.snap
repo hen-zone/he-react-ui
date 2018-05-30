@@ -60,10 +60,10 @@ exports[`<OnClickOutside(ActionSet) /> rendered correctly with LessThanTwo fixtu
                 name="Delete"
               >
                 <Delete
-                  className="icon icon"
+                  className="icon defaultSize icon"
                 >
                   <svg
-                    className="icon icon"
+                    className="icon defaultSize icon"
                     version="1.1"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -105,10 +105,10 @@ exports[`<OnClickOutside(ActionSet) /> rendered correctly with LessThanTwo fixtu
                 name="Edit"
               >
                 <Edit
-                  className="icon icon"
+                  className="icon defaultSize icon"
                 >
                   <svg
-                    className="icon icon"
+                    className="icon defaultSize icon"
                     version="1.1"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"

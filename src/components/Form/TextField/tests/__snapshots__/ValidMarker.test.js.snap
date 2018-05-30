@@ -41,10 +41,10 @@ exports[`<TextField /> rendered correctly with ValidMarker fixture 1`] = `
         name="Tick"
       >
         <Tick
-          className="icon marker"
+          className="icon defaultSize marker"
         >
           <svg
-            className="icon marker"
+            className="icon defaultSize marker"
             version="1.1"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"

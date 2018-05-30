@@ -1,12 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
+import { icon } from './Icon.scss'
 
 export default function HealthEngine (props) {
   const { className, inverted, ...restProps } = props
 
   return inverted ? (
     <svg
-      className={className}
+      className={classNames(className, icon)}
       {...restProps}
       viewBox="0 0 48 38"
       version="1.1"

@@ -30,10 +30,10 @@ exports[`<CheckBox /> rendered correctly with warning fixture 1`] = `
         name="CheckBoxUnchecked"
       >
         <CheckBoxUnchecked
-          className="icon checkbox empty"
+          className="icon defaultSize checkbox empty"
         >
           <svg
-            className="icon checkbox empty"
+            className="icon defaultSize checkbox empty"
             version="1.1"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -49,10 +49,10 @@ exports[`<CheckBox /> rendered correctly with warning fixture 1`] = `
         name="CheckBoxChecked"
       >
         <CheckBoxChecked
-          className="icon checkbox full"
+          className="icon defaultSize checkbox full"
         >
           <svg
-            className="icon checkbox full"
+            className="icon defaultSize checkbox full"
             version="1.1"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -74,10 +74,10 @@ exports[`<CheckBox /> rendered correctly with warning fixture 1`] = `
       name="Alert"
     >
       <Alert
-        className="icon warning"
+        className="icon defaultSize warning"
       >
         <svg
-          className="icon warning"
+          className="icon defaultSize warning"
           version="1.1"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"

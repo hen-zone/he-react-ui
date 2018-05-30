@@ -20,10 +20,10 @@ exports[`<ActionIcon /> rendered correctly with Disabled fixture 1`] = `
       name="Delete"
     >
       <Delete
-        className="icon icon"
+        className="icon defaultSize icon"
       >
         <svg
-          className="icon icon"
+          className="icon defaultSize icon"
           version="1.1"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
