@@ -46,11 +46,9 @@
     "react-media": "^1.8.0",
     "react-moment-proptypes": "^1.5.0",
     "react-onclickoutside": "^6.7.1",
-    "react-overlays": "^0.8.3",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "react-tippy": "^1.2.2",
-    "react-tooltip": "^3.6.1"
+    "react-tippy": "^1.2.2"
   },
   "devDependencies": {
     "autoprefixer": "^8.0.0",
