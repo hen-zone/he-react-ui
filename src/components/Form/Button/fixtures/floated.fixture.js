@@ -4,10 +4,18 @@ import Button from '../';
 
 function Wrapper({ children }) {
   return (
-    <div style={{ width: 500, height: 400, margin: 24, padding: 8, border: 'solid 1px silver', background: 'white', borderRadius: 8 }}>
-      <div style={{float: 'right'}}>
-      {children}
-      </div>
+    <div
+      style={{
+        width: 500,
+        height: 400,
+        margin: 24,
+        padding: 8,
+        border: 'solid 1px silver',
+        background: 'white',
+        borderRadius: 8,
+      }}
+    >
+      <div style={{ float: 'right' }}>{children}</div>
     </div>
   );
 }
