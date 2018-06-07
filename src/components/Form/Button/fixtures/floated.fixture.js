@@ -4,10 +4,10 @@ import Button from '../';
 
 function Wrapper({ children }) {
   return (
-    <div style={{ display: 'flex' }}>
-      <Button>I am to the left</Button>
+    <div style={{ width: 500, height: 400, margin: 24, padding: 8, border: 'solid 1px silver', background: 'white', borderRadius: 8 }}>
+      <div style={{float: 'right'}}>
       {children}
-      <Button>I am to the right</Button>
+      </div>
     </div>
   );
 }
@@ -18,5 +18,5 @@ export default {
   component: Button,
   simulateSubmission: true,
   wrapper: { tag: Wrapper },
-  children: 'Click me for action',
+  children: 'floated',
 };
