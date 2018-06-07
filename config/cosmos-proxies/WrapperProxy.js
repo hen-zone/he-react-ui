@@ -1,7 +1,6 @@
-import createRouterProxy from 'react-cosmos-router-proxy';
-
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
+
 
 export default class WrapperProxy extends React.Component {
   static propTypes = {
@@ -12,7 +11,7 @@ export default class WrapperProxy extends React.Component {
   render() {
     const { nextProxy, fixture, ...nextProps } = this.props;
     const { wrapper } = fixture;
-
+    
     const child = (
       <nextProxy.value
         {...nextProps}

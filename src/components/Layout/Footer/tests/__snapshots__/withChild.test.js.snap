@@ -36,11 +36,6 @@ exports[`<Footer /> rendered correctly with withChild fixture 1`] = `
           <button
             className="button green"
             onClick={[Function]}
-            style={
-              Object {
-                "float": "right",
-              }
-            }
             type="button"
           >
             <div
