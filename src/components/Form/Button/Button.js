@@ -4,9 +4,9 @@
  *
  */
 
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import PropTypes from 'prop-types';
+import React, { Fragment } from 'react';
 import Icon from '../../Icon';
 import style from './Button.scss';
 import ButtonSpinner from './ButtonSpinner';
@@ -105,7 +105,6 @@ class Button extends React.Component {
           className={buttonClasses}
           type={submit ? 'submit' : 'button'}
           onClick={this.handleClick}
-          {...rest}
         >
           {statusIcon || (
             <Fragment>
