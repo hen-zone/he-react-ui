@@ -59,14 +59,12 @@ class Button extends React.Component {
       iconRight,
       keyline,
       link,
-      onClick,
       small,
       large,
       squared,
       submit,
       submitting,
       done,
-      ...rest
     } = this.props;
 
     const buttonClasses = classnames(style.button, {
