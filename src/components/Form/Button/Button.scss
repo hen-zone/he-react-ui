@@ -1,10 +1,9 @@
 @import '../../../styles/base';
 
 .buttonContainer {
-  display: flex;
+  display: inline-flex;
   height: 48px;  
   width: 180px;
-  margin: auto;
 
   align-items: center;
   justify-content: center;
