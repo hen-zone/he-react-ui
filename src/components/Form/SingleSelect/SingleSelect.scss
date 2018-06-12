@@ -33,22 +33,53 @@
   font-weight: $regular;
   margin-bottom: 12px;
   position: relative;
-  width: 100%;
+  width: 280px;
+  @include breakpoint(small) {
+    width: 100%;
+  }
+
   &:hover {
-  border-color: $teal;
-  color: $he_black;
+    border-color: $teal;
+    color: $he_black;
 
-  .caret {
-    color: $teal;
+    .caret {
+      color: $teal;
+    }
   }
 
+  :global {
+    .Select-control {
+      height: 48px;
+      padding: 0px 16px;
+    }
+    .Select-menu-outer {
+      max-height: 240px;
+      overflow: scroll;
+    }
+    .Select-placeholder {
+      position: absolute;
+      top: 0px;
+      left: 16px;
+      font-size: 16px;
+      line-height: 48px;
+      color: $navy_1;
+    }
+    .Select-option {
+      color: $navy_1;
+      padding: 8px 16px;
+      &.is-focused {
+        background-color: $n_grey_4;
+        color: $navy_2;
+      }
+    }
+    input[role=combobox] {
+      font-size: 16px;
+      color: $navy_1;
+      border: 0 none;
+    }
   }
-  span {
-    display: block;
-    padding: 12px;
-    padding-right: 42px;
-    user-select: none;
-  }
+
+  
   @include transition(all 0.2s);
 }
 

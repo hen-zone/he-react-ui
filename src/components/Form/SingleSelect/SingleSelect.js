@@ -1,13 +1,7 @@
-/**
- *
- * SingleSelect
- *
- */
-
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
-import React from 'react';
-import onClickOutside from 'react-onclickoutside';
+import { default as React, default as React } from 'react';
+import Select from 'react-select';
 import Icon from '../../Icon';
 import Label from '../Label';
 import style from './SingleSelect.scss';
@@ -70,6 +64,10 @@ class SingleSelect extends React.Component {
     this.generateOptions = this.generateOptions.bind(this);
   }
 
+  onChange(data) {
+    console.log('data', data, this);
+  }
+
   getDisplay = () => {
     const { options, value, forceTitle, placeholder } = this.props;
 
@@ -99,7 +97,7 @@ class SingleSelect extends React.Component {
     this.hideExpand();
   };
 
-  selectOption = option => {
+  selectOption2 = option => {
     const oldValue = this.props.value;
     this.hideExpand();
     if (oldValue !== option.value) {
@@ -112,42 +110,58 @@ class SingleSelect extends React.Component {
     }
   };
 
-  generateOptions = () => {
-    const firstValue =
-      (this.props.options &&
-        this.props.options[0] &&
-        this.props.options[0].value) ||
-      undefined;
-    const value =
-      this.props.value || (this.props.placeholder ? undefined : firstValue);
-
-    return this.props.options.map(option => {
-      const selected = value === option.value;
-      let ref = null;
-      if (value === option.value) {
-        ref = item => {
-          if (item) {
-            setTimeout(() => {
-              item.parentNode.scrollTop =
-                item.offsetTop - item.parentNode.offsetTop;
-            }, 200);
-          }
-        };
-      }
-      return (
-        <li
-          className={classnames(style.option, { [style.selected]: selected })}
-          key={option.value}
-          onClick={() => this.selectOption(option)}
-          ref={ref}
-        >
-          {option.label}
-        </li>
-      );
+  selectOption(option) {
+    const { oldValue } = this.props;
+    this.setState({
+      expanded: false,
     });
-  };
+    if (oldValue !== option.value) {
+      const event = {
+        value: option.value,
+        props: this.props,
+      };
 
-  render() {
+      this.props.onChange(event);
+    }
+  }
+
+  generateOptions = () =>
+    // const firstValue =
+    //   (this.props.options &&
+    //     this.props.options[0] &&
+    //     this.props.options[0].value) ||
+    //   undefined;
+    // const value =
+    //   this.props.value || (this.props.placeholder ? undefined : firstValue);
+    // return this.props.options.map(option => {
+    //   const selected = value === option.value;
+    //   let ref = null;
+    //   if (value === option.value) {
+    //     ref = item => {
+    //       if (item) {
+    //         setTimeout(() => {
+    //           item.parentNode.scrollTop =
+    //             item.offsetTop - item.parentNode.offsetTop;
+    //         }, 200);
+    //       }
+    //     };
+    //   }
+    // });
+
+    this.props.options.map(option => (
+      <li
+        className={classnames(style.option, {
+          [style.selected]: this.props.value === option.value,
+        })}
+        key={option.value}
+        onClick={() => this.selectOption(option)}
+        ref={ref}
+      >
+        {option.label}
+      </li>
+    ));
+
+  oldRender() {
     const {
       id,
       name,
@@ -167,10 +181,9 @@ class SingleSelect extends React.Component {
       disableOnClickOutside,
       enableOnClickOutside,
       forceOpen,
-      forceTitle,
-      onBeforeOpen,
       ...restProps
     } = this.props;
+
     const classes = classnames(style.outer, {
       [style.expanded]: this.state.expanded,
       [style.inline]: inline,
@@ -205,8 +218,47 @@ class SingleSelect extends React.Component {
       </div>
     );
   }
+
+  render() {
+    const {
+      id,
+      name,
+      className,
+      required,
+      disabled,
+      error,
+      inline,
+      label,
+      placeholder,
+      onChange,
+      value,
+      options,
+      eventTypes,
+      outsideClickIgnoreClass,
+      preventDefault,
+      stopPropagation,
+      disableOnClickOutside,
+      enableOnClickOutside,
+      ...restProps
+    } = this.props;
+    return (
+      <div className={classnames({ [className]: className })} {...restProps}>
+        {label && (
+          <Label className={style.label} htmlFor={id}>
+            {label}
+          </Label>
+        )}
+        <Select
+          options={options}
+          className={classnames(style.select)}
+          value={this.value}
+          onChange={onChange}
+        />
+      </div>
+    );
+  }
 }
 
 export { SingleSelect as InnerSingleSelect };
 
-export default onClickOutside(SingleSelect);
+export default SingleSelect;
