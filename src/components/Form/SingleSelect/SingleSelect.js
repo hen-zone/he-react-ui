@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
-import { default as React, default as React } from 'react';
+import React from 'react';
 import Select from 'react-select';
 import Icon from '../../Icon';
 import Label from '../Label';
@@ -155,7 +155,7 @@ class SingleSelect extends React.Component {
         })}
         key={option.value}
         onClick={() => this.selectOption(option)}
-        ref={ref}
+        // ref={ref}
       >
         {option.label}
       </li>
