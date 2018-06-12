@@ -62,19 +62,19 @@
       left: 16px;
       font-size: 16px;
       line-height: 48px;
-      color: $navy_1;
+      color: $he_black;
     }
     .Select-option {
-      color: $navy_1;
+      color: $he_black;
       padding: 8px 16px;
       &.is-focused {
-        background-color: $n_grey_4;
-        color: $navy_2;
+        background-color: $grey_7;
+        color: $he_black;
       }
     }
     input[role=combobox] {
       font-size: 16px;
-      color: $navy_1;
+      color: $he_black;
       border: 0 none;
     }
   }
