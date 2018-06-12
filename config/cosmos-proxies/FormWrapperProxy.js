@@ -1,40 +1,38 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-export class FormWrapperProxy extends React.Component {
+export default class FormWrapperProxy extends React.Component {
   static propTypes = {
     nextProxy: PropTypes.object,
-    fixture: PropTypes.object 
-  }
+    fixture: PropTypes.object,
+  };
 
-  state = { value: 0 }
-
-  constructor (props) {
-    super(props)
-    const { formWrapper } = props.fixture
+  constructor(props) {
+    super(props);
+    const { formWrapper } = props.fixture;
     if (formWrapper && typeof formWrapper === 'object') {
-      this.state.value = formWrapper.value
+      this.state.value = formWrapper.value;
     }
   }
 
+  state = { value: 0 };
+
   onChange = ({ value }) => {
-    
-    
-    this.setState({ value })
-  }
+    this.setState({ value });
+  };
 
-  render () {
-    const { nextProxy, fixture, ...nextProps } = this.props
+  render() {
+    const { nextProxy, fixture, ...nextProps } = this.props;
 
-    const { onChange } = this
-    const { value } = this.state
+    const { onChange } = this;
+    const { value } = this.state;
 
     const wrappedFixture = fixture.formWrapper
       ? {
-        ...fixture,
-        props: { ...fixture.props, onChange, value }
-      }
-      : fixture
+          ...fixture,
+          props: { ...fixture.props, onChange, value },
+        }
+      : fixture;
 
     return (
       <nextProxy.value
@@ -42,6 +40,6 @@ export class FormWrapperProxy extends React.Component {
         nextProxy={nextProxy.next()}
         fixture={wrappedFixture}
       />
-    )
+    );
   }
 }
