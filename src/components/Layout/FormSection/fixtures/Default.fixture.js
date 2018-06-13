@@ -11,7 +11,7 @@ export default {
       'This generally provides some further explanation about what the user can / should do.',
   },
 
-  children: [
+  children: (
     <Radio
       name="demo"
       id="demo"
@@ -26,6 +26,6 @@ export default {
           showChild: false,
         },
       ]}
-    />,
-  ],
+    />
+  ),
 };
