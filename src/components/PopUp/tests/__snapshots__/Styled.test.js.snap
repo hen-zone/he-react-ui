@@ -25,7 +25,6 @@ exports[`<PopUp /> rendered correctly with Styled fixture 1`] = `
 >
   <div
     className="outer showing"
-    onOpen={[Function]}
   >
     <div
       className="overlay"

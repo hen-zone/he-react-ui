@@ -10,7 +10,6 @@ exports[`<PopUp /> rendered correctly with Modal fixture 1`] = `
 >
   <div
     className="outer showing"
-    onOpen={[Function]}
   >
     <div
       className="overlay"

@@ -4,9 +4,8 @@
  *
  */
 import classnames from 'classnames';
-import React from 'react';
 import PropTypes from 'prop-types';
-
+import React from 'react';
 import Icon from '../Icon';
 import LoadingSpinner from '../Loading/LoadingSpinner';
 import styles from './PopUp.scss';
@@ -64,9 +63,10 @@ class PopUp extends React.Component {
       className,
       modal,
       onClose,
+      onOpen,
       showing,
-      style,
       noPadding,
+      style,
       ...restProps
     } = this.props;
     const classes = classnames(styles.outer, {
