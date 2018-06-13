@@ -29,7 +29,7 @@ exports[`<SingleDatePicker /> rendered correctly with Default fixture 1`] = `
         }
       >
         <withStyles(SingleDatePicker)
-          anchorDirection="right"
+          anchorDirection="left"
           appendToBody={false}
           block={false}
           calendarInfoPosition="bottom"
@@ -40,7 +40,7 @@ exports[`<SingleDatePicker /> rendered correctly with Default fixture 1`] = `
           daySize={28}
           disableScroll={false}
           disabled={false}
-          displayFormat="DD/MM/YYYY"
+          displayFormat={[Function]}
           enableOutsideDays={false}
           firstDayOfWeek={null}
           focused={false}
@@ -56,7 +56,6 @@ exports[`<SingleDatePicker /> rendered correctly with Default fixture 1`] = `
           keepFocusOnInput={false}
           keepOpenOnDateSelect={false}
           monthFormat="MMMM YYYY"
-          name="demo"
           navNext={
             <Icon
               name="ChevronRight"
@@ -69,10 +68,8 @@ exports[`<SingleDatePicker /> rendered correctly with Default fixture 1`] = `
           }
           noBorder={false}
           numberOfMonths={2}
-          onBlur={[Function]}
           onClose={[Function]}
           onDateChange={[Function]}
-          onFocus={[Function]}
           onFocusChange={[Function]}
           onNextMonthClick={[Function]}
           onPrevMonthClick={[Function]}
@@ -109,8 +106,8 @@ exports[`<SingleDatePicker /> rendered correctly with Default fixture 1`] = `
               "upArrowDownArrow": "up and down arrow keys",
             }
           }
-          placeholder="Select date"
-          readOnly={true}
+          placeholder="Date"
+          readOnly={false}
           regular={false}
           renderCalendarInfo={null}
           renderDayContents={null}
@@ -128,7 +125,7 @@ exports[`<SingleDatePicker /> rendered correctly with Default fixture 1`] = `
           withPortal={false}
         >
           <SingleDatePicker
-            anchorDirection="right"
+            anchorDirection="left"
             appendToBody={false}
             block={false}
             calendarInfoPosition="bottom"
@@ -140,7 +137,7 @@ exports[`<SingleDatePicker /> rendered correctly with Default fixture 1`] = `
             daySize={28}
             disableScroll={false}
             disabled={false}
-            displayFormat="DD/MM/YYYY"
+            displayFormat={[Function]}
             enableOutsideDays={false}
             firstDayOfWeek={null}
             focused={false}
@@ -156,7 +153,6 @@ exports[`<SingleDatePicker /> rendered correctly with Default fixture 1`] = `
             keepFocusOnInput={false}
             keepOpenOnDateSelect={false}
             monthFormat="MMMM YYYY"
-            name="demo"
             navNext={
               <Icon
                 name="ChevronRight"
@@ -169,10 +165,8 @@ exports[`<SingleDatePicker /> rendered correctly with Default fixture 1`] = `
             }
             noBorder={false}
             numberOfMonths={2}
-            onBlur={[Function]}
             onClose={[Function]}
             onDateChange={[Function]}
-            onFocus={[Function]}
             onFocusChange={[Function]}
             onNextMonthClick={[Function]}
             onPrevMonthClick={[Function]}
@@ -209,8 +203,8 @@ exports[`<SingleDatePicker /> rendered correctly with Default fixture 1`] = `
                 "upArrowDownArrow": "up and down arrow keys",
               }
             }
-            placeholder="Select date"
-            readOnly={true}
+            placeholder="Date"
+            readOnly={false}
             regular={false}
             renderCalendarInfo={null}
             renderDayContents={null}
@@ -466,8 +460,8 @@ exports[`<SingleDatePicker /> rendered correctly with Default fixture 1`] = `
                         "upArrowDownArrow": "up and down arrow keys",
                       }
                     }
-                    placeholder="Select date"
-                    readOnly={true}
+                    placeholder="Date"
+                    readOnly={false}
                     regular={false}
                     required={false}
                     screenReaderMessage=""
@@ -529,8 +523,8 @@ exports[`<SingleDatePicker /> rendered correctly with Default fixture 1`] = `
                           "upArrowDownArrow": "up and down arrow keys",
                         }
                       }
-                      placeholder="Select date"
-                      readOnly={true}
+                      placeholder="Date"
+                      readOnly={false}
                       regular={false}
                       required={false}
                       screenReaderMessage=""
@@ -742,8 +736,8 @@ exports[`<SingleDatePicker /> rendered correctly with Default fixture 1`] = `
                           onKeyDownShiftTab={[Function]}
                           onKeyDownTab={[Function]}
                           openDirection="down"
-                          placeholder="Select date"
-                          readOnly={true}
+                          placeholder="Date"
+                          readOnly={false}
                           regular={false}
                           required={false}
                           screenReaderMessage="Press the down arrow key to interact with the calendar and
@@ -767,8 +761,8 @@ exports[`<SingleDatePicker /> rendered correctly with Default fixture 1`] = `
                             onKeyDownShiftTab={[Function]}
                             onKeyDownTab={[Function]}
                             openDirection="down"
-                            placeholder="Select date"
-                            readOnly={true}
+                            placeholder="Date"
+                            readOnly={false}
                             regular={false}
                             required={false}
                             screenReaderMessage="Press the down arrow key to interact with the calendar and
@@ -967,17 +961,17 @@ exports[`<SingleDatePicker /> rendered correctly with Default fixture 1`] = `
                             >
                               <input
                                 aria-describedby="DateInput__screen-reader-message-demo"
-                                aria-label="Select date"
+                                aria-label="Date"
                                 autoComplete="off"
-                                className="DateInput_input DateInput_input_1 DateInput_input__readOnly DateInput_input__readOnly_2"
+                                className="DateInput_input DateInput_input_1"
                                 disabled={false}
                                 id="demo"
                                 name="demo"
                                 onChange={[Function]}
                                 onFocus={[Function]}
                                 onKeyDown={[Function]}
-                                placeholder="Select date"
-                                readOnly={true}
+                                placeholder="Date"
+                                readOnly={false}
                                 required={false}
                                 type="text"
                                 value=""

@@ -97,15 +97,23 @@ class SingleDatePicker extends React.Component {
   render() {
     const {
       id,
+      name,
+      anchorDirection,
       className,
       disabled,
+      displayFormat,
       error,
+      horizontalMargin,
+      isOutsideRange,
       inline,
       label,
-      horizontalMargin,
+      readOnly,
+      onBlur,
       onChange,
-      style,
+      onFocus,
       value,
+      style,
+      placeholder,
       ...restProps
     } = this.props;
     const classes = classnames(styles.outer, {
