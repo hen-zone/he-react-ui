@@ -530,6 +530,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
           <withRouter(Bucket)
             exact={true}
             icon="Home"
+            itemKey="HOME"
             items={null}
             key="HOME"
             label="Home"
@@ -577,6 +578,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                   }
                 }
                 icon="Home"
+                itemKey="HOME"
                 items={null}
                 label="Home"
                 location={
@@ -607,6 +609,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                   ariaCurrent="true"
                   className="bucket"
                   exact={true}
+                  key="HOME"
                   onClick={[Function]}
                   title="Home"
                   to="/"
@@ -672,6 +675,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
           </withRouter(Bucket)>
           <withRouter(Bucket)
             icon="Engage"
+            itemKey="BUCKET1"
             items={
               Array [
                 Object {
@@ -762,6 +766,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                   }
                 }
                 icon="Engage"
+                itemKey="BUCKET1"
                 items={
                   Array [
                     Object {
@@ -833,6 +838,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
               >
                 <div
                   className="bucket"
+                  key="BUCKET1"
                   onClick={[Function]}
                   title="Bucket 1"
                 >
@@ -902,6 +908,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
           </withRouter(Bucket)>
           <withRouter(Bucket)
             icon="Megaphone"
+            itemKey="BUCKET2"
             items={
               Array [
                 Object {
@@ -988,6 +995,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                   }
                 }
                 icon="Megaphone"
+                itemKey="BUCKET2"
                 items={
                   Array [
                     Object {
@@ -1055,6 +1063,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
               >
                 <div
                   className="bucket"
+                  key="BUCKET2"
                   onClick={[Function]}
                   title="Bucket 2"
                 >
@@ -1099,6 +1108,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
           />
           <withRouter(Bucket)
             icon="Help"
+            itemKey="HELP"
             key="HELP"
             label="Help"
             onClickParent={[Function]}
@@ -1144,6 +1154,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                   }
                 }
                 icon="Help"
+                itemKey="HELP"
                 label="Help"
                 location={
                   Object {
@@ -1171,6 +1182,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                 <a
                   className="bucket external"
                   href="https://external.url/"
+                  key="HELP"
                   onClick={[Function]}
                   target="_blank"
                   title="Help"
@@ -1215,6 +1227,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
           </withRouter(Bucket)>
           <withRouter(Bucket)
             icon="Settings"
+            itemKey="SETTINGS"
             items={
               Array [
                 Object {
@@ -1317,6 +1330,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                   }
                 }
                 icon="Settings"
+                itemKey="SETTINGS"
                 items={
                   Array [
                     Object {
@@ -1400,6 +1414,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
               >
                 <div
                   className="bucket"
+                  key="SETTINGS"
                   onClick={[Function]}
                   title="Settings"
                 >

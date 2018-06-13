@@ -186,6 +186,7 @@ class PrimaryNavigation extends Component {
                 open={item.key === openKey}
                 onClickParent={() => toggleBucket(item.key)}
                 onClickRoute={closeBucket}
+                itemKey={item.key}
                 {...item}
               />
             ))}
@@ -195,6 +196,7 @@ class PrimaryNavigation extends Component {
                 open={item.key === openKey}
                 onClickParent={() => toggleBucket(item.key)}
                 onClickRoute={closeBucket}
+                itemKey={item.key}
                 {...item}
               />
             ))}
