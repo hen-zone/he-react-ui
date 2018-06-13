@@ -1,10 +1,11 @@
 import React from 'react';
 import Radio from '../';
-
 import SingleSelect from '../../SingleSelect';
 
 const other = (
   <SingleSelect
+    id="demo"
+    name="demo"
     options={[
       { value: 'A', label: 'A' },
       { value: 'B', label: 'B' },
@@ -18,6 +19,7 @@ export default {
   formWrapper: {},
   props: {
     name: 'demo',
+    id: 'demo',
     options: [
       { label: 'Option 1', value: '1' },
       { label: 'Option 2', value: '2' },
