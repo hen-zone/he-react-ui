@@ -7,6 +7,5 @@ export default {
     name: 'demo',
     label: 'First Name',
     error: "Something isn't right",
-    validateFunc: () => false,
   },
 };

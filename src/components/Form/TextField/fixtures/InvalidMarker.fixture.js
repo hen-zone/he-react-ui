@@ -8,7 +8,6 @@ export default {
     label: 'First Name',
     error: "Something isn't right",
     marker: true,
-    validateFunc: () => false,
     value: 'Bruce',
   },
 };

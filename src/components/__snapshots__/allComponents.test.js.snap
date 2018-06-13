@@ -12952,7 +12952,6 @@ exports[`Cosmos fixtures: TextField:Disabled 1`] = `
 exports[`Cosmos fixtures: TextField:Error 1`] = `
 <div
   className="outer"
-  validateFunc={[Function]}
 >
   <div
     className="block"
@@ -12986,7 +12985,6 @@ exports[`Cosmos fixtures: TextField:Error 1`] = `
 exports[`Cosmos fixtures: TextField:InvalidMarker 1`] = `
 <div
   className="outer hasMarker"
-  validateFunc={[Function]}
 >
   <div
     className="block"
