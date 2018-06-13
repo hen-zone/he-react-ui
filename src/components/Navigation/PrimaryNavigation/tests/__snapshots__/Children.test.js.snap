@@ -1478,6 +1478,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                 className="list"
                 exact={true}
                 icon="Home"
+                itemKey="HOME"
                 items={null}
                 label="Home"
                 onSelect={[Function]}
@@ -1486,6 +1487,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
               >
                 <div
                   className="list"
+                  key="HOME"
                 />
               </List>
             </div>
@@ -1556,6 +1558,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
               <List
                 className="list"
                 icon="Engage"
+                itemKey="BUCKET1"
                 items={
                   Array [
                     Object {
@@ -1608,6 +1611,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
               >
                 <div
                   className="list"
+                  key="BUCKET1"
                 >
                   <span
                     className="heading"
@@ -1743,6 +1747,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
               <List
                 className="list"
                 icon="Megaphone"
+                itemKey="BUCKET2"
                 items={
                   Array [
                     Object {
@@ -1791,6 +1796,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
               >
                 <div
                   className="list"
+                  key="BUCKET2"
                 >
                   <span
                     className="heading"
@@ -1890,6 +1896,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
               <List
                 className="list"
                 icon="Help"
+                itemKey="HELP"
                 label="Help"
                 onSelect={[Function]}
                 route="https://external.url/"
@@ -1897,6 +1904,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
               >
                 <div
                   className="list"
+                  key="HELP"
                 />
               </List>
             </div>
@@ -1979,6 +1987,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
               <List
                 className="list"
                 icon="Settings"
+                itemKey="SETTINGS"
                 items={
                   Array [
                     Object {
@@ -2043,6 +2052,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
               >
                 <div
                   className="list"
+                  key="SETTINGS"
                 >
                   <span
                     className="heading"

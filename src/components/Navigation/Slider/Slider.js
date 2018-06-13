@@ -45,7 +45,7 @@ class Slider extends Component {
         key={itemKey}
       >
         <div className={styles.filler} />
-        <List className={styles.list} {...restProps} />
+        <List className={styles.list} itemKey={itemKey} {...restProps} />
       </div>
     );
   }
