@@ -6,7 +6,9 @@ export default {
   props: {
     item: {
       items: [],
-      key: null,
+      key: 'placeholder',
+      title: '',
+      route: '#',
     },
     locations: [].map(location => ({ value: location, label: location })),
     loading: true,
