@@ -6,6 +6,7 @@ export default {
   props: {
     item: {
       items: [],
+      key: null,
     },
     locations: [].map(location => ({ value: location, label: location })),
     loading: true,
