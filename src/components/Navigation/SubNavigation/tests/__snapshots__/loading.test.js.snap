@@ -5,6 +5,7 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with loading fixture 1
   item={
     Object {
       "items": Array [],
+      "key": null,
     }
   }
   loading={true}
@@ -50,6 +51,7 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with loading fixture 1
       item={
         Object {
           "items": Array [],
+          "key": null,
         }
       }
       loading={true}
