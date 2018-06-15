@@ -11132,7 +11132,7 @@ exports[`Cosmos fixtures: SingleDatePicker:focusedWithValue 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="06/13/2018"
+              value="06/15/2018"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
