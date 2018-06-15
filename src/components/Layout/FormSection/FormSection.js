@@ -1,16 +1,15 @@
-import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
+import React, { Component } from 'react';
+import LoadingSpinner from '../../Loading/LoadingSpinner';
 import Heading from '../Heading';
 import Paragraph from '../Paragraph';
-import LoadingSpinner from '../../Loading/LoadingSpinner';
 import style from './FormSection.scss';
 
 class FormSection extends Component {
   static propTypes = {
     heading: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    children: PropTypes.array.isRequired,
+    children: PropTypes.any.isRequired,
   };
 
   render() {

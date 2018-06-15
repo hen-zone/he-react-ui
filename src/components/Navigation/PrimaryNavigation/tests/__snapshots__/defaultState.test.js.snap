@@ -530,6 +530,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
           <withRouter(Bucket)
             exact={true}
             icon="Home"
+            itemKey="HOME"
             items={null}
             key="HOME"
             label="Home"
@@ -577,6 +578,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                   }
                 }
                 icon="Home"
+                itemKey="HOME"
                 items={null}
                 label="Home"
                 location={
@@ -607,6 +609,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                   ariaCurrent="true"
                   className="bucket"
                   exact={true}
+                  key="HOME"
                   onClick={[Function]}
                   title="Home"
                   to="/"
@@ -672,6 +675,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
           </withRouter(Bucket)>
           <withRouter(Bucket)
             icon="Engage"
+            itemKey="BUCKET1"
             items={
               Array [
                 Object {
@@ -762,6 +766,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                   }
                 }
                 icon="Engage"
+                itemKey="BUCKET1"
                 items={
                   Array [
                     Object {
@@ -833,6 +838,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
               >
                 <div
                   className="bucket"
+                  key="BUCKET1"
                   onClick={[Function]}
                   title="Bucket 1"
                 >
@@ -902,6 +908,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
           </withRouter(Bucket)>
           <withRouter(Bucket)
             icon="Megaphone"
+            itemKey="BUCKET2"
             items={
               Array [
                 Object {
@@ -988,6 +995,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                   }
                 }
                 icon="Megaphone"
+                itemKey="BUCKET2"
                 items={
                   Array [
                     Object {
@@ -1055,6 +1063,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
               >
                 <div
                   className="bucket"
+                  key="BUCKET2"
                   onClick={[Function]}
                   title="Bucket 2"
                 >
@@ -1099,6 +1108,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
           />
           <withRouter(Bucket)
             icon="Help"
+            itemKey="HELP"
             key="HELP"
             label="Help"
             onClickParent={[Function]}
@@ -1144,6 +1154,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                   }
                 }
                 icon="Help"
+                itemKey="HELP"
                 label="Help"
                 location={
                   Object {
@@ -1171,6 +1182,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                 <a
                   className="bucket external"
                   href="https://external.url/"
+                  key="HELP"
                   onClick={[Function]}
                   target="_blank"
                   title="Help"
@@ -1215,6 +1227,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
           </withRouter(Bucket)>
           <withRouter(Bucket)
             icon="Settings"
+            itemKey="SETTINGS"
             items={
               Array [
                 Object {
@@ -1317,6 +1330,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                   }
                 }
                 icon="Settings"
+                itemKey="SETTINGS"
                 items={
                   Array [
                     Object {
@@ -1400,6 +1414,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
               >
                 <div
                   className="bucket"
+                  key="SETTINGS"
                   onClick={[Function]}
                   title="Settings"
                 >
@@ -1443,6 +1458,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
             bottom={false}
             exact={true}
             icon="Home"
+            itemKey="HOME"
             items={null}
             key="HOME"
             label="Home"
@@ -1453,6 +1469,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
           >
             <div
               className="slider"
+              key="HOME"
             >
               <div
                 className="filler"
@@ -1461,6 +1478,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                 className="list"
                 exact={true}
                 icon="Home"
+                itemKey="HOME"
                 items={null}
                 label="Home"
                 onSelect={[Function]}
@@ -1469,6 +1487,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
               >
                 <div
                   className="list"
+                  key="HOME"
                 />
               </List>
             </div>
@@ -1476,6 +1495,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
           <Slider
             bottom={false}
             icon="Engage"
+            itemKey="BUCKET1"
             items={
               Array [
                 Object {
@@ -1530,6 +1550,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
           >
             <div
               className="slider"
+              key="BUCKET1"
             >
               <div
                 className="filler"
@@ -1537,6 +1558,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
               <List
                 className="list"
                 icon="Engage"
+                itemKey="BUCKET1"
                 items={
                   Array [
                     Object {
@@ -1589,6 +1611,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
               >
                 <div
                   className="list"
+                  key="BUCKET1"
                 >
                   <span
                     className="heading"
@@ -1665,6 +1688,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
           <Slider
             bottom={false}
             icon="Megaphone"
+            itemKey="BUCKET2"
             items={
               Array [
                 Object {
@@ -1715,6 +1739,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
           >
             <div
               className="slider"
+              key="BUCKET2"
             >
               <div
                 className="filler"
@@ -1722,6 +1747,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
               <List
                 className="list"
                 icon="Megaphone"
+                itemKey="BUCKET2"
                 items={
                   Array [
                     Object {
@@ -1770,6 +1796,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
               >
                 <div
                   className="list"
+                  key="BUCKET2"
                 >
                   <span
                     className="heading"
@@ -1851,6 +1878,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
           <Slider
             bottom={true}
             icon="Help"
+            itemKey="HELP"
             key="HELP"
             label="Help"
             onSelect={[Function]}
@@ -1860,6 +1888,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
           >
             <div
               className="slider bottom"
+              key="HELP"
             >
               <div
                 className="filler"
@@ -1867,6 +1896,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
               <List
                 className="list"
                 icon="Help"
+                itemKey="HELP"
                 label="Help"
                 onSelect={[Function]}
                 route="https://external.url/"
@@ -1874,6 +1904,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
               >
                 <div
                   className="list"
+                  key="HELP"
                 />
               </List>
             </div>
@@ -1881,6 +1912,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
           <Slider
             bottom={true}
             icon="Settings"
+            itemKey="SETTINGS"
             items={
               Array [
                 Object {
@@ -1947,6 +1979,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
           >
             <div
               className="slider bottom"
+              key="SETTINGS"
             >
               <div
                 className="filler"
@@ -1954,6 +1987,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
               <List
                 className="list"
                 icon="Settings"
+                itemKey="SETTINGS"
                 items={
                   Array [
                     Object {
@@ -2018,6 +2052,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
               >
                 <div
                   className="list"
+                  key="SETTINGS"
                 >
                   <span
                     className="heading"

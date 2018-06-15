@@ -13,12 +13,10 @@ exports[`<TextField /> rendered correctly with Error fixture 1`] = `
   onBlur={[Function]}
   onChange={[Function]}
   onFocus={[Function]}
-  validateFunc={[MockFunction]}
   value=""
 >
   <div
     className="outer"
-    validateFunc={[MockFunction]}
   >
     <div
       className="block"

@@ -97,15 +97,23 @@ class SingleDatePicker extends React.Component {
   render() {
     const {
       id,
+      name,
+      anchorDirection,
       className,
       disabled,
+      displayFormat,
       error,
+      horizontalMargin,
+      isOutsideRange,
       inline,
       label,
-      horizontalMargin,
+      readOnly,
+      onBlur,
       onChange,
-      style,
+      onFocus,
       value,
+      style,
+      placeholder,
       ...restProps
     } = this.props;
     const classes = classnames(styles.outer, {
@@ -123,7 +131,6 @@ class SingleDatePicker extends React.Component {
           <Media query={{ maxWidth: 767 }}>
             {matches => (
               <Picker
-                className={styles.picker}
                 date={this.state.date}
                 daySize={28}
                 disabled={disabled}
@@ -135,7 +142,6 @@ class SingleDatePicker extends React.Component {
                 onFocusChange={this.handleFocusChange}
                 navNext={<Icon name="ChevronRight" />}
                 navPrev={<Icon name="ChevronLeft" />}
-                {...restProps}
               />
             )}
           </Media>

@@ -4,16 +4,15 @@
  *
  */
 
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import classnames from 'classnames';
-
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import List from '../List';
 import styles from './Slider.scss';
 
 class Slider extends Component {
   static propTypes = {
-    key: PropTypes.string.isRequired,
+    itemKey: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
     route: PropTypes.string,
@@ -35,7 +34,7 @@ class Slider extends Component {
   };
 
   render() {
-    const { bottom, key, open, ...restProps } = this.props;
+    const { bottom, itemKey, open, ...restProps } = this.props;
 
     return (
       <div
@@ -43,10 +42,10 @@ class Slider extends Component {
           [styles.open]: open,
           [styles.bottom]: bottom,
         })}
-        key={key}
+        key={itemKey}
       >
         <div className={styles.filler} />
-        <List className={styles.list} {...restProps} />
+        <List className={styles.list} itemKey={itemKey} {...restProps} />
       </div>
     );
   }

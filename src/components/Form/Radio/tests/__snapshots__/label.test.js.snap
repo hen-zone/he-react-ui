@@ -3,6 +3,7 @@
 exports[`<Radio /> rendered correctly with label fixture 1`] = `
 <Radio
   error=""
+  id="demo"
   inline={false}
   label="Select one"
   name="demo"
@@ -26,6 +27,7 @@ exports[`<Radio /> rendered correctly with label fixture 1`] = `
 >
   <div
     className="outer"
+    id="demo"
     name="demo"
     options={
       Array [
@@ -47,13 +49,16 @@ exports[`<Radio /> rendered correctly with label fixture 1`] = `
     <Label
       className="label"
       error={false}
+      htmlFor="demo"
       onChange={[Function]}
     >
       <div
         className="label label"
         onChange={[Function]}
       >
-        <label>
+        <label
+          htmlFor="demo"
+        >
           Select one
         </label>
       </div>
