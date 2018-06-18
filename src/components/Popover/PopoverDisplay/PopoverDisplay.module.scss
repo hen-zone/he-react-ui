@@ -1,0 +1,50 @@
+@import '../../../styles/base';
+
+.popover {
+  margin-top: 8px;
+  z-index: 1060;
+  
+  padding: 0px;
+  font-family: $font-stack;
+  font-size: 12px; 
+  color: $white;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-break: auto;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  font-size: 12px;
+  background-color: #071C25;
+  background-clip: padding-box;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 1px 10px transparentize($color: $grey_2, $amount: 0.85); 
+
+  &:not(.tooltip) {
+    max-width: 276px;
+  }
+
+  &.light {
+    background-color: $white;
+    color: $grey_1;
+    border: 1px solid $n_grey_1;
+  }
+
+  
+}
+
+.content {
+  padding: 16px 16px;
+  &.tooltip {
+    padding: 8px 16px;
+  }
+}

@@ -1,75 +1,68 @@
-/**
- *
- * Popover
- *
- */
-import classnames from 'classnames';
-import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './index.scss';
+import React from 'react';
+import { Tooltip as Tippy } from 'react-tippy';
+import style from './index.scss';
+import PopoverDisplay from './PopoverDisplay';
 
-class Popover extends React.Component {
+export default class Popover extends React.Component {
   static propTypes = {
-    placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
-    positionTop: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    positionLeft: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    arrowOffsetTop: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    arrowOffsetLeft: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    title: PropTypes.node,
-    className: PropTypes.string,
-    style: PropTypes.object,
     children: PropTypes.any,
+    content: PropTypes.any,
+    preferRight: PropTypes.bool,
+    triggerOnClick: PropTypes.bool,
+    tooltip: PropTypes.bool,
+    light: PropTypes.bool,
+    className: PropTypes.string,
   };
 
-  static defaultProps = {
-    placement: 'right',
+  state = {
+    fullyMounted: false,
   };
+
+  notifyMount = node => {
+    if (node) {
+      this.setState({ fullyMounted: true });
+    }
+  };
+
   render() {
     const {
-      placement,
-      positionTop,
-      positionLeft,
-      arrowOffsetTop,
-      arrowOffsetLeft,
-      title,
-      className,
-      style,
+      preferRight,
+      content,
       children,
-      ...props
+      triggerOnClick,
+      tooltip,
+      className,
+      light,
     } = this.props;
 
-    const classes = {
-      [styles.popover]: true,
-      [styles[placement]]: true,
-    };
-
-    const outerStyle = {
-      display: 'block',
-      top: positionTop,
-      left: positionLeft,
-      ...style,
-    };
-
-    const arrowStyle = {
-      top: arrowOffsetTop,
-      left: arrowOffsetLeft,
-    };
-
     return (
-      <div
-        {...props}
-        role="tooltip"
-        className={classnames(className, classes)}
-        style={outerStyle}
-      >
-        <div className={styles.arrow} style={arrowStyle} />
+      <React.Fragment>
+        <Tippy
+          disabled={!this.state.fullyMounted}
+          interactive={!tooltip}
+          delay={100}
+          hideDelay={300}
+          interactiveBorder={16}
+          trigger={triggerOnClick ? 'click' : 'mouseenter'}
+          html={
+            <PopoverDisplay
+              light={light}
+              className={className}
+              tooltip={tooltip}
+            >
+              {content}
+            </PopoverDisplay>
+          }
+          position={preferRight ? 'bottom-end' : 'bottom-start'}
+        >
+          {children}
+        </Tippy>
 
-        {title && <h3 className={styles.title}>{title}</h3>}
-
-        <div className={styles.content}>{children}</div>
-      </div>
+        {!this.fullyMounted && (
+          <span ref={this.notifyMount} className={style.hidden} />
+        )}
+      </React.Fragment>
     );
   }
 }
-
-export default Popover;
