@@ -4,18 +4,17 @@
  *
  */
 
-import React, { Component, Fragment } from 'react';
-import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import React, { Component, Fragment } from 'react';
 import onClickOutside from 'react-onclickoutside';
-import SubNavigation from '../SubNavigation';
+import { NavLink } from 'react-router-dom';
 import HashRoute from '../../HashRoute';
-
 import Icon from '../../Icon';
-import Bucket from '../Bucket';
 import LoadingStrip from '../../Loading/LoadingStrip';
+import Bucket from '../Bucket';
 import Slider from '../Slider';
+import SubNavigation from '../SubNavigation';
 import styles from './PrimaryNavigation.scss';
 
 const SUPPORTED_BADGES = ['NEW', 'FREE'];
@@ -139,6 +138,7 @@ class PrimaryNavigation extends Component {
           <Slider
             open={openKey === item.key}
             onSelect={closeBucket}
+            itemKey={item.key}
             {...item}
           />
         ))}
@@ -147,6 +147,7 @@ class PrimaryNavigation extends Component {
             bottom
             open={openKey === item.key}
             onSelect={closeBucket}
+            itemKey={item.key}
             {...item}
           />
         ))}
@@ -185,6 +186,7 @@ class PrimaryNavigation extends Component {
                 open={item.key === openKey}
                 onClickParent={() => toggleBucket(item.key)}
                 onClickRoute={closeBucket}
+                itemKey={item.key}
                 {...item}
               />
             ))}
@@ -194,6 +196,7 @@ class PrimaryNavigation extends Component {
                 open={item.key === openKey}
                 onClickParent={() => toggleBucket(item.key)}
                 onClickRoute={closeBucket}
+                itemKey={item.key}
                 {...item}
               />
             ))}

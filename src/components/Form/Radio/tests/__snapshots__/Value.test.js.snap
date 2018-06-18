@@ -3,6 +3,7 @@
 exports[`<Radio /> rendered correctly with Value fixture 1`] = `
 <Radio
   error=""
+  id="demo"
   inline={false}
   name="demo"
   onChange={[Function]}
@@ -26,6 +27,7 @@ exports[`<Radio /> rendered correctly with Value fixture 1`] = `
 >
   <div
     className="outer"
+    id="demo"
     name="demo"
     options={
       Array [

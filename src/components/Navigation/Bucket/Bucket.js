@@ -4,19 +4,18 @@
  *
  */
 
-import React, { Component, Fragment } from 'react';
-import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import { withRouter, matchPath } from 'react-router';
-import { NavLink } from 'react-router-dom';
 import isExternal from 'is-url-external';
-
+import PropTypes from 'prop-types';
+import React, { Component, Fragment } from 'react';
+import { matchPath, withRouter } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import Icon from '../../Icon';
 import styles from './Bucket.scss';
 
 class Bucket extends Component {
   static propTypes = {
-    key: PropTypes.string.isRequired,
+    itemKey: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
     route: PropTypes.string,
@@ -41,7 +40,7 @@ class Bucket extends Component {
 
   render() {
     const {
-      key,
+      itemKey,
       icon,
       items,
       label,
@@ -73,7 +72,7 @@ class Bucket extends Component {
     );
 
     const props = {
-      key,
+      key: itemKey,
       className: classnames(styles.bucket, {
         [styles.open]: open,
         [styles.external]: external,

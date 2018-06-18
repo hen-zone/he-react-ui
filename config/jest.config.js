@@ -34,3 +34,20 @@ window.matchMedia =
       removeListener() {},
     };
   };
+
+// Cause console errors to fail tests
+
+let throwing = false;
+
+global.console.error = it => {
+  if (throwing) {
+    console.log(it); // eslint-disable-line
+  } else {
+    throwing = true;
+    process.nextTick(() => {
+      throwing = false;
+    });
+
+    throw new Error(it);
+  }
+};

@@ -4,12 +4,11 @@
  *
  */
 
-import React, { Component, Fragment } from 'react';
-import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import PropTypes from 'prop-types';
+import React, { Component, Fragment } from 'react';
 import { matchPath } from 'react-router';
 import { NavLink } from 'react-router-dom';
-
 import styles from './List.scss';
 
 const SUPPORTED_BADGES = ['NEW', 'FREE'];
@@ -38,7 +37,7 @@ function renderBadge(item) {
 
 class List extends Component {
   static propTypes = {
-    key: PropTypes.string.isRequired,
+    itemKey: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     items: PropTypes.arrayOf(
       PropTypes.shape({
@@ -87,10 +86,10 @@ class List extends Component {
 
   render() {
     const { renderItem } = this;
-    const { className, key, title, items } = this.props;
+    const { className, itemKey, title, items } = this.props;
 
     return (
-      <div className={className} key={key}>
+      <div className={className} key={itemKey}>
         {items && (
           <Fragment>
             <span className={styles.heading}>{title}</span>

@@ -10,7 +10,9 @@ test('PopUp calls its handlers', () => {
   const onOpen = jest.fn();
   const onClose = jest.fn();
   const popUp = shallow(
-    <PopUp showing={false} onOpen={onOpen} onClose={onClose} />,
+    <PopUp showing={false} onOpen={onOpen} onClose={onClose}>
+      placeholder
+    </PopUp>,
   );
 
   popUp.setProps({ showing: true });

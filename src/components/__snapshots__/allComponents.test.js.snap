@@ -8834,7 +8834,6 @@ exports[`Cosmos fixtures: Paragraph:Loading 1`] = `
 exports[`Cosmos fixtures: PopUp:Default 1`] = `
 <div
   className="outer showing"
-  onOpen={[Function]}
 >
   <div
     className="overlay"
@@ -8901,7 +8900,6 @@ exports[`Cosmos fixtures: PopUp:Default 1`] = `
 exports[`Cosmos fixtures: PopUp:Loading 1`] = `
 <div
   className="outer showing"
-  onOpen={[Function]}
 >
   <div
     className="overlay"
@@ -8953,7 +8951,6 @@ exports[`Cosmos fixtures: PopUp:Loading 1`] = `
 exports[`Cosmos fixtures: PopUp:Modal 1`] = `
 <div
   className="outer showing"
-  onOpen={[Function]}
 >
   <div
     className="overlay"
@@ -8982,7 +8979,6 @@ exports[`Cosmos fixtures: PopUp:Modal 1`] = `
 exports[`Cosmos fixtures: PopUp:Styled 1`] = `
 <div
   className="outer showing"
-  onOpen={[Function]}
 >
   <div
     className="overlay"
@@ -9612,7 +9608,7 @@ exports[`Cosmos fixtures: PopoverDisplay:tooltip 1`] = `
 exports[`Cosmos fixtures: Radio:ChildOption 1`] = `
 <div
   className="outer"
-  id={undefined}
+  id="demo"
   name="demo"
   options={
     Array [
@@ -9637,6 +9633,8 @@ exports[`Cosmos fixtures: Radio:ChildOption 1`] = `
             ]
           }
           excludeScrollbar={false}
+          id="demo"
+          name="demo"
           options={
             Array [
               Object {
@@ -9858,7 +9856,7 @@ exports[`Cosmos fixtures: Radio:ChildOption 1`] = `
         >
           <div
             className="select"
-            id={undefined}
+            id="demo"
             onClick={[Function]}
           >
             <span>
@@ -9915,7 +9913,7 @@ exports[`Cosmos fixtures: Radio:ChildOption 1`] = `
 exports[`Cosmos fixtures: Radio:ChildOptionShow 1`] = `
 <div
   className="outer"
-  id={undefined}
+  id="demo"
   name="demo"
   options={
     Array [
@@ -9940,6 +9938,8 @@ exports[`Cosmos fixtures: Radio:ChildOptionShow 1`] = `
             ]
           }
           excludeScrollbar={false}
+          id="demo"
+          name="demo"
           options={
             Array [
               Object {
@@ -10162,7 +10162,7 @@ exports[`Cosmos fixtures: Radio:ChildOptionShow 1`] = `
         >
           <div
             className="select"
-            id={undefined}
+            id="demo"
             onClick={[Function]}
           >
             <span>
@@ -10219,7 +10219,7 @@ exports[`Cosmos fixtures: Radio:ChildOptionShow 1`] = `
 exports[`Cosmos fixtures: Radio:Default 1`] = `
 <div
   className="outer"
-  id={undefined}
+  id="demo"
   name="demo"
   options={
     Array [
@@ -10375,7 +10375,7 @@ exports[`Cosmos fixtures: Radio:Default 1`] = `
 exports[`Cosmos fixtures: Radio:Value 1`] = `
 <div
   className="outer"
-  id={undefined}
+  id="demo"
   name="demo"
   options={
     Array [
@@ -10531,7 +10531,7 @@ exports[`Cosmos fixtures: Radio:Value 1`] = `
 exports[`Cosmos fixtures: Radio:error 1`] = `
 <div
   className="outer"
-  id={undefined}
+  id="demo"
   name="demo"
   options={
     Array [
@@ -10712,7 +10712,7 @@ exports[`Cosmos fixtures: Radio:error 1`] = `
 exports[`Cosmos fixtures: Radio:label 1`] = `
 <div
   className="outer"
-  id={undefined}
+  id="demo"
   name="demo"
   options={
     Array [
@@ -10736,7 +10736,7 @@ exports[`Cosmos fixtures: Radio:label 1`] = `
     onChange={[Function]}
   >
     <label
-      htmlFor={undefined}
+      htmlFor="demo"
     >
       Select one
     </label>
@@ -10895,17 +10895,17 @@ exports[`Cosmos fixtures: SingleDatePicker:Default 1`] = `
           >
             <input
               aria-describedby="DateInput__screen-reader-message-demo"
-              aria-label="Select date"
+              aria-label="Date"
               autoComplete="off"
-              className="DateInput_input DateInput_input_1 DateInput_input__readOnly DateInput_input__readOnly_2"
+              className="DateInput_input DateInput_input_1"
               disabled={false}
               id="demo"
               name="demo"
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
-              placeholder="Select date"
-              readOnly={true}
+              placeholder="Date"
+              readOnly={false}
               required={false}
               type="text"
               value=""
@@ -10961,17 +10961,17 @@ exports[`Cosmos fixtures: SingleDatePicker:disabled 1`] = `
           >
             <input
               aria-describedby="DateInput__screen-reader-message-demo"
-              aria-label="Select date"
+              aria-label="Date"
               autoComplete="off"
-              className="DateInput_input DateInput_input_1 DateInput_input__readOnly DateInput_input__readOnly_2 DateInput_input__disabled DateInput_input__disabled_3"
+              className="DateInput_input DateInput_input_1 DateInput_input__disabled DateInput_input__disabled_2"
               disabled={true}
               id="demo"
               name="demo"
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
-              placeholder="Select date"
-              readOnly={true}
+              placeholder="Date"
+              readOnly={false}
               required={false}
               type="text"
               value=""
@@ -11027,17 +11027,17 @@ exports[`Cosmos fixtures: SingleDatePicker:error 1`] = `
           >
             <input
               aria-describedby="DateInput__screen-reader-message-demo"
-              aria-label="Select date"
+              aria-label="Date"
               autoComplete="off"
-              className="DateInput_input DateInput_input_1 DateInput_input__readOnly DateInput_input__readOnly_2"
+              className="DateInput_input DateInput_input_1"
               disabled={false}
               id="demo"
               name="demo"
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
-              placeholder="Select date"
-              readOnly={true}
+              placeholder="Date"
+              readOnly={false}
               required={false}
               type="text"
               value=""
@@ -11119,20 +11119,20 @@ exports[`Cosmos fixtures: SingleDatePicker:focusedWithValue 1`] = `
           >
             <input
               aria-describedby="DateInput__screen-reader-message-demo"
-              aria-label="Select date"
+              aria-label="Date"
               autoComplete="off"
-              className="DateInput_input DateInput_input_1 DateInput_input__readOnly DateInput_input__readOnly_2"
+              className="DateInput_input DateInput_input_1"
               disabled={false}
               id="demo"
               name="demo"
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
-              placeholder="Select date"
-              readOnly={true}
+              placeholder="Date"
+              readOnly={false}
               required={false}
               type="text"
-              value="13/06/2018"
+              value="06/15/2018"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -11195,17 +11195,17 @@ exports[`Cosmos fixtures: SingleDatePicker:label 1`] = `
           >
             <input
               aria-describedby="DateInput__screen-reader-message-demo"
-              aria-label="Select date"
+              aria-label="Date"
               autoComplete="off"
-              className="DateInput_input DateInput_input_1 DateInput_input__readOnly DateInput_input__readOnly_2"
+              className="DateInput_input DateInput_input_1"
               disabled={false}
               id="demo"
               name="demo"
               onChange={[Function]}
               onFocus={[Function]}
               onKeyDown={[Function]}
-              placeholder="Select date"
-              readOnly={true}
+              placeholder="Date"
+              readOnly={false}
               required={false}
               type="text"
               value=""
@@ -12956,7 +12956,6 @@ exports[`Cosmos fixtures: TextField:Disabled 1`] = `
 exports[`Cosmos fixtures: TextField:Error 1`] = `
 <div
   className="outer"
-  validateFunc={[Function]}
 >
   <div
     className="block"
@@ -12990,7 +12989,6 @@ exports[`Cosmos fixtures: TextField:Error 1`] = `
 exports[`Cosmos fixtures: TextField:InvalidMarker 1`] = `
 <div
   className="outer hasMarker"
-  validateFunc={[Function]}
 >
   <div
     className="block"
