@@ -19,7 +19,6 @@ import styles from './SingleDatePicker.scss';
 class SingleDatePicker extends React.Component {
   static propTypes = {
     id: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
     anchorDirection: PropTypes.oneOf(['left', 'right']),
     className: PropTypes.string,
     disabled: PropTypes.bool,
