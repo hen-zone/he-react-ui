@@ -4,10 +4,13 @@
   display: inline-flex;
   height: 48px;  
   width: 180px;
-  margin: 0px 16px;
 
   align-items: center;
   justify-content: center;
+
+  &+.buttonContainer {
+    margin-left: 24px;
+  }
 
   &.small {
     height: 30px;
