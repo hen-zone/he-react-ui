@@ -347,6 +347,47 @@ exports[`Cosmos fixtures: Button:done 1`] = `
 </div>
 `;
 
+exports[`Cosmos fixtures: Button:floated 1`] = `
+<div
+  style={
+    Object {
+      "background": "white",
+      "border": "solid 1px silver",
+      "borderRadius": 8,
+      "height": 400,
+      "margin": 24,
+      "padding": 8,
+      "width": 500,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "float": "right",
+      }
+    }
+  >
+    <div
+      className="buttonContainer"
+    >
+      <button
+        className="button teal"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="content"
+        >
+          floated
+          
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Cosmos fixtures: Button:iconLeft 1`] = `
 <div
   className="buttonContainer"
@@ -599,6 +640,65 @@ exports[`Cosmos fixtures: Button:submitting 1`] = `
       </svg>
     </div>
   </button>
+</div>
+`;
+
+exports[`Cosmos fixtures: Button:withOtherButtons 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <div
+    className="buttonContainer"
+  >
+    <button
+      className="button teal"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="content"
+      >
+        I am to the left
+        
+      </div>
+    </button>
+  </div>
+  <div
+    className="buttonContainer"
+  >
+    <button
+      className="button teal"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="content"
+      >
+        Click me for action
+        
+      </div>
+    </button>
+  </div>
+  <div
+    className="buttonContainer"
+  >
+    <button
+      className="button teal"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="content"
+      >
+        I am to the right
+        
+      </div>
+    </button>
+  </div>
 </div>
 `;
 
@@ -2223,40 +2323,43 @@ exports[`Cosmos fixtures: Footer:withChild 1`] = `
       The footer is useful for creating padding at the bottom of a view.
     </span>
     <div
-      className="buttonContainer"
-    >
-      <button
-        className="button green"
-        onClick={[Function]}
-        style={
-          Object {
-            "float": "right",
-          }
+      style={
+        Object {
+          "float": "right",
         }
-        type="button"
+      }
+    >
+      <div
+        className="buttonContainer"
       >
-        <div
-          className="content"
+        <button
+          className="button green"
+          onClick={[Function]}
+          type="button"
         >
-          Next page
-          <svg
-            className="icon legacyIcon"
-            height={undefined}
-            version="1.1"
-            viewBox="0 0 24 24"
-            width={undefined}
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            className="content"
           >
-            <g
-              transform="translate(2.000000, 5.000000)"
+            Next page
+            <svg
+              className="icon legacyIcon"
+              height={undefined}
+              version="1.1"
+              viewBox="0 0 24 24"
+              width={undefined}
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <path
-                d="M16.5857864,8 L1,8 C0.44771525,8 0,7.55228475 0,7 C0,6.44771525 0.44771525,6 1,6 L16.5857864,6 L12.2928932,1.70710678 C11.9023689,1.31658249 11.9023689,0.683417511 12.2928932,0.292893219 C12.6834175,-0.0976310729 13.3165825,-0.0976310729 13.7071068,0.292893219 L19.7071068,6.29289322 C20.0976311,6.68341751 20.0976311,7.31658249 19.7071068,7.70710678 L13.7071068,13.7071068 C13.3165825,14.0976311 12.6834175,14.0976311 12.2928932,13.7071068 C11.9023689,13.3165825 11.9023689,12.6834175 12.2928932,12.2928932 L16.5857864,8 Z"
-              />
-            </g>
-          </svg>
-        </div>
-      </button>
+              <g
+                transform="translate(2.000000, 5.000000)"
+              >
+                <path
+                  d="M16.5857864,8 L1,8 C0.44771525,8 0,7.55228475 0,7 C0,6.44771525 0.44771525,6 1,6 L16.5857864,6 L12.2928932,1.70710678 C11.9023689,1.31658249 11.9023689,0.683417511 12.2928932,0.292893219 C12.6834175,-0.0976310729 13.3165825,-0.0976310729 13.7071068,0.292893219 L19.7071068,6.29289322 C20.0976311,6.68341751 20.0976311,7.31658249 19.7071068,7.70710678 L13.7071068,13.7071068 C13.3165825,14.0976311 12.6834175,14.0976311 12.2928932,13.7071068 C11.9023689,13.3165825 11.9023689,12.6834175 12.2928932,12.2928932 L16.5857864,8 Z"
+                />
+              </g>
+            </svg>
+          </div>
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -2295,7 +2398,7 @@ exports[`Cosmos fixtures: FormSection:Default 1`] = `
           },
           Object {
             "child": <SingleDatePicker
-              anchorDirection="right"
+              anchorDirection="left"
               disabled={false}
               displayFormat="DD/MM/YYYY"
               id="demo2"
@@ -2304,8 +2407,8 @@ exports[`Cosmos fixtures: FormSection:Default 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
-              placeholder="Select date"
-              readOnly={true}
+              placeholder="Date"
+              readOnly={false}
             />,
             "label": "Specific date...",
             "showChild": false,
@@ -11132,7 +11235,7 @@ exports[`Cosmos fixtures: SingleDatePicker:focusedWithValue 1`] = `
               readOnly={false}
               required={false}
               type="text"
-              value="06/15/2018"
+              value="18/06/2018"
             />
             <p
               className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"

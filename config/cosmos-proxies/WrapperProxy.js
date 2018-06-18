@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-
 export default class WrapperProxy extends React.Component {
   static propTypes = {
     nextProxy: PropTypes.object,
@@ -11,7 +10,7 @@ export default class WrapperProxy extends React.Component {
   render() {
     const { nextProxy, fixture, ...nextProps } = this.props;
     const { wrapper } = fixture;
-    
+
     const child = (
       <nextProxy.value
         {...nextProps}
@@ -27,4 +26,3 @@ export default class WrapperProxy extends React.Component {
     return <Component {...props}>{child}</Component>;
   }
 }
-

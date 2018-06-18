@@ -39,12 +39,12 @@ class SingleDatePicker extends React.Component {
   };
 
   static defaultProps = {
-    anchorDirection: 'right',
+    anchorDirection: 'left',
     disabled: false,
     displayFormat: 'DD/MM/YYYY',
     inline: false,
-    placeholder: 'Select date',
-    readOnly: true,
+    placeholder: 'Date',
+    readOnly: false,
     onBlur: () => null,
     onChange: () => null,
     onFocus: () => null,
@@ -104,15 +104,10 @@ class SingleDatePicker extends React.Component {
       className,
       disabled,
       style,
-      name,
       anchorDirection,
       displayFormat,
       isOutsideRange,
       readOnly,
-      onBlur,
-      onChange,
-      onFocus,
-      value,
       placeholder,
     } = this.props;
     const classes = classnames(styles.outer, {
@@ -141,6 +136,11 @@ class SingleDatePicker extends React.Component {
                 onFocusChange={this.handleFocusChange}
                 navNext={<Icon name="ChevronRight" />}
                 navPrev={<Icon name="ChevronLeft" />}
+                anchorDirection={anchorDirection}
+                displayFormat={displayFormat}
+                isOutsideRange={isOutsideRange}
+                readOnly={readOnly}
+                placeholder={placeholder}
               />
             )}
           </Media>

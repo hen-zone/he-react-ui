@@ -50,7 +50,7 @@ exports[`<FormSection /> rendered correctly with Default fixture 1`] = `
             },
             Object {
               "child": <SingleDatePicker
-                anchorDirection="right"
+                anchorDirection="left"
                 disabled={false}
                 displayFormat="DD/MM/YYYY"
                 id="demo2"
@@ -59,8 +59,8 @@ exports[`<FormSection /> rendered correctly with Default fixture 1`] = `
                 onBlur={[Function]}
                 onChange={[Function]}
                 onFocus={[Function]}
-                placeholder="Select date"
-                readOnly={true}
+                placeholder="Date"
+                readOnly={false}
               />,
               "label": "Specific date...",
               "showChild": false,
@@ -82,7 +82,7 @@ exports[`<FormSection /> rendered correctly with Default fixture 1`] = `
               },
               Object {
                 "child": <SingleDatePicker
-                  anchorDirection="right"
+                  anchorDirection="left"
                   disabled={false}
                   displayFormat="DD/MM/YYYY"
                   id="demo2"
@@ -91,8 +91,8 @@ exports[`<FormSection /> rendered correctly with Default fixture 1`] = `
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocus={[Function]}
-                  placeholder="Select date"
-                  readOnly={true}
+                  placeholder="Date"
+                  readOnly={false}
                 />,
                 "label": "Specific date...",
                 "showChild": false,

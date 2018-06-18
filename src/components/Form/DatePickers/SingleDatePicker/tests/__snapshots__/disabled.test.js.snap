@@ -2,7 +2,7 @@
 
 exports[`<SingleDatePicker /> rendered correctly with disabled fixture 1`] = `
 <SingleDatePicker
-  anchorDirection="right"
+  anchorDirection="left"
   disabled={true}
   displayFormat="DD/MM/YYYY"
   id="demo"
@@ -11,8 +11,8 @@ exports[`<SingleDatePicker /> rendered correctly with disabled fixture 1`] = `
   onBlur={[Function]}
   onChange={[Function]}
   onFocus={[Function]}
-  placeholder="Select date"
-  readOnly={true}
+  placeholder="Date"
+  readOnly={false}
 >
   <div
     className="outer disabled"
@@ -39,7 +39,7 @@ exports[`<SingleDatePicker /> rendered correctly with disabled fixture 1`] = `
           daySize={28}
           disableScroll={false}
           disabled={true}
-          displayFormat={[Function]}
+          displayFormat="DD/MM/YYYY"
           enableOutsideDays={false}
           firstDayOfWeek={null}
           focused={false}
@@ -135,7 +135,7 @@ exports[`<SingleDatePicker /> rendered correctly with disabled fixture 1`] = `
             daySize={28}
             disableScroll={false}
             disabled={true}
-            displayFormat={[Function]}
+            displayFormat="DD/MM/YYYY"
             enableOutsideDays={false}
             firstDayOfWeek={null}
             focused={false}
