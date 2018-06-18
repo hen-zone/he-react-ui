@@ -12,4 +12,12 @@ export default {
       { label: 'Option 3', value: '3' },
     ],
   },
+
+  parentLayout: {
+    margin: 40,
+    padding: 40,
+    border: 'solid 1px silver',
+    background: 'white',
+    boxShadow: '0 5px 10px rgba(0,0,0,0.1)',
+  },
 };

@@ -1,7 +1,7 @@
 @import '../../../styles/base';
 
 .heading {
-  color: $n_grey_1;
+  color: $grey_4;
   display: block;
   font-size: 15px;
   margin-bottom: 16px;
@@ -15,13 +15,13 @@
   padding: 10px;
   text-decoration: none;
   &:hover {
-    background-color: $navy_2;
+    background-color: $he_black;
   }
   &:active {
-    background-color: $teal_1;
+    background-color: $teal;
   }
   &.current {
-    background-color: $teal_1;
+    background-color: $teal;
   }
   @include transition(all 0.2s);
 }
@@ -38,16 +38,16 @@
 }
 
 .notification {
-  background-color: $sp_red;
+  background-color: $red;
   border-radius: 13px;
   min-width: 14px;
   text-align: center;
 }
 
 .new {
-  background-color: $sp_dark_green;
+  background-color: $green;
 }
 
 .free {
-  background-color: $sp_orange;
+  background-color: $orange;
 }

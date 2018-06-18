@@ -14,7 +14,7 @@
 }
 
 .overlay {
-  background-color: $navy_2;
+  background-color: $he_black;
   height: 100%;
   opacity: 0;
   position: absolute;
@@ -27,7 +27,7 @@
 .popup {
   background-color: $white;
   border-radius: 4px;
-  color: $navy_1;
+  color: $grey_1;
   font-family: $font-stack;
   margin: auto;
   top: 0;
@@ -59,7 +59,7 @@
 .close {
   border-radius: 32px;
   cursor: pointer;
-  color: $navy_2;
+  color: $he_black;
   height: 24px;
   padding: 8px;
   position: absolute;
@@ -72,7 +72,7 @@
 }
 
 .close:hover {
-  background: $n_grey_2;
+  background: $grey_5;
 }
 
 .showing {

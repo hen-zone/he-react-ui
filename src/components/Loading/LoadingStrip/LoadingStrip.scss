@@ -4,7 +4,7 @@ $innerWidth: 100px;
 
 .outer {
   border-radius: 4px;
-  background-color: $n_grey_1;
+  background-color: $grey_4;
   min-height: 12px;
   position: relative;
   overflow: hidden;
@@ -14,7 +14,7 @@ $innerWidth: 100px;
 .inner {
   height: 100%;
   width: $innerWidth;
-  background: linear-gradient(to right, $n_grey_1, $n_grey_3, $n_grey_1);
+  background: linear-gradient(to right, $grey_4, $grey_6, $grey_4);
   animation: slide 1.5s;
   animation-iteration-count: infinite;
   position: absolute;

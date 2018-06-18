@@ -16,20 +16,20 @@ $bucket-width: 76px;
   position: relative;
   text-decoration: none;
   &:hover {
-    background-color: $navy_2_dark_20;
+    background-color: $teal_dark_60;
     opacity: 1;
   }
   &:active {
-    background-color: $navy_2_dark_40;
+    background-color: $blue_dark_60;
     color: $white;
     opacity: 1;
   }
   &.current {
-    border-left-color: $teal_1;
+    border-left-color: $teal;
     opacity: 1;
   }
   &.open {
-    background-color: $navy_2_dark_40;
+    background-color: $blue_dark_60;
     opacity: 1;
   }
   @include transition(all 0.2s);
@@ -58,7 +58,7 @@ $bucket-width: 76px;
 .notification {
   animation: pulse 1.5s;
   animation-iteration-count: infinite;
-  background-color: $teal_1;
+  background-color: $teal;
   border-radius: 100%;
   height: 8px;
   position: absolute;
@@ -68,5 +68,5 @@ $bucket-width: 76px;
 }
 
 .external {
-  color: $sp_yellow;
+  color: $yellow;
 }

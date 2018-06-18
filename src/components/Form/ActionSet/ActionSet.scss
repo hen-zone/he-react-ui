@@ -10,7 +10,7 @@
     width: 36px;
     &.open {
       .ellipsis {
-        color: $n_grey_3;
+        color: $grey_6;
         opacity: 0;
         transform: scale(3) translate(-9px, 1.67px);
         @include transition(all 0.2s);
@@ -32,7 +32,7 @@
 
 .expandable {
   .ellipsis {
-    color: $navy_1;
+    color: $grey_1;
     cursor: pointer;
     fill: currentColor;
     margin-top: 3px;

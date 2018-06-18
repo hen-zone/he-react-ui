@@ -4,18 +4,16 @@
  *
  */
 
-import React from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
+import React from 'react';
+import { SingleDatePicker as Picker } from 'react-dates';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
-import momentPropTypes from 'react-moment-proptypes';
-
-import { SingleDatePicker as Picker } from 'react-dates';
 import Media from 'react-media';
-
-import Label from '../Label';
-import Icon from '../../Icon';
+import momentPropTypes from 'react-moment-proptypes';
+import Icon from '../../../Icon';
+import Label from '../../Label';
 import styles from './SingleDatePicker.scss';
 
 class SingleDatePicker extends React.Component {

@@ -23,9 +23,16 @@ class SingleSelect extends React.Component {
     inline: PropTypes.bool,
     label: PropTypes.string,
     placeholder: PropTypes.string,
-    options: PropTypes.array.isRequired,
+    options: PropTypes.arrayOf(
+      PropTypes.shape({
+        label: PropTypes.string.isRequired,
+        value: PropTypes.any.isRequired,
+      }),
+    ).isRequired,
     value: PropTypes.string,
     onChange: PropTypes.func,
+    onBeforeOpen: PropTypes.func,
+    onClose: PropTypes.func,
     eventTypes: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.arrayOf(PropTypes.string),
@@ -35,6 +42,8 @@ class SingleSelect extends React.Component {
     stopPropagation: PropTypes.bool,
     disableOnClickOutside: PropTypes.func,
     enableOnClickOutside: PropTypes.func,
+    forceOpen: PropTypes.bool,
+    forceTitle: PropTypes.string,
   };
 
   static defaultProps = {
@@ -43,6 +52,8 @@ class SingleSelect extends React.Component {
     inline: false,
     value: null,
     onChange: () => {},
+    onBeforeOpen: () => true,
+    onClose: () => true,
   };
 
   constructor(props) {
@@ -60,21 +71,28 @@ class SingleSelect extends React.Component {
   }
 
   getDisplay = () => {
-    const { options, value } = this.props;
+    const { options, value, forceTitle, placeholder } = this.props;
+
+    if (forceTitle) return forceTitle;
+
     const option = options.find(it => it.value === value);
     const firstLabel = (options && options[0] && options[0].label) || '';
 
-    return option ? option.label : this.props.placeholder || firstLabel;
+    return option ? option.label : placeholder || firstLabel;
   };
 
   toggleExpand = () => {
-    this.setState({
-      expanded: this.props.disabled ? false : !this.state.expanded,
-    });
+    if (this.state.expanded) {
+      this.hideExpand();
+    } else if (this.props.onBeforeOpen())
+      this.setState({
+        expanded: !this.props.disabled,
+      });
   };
 
   hideExpand = () => {
     this.setState({ expanded: false });
+    this.props.onClose();
   };
 
   handleClickOutside = () => {
@@ -83,9 +101,7 @@ class SingleSelect extends React.Component {
 
   selectOption = option => {
     const oldValue = this.props.value;
-    this.setState({
-      expanded: false,
-    });
+    this.hideExpand();
     if (oldValue !== option.value) {
       const event = {
         value: option.value,
@@ -150,11 +166,15 @@ class SingleSelect extends React.Component {
       stopPropagation,
       disableOnClickOutside,
       enableOnClickOutside,
+      forceOpen,
+      forceTitle,
+      onBeforeOpen,
       ...restProps
     } = this.props;
     const classes = classnames(style.outer, {
       [style.expanded]: this.state.expanded,
       [style.inline]: inline,
+      [style.forceOpen]: forceOpen,
       [className]: className,
     });
 
@@ -186,5 +206,7 @@ class SingleSelect extends React.Component {
     );
   }
 }
+
+export { SingleSelect as InnerSingleSelect };
 
 export default onClickOutside(SingleSelect);

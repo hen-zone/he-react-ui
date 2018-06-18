@@ -2,7 +2,7 @@
 
 .bar {
   background-color: $white;
-  color: $navy_1;
+  color: $grey_1;
   flex-grow: 0;
   font-family: $font-stack;
   padding: 20px 48px;
@@ -20,7 +20,7 @@
 }
 
 .item {
-  color: $navy_tint_1;
+  color: $grey_2;
   cursor: pointer;
   padding: 0 24px 24px;
   text-decoration: none;
@@ -41,7 +41,7 @@
   color: $grey_1;
   font-weight: bold;
   span {
-    border-bottom-color: $teal_1;
+    border-bottom-color: $teal;
   }
 }
 
@@ -62,7 +62,7 @@
         }
       }
       padding: 0 28px;
-      border-right: 1px solid $n_grey_1;
+      border-right: 1px solid $grey_4;
       &:last-child {
         border-right: none;
         padding-right: 0;

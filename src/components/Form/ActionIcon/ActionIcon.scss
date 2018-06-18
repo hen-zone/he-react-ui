@@ -3,7 +3,7 @@
 .button {
   background-color: $white;
   cursor: pointer;
-  color: $navy_2;
+  color: $he_black;
   border: none;
   border-radius: 100%;
   text-align: center;
@@ -30,32 +30,32 @@
     }
     &:focus:not(:hover) {
       background-color: $white;
-      color: $navy_2;
+      color: $he_black;
     }
   }
 }
 
 .teal {
   &:active, &:hover {
-    background: $teal_1;
+    background: $teal;
   }
 }
 
 .blue {
   &:active, &:hover {
-    background: $sp_blue;
+    background: $blue;
   }
 }
 
 .green {
   &:active, &:hover {
-    background: $sp_green;
+    background: $green;
   }
 }
 
 .red {
   &:active, &:hover {
-    background: $sp_red;
+    background: $red;
   }
 }
 
@@ -78,5 +78,5 @@
   &:active, &:hover, &:focus {
     background: $white !important;
   }
-  color: $n_grey_1 !important;
+  color: $grey_4 !important;
 }

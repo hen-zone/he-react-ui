@@ -25,9 +25,9 @@
 
 .select {
   background-color: $white;
-  border: solid 1px $n_grey_2;
+  border: solid 1px $grey_5;
   border-radius: 4px;
-  color: $navy_1;
+  color: $grey_1;
   cursor: pointer;
   font-size: $input-size;
   font-weight: $regular;
@@ -35,8 +35,13 @@
   position: relative;
   width: 100%;
   &:hover {
-    border-color: $teal_2;
-    color: $navy_2;
+  border-color: $teal;
+  color: $he_black;
+
+  .caret {
+    color: $teal;
+  }
+
   }
   span {
     display: block;
@@ -47,17 +52,20 @@
   @include transition(all 0.2s);
 }
 
-.expanded {
+.expanded, .forceOpen {
   .select {
-    color: $navy_2;
-    &:hover {
-      border-color: $n_grey_2;
-    }
+    color: $he_black;
+    border-color: $teal;
+    border-radius: 4px 4px 0px 0px;
+    
     .caret {
-      color: $teal_1;
+      color: $teal;
       transform: rotate(180deg);
     }
   }
+}
+
+.expanded {
   .options {
     margin-left: 0;
     opacity: 1;
@@ -68,7 +76,7 @@
 }
 
 .caret {
-  color: $navy_2;
+  color: $he_black;
   fill: currentColor;
   position: absolute;
   pointer-events: none;
@@ -78,29 +86,29 @@
 }
 
 .disabled {
-  background-color: $n_grey_4;
-  border-color: $n_grey_2;
+  background-color: $grey_7;
+  border-color: $grey_5;
   cursor: not-allowed;
-  color: $navy_tint_1;
+  color: $grey_2;
   &:hover {
-    border-color: $n_grey_2;
-    color: $navy_tint_1;
+    border-color: $grey_5;
+    color: $grey_2;
   }
   .caret {
-    color: $navy_tint_2;
+    color: $grey_3;
   }
 }
 
 .error, .error:active, .error:hover, .error:focus {
-  background-color: $sp_light_red;
-  border-color: $sp_red;
-  color: $sp_red;
+  background-color: $red_light_80;
+  border-color: $red;
+  color: $red;
   .caret {
-    color: $sp_red;
+    color: $red;
   }
   &.expanded {
-    border-color: $sp_red;
-    color: $sp_red;
+    border-color: $red;
+    color: $red;
   }
 }
 
@@ -111,14 +119,15 @@
 
 .options {
   background-color: $white;
-  border: solid 1px $n_grey_2;
-  border-radius: 4px;
-  box-shadow: 0 2px 12px $n_grey_1;
+  border: solid 1px $teal;
+  border-top: solid 1px $grey_7;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 6px 12px $grey_4;
   cursor: pointer;
   font-size: $input-size;
   font-weight: $regular;
   list-style: none;
-  margin: -4px 0 0 4%;
+  margin: -13px 0 0 4%;
   max-height: 240px;
   opacity: 0;
   overflow-y: auto;
@@ -131,16 +140,16 @@
 }
 
 .option {
-  color: $navy_1;
+  color: $grey_1;
   padding: 12px;
   user-select: none;
   &:hover {
-    background-color: $n_grey_4;
-    color: $navy_2;
+    background-color: $grey_7;
+    color: $he_black;
   }
   @include transition(all 0.2s);
 }
 
 .selected {
-  background-color: $teal_tint_3;
+  background-color: $teal_light_80;
 }

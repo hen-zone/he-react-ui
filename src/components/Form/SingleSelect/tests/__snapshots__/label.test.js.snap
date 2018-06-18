@@ -47,7 +47,9 @@ exports[`<OnClickOutside(SingleSelect) /> rendered correctly with label fixture 
     inline={false}
     label="Select from the list"
     name="demo"
+    onBeforeOpen={[Function]}
     onChange={[Function]}
+    onClose={[Function]}
     options={
       Array [
         Object {
@@ -71,6 +73,7 @@ exports[`<OnClickOutside(SingleSelect) /> rendered correctly with label fixture 
   >
     <div
       className="outer"
+      onClose={[Function]}
       options={
         Array [
           Object {

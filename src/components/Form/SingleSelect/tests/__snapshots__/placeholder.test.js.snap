@@ -46,7 +46,9 @@ exports[`<OnClickOutside(SingleSelect) /> rendered correctly with placeholder fi
     id="demo"
     inline={false}
     name="demo"
+    onBeforeOpen={[Function]}
     onChange={[Function]}
+    onClose={[Function]}
     options={
       Array [
         Object {
@@ -71,6 +73,7 @@ exports[`<OnClickOutside(SingleSelect) /> rendered correctly with placeholder fi
   >
     <div
       className="outer"
+      onClose={[Function]}
       options={
         Array [
           Object {

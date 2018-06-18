@@ -35,10 +35,10 @@
   width: 100%;
   &:hover {
     .empty {
-      color: $teal_1;
+      color: $teal;
     }
     .tag {
-      color: $navy_2;
+      color: $he_black;
     }
   }
 }
@@ -52,7 +52,7 @@
 }
 
 .tag {
-  color: $navy_1;
+  color: $grey_1;
   cursor: pointer;
   font-size: $checkbox-size;
   padding-left: 32px;
@@ -69,11 +69,11 @@
 }
 
 .empty {
-  color: $n_grey_1;
+  color: $grey_4;
 }
 
 .full {
-  color: $teal_1;
+  color: $teal;
   opacity: 0;
 }
 

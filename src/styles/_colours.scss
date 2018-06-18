@@ -1,47 +1,216 @@
-// design language colors
+/* 
+ * Core colours 
+ *
+ */
+
+$white: #FFF;
+ 
+
+ /* Primary — Teal 
+  *
+  * Use: Default call to action colour – used for buttons, links, or to draw 
+  * attention to actionable items. 
+  *
+  * Recommendation: Use this colour sparingly to allow it to stand out best.
+  */
+ 
+$teal: #01A4B7;
+ 
+$teal_dark_60: #004149;
+$teal_dark_40: #00626D;
+$teal_dark_20: #018392;
+$teal_light_80: #CCECF0; 
+$teal_light_60: #99DAE2;
+$teal_light_40: #66C8D3;
+$teal_light_20: #33B6C5;
+ 
+ 
+ /* Secondary — Blue 
+  *
+  * Use: Secondary call to action colour – can also be used for buttons, links,
+  * or to draw attention to actionable items that are of a lower priority.
+ */
+ 
+$blue: #008EC8;
+  
+$blue_dark_60: #003850;
+$blue_dark_40: #005578;
+$blue_dark_20: #0071A0;
+$blue_light_80: #CCE8F4;
+$blue_light_60: #99D1E9;
+$blue_light_40: #66BBDE;
+$blue_light_20: #33A4D3;
+ 
+ 
+ /* Grey Base / Grey 1 
+  * Use: Default text colour _except_ for headers, titles, captions etc.
+  * In those instances, HE Black (#051E2A) should be the default colour. 
+  * Although, shades of grey can be used for those as well. 
+  *
+  * HE Black and the greys can also be used as background colours.
+ */
+ 
 $grey_1: #2B4B5A;
 $grey_2: #5C7783;
-$teal_dark_60: #004149;
+$grey_3: #9FB3BC;
+$grey_4: #D3DDE1;
+$grey_5: #E3E8ED;
+$grey_6: #ECF0F2;
+$grey_7: #F5F7F8;
+ 
+ 
+ 
+ /* 
+  * Supporting colours / Accents 
+  *
+  */
+ 
+ /* HE_Black 
+  * Use: Headers, captions and bold text.
+  */
+ 
+$he_black: #051E2A;
+ 
+ 
+ /* Green */
+ 
+$green: #48B400;
 
-// core colors
-$white: #FFF;
-$navy_1: $grey_1;
-$navy_2: #051E2A;
-$navy_tint_1: #57707C;
-$navy_tint_2: #9FB3BC;
-$teal_1: #01A4B7;
-$teal_2: #018392;
-$teal_tint_1: #015057;
-$teal_tint_2: #5BC0C9;
-$teal_tint_3: #D5F0F3;
+$green_light_80: #DFF2D2;
+$green_light_60: #BDE5A3;
+$green_light_40: #9BD871;
+$green_light_20: #77CA3A;
+$green_dark_60: #1E5200;
+$green_dark_40: #317700;
+$green_dark_20: #419B00;
+ 
+ 
+ /* Yellow/Amber */
+ 
+$yellow: #FFB700;
+ 
+$yellow_light_80: #FFF0CC;
+$yellow_light_60: #FFE299;
+$yellow_light_40: #FFD366;
+$yellow_light_20: #FFC533;
+$yellow_dark_60: #664900;
+$yellow_dark_40: #996D00;
+$yellow_dark_20: #CC9200;
+ 
+ 
+ /* Orange 
+  *
+  * Limit use in print. Process is dull compared to spot.
+ */
+ 
+$orange: #FF4D00;
+ 
+$orange_light_80: #FFDBCC;
+$orange_light_60: #FFB799;
+$orange_light_40: #FF9466;
+$orange_light_20: #FF7033;
+$orange_dark_60: #661E00;
+$orange_dark_40: #992E00;
+$orange_dark_20: #CC3D00;
+ 
+ 
+ /* Red */
+ 
+$red: #DF0E42; 
+$red_light_80: #F8CED9;
+$red_light_60: #F29EB3;
+$red_light_40: #EB6E8D;
+$red_light_20: #E53E67;
+$red_dark_60: #59051A;
+$red_dark_40: #850827;
+$red_dark_20: #B20B34;
+ 
+ 
+ /* Pink */
+ 
+$pink: #E3166F;
+ 
+$pink_light_80: #F9D0E2;
+$pink_light_60: #F3A1C5;
+$pink_light_40: #EE73A8;
+$pink_light_20: #E8448B;
+$pink_dark_20: #B51158;
+$pink_dark_40: #880D42;
+$pink_dark_60: #5A082C;
+ 
+ 
+ 
+ /* 
+  * 
+  * Javascript export to make these available in code
+  * 
+  */
+ 
+ :export {
+   white: $white;
+   teal: $teal;
+   teal_dark_60: $teal_dark_60;
+   teal_dark_40: $teal_dark_40;
+   teal_dark_20: $teal_dark_20;
+   teal_light_80: $teal_light_80;
+   teal_light_60: $teal_light_60;
+   teal_light_40: $teal_light_40;
+   teal_light_20: $teal_light_20;
+   blue: $blue;
+   blue_dark_60: $blue_dark_60;
+   blue_dark_40: $blue_dark_40;
+   blue_dark_20: $blue_dark_20;
+   blue_light_80: $blue_light_80;
+   blue_light_60: $blue_light_60;
+   blue_light_40: $blue_light_40;
+   blue_light_20: $blue_light_20;
+   grey_1: $grey_1;
+   grey_2: $grey_2;
+   grey_3: $grey_3;
+   grey_4: $grey_4;
+   grey_5: $grey_5;
+   grey_6: $grey_6;
+   grey_7: $grey_7;
+   he_black: $he_black;
+   green: $green;
+   green_light_80: $green_light_80;
+   green_light_60: $green_light_60;
+   green_light_40: $green_light_40;
+   green_light_20: $green_light_20;
+   green_dark_60: $green_dark_60;
+   green_dark_40: $green_dark_40;
+   green_dark_20: $green_dark_20;
+   yellow: $yellow;
+   yellow_light_80: $yellow_light_80;
+   yellow_light_60: $yellow_light_60;
+   yellow_light_40: $yellow_light_40;
+   yellow_light_20: $yellow_light_20;
+   yellow_dark_60: $yellow_dark_60;
+   yellow_dark_40: $yellow_dark_40;
+   yellow_dark_20: $yellow_dark_20;
+   orange: $orange;
+   orange_light_80: $orange_light_80;
+   orange_light_60: $orange_light_60;
+   orange_light_40: $orange_light_40;
+   orange_light_20: $orange_light_20;
+   orange_dark_60: $orange_dark_60;
+   orange_dark_40: $orange_dark_40;
+   orange_dark_20: $orange_dark_20;
+   red: $red;
+   red_light_80: $red_light_80;
+   red_light_60: $red_light_60;
+   red_light_40: $red_light_40;
+   red_light_20: $red_light_20;
+   red_dark_60: $red_dark_60;
+   red_dark_40: $red_dark_40;
+   red_dark_20: $red_dark_20;
+   pink: $pink;
+   pink_light_80: $pink_light_80;
+   pink_light_60: $pink_light_60;
+   pink_light_40: $pink_light_40;
+   pink_light_20: $pink_light_20;
+   pink_dark_20: $pink_dark_20;
+   pink_dark_40: $pink_dark_40;
+   pink_dark_60: $pink_dark_60;
+ }
 
-// support colors
-$sp_blue: #008EC8;
-$sp_pink: #E3166F;
-
-$sp_yellow: #FFB700;
-$sp_yellow_light_80: #FFF0CC;
-$sp_yellow_dark_40: #996D00;
-
-$sp_dark_green: #48B400;
-$sp_green: #6BCC2B;
-$sp_green_base: #48B400;
-$sp_green_dark_40: #317700;
-$sp_green_light_80: #DFF2D2;
-$sp_light_green: #C6E400;
-
-$sp_light_red: #FBE6EC;
-$sp_red: #DF0E42;
-$sp_red_dark_40: #850827;
-$sp_red_light_80: #F8CED9;
-
-$sp_orange: #FF4D00;
-
-// natural colors, for backgrounds and lines
-$n_grey_1: #D3DDE1;
-$n_grey_2: #E3E8ED;
-$n_grey_3: #ECF0F2;
-$n_grey_4: #F5F7F8;
-
-$navy_2_dark_20: #223C48;
-$navy_2_dark_40: #192D36;

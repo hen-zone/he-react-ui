@@ -19,27 +19,27 @@
 }
 
 .notification.default {
-  background-color: $n_grey_4;
-  border-color: $n_grey_2;
-  color: $navy_1;
+  background-color: $grey_7;
+  border-color: $grey_5;
+  color: $grey_1;
 }
 
 .notification.confirmation {
-  background-color: $sp_green_light_80;
-  border-color: $sp_green;
-  color: $sp_green_dark_40;
+  background-color: $green_light_80;
+  border-color: $green;
+  color: $green_dark_40;
 }
 
 .notification.warning {
-  background-color: $sp_yellow_light_80;
-  border-color: $sp_yellow;
-  color: $sp_yellow_dark_40;
+  background-color: $yellow_light_80;
+  border-color: $yellow;
+  color: $yellow_dark_40;
 }
 
 .notification.error {
-  background-color: $sp_red_light_80;
-  border-color: $sp_red;
-  color: $sp_red_dark_40;
+  background-color: $red_light_80;
+  border-color: $red;
+  color: $red_dark_40;
 }
 
 .icon {
@@ -53,15 +53,15 @@
 }
 
 .icon.confirmation {
-  background-color: $sp_green_base;
+  background-color: $green;
 }
 
 .icon.warning {
-  background-color: $sp_yellow;
+  background-color: $yellow;
 }
 
 .icon.error {
-  background-color: $sp_red;
+  background-color: $red;
 }
 
 .message {
@@ -79,17 +79,17 @@
 }
 
 .closeIcon.default {
-  fill: $navy_1;
+  fill: $grey_1;
 }
 
 .closeIcon.confirmation {
-  fill: $sp_green_dark_40;
+  fill: $green_dark_40;
 }
 
 .closeIcon.warning {
-  fill: $sp_yellow_dark_40;
+  fill: $yellow_dark_40;
 }
 
 .closeIcon.error {
-  fill: $sp_red_dark_40;
+  fill: $red_dark_40;
 }

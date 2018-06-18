@@ -14,7 +14,7 @@ $slider-width: 264px;
 }
 
 .buckets {
-  background-color: $navy_1;
+  background-color: $grey_1;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -35,10 +35,10 @@ $slider-width: 264px;
   max-width: $bucket-width;
   text-align: center;
   &:hover {
-    background-color: $navy_2_dark_20;
+    background-color: $teal_dark_60;
   }
   &:active {
-    background-color: $navy_2_dark_40;
+    background-color: $blue_dark_60;
   }
   @include transition(all 0.2s);
 }
@@ -102,7 +102,7 @@ $slider-width: 264px;
 }
 
 .children {
-  background-color: $n_grey_3;
+  background-color: $grey_6;
   flex-grow: 1;
   height: 100%;
   overflow-y: auto;

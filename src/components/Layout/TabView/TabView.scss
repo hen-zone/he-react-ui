@@ -1,7 +1,7 @@
 @import '../../../styles/base';
 
 .barOuter {
-  background-color: $navy_2;
+  background-color: $he_black;
   font-family: $font-stack;
   height: fit-content;
   overflow: hidden;
@@ -38,7 +38,7 @@
 }
 
 .tab {
-  color: $n_grey_1;
+  color: $grey_4;
   cursor: pointer;
   display: inline-block;
   padding: 0 20px 20px;
@@ -63,7 +63,7 @@
 .selected {
   color: $white;
   span {
-    border-bottom-color: $teal_1;
+    border-bottom-color: $teal;
   }
 }
 

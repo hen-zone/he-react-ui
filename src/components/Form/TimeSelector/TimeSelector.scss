@@ -26,19 +26,19 @@
 
 .select {
   background-color: $white;
-  border: solid 1px $n_grey_2;
+  border: solid 1px $grey_5;
   border-radius: 4px;
-  color: $navy_1;
+  color: $grey_1;
   cursor: pointer;
   font-size: $input-size;
   font-weight: $regular;
   position: relative;
   width: 100%;
   &:hover {
-    border-color: $teal_2;
-    color: $navy_2;
+    border-color: $teal_dark_20;
+    color: $he_black;
     .clock {
-      color: $teal_2;
+      color: $teal_dark_20;
     }
   }
   span {
@@ -53,12 +53,12 @@
 .expanded {
   .select {
     border-radius: 4px 4px 0px 0px;
-    color: $navy_2;
+    color: $he_black;
     &:hover {
-      border-color: $n_grey_2;
+      border-color: $grey_5;
     }
     .clock {
-      color: $teal_1;
+      color: $teal;
     }
   }
   .options {
@@ -72,7 +72,7 @@
 }
 
 .clock {
-  color: $navy_2;
+  color: $he_black;
   fill: currentColor;
   height: 32px;
   position: absolute;
@@ -84,35 +84,35 @@
 }
 
 .disabled {
-  border-color: $n_grey_2;
+  border-color: $grey_5;
   cursor: not-allowed;
-  color: $navy_tint_1;
+  color: $grey_2;
   &:hover {
-    border-color: $n_grey_2;
-    color: $navy_tint_1;
+    border-color: $grey_5;
+    color: $grey_2;
     .clock {
-      color: $navy_tint_2;
+      color: $grey_3;
     }
   }
   .clock {
-    color: $navy_tint_2;
+    color: $grey_3;
   }
 }
 
 .error {
-  background-color: $sp_light_red;
+  background-color: $red_light_80;
   .clock {
-    color: $sp_red;
+    color: $red;
   }
   &:hover, &:focus {
-    border-color: $sp_red;
+    border-color: $red;
     .clock {
-      color: $sp_red;
+      color: $red;
     }
   }
   &.expanded {
     .clock {
-      color: $navy_2;
+      color: $he_black;
     }
   }
 }
@@ -124,9 +124,9 @@
 
 .options {
   background-color: $white;
-  border: solid 1px $n_grey_2;
+  border: solid 1px $grey_5;
   border-radius: 2px;
-  box-shadow: 0 2px 12px $n_grey_1;
+  box-shadow: 0 2px 12px $grey_4;
   cursor: pointer;
   font-size: $input-size;
   font-weight: $regular;
@@ -158,16 +158,16 @@
 }
 
 .option {
-  color: $navy_1;
+  color: $grey_1;
   padding: 12px;
   user-select: none;
   &:hover {
-    background-color: $n_grey_4;
-    color: $navy_2;
+    background-color: $grey_7;
+    color: $he_black;
   }
   @include transition(all 0.2s);
 }
 
 .selected {
-  background-color: $teal_tint_3;
+  background-color: $teal_light_80;
 }

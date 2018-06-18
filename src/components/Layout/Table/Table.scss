@@ -23,7 +23,7 @@
 
 .heading {
   align-items: center;
-  color: $navy_2;
+  color: $he_black;
   display: flex;
   flex-direction: row;
   flex-basis: 0;
@@ -39,11 +39,11 @@
     cursor: pointer;
     user-select: none;
     &:hover {
-      color: $teal_1;
+      color: $teal;
       filter: brightness(92%);
     }
     &:active {
-      color: $teal_1;
+      color: $teal;
       filter: brightness(84%);
     }
     &.ascending {
@@ -66,8 +66,8 @@
 }
 
 .cell {
-  border-top: solid 1px $n_grey_2;
-  color: $navy_1;
+  border-top: solid 1px $grey_5;
+  color: $grey_1;
   display: flex;
   flex-direction: column;
   font-size: 14px;
@@ -86,7 +86,7 @@
   display: flex;
   padding: 0 44px;
   &:hover {
-    background-color: $n_grey_4;
+    background-color: $grey_7;
     .cell {
       border-top-color: transparent;
     }
@@ -98,7 +98,7 @@
   }
   &.inactive {
     .cell {
-      color: $navy_tint_2;
+      color: $grey_3;
     }
   }
   transition: 0.5s ease all;
@@ -125,7 +125,7 @@
 }
 
 .bodyLoading {
-  border-top: solid 1px $n_grey_2;
+  border-top: solid 1px $grey_5;
   height: 160px;
   margin: 0 44px;
   width: auto;

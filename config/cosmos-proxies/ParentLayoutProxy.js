@@ -1,18 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import React from 'react';
 
-
-export class ParentLayoutProxy extends React.Component {
+export default class ParentLayoutProxy extends React.Component {
   static propTypes = {
     nextProxy: PropTypes.object,
-    fixture: PropTypes.object
-  }
+    fixture: PropTypes.object,
+  };
 
-  onChange = ({ value }) => this.setState({ value })
-
-  render () {
-    const { nextProxy, fixture, ...nextProps } = this.props
-    const { parentLayout } = fixture
+  render() {
+    const { nextProxy, fixture, ...nextProps } = this.props;
+    const { parentLayout } = fixture;
 
     const child = (
       <nextProxy.value
@@ -20,8 +17,8 @@ export class ParentLayoutProxy extends React.Component {
         nextProxy={nextProxy.next()}
         fixture={fixture}
       />
-    )
+    );
 
-    return parentLayout ? <div style={parentLayout}>{child}</div> : child
+    return parentLayout ? <div style={parentLayout}>{child}</div> : child;
   }
 }

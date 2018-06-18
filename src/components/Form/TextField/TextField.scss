@@ -6,7 +6,7 @@
     position: relative;
     background-color: transparent;
     cursor: auto;
-    color: $navy_2;
+    color: $he_black;
     margin-bottom: 12px;
     user-select: none;
     width: 280px;
@@ -29,7 +29,7 @@
     transform-origin: left top 0px;
     pointer-events: none;
     user-select: none;
-    color: $navy_tint_1;
+    color: $grey_2;
     user-select: none;
     &.floating {
         position: absolute;
@@ -41,9 +41,9 @@
 }
 
 .input {
-    border: thin solid $n_grey_3;
+    border: thin solid $grey_6;
     border-radius: 5px;
-    color: $navy_2;
+    color: $he_black;
     height: 64px;
     position: relative;
     width: 100%;
@@ -57,7 +57,7 @@
     margin-top: 0px;
     font-size: $input-size;
     &:hover {
-        border-color: $teal_1;
+        border-color: $teal;
     }
 }
 
@@ -69,52 +69,52 @@
 
 .disabled {
     .label {
-        color: $navy_tint_2;
+        color: $grey_3;
     }
     .input {
-        background-color: $n_grey_4;
-        border-color: $n_grey_2;
+        background-color: $grey_7;
+        border-color: $grey_5;
         cursor: not-allowed;
         .label {
-            color: $navy_tint_2;
+            color: $grey_3;
         }
     }
     .description {
-        color: $navy_tint_2;
+        color: $grey_3;
     }
 }
 
 
 .focused {
     .input {
-        border-color: $teal_1;
+        border-color: $teal;
     }
     .label {
-        color: $teal_1;
+        color: $teal;
     }
     .marker {
-        color: $sp_green;
+        color: $green;
     }
 }
 
 .invalid {
     .input {
-        background-color: $sp_light_red;
-        border-color: $sp_red;
+        background-color: $red_light_80;
+        border-color: $red;
     }
     .label {
-        color: $sp_red;
+        color: $red;
     }
     .description {
-        color: $sp_red;
+        color: $red;
     }
     .marker {
-        color: $sp_red;
+        color: $red;
     }
 }
 
 .marker {
-    color: $navy_tint_2;
+    color: $grey_3;
     fill: currentColor;
     pointer-events: none;
     position: absolute;
@@ -123,7 +123,7 @@
 }
 
 .description {
-    color: $navy_tint_1;
+    color: $grey_2;
     cursor: pointer;
     display: block;
     font-size: 14px;

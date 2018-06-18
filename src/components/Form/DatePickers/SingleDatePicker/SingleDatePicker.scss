@@ -1,0 +1,99 @@
+@import '../../../../styles/base';
+@import '../shared.module.scss';
+.outer {
+  font-family: $font-stack;
+  margin-bottom: 12px;
+  position: relative;
+  user-select: none;
+  width: 280px;
+  @include breakpoint(small) {
+    width: 100%;
+  }
+}
+
+.inline {
+  @include inline-block;
+}
+
+.inner {
+  @extend .reactDatesWrapper;
+
+  margin-bottom: 12px;
+
+  &:hover {
+    .picker {
+      border-color: $teal_dark_20;
+      color: $he_black;
+    }
+    .icon {
+      color: $teal_dark_20;
+    }
+  }
+}
+
+.icon {
+  color: $grey_1;
+  fill: currentColor;
+  pointer-events: none;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  @include transition(all 0.2s);
+}
+
+.focused {
+  .inner,
+  .inner:hover {
+    .icon {
+      color: $teal;
+    }
+  }
+}
+
+.disabled {
+  .inner,
+  .inner:hover {
+    :global {
+      .DateInput_input {
+        background-color: $grey_7;
+        border-color: $grey_5;
+        cursor: not-allowed;
+        color: $grey_2;
+        &::placeholder {
+          color: $grey_2;
+        }
+      }
+    }
+    .icon {
+      color: $grey_2;
+    }
+  }
+}
+
+.error {
+  .inner,
+  .inner:hover {
+    :global {
+      .DateInput_input {
+        background-color: $red_light_80;
+        border-color: $red;
+        color: $red;
+        &::placeholder {
+          color: $red;
+        }
+        &:hover,
+        &:focus {
+          border-color: $red;
+        }
+      }
+    }
+    .icon {
+      color: $red;
+    }
+  }
+}
+
+.errorMessage {
+  margin-top: 12px;
+  margin-bottom: 0;
+}

@@ -199,7 +199,9 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with Default fixture 1
                   id="locationSelector"
                   inline={false}
                   name="location"
+                  onBeforeOpen={[Function]}
                   onChange={[Function]}
+                  onClose={[Function]}
                   options={
                     Array [
                       Object {
@@ -224,6 +226,7 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with Default fixture 1
                 >
                   <div
                     className="outer locationSelector"
+                    onClose={[Function]}
                     options={
                       Array [
                         Object {

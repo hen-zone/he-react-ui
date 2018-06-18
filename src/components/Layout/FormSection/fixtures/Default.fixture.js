@@ -1,7 +1,7 @@
 import React from 'react';
 import FormSection from '../';
+import { SingleDatePicker } from '../../../';
 import Radio from '../../../Form/Radio';
-import SingleDatePicker from '../../../Form/SingleDatePicker';
 
 export default {
   component: FormSection,
@@ -10,7 +10,8 @@ export default {
     description:
       'This generally provides some further explanation about what the user can / should do.',
   },
-  children: (
+
+  children: [
     <Radio
       name="demo"
       id="demo"
@@ -25,6 +26,6 @@ export default {
           showChild: false,
         },
       ]}
-    />
-  ),
+    />,
+  ],
 };

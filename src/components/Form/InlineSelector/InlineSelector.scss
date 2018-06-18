@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    border: 1px solid $n_grey_2;
+    border: 1px solid $grey_5;
     white-space: nowrap;
     padding: 10px 10px;
     font-size: 14px;
@@ -26,7 +26,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: $navy_1;
+    color: $grey_1;
     background-color: $white;
     margin-left: -1px;
     min-width: 44px;
@@ -37,16 +37,16 @@
         border-radius: 0 4px 4px 0;
     }
     &:not(.disabled):hover{
-        border: 1px solid $teal_1;
+        border: 1px solid $teal;
         z-index: 1;
     }
     &:not(.disabled).selected{
-        background-color: $teal_1;
-        border: 1px solid $teal_1;
+        background-color: $teal;
+        border: 1px solid $teal;
         color: $white;
         &:hover{
-            background-color: $teal_2;
-            border: 1px solid $teal_2;
+            background-color: $teal_dark_20;
+            border: 1px solid $teal_dark_20;
         }
     }
 }

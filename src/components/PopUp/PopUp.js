@@ -4,9 +4,8 @@
  *
  */
 import classnames from 'classnames';
-import React from 'react';
 import PropTypes from 'prop-types';
-
+import React from 'react';
 import Icon from '../Icon';
 import LoadingSpinner from '../Loading/LoadingSpinner';
 import styles from './PopUp.scss';
