@@ -43,6 +43,7 @@ class SingleSelect extends React.Component {
     disableOnClickOutside: PropTypes.func,
     enableOnClickOutside: PropTypes.func,
     forceOpen: PropTypes.bool,
+    fill: PropTypes.bool,
     forceTitle: PropTypes.string,
   };
 
@@ -169,6 +170,7 @@ class SingleSelect extends React.Component {
       forceOpen,
       forceTitle,
       onBeforeOpen,
+      fill,
       ...restProps
     } = this.props;
     const classes = classnames(style.outer, {
@@ -176,6 +178,7 @@ class SingleSelect extends React.Component {
       [style.inline]: inline,
       [style.forceOpen]: forceOpen,
       [className]: className,
+      [style.fill]: fill,
     });
 
     return (

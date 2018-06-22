@@ -6,6 +6,10 @@
   position: relative;
   user-select: none;
   width: 280px;
+  &.fill {
+    width: 100%;
+  }
+  
   @include breakpoint(small) {
     width: 100%;
   }
