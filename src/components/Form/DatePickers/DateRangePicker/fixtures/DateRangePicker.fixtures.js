@@ -1,5 +1,5 @@
 import moment from 'moment';
-import DateRangePicker from '../DateRangePicker';
+import component from '../DateRangePicker';
 
 const LAST_MONTH = {
   label: 'Last month',
@@ -56,7 +56,7 @@ const options = [
 export default [
   {
     name: 'withChoices',
-    component: DateRangePicker,
+    component,
 
     props: {
       options,
@@ -68,7 +68,21 @@ export default [
   },
 
   {
-    component: DateRangePicker,
+    name: 'fill',
+    component,
+
+    props: {
+      options,
+      fill: true,
+    },
+
+    parentLayout,
+
+    formWrapper,
+  },
+
+  {
+    component,
 
     name: 'customOnly',
 
@@ -78,7 +92,7 @@ export default [
   },
 
   {
-    component: DateRangePicker,
+    component,
 
     name: 'presetsOnly',
 
@@ -90,7 +104,7 @@ export default [
   },
 
   {
-    component: DateRangePicker,
+    component,
 
     name: 'noInitialValue',
 
@@ -102,7 +116,7 @@ export default [
   },
 
   {
-    component: DateRangePicker,
+    component,
 
     name: 'customPlaceholder',
 
@@ -118,7 +132,7 @@ export default [
   },
   /* This fixture is temporarily commented out because it cannot be safely tested within JSDOM. */
   // {
-  //   component: DateRangePicker,
+  //   component,
   //   name: 'customPickerOpen',
   //   parentLayout,
   //   formWrapper,
