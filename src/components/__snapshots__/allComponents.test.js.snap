@@ -1350,6 +1350,188 @@ exports[`Cosmos fixtures: DateRangePicker:customPlaceholder 1`] = `
 </div>
 `;
 
+exports[`Cosmos fixtures: DateRangePicker:fill 1`] = `
+<div
+  style={
+    Object {
+      "background": "white",
+      "border": "solid 1px silver",
+      "boxShadow": "0 5px 10px rgba(0,0,0,0.1)",
+      "margin": 20,
+      "padding": 20,
+    }
+  }
+>
+  <div
+    className="outer"
+  >
+    <div
+      className="outer fill"
+      onClose={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "Last month",
+            "value": "0",
+          },
+          Object {
+            "label": "Last 3 months",
+            "value": "1",
+          },
+          Object {
+            "label": "Last 12 months",
+            "value": "2",
+          },
+          Object {
+            "label": "Custom",
+            "value": "CUSTOM",
+          },
+        ]
+      }
+    >
+      <div
+        className="select"
+        id="date-range-picker-select-id"
+        onClick={[Function]}
+      >
+        <span>
+          Last month
+        </span>
+        <svg
+          className="icon caret"
+          height={undefined}
+          version="1.1"
+          viewBox="0 0 24 24"
+          width={undefined}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            transform="translate(15.000000, 7.000000) rotate(90.000000)"
+          >
+            <path
+              d="M2,6.93247919 L2,-0.932479194 C2,-1.20862157 2.22385763,-1.43247919 2.5,-1.43247919 C2.61696825,-1.43247919 2.7302347,-1.39147108 2.8200922,-1.31658983 L7.53906723,2.61588936 C7.75120568,2.7926714 7.77986771,3.10795375 7.60308567,3.3200922 C7.58372606,3.34332373 7.56229876,3.36475103 7.53906723,3.38411064 L2.8200922,7.31658983 C2.60795375,7.49337187 2.2926714,7.46470984 2.11588936,7.25257139 C2.04100811,7.16271389 2,7.04944745 2,6.93247919 Z"
+            />
+          </g>
+        </svg>
+      </div>
+      <ul
+        className="options"
+      >
+        <li
+          className="option selected"
+          onClick={[Function]}
+        >
+          Last month
+        </li>
+        <li
+          className="option"
+          onClick={[Function]}
+        >
+          Last 3 months
+        </li>
+        <li
+          className="option"
+          onClick={[Function]}
+        >
+          Last 12 months
+        </li>
+        <li
+          className="option"
+          onClick={[Function]}
+        >
+          Custom
+        </li>
+      </ul>
+      
+    </div>
+    <div
+      className="inner"
+    >
+      <div
+        className="DateRangePicker DateRangePicker_1"
+      >
+        <div>
+          <div
+            className="DateRangePickerInput DateRangePickerInput_1 DateRangePickerInput__withBorder DateRangePickerInput__withBorder_2"
+          >
+            <div
+              className="DateInput DateInput_1"
+            >
+              <input
+                aria-describedby="DateInput__screen-reader-message-date-range-picker-start"
+                aria-label="Start Date"
+                autoComplete="off"
+                className="DateInput_input DateInput_input_1"
+                disabled={false}
+                id="date-range-picker-start"
+                name="date-range-picker-start"
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Start Date"
+                readOnly={false}
+                required={false}
+                type="text"
+                value="05/01/2018"
+              />
+              <p
+                className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+                id="DateInput__screen-reader-message-date-range-picker-start"
+              >
+                Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+              </p>
+            </div>
+            <div
+              aria-hidden="true"
+              className="DateRangePickerInput_arrow DateRangePickerInput_arrow_1"
+              role="presentation"
+            >
+              <svg
+                className="DateRangePickerInput_arrow_svg DateRangePickerInput_arrow_svg_1"
+                viewBox="0 0 1000 1000"
+              >
+                <path
+                  d="M694.4 242.4l249.1 249.1c11 11 11 21 0 32L694.4 772.7c-5 5-10 7-16 7s-11-2-16-7c-11-11-11-21 0-32l210.1-210.1H67.1c-13 0-23-10-23-23s10-23 23-23h805.4L662.4 274.5c-21-21.1 11-53.1 32-32.1z"
+                />
+              </svg>
+            </div>
+            <div
+              className="DateInput DateInput_1"
+            >
+              <input
+                aria-describedby="DateInput__screen-reader-message-date-range-picker-end"
+                aria-label="End Date"
+                autoComplete="off"
+                className="DateInput_input DateInput_input_1"
+                disabled={false}
+                id="date-range-picker-end"
+                name="date-range-picker-end"
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="End Date"
+                readOnly={false}
+                required={false}
+                type="text"
+                value="05/31/2018"
+              />
+              <p
+                className="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
+                id="DateInput__screen-reader-message-date-range-picker-end"
+              >
+                Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Cosmos fixtures: DateRangePicker:noInitialValue 1`] = `
 <div
   style={
@@ -5747,6 +5929,78 @@ exports[`Cosmos fixtures: OnClickOutside(SingleSelect):error 1`] = `
       That selection wasn't great
     </label>
   </div>
+</div>
+`;
+
+exports[`Cosmos fixtures: OnClickOutside(SingleSelect):fill 1`] = `
+<div
+  className="outer fill"
+  onClose={[Function]}
+  options={
+    Array [
+      Object {
+        "label": "Option 1",
+        "value": "1",
+      },
+      Object {
+        "label": "Option 2",
+        "value": "2",
+      },
+      Object {
+        "label": "Option 3",
+        "value": "3",
+      },
+    ]
+  }
+>
+  <div
+    className="select"
+    id="demo"
+    onClick={[Function]}
+  >
+    <span>
+      Option 1
+    </span>
+    <svg
+      className="icon caret"
+      height={undefined}
+      version="1.1"
+      viewBox="0 0 24 24"
+      width={undefined}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        transform="translate(15.000000, 7.000000) rotate(90.000000)"
+      >
+        <path
+          d="M2,6.93247919 L2,-0.932479194 C2,-1.20862157 2.22385763,-1.43247919 2.5,-1.43247919 C2.61696825,-1.43247919 2.7302347,-1.39147108 2.8200922,-1.31658983 L7.53906723,2.61588936 C7.75120568,2.7926714 7.77986771,3.10795375 7.60308567,3.3200922 C7.58372606,3.34332373 7.56229876,3.36475103 7.53906723,3.38411064 L2.8200922,7.31658983 C2.60795375,7.49337187 2.2926714,7.46470984 2.11588936,7.25257139 C2.04100811,7.16271389 2,7.04944745 2,6.93247919 Z"
+        />
+      </g>
+    </svg>
+  </div>
+  <ul
+    className="options"
+  >
+    <li
+      className="option selected"
+      onClick={[Function]}
+    >
+      Option 1
+    </li>
+    <li
+      className="option"
+      onClick={[Function]}
+    >
+      Option 2
+    </li>
+    <li
+      className="option"
+      onClick={[Function]}
+    >
+      Option 3
+    </li>
+  </ul>
+  
 </div>
 `;
 
