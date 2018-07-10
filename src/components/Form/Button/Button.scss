@@ -13,6 +13,7 @@
   }
 
   @include breakpoint(small) {
+    min-width: 0;
     width: 100%;
     &+.buttonContainer {
       margin-left: 0;
@@ -23,10 +24,16 @@
   &.small {
     height: 30px;
     min-width: 100px;
+    @include breakpoint(small) {
+      min-width: 0;
+    }
   }
 
   &.large {
     min-width: 280px;
+    @include breakpoint(small) {
+      min-width: 0;
+    }
   }
 }
 

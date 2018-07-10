@@ -1,6 +1,6 @@
 {
   "name": "he-react-ui",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "Common UI elements for HealthEngine",
   "main": "dist/index.js",
   "scripts": {
@@ -106,9 +106,9 @@
     ],
     "coverageThreshold": {
       "global": {
-        "lines": 79.88,
-        "statements": 79.92,
-        "functions": 68.87,
+        "lines": 80.08,
+        "statements": 80.11,
+        "functions": 69.16,
         "branches": 80.23
       }
     },

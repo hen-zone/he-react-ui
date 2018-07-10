@@ -4,11 +4,13 @@ import Button from '../../Form/Button';
 import Banner from '../Banner';
 import BenefitItem from '../BenefitItem';
 import BenefitList from '../BenefitList';
+import ImageDisplay from '../ImageDisplay';
 import PromoFooter from '../Footer';
 import PromoHighlight from '../Highlight';
 import PromoSection from '../Section';
 import SupportItem from '../SupportItem';
 import SupportList from '../SupportList';
+import VideoDisplay from '../VideoDisplay';
 
 function PromoDemo() {
   const benefit = (
@@ -89,8 +91,42 @@ function PromoDemo() {
           {support}
           {support}
         </SupportList>
-        <p>And there is even more great stuff about this product.</p>
-        <Button large>Find out more</Button>
+      </PromoSection>
+      <PromoSection>
+        <VideoDisplay youtubeId="iYuXzohJUFE">
+          <h2>Heading about the video</h2>
+          <p>
+            This is a paragraph of text made to emulate a quick description of
+            the item being promoted.
+          </p>
+          <p>
+            This is a paragraph of text made to emulate a quick description of
+            the item being promoted.
+          </p>
+        </VideoDisplay>
+      </PromoSection>
+      <PromoSection white>
+        <ImageDisplay
+          image={{
+            src:
+              'http://res.publicdomainfiles.com/pdf_view/2/13491430814060.png',
+            alt: 'A bandage.',
+          }}
+        >
+          <h2>Heading about the image</h2>
+          <p>
+            This is a paragraph of text made to emulate a quick description of
+            the item being promoted.
+          </p>
+          <p>
+            This is a paragraph of text made to emulate a quick description of
+            the item being promoted.
+          </p>
+          <p>
+            This is a paragraph of text made to emulate a quick description of
+            the item being promoted.
+          </p>
+        </ImageDisplay>
       </PromoSection>
       <PromoFooter header="Ready for this product?">
         <p>This product will change everything.</p>

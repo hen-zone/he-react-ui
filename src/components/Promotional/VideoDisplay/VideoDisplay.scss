@@ -1,0 +1,45 @@
+@import '../../../styles/_base';
+
+.outer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-family: $font-stack;
+  justify-content: center;
+  margin: auto;
+  max-width: 1080px;
+  padding: 96px 0 0;
+  @include breakpoint(small) {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+.children {
+  flex-shrink: 1;
+  text-align: left;
+  @include breakpoint(small) {
+    text-align: center;
+  }
+}
+
+.videoWrapper {
+  flex-shrink: 0;
+  height: 360px;
+  margin: 0 48px 0 0;
+  max-width: 100%;
+  width: 640px;
+  @include breakpoint(medium) {
+    height: 270px;
+    width: 480px;
+  }
+  @include breakpoint(small) {
+    height: 225px;
+    margin: 0 auto;
+    width: 400px;
+  }
+}
+
+.youtube {
+  height: 100%;
+  width: 100%;
+}

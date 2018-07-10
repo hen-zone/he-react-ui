@@ -763,36 +763,125 @@ exports[`<PromoDemo /> rendered correctly with a fixture 1`] = `
               </SupportItem>
             </div>
           </SupportList>
-          <p>
-            And there is even more great stuff about this product.
-          </p>
-          <Button
-            color="teal"
-            disabled={false}
-            icon=""
-            keyline={false}
-            large={true}
-            link={false}
-            onClick={[Function]}
-            squared={false}
-            submit={false}
+        </div>
+      </div>
+    </Section>
+    <Section
+      white={false}
+    >
+      <div
+        className="outer"
+      >
+        <div
+          className="inner"
+        >
+          <VideoDisplay
+            youtubeId="iYuXzohJUFE"
           >
             <div
-              className="buttonContainer large"
+              className="outer"
             >
-              <button
-                className="button teal"
-                onClick={[Function]}
-                type="button"
+              <div
+                className="videoWrapper"
               >
-                <div
-                  className="content"
+                <YouTube
+                  className="youtube"
+                  containerClassName=""
+                  id={null}
+                  onEnd={[Function]}
+                  onError={[Function]}
+                  onPause={[Function]}
+                  onPlay={[Function]}
+                  onPlaybackQualityChange={[Function]}
+                  onPlaybackRateChange={[Function]}
+                  onReady={[Function]}
+                  onStateChange={[Function]}
+                  opts={
+                    Object {
+                      "playerVars": Object {
+                        "color": "white",
+                        "rel": 0,
+                        "showinfo": 0,
+                      },
+                    }
+                  }
+                  videoId="iYuXzohJUFE"
                 >
-                  Find out more
-                </div>
-              </button>
+                  <span
+                    className=""
+                  >
+                    <div
+                      className="youtube"
+                      id={null}
+                    />
+                  </span>
+                </YouTube>
+              </div>
+              <div
+                className="children"
+              >
+                <h2>
+                  Heading about the video
+                </h2>
+                <p>
+                  This is a paragraph of text made to emulate a quick description of the item being promoted.
+                </p>
+                <p>
+                  This is a paragraph of text made to emulate a quick description of the item being promoted.
+                </p>
+              </div>
             </div>
-          </Button>
+          </VideoDisplay>
+        </div>
+      </div>
+    </Section>
+    <Section
+      white={true}
+    >
+      <div
+        className="outer white"
+      >
+        <div
+          className="inner"
+        >
+          <ImageDisplay
+            image={
+              Object {
+                "alt": "A bandage.",
+                "src": "http://res.publicdomainfiles.com/pdf_view/2/13491430814060.png",
+              }
+            }
+          >
+            <div
+              className="outer"
+            >
+              <div
+                className="children"
+              >
+                <h2>
+                  Heading about the image
+                </h2>
+                <p>
+                  This is a paragraph of text made to emulate a quick description of the item being promoted.
+                </p>
+                <p>
+                  This is a paragraph of text made to emulate a quick description of the item being promoted.
+                </p>
+                <p>
+                  This is a paragraph of text made to emulate a quick description of the item being promoted.
+                </p>
+              </div>
+              <div
+                className="imageWrapper"
+              >
+                <img
+                  alt="A bandage."
+                  className="image"
+                  src="http://res.publicdomainfiles.com/pdf_view/2/13491430814060.png"
+                />
+              </div>
+            </div>
+          </ImageDisplay>
         </div>
       </div>
     </Section>

@@ -110,40 +110,42 @@ class SingleSelect extends React.Component<Props, *> {
           [style.fill]: fill,
           [style.inline]: inline,
         })}
+        {...restProps}
       >
         {label && (
           <Label className={style.label} htmlFor={id}>
             {label}
           </Label>
         )}
-        <div
-          className={classnames(style.container, {
-            [style.expanded]: expanded,
-            [style.disabled]: disabled,
-            [style.error]: error,
-            [style.fill]: fill,
-          })}
-          {...restProps}
-        >
-          <Select
-            options={options}
-            className={classnames(style.select, {
+        <div className={classnames(className, style.relative)}>
+          <div
+            className={classnames(style.container, {
               [style.expanded]: expanded,
               [style.disabled]: disabled,
               [style.error]: error,
-              [style.forceTitle]: forceTitle,
+              [style.fill]: fill,
             })}
-            disabled={disabled}
-            value={value}
-            onChange={handleChange}
-            onOpen={handleOpen}
-            onClose={handleClose}
-            placeholder={forceTitle || placeholder}
-            valueRenderer={this.getDisplay}
-            id={id}
-            required={required}
-          />
-          <Icon className={style.caret} name="DropDown" />
+          >
+            <Select
+              options={options}
+              className={classnames(style.select, {
+                [style.expanded]: expanded,
+                [style.disabled]: disabled,
+                [style.error]: error,
+                [style.forceTitle]: forceTitle,
+              })}
+              disabled={disabled}
+              value={value}
+              onChange={handleChange}
+              onOpen={handleOpen}
+              onClose={handleClose}
+              placeholder={forceTitle || placeholder}
+              valueRenderer={this.getDisplay}
+              id={id}
+              required={required}
+            />
+            <Icon className={style.caret} name="DropDown" />
+          </div>
         </div>
       </div>
     );
