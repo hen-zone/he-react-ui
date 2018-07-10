@@ -77,10 +77,11 @@ class PrimaryNavigation extends Component<Props, *> {
       top: 76,
       left: 76,
       reversed: false,
+      opacity: 1,
     },
   };
 
-  onChangeStep = step => {
+  onChangeStep = (step: any) => {
     const openBucket = step.target.bucket && step.target.item;
     const bucketEl = step.target.bucket
       ? document.getElementById(`BUCKET_${step.target.bucket}`)
@@ -109,7 +110,7 @@ class PrimaryNavigation extends Component<Props, *> {
     this.setState({ openKey: null });
   };
 
-  toggleBucket = key => {
+  toggleBucket = (key: string) => {
     const { openKey } = this.state;
 
     this.setState({ openKey: key === openKey ? null : key });

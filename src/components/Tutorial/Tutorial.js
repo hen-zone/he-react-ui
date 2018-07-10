@@ -15,12 +15,12 @@ import styles from './Tutorial.scss';
 import CarouselIndicator from '../Layout/CarouselIndicator';
 
 type Props = {
-  className: string,
-  showing: boolean,
-  style: any,
+  className?: string,
+  showing?: boolean,
+  style?: any,
   tutorialStages: any,
-  onClose: Function,
-  onChangeStep: Function,
+  onClose?: Function,
+  onChangeStep?: Function,
   left: number,
   top: number,
   reversed: boolean,
@@ -29,7 +29,6 @@ type Props = {
 class Tutorial extends Component<Props, *> {
   static defaultProps = {
     showing: false,
-    onChangeStep: () => null,
     top: 0,
     left: 0,
     reversed: false,
@@ -46,7 +45,9 @@ class Tutorial extends Component<Props, *> {
     this.setState({
       showing: false,
     });
-    this.props.onClose();
+    if (this.props.onClose) {
+      this.props.onClose();
+    }
   };
 
   takeTheTour = () => {
@@ -67,16 +68,18 @@ class Tutorial extends Component<Props, *> {
   };
 
   doNextStep = () => {
-    const { tutorialStages } = this.props;
+    const { tutorialStages, onChangeStep } = this.props;
     const nextStep = this.state.currentStep + 1;
     this.setState({
       currentStep: nextStep,
       opacity: 1,
     });
-    this.props.onChangeStep(tutorialStages.steps[nextStep]);
+    if (onChangeStep) {
+      onChangeStep(tutorialStages.steps[nextStep]);
+    }
   };
 
-  renderIntro = intro => (
+  renderIntro = (intro: any) => (
     <Fragment>
       {intro.header}
       <Button onClick={this.takeTheTour}>Take the tour</Button>
@@ -88,7 +91,7 @@ class Tutorial extends Component<Props, *> {
     </Fragment>
   );
 
-  renderSteps = (i, steps) => (
+  renderSteps = (i: number, steps: any) => (
     <div className={styles.tutorialWrapper}>
       <h3 className={styles.tutorialHeader}>{steps[i].header}</h3>
 

@@ -432,6 +432,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
     preventDefault={false}
     siteName="Your Site"
     stopPropagation={false}
+    tutorialProps={null}
   >
     <div
       className="outer"
@@ -476,11 +477,13 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                       name="HealthEngine"
                     >
                       <HealthEngine
-                        className="icon logo"
+                        className="logo"
                         inverted={true}
+                        name="HealthEngine"
                       >
                         <svg
-                          className="icon logo"
+                          className="logo"
+                          name="HealthEngine"
                           version="1.1"
                           viewBox="0 0 48 38"
                           xmlns="http://www.w3.org/2000/svg"
@@ -611,6 +614,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                   ariaCurrent="true"
                   className="bucket"
                   exact={true}
+                  id="BUCKET_HOME"
                   key="HOME"
                   onClick={[Function]}
                   title="Home"
@@ -623,6 +627,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                     <Link
                       aria-current="true"
                       className="bucket current"
+                      id="BUCKET_HOME"
                       onClick={[Function]}
                       replace={false}
                       style={Object {}}
@@ -633,6 +638,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                         aria-current="true"
                         className="bucket current"
                         href="/"
+                        id="BUCKET_HOME"
                         onClick={[Function]}
                         style={Object {}}
                         title="Home"
@@ -840,6 +846,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
               >
                 <div
                   className="bucket"
+                  id="BUCKET_BUCKET1"
                   key="BUCKET1"
                   onClick={[Function]}
                   title="Bucket 1"
@@ -1065,6 +1072,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
               >
                 <div
                   className="bucket"
+                  id="BUCKET_BUCKET2"
                   key="BUCKET2"
                   onClick={[Function]}
                   title="Bucket 2"
@@ -1184,6 +1192,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                 <a
                   className="bucket external"
                   href="https://external.url/"
+                  id="BUCKET_HELP"
                   key="HELP"
                   onClick={[Function]}
                   target="_blank"
@@ -1416,6 +1425,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
               >
                 <div
                   className="bucket"
+                  id="BUCKET_SETTINGS"
                   key="SETTINGS"
                   onClick={[Function]}
                   title="Settings"
@@ -1638,6 +1648,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                     activeClassName="current"
                     ariaCurrent="true"
                     className="item"
+                    id="NAV_NORMAL"
                     key="NORMAL"
                     onClick={[Function]}
                     to="/normal"
@@ -1648,6 +1659,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                       <Link
                         aria-current={false}
                         className="item"
+                        id="NAV_NORMAL"
                         onClick={[Function]}
                         replace={false}
                         to="/normal"
@@ -1656,6 +1668,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                           aria-current={false}
                           className="item"
                           href="/normal"
+                          id="NAV_NORMAL"
                           onClick={[Function]}
                         >
                           Normal item
@@ -1667,6 +1680,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                     activeClassName="current"
                     ariaCurrent="true"
                     className="item"
+                    id="NAV_NOTIFICATIONS"
                     key="NOTIFICATIONS"
                     onClick={[Function]}
                     to="/notifications"
@@ -1677,6 +1691,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                       <Link
                         aria-current={false}
                         className="item"
+                        id="NAV_NOTIFICATIONS"
                         onClick={[Function]}
                         replace={false}
                         to="/notifications"
@@ -1685,6 +1700,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                           aria-current={false}
                           className="item"
                           href="/notifications"
+                          id="NAV_NOTIFICATIONS"
                           onClick={[Function]}
                         >
                           Notifications
@@ -1830,6 +1846,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                     activeClassName="current"
                     ariaCurrent="true"
                     className="item"
+                    id="NAV_FREE"
                     key="FREE"
                     onClick={[Function]}
                     to="/free"
@@ -1840,6 +1857,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                       <Link
                         aria-current={false}
                         className="item"
+                        id="NAV_FREE"
                         onClick={[Function]}
                         replace={false}
                         to="/free"
@@ -1848,6 +1866,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                           aria-current={false}
                           className="item"
                           href="/free"
+                          id="NAV_FREE"
                           onClick={[Function]}
                         >
                           Free item
@@ -1864,6 +1883,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                     activeClassName="current"
                     ariaCurrent="true"
                     className="item"
+                    id="NAV_NEW"
                     key="NEW"
                     onClick={[Function]}
                     to="/new"
@@ -1874,6 +1894,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                       <Link
                         aria-current={false}
                         className="item"
+                        id="NAV_NEW"
                         onClick={[Function]}
                         replace={false}
                         to="/new"
@@ -1882,6 +1903,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                           aria-current={false}
                           className="item"
                           href="/new"
+                          id="NAV_NEW"
                           onClick={[Function]}
                         >
                           New item
@@ -2086,6 +2108,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                     activeClassName="current"
                     ariaCurrent="true"
                     className="item"
+                    id="NAV_ITEM1"
                     key="ITEM1"
                     onClick={[Function]}
                     to="/settings-1"
@@ -2096,6 +2119,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                       <Link
                         aria-current={false}
                         className="item"
+                        id="NAV_ITEM1"
                         onClick={[Function]}
                         replace={false}
                         to="/settings-1"
@@ -2104,6 +2128,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                           aria-current={false}
                           className="item"
                           href="/settings-1"
+                          id="NAV_ITEM1"
                           onClick={[Function]}
                         >
                           Item 1
@@ -2115,6 +2140,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                     activeClassName="current"
                     ariaCurrent="true"
                     className="item"
+                    id="NAV_ITEM2"
                     key="ITEM2"
                     onClick={[Function]}
                     to="/settings-2"
@@ -2125,6 +2151,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                       <Link
                         aria-current={false}
                         className="item"
+                        id="NAV_ITEM2"
                         onClick={[Function]}
                         replace={false}
                         to="/settings-2"
@@ -2133,6 +2160,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                           aria-current={false}
                           className="item"
                           href="/settings-2"
+                          id="NAV_ITEM2"
                           onClick={[Function]}
                         >
                           Item 2
@@ -2144,6 +2172,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                     activeClassName="current"
                     ariaCurrent="true"
                     className="item"
+                    id="NAV_ITEM3"
                     key="ITEM3"
                     onClick={[Function]}
                     to="/settings-3"
@@ -2154,6 +2183,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                       <Link
                         aria-current={false}
                         className="item"
+                        id="NAV_ITEM3"
                         onClick={[Function]}
                         replace={false}
                         to="/settings-3"
@@ -2162,6 +2192,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Default f
                           aria-current={false}
                           className="item"
                           href="/settings-3"
+                          id="NAV_ITEM3"
                           onClick={[Function]}
                         >
                           Item 3

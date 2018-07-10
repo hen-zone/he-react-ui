@@ -399,10 +399,12 @@ exports[`<TimeSelector /> rendered correctly with default fixture 1`] = `
           name="Clock"
         >
           <Clock
-            className="icon clock"
+            className="clock"
+            name="Clock"
           >
             <svg
-              className="icon clock"
+              className="clock"
+              name="Clock"
               version="1.1"
               viewBox="0 0 26 26"
               xmlns="http://www.w3.org/2000/svg"

@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import * as React from 'react';
 import classnames from 'classnames';
 import PrimaryNavigation from '../';
 import Button from '../../../Form/Button';
@@ -12,10 +12,16 @@ export default {
   url: '/',
   props: {
     logoutRoute: '/logout',
-    locations: ['Location A', 'Location B'].map(location => ({
-      value: location,
-      label: location,
-    })),
+    locations: [
+      {
+        value: 'Location A',
+        label: 'Location A',
+      },
+      {
+        value: 'Location B',
+        label: 'Location B',
+      },
+    ],
     bottomKeys: ['HELP', 'SETTINGS'],
     items: [
       {

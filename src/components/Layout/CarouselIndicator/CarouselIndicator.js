@@ -10,8 +10,8 @@ import classnames from 'classnames';
 import style from './CarouselIndicator.scss';
 
 type Props = {
-  length?: number,
-  current?: number,
+  length: number,
+  current: number,
   showNext?: boolean,
   nextStep?: Function,
   className?: string,
@@ -28,12 +28,7 @@ function CarouselIndicator(props: Props) {
   } = props;
 
   return (
-    <div
-      className={classnames(style.outer, {
-        [className]: className,
-      })}
-      {...restProps}
-    >
+    <div className={classnames(style.outer, className)} {...restProps}>
       <ol className={style.wrapper}>
         {Array(length)
           .fill(1)
@@ -55,5 +50,8 @@ function CarouselIndicator(props: Props) {
     </div>
   );
 }
-
+CarouselIndicator.defaultProps = {
+  current: 0,
+  length: 0,
+};
 export default CarouselIndicator;
