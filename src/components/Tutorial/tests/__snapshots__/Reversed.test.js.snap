@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Tutorial /> rendered correctly with default fixture 1`] = `
+exports[`<Tutorial /> rendered correctly with reversed fixture 1`] = `
 <Tutorial
   left={150}
   onChangeStep={[MockFunction]}
   onClose={[MockFunction]}
   opacity={1}
-  reversed={false}
+  reversed={true}
   showing={true}
   top={150}
   tutorialStages={

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tutorial /> rendered correctly with empty fixture 1`] = `
+<Tutorial
+  left={0}
+  reversed={false}
+  showing="true"
+  top={0}
+  tutorialStages={null}
+/>
+`;

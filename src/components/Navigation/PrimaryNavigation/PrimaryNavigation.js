@@ -56,7 +56,7 @@ type Props = {
   logoutRoute: string,
   loading?: boolean,
   children: any,
-  tutorialProps: any,
+  tutorialProps?: any,
 };
 
 class PrimaryNavigation extends Component<Props, *> {
@@ -81,7 +81,7 @@ class PrimaryNavigation extends Component<Props, *> {
     },
   };
 
-  onChangeStep = (step: any) => {
+  doChangeStep = (step: any) => {
     const openBucket = step.target.bucket && step.target.item;
     const bucketEl = step.target.bucket
       ? document.getElementById(`BUCKET_${step.target.bucket}`)
@@ -241,6 +241,7 @@ class PrimaryNavigation extends Component<Props, *> {
 
   renderTutorial = tutorialProps => {
     const { currentTutorialPosition } = this.state;
+    const { doChangeStep } = this;
     return (
       <Tutorial
         showing
@@ -248,7 +249,7 @@ class PrimaryNavigation extends Component<Props, *> {
         left={currentTutorialPosition.left}
         reversed={currentTutorialPosition.reversed}
         opacity={currentTutorialPosition.opacity}
-        onChangeStep={this.onChangeStep}
+        onChangeStep={doChangeStep}
         tutorialStages={tutorialProps.tutorialStages}
       />
     );

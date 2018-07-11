@@ -6,7 +6,7 @@
  */
 import classnames from 'classnames';
 import React, { Fragment, Component } from 'react';
-
+import { findDOMNode } from 'react-dom';
 import Icon from '../Icon';
 import LoadingSpinner from '../Loading/LoadingSpinner';
 import Button from '../Form/Button';
@@ -16,7 +16,7 @@ import CarouselIndicator from '../Layout/CarouselIndicator';
 
 type Props = {
   className?: string,
-  showing?: boolean,
+  showing: boolean,
   style?: any,
   tutorialStages: any,
   onClose?: Function,
@@ -40,6 +40,12 @@ class Tutorial extends Component<Props, *> {
     currentStage: 'intro',
     opacity: 1,
   };
+
+  popup = null;
+
+  componentDidMount() {
+    this.popup = findDOMNode(this.refs.tutorialPopup);
+  }
 
   handleClose = () => {
     this.setState({
@@ -82,7 +88,9 @@ class Tutorial extends Component<Props, *> {
   renderIntro = (intro: any) => (
     <Fragment>
       {intro.header}
-      <Button onClick={this.takeTheTour}>Take the tour</Button>
+      <Button id="takeTourBtn" onClick={this.takeTheTour}>
+        Take the tour
+      </Button>
       <br />
       <Button link onClick={this.handleClose}>
         Not now
@@ -142,13 +150,13 @@ class Tutorial extends Component<Props, *> {
     let leftOverlay = {};
     let steps = null;
     let newTop = top - 75;
-    const popup = document.getElementById('tutorialPopup');
+
     if (currentStage === 'steps' && tutorialStages[currentStage]) {
       steps = tutorialStages[currentStage];
-      if (popup && reversed) {
-        newTop -= popup.getBoundingClientRect().height - 150;
+      if (this.popup && reversed) {
+        newTop -= this.popup.getBoundingClientRect().height - 150;
         arrowStyle = {
-          top: popup.getBoundingClientRect().height - 75,
+          top: this.popup.getBoundingClientRect().height - 75,
         };
       }
       wrapperStyle = {
@@ -190,7 +198,7 @@ class Tutorial extends Component<Props, *> {
           onClick={this.handleClose}
         />
         <div style={wrapperStyle}>
-          <div className={popupClasses} id="tutorialPopup" style={style}>
+          <div className={popupClasses} ref="tutorialPopup" style={style}>
             <Icon
               className={styles.close}
               name="Cross"
@@ -214,19 +222,14 @@ class Tutorial extends Component<Props, *> {
     );
   };
   render() {
-    const { tutorialStages, ...restProps } = this.props;
-
+    const { tutorialStages } = this.props;
     if (!tutorialStages) {
       return null;
     }
     const classes = classnames(styles.outer, {
       [styles.showing]: this.state.showing,
     });
-    return (
-      <div className={classes} {...restProps}>
-        {this.renderContent()}
-      </div>
-    );
+    return <div className={classes}>{this.renderContent()}</div>;
   }
 }
 

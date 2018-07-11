@@ -200,16 +200,16 @@ export default {
       },
     ],
     tutorialProps: {
-      showing: true,
       tutorialStages: {
         intro: {
           header: (
             <div className={styles.tutorialIntroHeader}>
               <Icon
+                key="h1"
                 className={styles.heLogoWithText}
                 name="HealthEngineWithText"
               />
-              <h3>Welcome to your improved Practice Admin</h3>
+              <h3 key="h2">Welcome to your improved Practice Admin</h3>
             </div>
           ),
           content: (
@@ -219,7 +219,7 @@ export default {
                 styles.greyBackground,
               )}
             >
-              <div className={styles.footerCell}>
+              <div className={styles.footerCell} key="c1">
                 <CheckBox
                   id="neverShowAgain"
                   name="neverShowAgain"
@@ -227,8 +227,8 @@ export default {
                   label="Don't show me this again"
                 />
               </div>
-              <div className={styles.footerCell}>
-                <Button className={styles.rightElement} link>
+              <div className={styles.footerCell} key="c2">
+                <Button key="cb1" className={styles.rightElement} link>
                   Why we changed the Practice Admin
                 </Button>
               </div>

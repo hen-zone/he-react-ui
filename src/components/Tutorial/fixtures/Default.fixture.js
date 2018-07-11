@@ -10,7 +10,7 @@ import styles from '../Tutorial.scss';
 export default {
   component: Tutorial,
   props: {
-    showing: 'true',
+    showing: true,
     tutorialStages: {
       intro: {
         header: (
@@ -39,7 +39,7 @@ export default {
               />
             </div>
             <div className={styles.footerCell} key="c2">
-              <Button className={styles.rightElement} link>
+              <Button key="cb1" className={styles.rightElement} link>
                 Why we changed the Practice Admin
               </Button>
             </div>
