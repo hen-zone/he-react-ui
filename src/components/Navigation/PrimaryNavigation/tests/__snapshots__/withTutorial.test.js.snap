@@ -3055,6 +3055,7 @@ exports[`<PrimaryNavigation /> rendered correctly with tutorial fixture 1`] = `
           >
             <div
               className="popup popupCentered"
+              id="tutorialPopup"
             >
               <Icon
                 className="close"

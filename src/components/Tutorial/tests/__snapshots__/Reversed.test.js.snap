@@ -140,6 +140,7 @@ exports[`<Tutorial /> rendered correctly with reversed fixture 1`] = `
     >
       <div
         className="popup popupCentered"
+        id="tutorialPopup"
       >
         <Icon
           className="close"

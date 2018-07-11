@@ -6,7 +6,6 @@
  */
 import classnames from 'classnames';
 import React, { Fragment, Component } from 'react';
-import { findDOMNode } from 'react-dom';
 import Icon from '../Icon';
 import LoadingSpinner from '../Loading/LoadingSpinner';
 import Button from '../Form/Button';
@@ -40,12 +39,6 @@ class Tutorial extends Component<Props, *> {
     currentStage: 'intro',
     opacity: 1,
   };
-
-  popup = null;
-
-  componentDidMount() {
-    this.popup = findDOMNode(this.refs.tutorialPopup);
-  }
 
   handleClose = () => {
     this.setState({
@@ -150,13 +143,14 @@ class Tutorial extends Component<Props, *> {
     let leftOverlay = {};
     let steps = null;
     let newTop = top - 75;
+    const popup = document.getElementById('tutorialPopup');
 
     if (currentStage === 'steps' && tutorialStages[currentStage]) {
       steps = tutorialStages[currentStage];
-      if (this.popup && reversed) {
-        newTop -= this.popup.getBoundingClientRect().height - 150;
+      if (popup && reversed) {
+        newTop -= popup.getBoundingClientRect().height - 150;
         arrowStyle = {
-          top: this.popup.getBoundingClientRect().height - 75,
+          top: popup.getBoundingClientRect().height - 75,
         };
       }
       wrapperStyle = {
@@ -198,7 +192,7 @@ class Tutorial extends Component<Props, *> {
           onClick={this.handleClose}
         />
         <div style={wrapperStyle}>
-          <div className={popupClasses} ref="tutorialPopup" style={style}>
+          <div className={popupClasses} id="tutorialPopup" style={style}>
             <Icon
               className={styles.close}
               name="Cross"
