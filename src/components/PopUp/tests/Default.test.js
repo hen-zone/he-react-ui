@@ -27,4 +27,6 @@ test('PopUp calls its handlers', () => {
   popUp.find('.overlay').simulate('click');
 
   expect(onClose).toHaveBeenCalledTimes(2);
+
+  popUp.instance().handleClose();
 });

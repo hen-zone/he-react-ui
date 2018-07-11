@@ -1,5 +1,13 @@
 // @flow
-import fixture from '../fixtures/Default.fixture.js';
-import testFixture from '../../../../../config/testFixture';
+import createTestContext from 'react-cosmos-test/enzyme';
+import fixture from '../fixtures/Default.fixture';
 
-testFixture(fixture, 'Default');
+const { mount, getWrapper } = createTestContext({ fixture });
+
+beforeEach(mount);
+
+test('<PrimaryNavigation /> rendered correctly with default fixture', () => {
+  const wrapper = getWrapper();
+
+  expect(wrapper).toMatchSnapshot();
+});

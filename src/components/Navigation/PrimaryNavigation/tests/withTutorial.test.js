@@ -8,6 +8,11 @@ beforeEach(mount);
 
 test('<PrimaryNavigation /> rendered correctly with tutorial fixture', () => {
   const wrapper = getWrapper();
-
+  const component = wrapper.find('PrimaryNavigation').instance();
   expect(wrapper).toMatchSnapshot();
+  component.toggleBucket('BUCKET1');
+  component.closeBucket();
+  component.toggleBucket('BUCKET1');
+  component.handleClickOutside();
+  component.doChangeStep(fixture.props.tutorialProps.tutorialStages.steps[1]);
 });
