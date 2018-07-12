@@ -2,10 +2,10 @@
 
 exports[`<Tutorial /> rendered correctly with empty fixture 1`] = `
 <Tutorial
-  left={0}
+  left={100}
   reversed={false}
   showing="true"
-  top={0}
+  top={100}
   tutorialStages={null}
 />
 `;

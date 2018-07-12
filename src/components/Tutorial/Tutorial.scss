@@ -21,7 +21,7 @@
   left: 0;
   top: 0;
   right: 0;
-  @include transition(opacity 0.2s);
+  @include transition(all 0.4s ease-in-out);
 }
 .transparentOverlay {
   background-color: $white;
@@ -31,7 +31,7 @@
   left: 0;
   top: 0;
   width: 0;
-  @include transition(opacity 0.2s);
+  @include transition(all 0.4s ease-in-out);
 }
 .wrapper{
   opacity: 0;
@@ -149,7 +149,6 @@
   @include transition(all 0.2s);
   .overlay {
     opacity: 0.45;
-    @include transition(opacity 0.2s);
   }
   .arrow{
     opacity: 1;

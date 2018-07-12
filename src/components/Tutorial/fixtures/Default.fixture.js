@@ -20,7 +20,7 @@ export default {
               className={styles.heLogoWithText}
               name="HealthEngineWithText"
             />
-            <h3 key="h2">Welcome to your improved Practice Admin</h3>
+            <h3 key="h2">Welcome</h3>
           </div>
         ),
         content: (
@@ -30,23 +30,14 @@ export default {
               styles.greyBackground,
             )}
           >
-            <div className={styles.footerCell} key="c1">
-              <CheckBox
-                id="neverShowAgain"
-                name="neverShowAgain"
-                className={styles.leftElement}
-                label="Don't show me this again"
-              />
-            </div>
+            <div className={styles.footerCell} key="c1" />
             <div className={styles.footerCell} key="c2">
               <Button key="cb1" className={styles.rightElement} link>
-                Why we changed the Practice Admin
+                Why we changed?
               </Button>
             </div>
           </div>
         ),
-        top: null,
-        left: null,
       },
       steps: [
         {
@@ -57,8 +48,6 @@ export default {
               lobortis sagittis lobortis. Curabitur.
             </div>
           ),
-          top: '0px',
-          left: '200px',
         },
         {
           header: 'Efficitur',
@@ -67,8 +56,6 @@ export default {
               Vivamus efficitur lacus at est ornare porta euismod non leo.
             </div>
           ),
-          top: '0px',
-          left: '100px',
         },
         {
           header: 'Provide better care experiences',
@@ -78,8 +65,6 @@ export default {
               requests here.
             </div>
           ),
-          top: '0px',
-          left: '76px',
         },
         {
           header: 'Commodo?',
@@ -89,8 +74,6 @@ export default {
               rhoncus efficitur.
             </div>
           ),
-          top: '0px',
-          left: '76px',
         },
         {
           header: 'Condimentum',
@@ -101,8 +84,6 @@ export default {
               feugiat rhoncus pulvinar
             </div>
           ),
-          top: '0px',
-          left: '76px',
         },
       ],
     },

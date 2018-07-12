@@ -82,6 +82,13 @@ class PrimaryNavigation extends Component<Props, *> {
   };
 
   doChangeStep = (step: any) => {
+    this.setState({
+      currentTutorialPosition: {
+        top: this.state.currentTutorialPosition.top,
+        reversed: this.state.currentTutorialPosition.reversed,
+        left: 0,
+      },
+    });
     const openBucket = step.target.bucket && step.target.item;
     const bucketEl = step.target.bucket
       ? document.getElementById(`BUCKET_${step.target.bucket}`)

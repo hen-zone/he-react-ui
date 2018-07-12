@@ -9,14 +9,12 @@ import React, { Fragment, Component } from 'react';
 import Icon from '../Icon';
 import LoadingSpinner from '../Loading/LoadingSpinner';
 import Button from '../Form/Button';
-import CheckBox from '../Form/CheckBox';
 import styles from './Tutorial.scss';
 import CarouselIndicator from '../Layout/CarouselIndicator';
 
 type Props = {
   className?: string,
   showing: boolean,
-  style?: any,
   tutorialStages: any,
   onClose?: Function,
   onChangeStep?: Function,
@@ -28,14 +26,14 @@ type Props = {
 class Tutorial extends Component<Props, *> {
   static defaultProps = {
     showing: false,
-    top: 0,
-    left: 0,
+    top: 100,
+    left: 100,
     reversed: false,
   };
 
   state = {
     showing: this.props.showing,
-    currentStep: 0,
+    currentStep: -1,
     currentStage: 'intro',
     opacity: 1,
   };
@@ -63,7 +61,7 @@ class Tutorial extends Component<Props, *> {
 
     setTimeout(() => {
       this.doNextStep();
-    }, 100);
+    }, 50);
   };
 
   doNextStep = () => {
@@ -107,16 +105,13 @@ class Tutorial extends Component<Props, *> {
         />
       ) : (
         <div className={styles.tutorialIntroFooter}>
+          <div className={styles.footerCell} />
           <div className={styles.footerCell}>
-            <CheckBox
-              id="neverShowAgain"
-              name="neverShowAgain"
-              className={styles.leftElement}
-              label="Do not show me this again"
-            />
-          </div>
-          <div className={styles.footerCell}>
-            <Button className={styles.rightElement} link>
+            <Button
+              className={styles.rightElement}
+              link
+              onClick={this.handleClose}
+            >
               Got it!
             </Button>
           </div>
@@ -125,19 +120,18 @@ class Tutorial extends Component<Props, *> {
     </div>
   );
   renderContent = () => {
-    const {
-      className,
-      tutorialStages,
-      style,
-      top,
-      reversed,
-      left,
-    } = this.props;
+    const { className, tutorialStages, top, reversed, left } = this.props;
     const { currentStep, currentStage, opacity } = this.state;
     const popupClasses = classnames(styles.popup, className, {
       [styles.popupCentered]: currentStage === 'intro',
     });
-    let wrapperStyle = {};
+    let wrapperStyle = {
+      position: 'absolute',
+      width: '100%',
+      height: '100%',
+      transition: 'all 0.4s',
+      opacity,
+    };
     let arrowStyle = {};
     let rightOverlay = {};
     let leftOverlay = {};
@@ -154,14 +148,10 @@ class Tutorial extends Component<Props, *> {
         };
       }
       wrapperStyle = {
-        position: 'absolute',
-        width: '100%',
-        height: '100%',
+        ...wrapperStyle,
         top: newTop,
         left,
         right: 'auto',
-        opacity,
-        transition: 'all 0.4s',
       };
       rightOverlay = {
         left,
@@ -169,16 +159,7 @@ class Tutorial extends Component<Props, *> {
       leftOverlay = {
         width: left,
       };
-    } else {
-      wrapperStyle = {
-        position: 'absolute',
-        width: '100%',
-        height: '100%',
-        opacity,
-        transition: 'all 0.4s',
-      };
     }
-
     return (
       <Fragment>
         <div
@@ -192,13 +173,13 @@ class Tutorial extends Component<Props, *> {
           onClick={this.handleClose}
         />
         <div style={wrapperStyle}>
-          <div className={popupClasses} id="tutorialPopup" style={style}>
+          <div className={popupClasses} id="tutorialPopup">
             <Icon
               className={styles.close}
               name="Cross"
               onClick={this.handleClose}
             />
-            {steps
+            {steps && currentStep >= 0
               ? this.renderSteps(currentStep, steps)
               : this.renderIntro(tutorialStages[currentStage])}
           </div>
