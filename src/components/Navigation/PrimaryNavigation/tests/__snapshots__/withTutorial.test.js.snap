@@ -2583,7 +2583,6 @@ exports[`<PrimaryNavigation /> rendered correctly with tutorial fixture 1`] = `
                         >
                           <div
                             className="outer fill"
-                            onClose={[Function]}
                           >
                             <div
                               className="relative"
@@ -2619,6 +2618,7 @@ exports[`<PrimaryNavigation /> rendered correctly with tutorial fixture 1`] = `
                                   menuBuffer={0}
                                   menuRenderer={[Function]}
                                   multi={false}
+                                  name="location"
                                   noResultsText="No results found"
                                   onBlurResetsInput={true}
                                   onChange={[Function]}
