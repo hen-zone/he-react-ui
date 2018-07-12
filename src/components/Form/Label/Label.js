@@ -16,7 +16,6 @@ type Props = {
   error?: boolean,
   htmlFor?: string,
   children: any,
-  onChange?: Function,
 };
 
 function Label(props: Props) {
@@ -42,7 +41,6 @@ function Label(props: Props) {
 
 Label.defaultProps = {
   error: false,
-  onChange: () => null,
 };
 
 export default Label;

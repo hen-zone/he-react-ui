@@ -33,7 +33,7 @@
   font-size: $input-size;
   font-weight: $regular;
   position: relative;
-  width: 100%;
+  height: 46px;
   &:hover {
     border-color: $teal_dark_20;
     color: $he_black;
@@ -52,7 +52,7 @@
 
 .expanded {
   .select {
-    border-radius: 4px 4px 0px 0px;
+    border-radius: 4px 4px 0 0;
     color: $he_black;
     &:hover {
       border-color: $grey_5;
@@ -62,57 +62,57 @@
     }
   }
   .options {
-    border-radius: 0px 0px 4px 4px;
-    margin-left: 0;
+    border-radius: 0 0 4px 4px;
     opacity: 1;
     pointer-events: auto;
-    width: 100%;
-    @include transition(opacity 0.2s, width 0.2s, margin-left, 0.2s);
+    ul {
+      max-height: 240px;
+    }
   }
 }
 
 .clock {
-  color: $he_black;
+  color: $grey_1;
   fill: currentColor;
   height: 32px;
   position: absolute;
   pointer-events: none;
-  right: 8px;
-  top: 8px;
+  right: 7px;
+  top: 7px;
   width: 32px;
   @include transition(all 0.2s);
 }
 
+.noValue {
+  color: $grey_2;
+}
+
 .disabled {
+  background-color: $grey_7;
   border-color: $grey_5;
   cursor: not-allowed;
   color: $grey_2;
+  .clock {
+    color: $grey_3;
+  }
   &:hover {
+    background-color: $grey_7;
     border-color: $grey_5;
+    cursor: not-allowed;
     color: $grey_2;
     .clock {
       color: $grey_3;
     }
   }
-  .clock {
-    color: $grey_3;
-  }
 }
 
-.error {
-  background-color: $red_light_80;
-  .clock {
+.outer:not(.expanded) {
+  .error {
     color: $red;
-  }
-  &:hover, &:focus {
     border-color: $red;
+    background-color: $red_light_80;
     .clock {
       color: $red;
-    }
-  }
-  &.expanded {
-    .clock {
-      color: $he_black;
     }
   }
 }
@@ -137,16 +137,18 @@
     width: 50%;
     display: inline-block;
     overflow-y: auto;
-    max-height: 240px;
+    max-height: 0;
+    @include transition(max-height 0.2s);
   }
   overflow-y: hidden;
-  margin: 0 0 0 4%;
   opacity: 0;
   position: absolute;
+  top: 46px;
+  left: -1px;
   pointer-events: none;
-  width: 80%;
+  width: 100%;
   z-index: 1;
-  @include transition(margin-left 0.2s, opacity 0.2s, width 0.2s);
+  @include transition(opacity 0.2s);
 }
 
 .hourly {

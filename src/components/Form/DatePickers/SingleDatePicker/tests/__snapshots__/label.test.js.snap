@@ -21,11 +21,9 @@ exports[`<SingleDatePicker /> rendered correctly with label fixture 1`] = `
     <Label
       className="label"
       error={false}
-      onChange={[Function]}
     >
       <div
         className="label label"
-        onChange={[Function]}
       >
         <label>
           Which day?

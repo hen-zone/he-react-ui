@@ -224,11 +224,9 @@ exports[`<Radio /> rendered correctly with error fixture 1`] = `
     <Label
       className="error"
       error={true}
-      onChange={[Function]}
     >
       <div
         className="label error"
-        onChange={[Function]}
       >
         <Icon
           className="icon"

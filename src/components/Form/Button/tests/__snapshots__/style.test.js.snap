@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> rendered correctly with style fixture 1`] = `
+<Button
+  color="teal"
+  disabled={false}
+  icon=""
+  keyline={false}
+  link={false}
+  onClick={[Function]}
+  squared={false}
+  style={
+    Object {
+      "float": "right",
+      "height": "200px",
+      "margin": "20px",
+      "width": "400px",
+    }
+  }
+  submit={false}
+>
+  <div
+    className="buttonContainer"
+    style={
+      Object {
+        "float": "right",
+        "height": "200px",
+        "margin": "20px",
+        "width": "400px",
+      }
+    }
+  >
+    <button
+      className="button teal"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="content"
+      >
+        Button
+      </div>
+    </button>
+  </div>
+</Button>
+`;

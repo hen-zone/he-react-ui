@@ -1022,11 +1022,9 @@ exports[`<SingleDatePicker /> rendered correctly with error fixture 1`] = `
       className="errorMessage"
       error={true}
       htmlFor="demo"
-      onChange={[Function]}
     >
       <div
         className="label error errorMessage"
-        onChange={[Function]}
       >
         <Icon
           className="icon"

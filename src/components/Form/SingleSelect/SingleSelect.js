@@ -97,6 +97,7 @@ class SingleSelect extends React.Component<Props, *> {
       preventDefault,
       stopPropagation,
       onBeforeOpen,
+      onClose,
       forceTitle,
       fill,
       ...restProps
@@ -142,6 +143,7 @@ class SingleSelect extends React.Component<Props, *> {
               placeholder={forceTitle || placeholder}
               valueRenderer={this.getDisplay}
               id={id}
+              name={name}
               required={required}
             />
             <Icon className={style.caret} name="DropDown" />

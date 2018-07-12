@@ -9,7 +9,7 @@
 import classnames from 'classnames';
 import React, { Fragment } from 'react';
 import Icon from '../../Icon';
-import style from './Button.scss';
+import styles from './Button.scss';
 import ButtonSpinner from './ButtonSpinner';
 
 type Props = {
@@ -26,6 +26,7 @@ type Props = {
   iconLeft?: any,
   iconRight?: any,
   squared?: boolean,
+  style?: any,
   submitting?: boolean,
   done?: boolean,
   className?: string,
@@ -63,38 +64,39 @@ class Button extends React.Component<Props> {
       small,
       large,
       squared,
+      style,
       submit,
       submitting,
       done,
     } = this.props;
 
     const buttonClasses = classnames(
-      style.button,
-      color && !done && style[color],
+      styles.button,
+      color && !done && styles[color],
       {
-        [style.disabled]: disabled,
-        [style.keyline]: keyline,
-        [style.link]: link,
-        [style.squared]: squared,
-        [style.submitting]: submitting,
-        [style.done]: done,
+        [styles.disabled]: disabled,
+        [styles.keyline]: keyline,
+        [styles.link]: link,
+        [styles.squared]: squared,
+        [styles.submitting]: submitting,
+        [styles.done]: done,
       },
       className,
     );
 
-    const containerClasses = classnames(style.buttonContainer, {
-      [style.small]: small,
-      [style.large]: large,
+    const containerClasses = classnames(styles.buttonContainer, {
+      [styles.small]: small,
+      [styles.large]: large,
     });
 
     const submittingIcon = submitting ? (
-      <div className={style.iconCenter}>
+      <div className={styles.iconCenter}>
         <ButtonSpinner />
       </div>
     ) : null;
 
     const statusIcon = done ? (
-      <div className={style.iconCenter}>
+      <div className={styles.iconCenter}>
         <Icon name="Tick" />
       </div>
     ) : (
@@ -102,7 +104,7 @@ class Button extends React.Component<Props> {
     );
 
     return (
-      <div className={containerClasses}>
+      <div className={containerClasses} style={style}>
         <button
           className={buttonClasses}
           type={submit ? 'submit' : 'button'}
@@ -110,15 +112,15 @@ class Button extends React.Component<Props> {
         >
           {statusIcon || (
             <Fragment>
-              {iconLeft && <div className={style.iconLeft}>{iconLeft}</div>}
+              {iconLeft && <div className={styles.iconLeft}>{iconLeft}</div>}
 
-              <div className={style.content}>
+              <div className={styles.content}>
                 {children}
 
-                {icon && <Icon className={style.legacyIcon} name={icon} />}
+                {icon && <Icon className={styles.legacyIcon} name={icon} />}
               </div>
 
-              {iconRight && <div className={style.iconRight}>{iconRight}</div>}
+              {iconRight && <div className={styles.iconRight}>{iconRight}</div>}
             </Fragment>
           )}
         </button>

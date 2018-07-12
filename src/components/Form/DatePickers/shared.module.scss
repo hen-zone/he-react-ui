@@ -3,7 +3,6 @@
 
 .reactDatesWrapper {
   color: $he_black;
-
   position: relative;
   width: 100%;
 
@@ -20,7 +19,7 @@
       color: #00a699;
       padding: 4px 12px;
       margin-right: 8px;
-      font: inherit;
+      font: $font-stack;
       font-weight: 700;
       line-height: normal;
       overflow: visible;
@@ -55,7 +54,7 @@
       background: 0 0;
       border: 0;
       color: inherit;
-      font: inherit;
+      font: $font-stack;
       line-height: normal;
       overflow: visible;
       cursor: pointer;
@@ -92,7 +91,7 @@
       background: 0 0;
       border: 0;
       color: inherit;
-      font: inherit;
+      font: $font-stack;
       line-height: normal;
       overflow: visible;
       cursor: pointer;
@@ -144,7 +143,7 @@
       background: 0 0;
       border: 0;
       color: inherit;
-      font: inherit;
+      font: $font-stack;
       line-height: normal;
       overflow: visible;
       cursor: pointer;
@@ -169,7 +168,7 @@
       border: 0;
       border-radius: 0;
       color: inherit;
-      font: inherit;
+      font: $font-stack;
       line-height: normal;
       overflow: visible;
       padding: 0;
@@ -422,7 +421,7 @@
     .DayPicker__withBorder {
       box-shadow: 0 0 4px rgba(0, 0, 0, .2);
       border-radius: 4px;
-      margin-top: -14px;
+      margin-top: -7px;
       padding: 16px 24px;
     }
     .DayPicker_portal__horizontal {
@@ -536,8 +535,10 @@
       box-sizing: border-box;
       color: $grey_1;
       cursor: pointer;
+      font-family: $font-stack;
       font-size: $input-size;
       font-weight: $regular;
+      height: 48px;
       outline: none;
       padding: 12px;
       padding-right: 42px;
@@ -586,14 +587,13 @@
     }
     .DateInput_fang {
       position: absolute;
-      margin-top: -13px;
+      margin-top: -6px;
       width: 20px;
       height: 10px;
       left: 50%;
       z-index: 2;
       @include breakpoint(small) {
-        left: unset;
-        right: 132px;
+        left: 132px;
       }
     }
     .DateInput_fangShape {

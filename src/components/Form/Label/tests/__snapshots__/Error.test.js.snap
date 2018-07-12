@@ -4,11 +4,9 @@ exports[`<Label /> rendered correctly with Error fixture 1`] = `
 <Label
   error={true}
   htmlFor="demo"
-  onChange={[Function]}
 >
   <div
     className="label error"
-    onChange={[Function]}
   >
     <Icon
       className="icon"

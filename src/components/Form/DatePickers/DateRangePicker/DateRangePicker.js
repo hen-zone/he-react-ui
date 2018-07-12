@@ -5,7 +5,7 @@ import React from 'react';
 import { DateRangePicker as InnerDateRangePicker } from 'react-dates';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
-import { Icon, SingleSelect, Label } from '../../../';
+import { Icon, SingleSelect } from '../../../';
 import style from './DateRangePicker.module.scss';
 
 const CUSTOM = 'CUSTOM';
@@ -174,7 +174,6 @@ export default class DateRangePicker extends React.Component<Props, *> {
 
     return (
       <div className={classes}>
-        {label && <Label className={style.label}>{label}</Label>}
         <SingleSelect
           id={`${id}-select-id`}
           value={selectValue}

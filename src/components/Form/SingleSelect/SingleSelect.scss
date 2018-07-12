@@ -103,6 +103,7 @@
       height: 46px;
     }
     .Select-option, .Select-noresults {
+      background-color: $white;
       color: $grey_1;
       padding: 11px 16px;
     }
@@ -130,13 +131,15 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      color: $grey_1;
+    }
+    .Select-placeholder {
+      color: $grey_2;
     }
   }
   .select:not(.forceTitle) {
     :global {
       .Select-placeholder, .is-open .Select-value-label {
-        color: $grey_3;
+        color: $grey_2;
       }
     }
   }
@@ -151,6 +154,7 @@
   cursor: pointer;
   font-size: $input-size;
   font-weight: $regular;
+  overflow: hidden;
   &:hover {
     border-color: $teal;
   }

@@ -2367,7 +2367,6 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                         >
                           <div
                             className="outer fill"
-                            onClose={[Function]}
                           >
                             <div
                               className="relative"
@@ -2403,6 +2402,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                                   menuBuffer={0}
                                   menuRenderer={[Function]}
                                   multi={false}
+                                  name="location"
                                   noResultsText="No results found"
                                   onBlurResetsInput={true}
                                   onChange={[Function]}

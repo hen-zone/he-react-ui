@@ -105,11 +105,9 @@ exports[`<FormSection /> rendered correctly with Default fixture 1`] = `
             className="label"
             error={false}
             htmlFor="demo"
-            onChange={[Function]}
           >
             <div
               className="label label"
-              onChange={[Function]}
             >
               <label
                 htmlFor="demo"

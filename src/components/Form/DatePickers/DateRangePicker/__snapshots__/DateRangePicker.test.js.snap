@@ -38,7 +38,6 @@ exports[`<DateRangePicker /> rendered correctly with customOnly fixture 1`] = `
     >
       <div
         className="outer"
-        onClose={[Function]}
       >
         <div
           className="relative"
@@ -74,6 +73,7 @@ exports[`<DateRangePicker /> rendered correctly with customOnly fixture 1`] = `
               menuBuffer={0}
               menuRenderer={[Function]}
               multi={false}
+              name="date-range-picker-select-name"
               noResultsText="No results found"
               onBlurResetsInput={true}
               onChange={[Function]}
@@ -1626,7 +1626,6 @@ exports[`<DateRangePicker /> rendered correctly with customPlaceholder fixture 1
     >
       <div
         className="outer"
-        onClose={[Function]}
       >
         <div
           className="relative"
@@ -1662,6 +1661,7 @@ exports[`<DateRangePicker /> rendered correctly with customPlaceholder fixture 1
               menuBuffer={0}
               menuRenderer={[Function]}
               multi={false}
+              name="date-range-picker-select-name"
               noResultsText="No results found"
               onBlurResetsInput={true}
               onChange={[Function]}
@@ -3214,7 +3214,6 @@ exports[`<DateRangePicker /> rendered correctly with fill fixture 1`] = `
     >
       <div
         className="outer"
-        onClose={[Function]}
       >
         <div
           className="relative"
@@ -3250,6 +3249,7 @@ exports[`<DateRangePicker /> rendered correctly with fill fixture 1`] = `
               menuBuffer={0}
               menuRenderer={[Function]}
               multi={false}
+              name="date-range-picker-select-name"
               noResultsText="No results found"
               onBlurResetsInput={true}
               onChange={[Function]}
@@ -4802,7 +4802,6 @@ exports[`<DateRangePicker /> rendered correctly with keepOpenOnDateSelect fixtur
     >
       <div
         className="outer"
-        onClose={[Function]}
       >
         <div
           className="relative"
@@ -4838,6 +4837,7 @@ exports[`<DateRangePicker /> rendered correctly with keepOpenOnDateSelect fixtur
               menuBuffer={0}
               menuRenderer={[Function]}
               multi={false}
+              name="date-range-picker-select-name"
               noResultsText="No results found"
               onBlurResetsInput={true}
               onChange={[Function]}
@@ -6390,7 +6390,6 @@ exports[`<DateRangePicker /> rendered correctly with noInitialValue fixture 1`] 
     >
       <div
         className="outer"
-        onClose={[Function]}
       >
         <div
           className="relative"
@@ -6426,6 +6425,7 @@ exports[`<DateRangePicker /> rendered correctly with noInitialValue fixture 1`] 
               menuBuffer={0}
               menuRenderer={[Function]}
               multi={false}
+              name="date-range-picker-select-name"
               noResultsText="No results found"
               onBlurResetsInput={true}
               onChange={[Function]}
@@ -7978,7 +7978,6 @@ exports[`<DateRangePicker /> rendered correctly with presetsOnly fixture 1`] = `
     >
       <div
         className="outer"
-        onClose={[Function]}
       >
         <div
           className="relative"
@@ -8014,6 +8013,7 @@ exports[`<DateRangePicker /> rendered correctly with presetsOnly fixture 1`] = `
               menuBuffer={0}
               menuRenderer={[Function]}
               multi={false}
+              name="date-range-picker-select-name"
               noResultsText="No results found"
               onBlurResetsInput={true}
               onChange={[Function]}
@@ -9566,7 +9566,6 @@ exports[`<DateRangePicker /> rendered correctly with withChoices fixture 1`] = `
     >
       <div
         className="outer"
-        onClose={[Function]}
       >
         <div
           className="relative"
@@ -9602,6 +9601,7 @@ exports[`<DateRangePicker /> rendered correctly with withChoices fixture 1`] = `
               menuBuffer={0}
               menuRenderer={[Function]}
               multi={false}
+              name="date-range-picker-select-name"
               noResultsText="No results found"
               onBlurResetsInput={true}
               onChange={[Function]}

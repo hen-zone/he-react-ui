@@ -50,11 +50,9 @@ exports[`<Radio /> rendered correctly with label fixture 1`] = `
       className="label"
       error={false}
       htmlFor="demo"
-      onChange={[Function]}
     >
       <div
         className="label label"
-        onChange={[Function]}
       >
         <label
           htmlFor="demo"

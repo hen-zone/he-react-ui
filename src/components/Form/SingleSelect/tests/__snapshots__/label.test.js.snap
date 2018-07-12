@@ -31,17 +31,14 @@ exports[`<SingleSelect /> rendered correctly with label fixture 1`] = `
 >
   <div
     className="outer"
-    onClose={[Function]}
   >
     <Label
       className="label"
       error={false}
       htmlFor="demo"
-      onChange={[Function]}
     >
       <div
         className="label label"
-        onChange={[Function]}
       >
         <label
           htmlFor="demo"
@@ -84,6 +81,7 @@ exports[`<SingleSelect /> rendered correctly with label fixture 1`] = `
           menuBuffer={0}
           menuRenderer={[Function]}
           multi={false}
+          name="demo"
           noResultsText="No results found"
           onBlurResetsInput={true}
           onChange={[Function]}

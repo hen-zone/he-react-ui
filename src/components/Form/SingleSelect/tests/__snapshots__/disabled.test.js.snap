@@ -31,7 +31,6 @@ exports[`<SingleSelect /> rendered correctly with disabled fixture 1`] = `
 >
   <div
     className="outer"
-    onClose={[Function]}
   >
     <div
       className="relative"
@@ -67,6 +66,7 @@ exports[`<SingleSelect /> rendered correctly with disabled fixture 1`] = `
           menuBuffer={0}
           menuRenderer={[Function]}
           multi={false}
+          name="demo"
           noResultsText="No results found"
           onBlurResetsInput={true}
           onChange={[Function]}

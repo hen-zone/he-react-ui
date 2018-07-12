@@ -194,15 +194,18 @@ class TimeSelector extends React.Component<Props, *> {
           className={classnames(style.select, {
             [style.error]: error,
             [style.disabled]: disabled,
+            [style.noValue]: !value,
           })}
           onClick={this.toggleExpand}
         >
           <span>{this.getDisplay()}</span>
           <Icon className={style.clock} name="Clock" />
-        </div>
-        <div className={style.options}>
-          <ul>{this.generateList(hours, this.selectHour)}</ul>
-          {!hourly && <ul>{this.generateList(minutes, this.selectMinute)}</ul>}
+          <div className={style.options}>
+            <ul>{this.generateList(hours, this.selectHour)}</ul>
+            {!hourly && (
+              <ul>{this.generateList(minutes, this.selectMinute)}</ul>
+            )}
+          </div>
         </div>
         {error && (
           <Label className={style.errorMessage} htmlFor={id} error>
