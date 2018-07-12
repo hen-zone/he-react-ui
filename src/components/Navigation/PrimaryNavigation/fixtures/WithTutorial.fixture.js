@@ -3,7 +3,6 @@ import * as React from 'react';
 import classnames from 'classnames';
 import PrimaryNavigation from '../';
 import Button from '../../../Form/Button';
-import CheckBox from '../../../Form/CheckBox';
 import Icon from '../../../Icon';
 import styles from '../../../Tutorial/Tutorial.scss';
 
