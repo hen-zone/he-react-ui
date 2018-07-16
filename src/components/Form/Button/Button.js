@@ -46,7 +46,7 @@ function InnerButton(props: {
 }
 
 type Props = {
-  submit?: boolean,
+  submit: boolean,
   color?: 'teal' | 'blue' | 'green' | 'red' | 'white',
   link?: boolean,
   small?: boolean,

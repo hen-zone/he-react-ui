@@ -1,6 +1,6 @@
 // @flow
 import createTestContext from 'react-cosmos-test/enzyme';
-import fixture from '../fixtures/Link.fixture';
+import fixture from '../fixtures/linkStyle.fixture';
 
 const { mount, getWrapper } = createTestContext({ fixture });
 

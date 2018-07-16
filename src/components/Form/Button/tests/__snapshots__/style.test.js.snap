@@ -18,6 +18,7 @@ exports[`<Button /> rendered correctly with style fixture 1`] = `
     }
   }
   submit={false}
+  withRouter={false}
 >
   <div
     className="buttonContainer"
@@ -30,17 +31,24 @@ exports[`<Button /> rendered correctly with style fixture 1`] = `
       }
     }
   >
-    <button
+    <InnerButton
       className="button teal"
       onClick={[Function]}
-      type="button"
+      submit={false}
+      withRouter={false}
     >
-      <div
-        className="content"
+      <button
+        className="button teal"
+        onClick={[Function]}
+        type="button"
       >
-        Button
-      </div>
-    </button>
+        <div
+          className="content"
+        >
+          Button
+        </div>
+      </button>
+    </InnerButton>
   </div>
 </Button>
 `;
