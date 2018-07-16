@@ -13,7 +13,8 @@
     "lint": "eslint . --env jest",
     "lint-fix": "eslint . --fix --env jest",
     "cosmos": "cosmos",
-    "precommit": "yarn lint && yarn flow && yarn coverage && yarn jest-coverage-ratchet"
+    "precommit": "yarn verify",
+    "verify": "yarn lint && yarn flow && yarn coverage && yarn jest-coverage-ratchet"
   },
   "keywords": [
     "HealthEngine",
