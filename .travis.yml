@@ -1,19 +1,23 @@
 language: js
+
 cache:
   yarn: true
   directories:
-  - node_modules
+    - node_modules
+
 script:
-- yarn
-- yarn verify
-- yarn build
+  - yarn
+  - yarn verify
+  - yarn build
+
 after_success:
-- yarn coveralls
+  - yarn coveralls
+
 before_deploy:
-- yarn cosmos-export
-- touch cosmos-export/.nojekyll
+  - yarn cosmos-export
+  - touch cosmos-export/.nojekyll
+
 deploy:
-  matrix:
   - provider: pages
     verbose: true
     skip-cleanup: true
@@ -31,6 +35,7 @@ deploy:
     on:
       tags: true
     skip-cleanup: true
+
 notifications:
   slack:
     secure: vqLBHGlx4cZ9bzVN59w9HGztu03tDX/vMVt/C9s+qDZFOv1+VCRaEzInBw99vpxgGBnm364VgXtYXFk6H1GAuFe8j20ydaqi/mVUnHRRb8akC5YpyL6aar7ACs6LDHuUvmIjCV4QVZxHWHl+ppRgZ0XZHvHuKG+bpiLMPpwQEDFHajxaFdghtxFxeTO4BaSSB2/rD1WXPshLOixCo2tK78h9IJndhXo4PFUNSC+wgYHdaVoVRDmRLUDf3dnRswLXP2GbQFW4yZU8rqnkDT/Y2tCV1cLA0flqOez4DEVHrs1jgghJ5FBzwLCVvHAwbFsESbAl0bMA7dgErJQVMkvujTBl7+SW/X94OicwmjTxOUb3S9sEb3F3+WZMaolHnksZydmexyD+Vw4p3JuDZHICaYdjqYayvSgOanVcfyY+NawE8RmjepiTY2QDlaNCeQ82r8hakoh3xITVO8/Htm5n5e9m+m2voieiGtIGeNHGYzYlQj28qwb20+K9Xh0PRi2ZMhY/qowh15mBtbLKJZDCFZ1waIIBjq+hAgkVpaBrdS5vi2uJQgGayfmsYcHJ6qxUd1Q9Vz2DChu/GUfX7WoAU28CCliHbSpmk+wYkRRZ4gL22V8uSEKtg7dUmjG9QQx4nw5GEAqtjHG6XYnnVz86UliuntmP7P+bw1qWvRDYjGw=
