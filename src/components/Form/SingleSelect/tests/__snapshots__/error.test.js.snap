@@ -59,7 +59,7 @@ exports[`<SingleSelect /> rendered correctly with error fixture 1`] = `
           ignoreCase={true}
           inputProps={Object {}}
           isLoading={false}
-          joinValues={false}
+          joinValues={true}
           labelKey="label"
           matchPos="any"
           matchProp="any"
@@ -110,6 +110,12 @@ exports[`<SingleSelect /> rendered correctly with error fixture 1`] = `
           <div
             className="Select select error is-clearable is-searchable Select--single"
           >
+            <input
+              disabled={false}
+              name="demo"
+              type="hidden"
+              value=""
+            />
             <div
               className="Select-control"
               onKeyDown={[Function]}

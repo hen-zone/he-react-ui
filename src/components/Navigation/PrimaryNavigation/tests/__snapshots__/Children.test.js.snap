@@ -2364,7 +2364,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                                   ignoreCase={true}
                                   inputProps={Object {}}
                                   isLoading={false}
-                                  joinValues={false}
+                                  joinValues={true}
                                   labelKey="label"
                                   matchPos="any"
                                   matchProp="any"
@@ -2411,6 +2411,12 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                                   <div
                                     className="Select select is-clearable is-searchable Select--single"
                                   >
+                                    <input
+                                      disabled={false}
+                                      name="location"
+                                      type="hidden"
+                                      value=""
+                                    />
                                     <div
                                       className="Select-control"
                                       onKeyDown={[Function]}

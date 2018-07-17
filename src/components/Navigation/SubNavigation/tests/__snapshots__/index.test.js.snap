@@ -194,7 +194,7 @@ exports[`<SubNavigation /> rendered correctly with fixture 1`] = `
                       ignoreCase={true}
                       inputProps={Object {}}
                       isLoading={false}
-                      joinValues={false}
+                      joinValues={true}
                       labelKey="label"
                       matchPos="any"
                       matchProp="any"
@@ -241,6 +241,12 @@ exports[`<SubNavigation /> rendered correctly with fixture 1`] = `
                       <div
                         className="Select select is-clearable is-searchable Select--single"
                       >
+                        <input
+                          disabled={false}
+                          name="location"
+                          type="hidden"
+                          value=""
+                        />
                         <div
                           className="Select-control"
                           onKeyDown={[Function]}
