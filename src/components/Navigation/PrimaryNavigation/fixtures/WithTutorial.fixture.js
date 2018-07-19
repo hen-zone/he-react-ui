@@ -6,6 +6,39 @@ import Button from '../../../Form/Button';
 import Icon from '../../../Icon';
 import styles from '../../../Tutorial/Tutorial.scss';
 import { TutorialOwner, TutorialStep, withTutorial } from '../../../Tutorial';
+import type { TutorialProps } from '../../../Tutorial/TutorialContext';
+
+const IntroBox = withTutorial((props: TutorialProps & { id: string }) => (
+  <TutorialStep id={props.id} centered>
+    <div className={styles.tutorialIntroHeader}>
+      <Icon
+        key="h1"
+        className={styles.heLogoWithText}
+        name="HealthEngineWithText"
+      />
+      <h3 key="h2">Welcome</h3>
+    </div>
+
+    <Button id="takeTourBtn" onClick={props.onTutorialAdvance}>
+      Take the tour
+    </Button>
+    <br />
+    <Button link onClick={props.onTutorialDismiss}>
+      Not now
+    </Button>
+
+    <div
+      className={classnames(styles.tutorialIntroFooter, styles.greyBackground)}
+    >
+      <div className={styles.footerCell} key="c1" />
+      <div className={styles.footerCell} key="c2">
+        <Button key="cb1" className={styles.rightElement} link>
+          Why we changed?
+        </Button>
+      </div>
+    </div>
+  </TutorialStep>
+));
 
 const sharedNavProps = {
   logoutRoute: '/logout',
@@ -214,7 +247,7 @@ const NavTutorialAnimator = withTutorial(
     const openBucketKeyForStep = {
       bucket1: 'BUCKET1',
       bucket2: 'BUCKET2',
-      settings: 'NAV_ITEM',
+      settings: 'SETTINGS',
     };
 
     const openKey = openBucketKeyForStep[currentStep];
@@ -236,106 +269,52 @@ export default {
     steps: ['intro', 'new-nav', 'bucket1', 'bucket2', 'help', 'settings'],
     children: (
       <React.Fragment>
-        <TutorialStep
-          id="intro"
-          isIntro
-          centered
-          header={
-            <div className={styles.tutorialIntroHeader}>
-              <Icon
-                key="h1"
-                className={styles.heLogoWithText}
-                name="HealthEngineWithText"
-              />
-              <h3 key="h2">Welcome</h3>
-            </div>
-          }
-          content={
-            <div
-              className={classnames(
-                styles.tutorialIntroFooter,
-                styles.greyBackground,
-              )}
-            >
-              <div className={styles.footerCell} key="c1" />
-              <div className={styles.footerCell} key="c2">
-                <Button key="cb1" className={styles.rightElement} link>
-                  Why we changed?
-                </Button>
-              </div>
-            </div>
-          }
-        />
+        <IntroBox id="intro" />
 
-        <TutorialStep
-          id="new-nav"
-          attachTo="BUCKET_HOME"
-          showCarousel
-          showArrow
-          header="New navigation"
-          content={
-            <div>
-              Duis in vulputate magna. Pellentesque luctus. <br />Vivamus
-              lobortis sagittis lobortis. Curabitur.
-            </div>
-          }
-        />
+        <TutorialStep id="new-nav" attachTo="BUCKET_HOME" showCarousel>
+          <h3>New navigation</h3>
 
-        <TutorialStep
-          id="bucket1"
-          attachTo="NAV_NORMAL"
-          showCarousel
-          showArrow
-          header="BUCKET1"
-          content={
-            <div>
-              Vivamus efficitur lacus at est ornare porta euismod non leo.
-            </div>
-          }
-        />
+          <div>
+            Duis in vulputate magna. Pellentesque luctus. <br />Vivamus lobortis
+            sagittis lobortis. Curabitur.
+          </div>
+        </TutorialStep>
 
-        <TutorialStep
-          id="bucket2"
-          attachTo="NAV_NEW"
-          showCarousel
-          showArrow
-          header="BUCKET2"
-          content={
-            <div>
-              Donec molestie commodo convallis. Phasellus vitae purus et diam
-              rhoncus efficitur.
-            </div>
-          }
-        />
+        <TutorialStep id="bucket1" attachTo="NAV_NORMAL" showCarousel>
+          <h3>BUCKET1</h3>
 
-        <TutorialStep
-          id="help"
-          attachTo="BUCKET_HELP"
-          showCarousel
-          showArrow
-          header="Need some help?"
-          content={
-            <div>
-              Proin nibh nibh, condimentum a tristique in, porta eleifend ex.
-              Proin sodales varius fermentum. Ut vitae elit nisi. Phasellus
-              feugiat rhoncus pulvinar
-            </div>
-          }
-        />
+          <div>
+            Vivamus efficitur lacus at est ornare porta euismod non leo.
+          </div>
+        </TutorialStep>
 
-        <TutorialStep
-          id="settings"
-          attachTo="BUCKET_SETTINGS"
-          showCarousel
-          showArrow
-          header="Settings"
-          content={
-            <div>
-              Nulla dolor nisl, faucibus non sagittis ut, viverra a arcu. Fusce
-              maximus posuere metus vel egestas.
-            </div>
-          }
-        />
+        <TutorialStep id="bucket2" attachTo="NAV_NEW" showCarousel>
+          <h3>BUCKET2</h3>
+
+          <div>
+            Donec molestie commodo convallis. Phasellus vitae purus et diam
+            rhoncus efficitur.
+          </div>
+        </TutorialStep>
+
+        <TutorialStep id="help" attachTo="BUCKET_HELP" showCarousel>
+          <h3>Need some help?</h3>
+
+          <div>
+            Proin nibh nibh, condimentum a tristique in, porta eleifend ex.
+            Proin sodales varius fermentum. Ut vitae elit nisi. Phasellus
+            feugiat rhoncus pulvinar
+          </div>
+        </TutorialStep>
+
+        <TutorialStep id="settings" attachTo="NAV_ITEM1" showCarousel>
+          <h3>Settings</h3>
+
+          <div>
+            Nulla dolor nisl, faucibus non sagittis ut, viverra a arcu. Fusce
+            maximus posuere metus vel egestas.
+          </div>
+        </TutorialStep>
       </React.Fragment>
     ),
   },

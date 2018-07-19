@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 
-type TutorialProps = {
+export type TutorialProps = {
   onTutorialAdvance: Function,
   onTutorialDismiss: Function,
   onTutorialJump: Function,

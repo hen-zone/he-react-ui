@@ -1,18 +1,29 @@
 // @flow
-/* eslint-disable react/no-multi-comp */
-/**
- *
- * Tutorial
- *
- */
+
 import classnames from 'classnames';
 import * as React from 'react';
-import Icon from '../Icon';
-import LoadingSpinner from '../Loading/LoadingSpinner';
 import Button from '../Form/Button';
-import styles from './Tutorial.scss';
+import Icon from '../Icon';
 import CarouselIndicator from '../Layout/CarouselIndicator';
+import styles from './Tutorial.scss';
 import withTutorial from './withTutorial';
+
+function everyFrame(handler) {
+  let stopped = false;
+
+  function repeat() {
+    if (!stopped) {
+      handler();
+      requestAnimationFrame(repeat);
+    }
+  }
+
+  repeat();
+
+  return function stop() {
+    stopped = true;
+  };
+}
 
 export default withTutorial(
   class TutorialStep extends React.Component<*, *> {
@@ -25,11 +36,11 @@ export default withTutorial(
     };
 
     componentWillMount() {
-      this.attachmentPollId = setInterval(this.pollAttachedElement, 200);
+      this.stopRepeating = everyFrame(this.pollAttachedElement);
     }
 
     componentWillUnmount() {
-      if (this.attachmentPollId) clearInterval(this.attachmentPollId);
+      if (this.stopRepeating) this.stopRepeating();
     }
 
     receiveOwnDomElement = ownDomElement => {
@@ -61,7 +72,7 @@ export default withTutorial(
       }
     };
 
-    attachmentPollId = null;
+    stopRepeating = null;
 
     render() {
       const {
@@ -71,11 +82,9 @@ export default withTutorial(
         tutorialSteps,
         id,
         showCarousel,
-        header,
-        content,
+        children,
         className,
         centered,
-        isIntro,
       } = this.props;
 
       const currentStep = tutorialSteps[tutorialIndex];
@@ -96,7 +105,7 @@ export default withTutorial(
         position: 'absolute',
         width: '100%',
         height: '100%',
-        transition: 'all 0.4s',
+        // transition: 'all 0.4s',
       };
       let arrowStyle = {};
       let newTop = top - 75;
@@ -120,50 +129,6 @@ export default withTutorial(
         width: left,
       };
 
-      const asIntro = (
-        <React.Fragment>
-          {header}
-          <Button id="takeTourBtn" onClick={onTutorialAdvance}>
-            Take the tour
-          </Button>
-          <br />
-          <Button link onClick={onTutorialDismiss}>
-            Not now
-          </Button>
-          {content}
-        </React.Fragment>
-      );
-
-      const asStep = (
-        <div className={styles.tutorialWrapper}>
-          <h3 className={styles.tutorialHeader}>{header}</h3>
-
-          {content || <LoadingSpinner />}
-
-          {showCarousel ? (
-            <CarouselIndicator
-              className={styles.tutorialIndicator}
-              length={tutorialSteps.length}
-              current={tutorialIndex}
-              nextStep={onTutorialAdvance}
-            />
-          ) : (
-            <div className={styles.tutorialIntroFooter}>
-              <div className={styles.footerCell} />
-              <div className={styles.footerCell}>
-                <Button
-                  className={styles.rightElement}
-                  link
-                  onClick={onTutorialDismiss}
-                >
-                  Got it!
-                </Button>
-              </div>
-            </div>
-          )}
-        </div>
-      );
-
       return (
         <div className={classes}>
           <div
@@ -183,7 +148,31 @@ export default withTutorial(
                 name="Cross"
                 onClick={onTutorialDismiss}
               />
-              {isIntro ? asIntro : asStep}
+              <div className={styles.tutorialWrapper}>
+                {children}
+
+                {showCarousel ? (
+                  <CarouselIndicator
+                    className={styles.tutorialIndicator}
+                    length={tutorialSteps.length}
+                    current={tutorialIndex}
+                    nextStep={onTutorialAdvance}
+                  />
+                ) : (
+                  <div className={styles.tutorialIntroFooter}>
+                    <div className={styles.footerCell} />
+                    <div className={styles.footerCell}>
+                      <Button
+                        className={styles.rightElement}
+                        link
+                        onClick={onTutorialDismiss}
+                      >
+                        Got it!
+                      </Button>
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
             {isAttached && (
               <Icon
