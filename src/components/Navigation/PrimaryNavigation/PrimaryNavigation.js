@@ -82,6 +82,7 @@ class PrimaryNavigation extends Component<Props, *> {
   };
 
   doChangeStep = (step: any) => {
+    console.log(`Called PrimaryNavigation.doChangeStep with`, step); // FIXME
     this.setState({
       currentTutorialPosition: {
         top: this.state.currentTutorialPosition.top,
@@ -280,6 +281,8 @@ class PrimaryNavigation extends Component<Props, *> {
       children,
       tutorialProps,
     } = this.props;
+
+    console.log(`PrimaryNavigation rendering with state:`, this.state); // FIXME
 
     return (
       <div className={styles.outer}>
