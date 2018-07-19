@@ -80,181 +80,172 @@ export class TutorialHarness extends React.Component<*, *> {
   }
 }
 
-class TutorialStepInner extends React.Component<*, *> {
-  state = {
-    ownDomElement: null,
-  };
-
-  receiveOwnDomElement = ownDomElement => {
-    if (ownDomElement !== this.state.ownDomElement) {
-      this.setState({ ownDomElement });
-    }
-  };
-
-  render() {
-    const {
-      onTutorialAdvance,
-      onTutorialDismiss,
-      tutorialIndex,
-      tutorialSteps,
-      id,
-      showCarousel,
-      header,
-      content,
-      className,
-      showArrow,
-      centered,
-      isIntro,
-      attachTo,
-    } = this.props;
-
-    const currentStep = tutorialSteps[tutorialIndex];
-
-    if (currentStep !== id) {
-      return null;
-    }
-
-    const { ownDomElement } = this.state;
-
-    const attachedDomElement = attachTo
-      ? document.getElementById(attachTo)
-      : null;
-
-    let top = 100;
-    let left = 76;
-    let reversed = false;
-
-    if (attachedDomElement) {
-      console.log(`Found target`, attachedDomElement); // FIXME
-      const cords = attachedDomElement.getBoundingClientRect();
-      const newLeft = cords.right;
-      top = cords.top + cords.height / 2;
-      left = newLeft;
-      reversed = cords.top > window.innerHeight / 2;
-    } else {
-      console.log(`No target found for`, attachTo); // FIXME
-    }
-
-    const classes = classnames(styles.outer, styles.showing);
-
-    // TODO: handle opacity rules
-
-    const popupClasses = classnames(styles.popup, className, {
-      [styles.popupCentered]: centered,
-    });
-    let wrapperStyle = {
-      position: 'absolute',
-      width: '100%',
-      height: '100%',
-      transition: 'all 0.4s',
+export const TutorialStep = withTutorial(
+  class TutorialStep extends React.Component<*, *> {
+    state = {
+      ownDomElement: null,
     };
-    let arrowStyle = {};
-    let rightOverlay = {};
-    let leftOverlay = {};
-    let newTop = top - 75;
 
-    if (ownDomElement && reversed) {
-      newTop -= ownDomElement.getBoundingClientRect().height - 150;
-      arrowStyle = {
-        top: ownDomElement.getBoundingClientRect().height - 75,
+    receiveOwnDomElement = ownDomElement => {
+      if (ownDomElement !== this.state.ownDomElement) {
+        this.setState({ ownDomElement });
+      }
+    };
+
+    render() {
+      const {
+        onTutorialAdvance,
+        onTutorialDismiss,
+        tutorialIndex,
+        tutorialSteps,
+        id,
+        showCarousel,
+        header,
+        content,
+        className,
+        centered,
+        isIntro,
+        attachTo,
+      } = this.props;
+
+      const currentStep = tutorialSteps[tutorialIndex];
+
+      if (currentStep !== id) {
+        return null;
+      }
+
+      const { ownDomElement } = this.state;
+
+      const attachedDomElement = attachTo
+        ? document.getElementById(attachTo)
+        : null;
+
+      let top = 100;
+      let left = 76;
+      let reversed = false;
+
+      if (attachedDomElement) {
+        const cords = attachedDomElement.getBoundingClientRect();
+        const newLeft = cords.right;
+        top = cords.top + cords.height / 2;
+        left = newLeft;
+        reversed = cords.top > window.innerHeight / 2;
+      }
+
+      const classes = classnames(styles.outer, styles.showing);
+
+      // TODO: handle opacity rules
+
+      const popupClasses = classnames(styles.popup, className, {
+        [styles.popupCentered]: centered,
+      });
+      let wrapperStyle = {
+        position: 'absolute',
+        width: '100%',
+        height: '100%',
+        transition: 'all 0.4s',
       };
-    }
-    wrapperStyle = {
-      ...wrapperStyle,
-      top: newTop,
-      left,
-      right: 'auto',
-    };
-    rightOverlay = {
-      left,
-    };
-    leftOverlay = {
-      width: left,
-    };
+      let arrowStyle = {};
+      let rightOverlay = {};
+      let leftOverlay = {};
+      let newTop = top - 75;
 
-    const asIntro = (
-      <React.Fragment>
-        {header}
-        <Button id="takeTourBtn" onClick={onTutorialAdvance}>
-          Take the tour
-        </Button>
-        <br />
-        <Button link onClick={onTutorialDismiss}>
-          Not now
-        </Button>
-        {content}
-      </React.Fragment>
-    );
+      if (ownDomElement && reversed) {
+        newTop -= ownDomElement.getBoundingClientRect().height - 150;
+        arrowStyle = {
+          top: ownDomElement.getBoundingClientRect().height - 75,
+        };
+      }
+      wrapperStyle = {
+        ...wrapperStyle,
+        top: newTop,
+        left,
+        right: 'auto',
+      };
+      rightOverlay = {
+        left,
+      };
+      leftOverlay = {
+        width: left,
+      };
 
-    const asStep = (
-      <div className={styles.tutorialWrapper}>
-        <h3 className={styles.tutorialHeader}>{header}</h3>
+      const asIntro = (
+        <React.Fragment>
+          {header}
+          <Button id="takeTourBtn" onClick={onTutorialAdvance}>
+            Take the tour
+          </Button>
+          <br />
+          <Button link onClick={onTutorialDismiss}>
+            Not now
+          </Button>
+          {content}
+        </React.Fragment>
+      );
 
-        {content || <LoadingSpinner />}
+      const asStep = (
+        <div className={styles.tutorialWrapper}>
+          <h3 className={styles.tutorialHeader}>{header}</h3>
 
-        {showCarousel ? (
-          <CarouselIndicator
-            className={styles.tutorialIndicator}
-            length={tutorialSteps.length}
-            current={tutorialIndex}
-            nextStep={onTutorialAdvance}
-          />
-        ) : (
-          <div className={styles.tutorialIntroFooter}>
-            <div className={styles.footerCell} />
-            <div className={styles.footerCell}>
-              <Button
-                className={styles.rightElement}
-                link
-                onClick={onTutorialDismiss}
-              >
-                Got it!
-              </Button>
+          {content || <LoadingSpinner />}
+
+          {showCarousel ? (
+            <CarouselIndicator
+              className={styles.tutorialIndicator}
+              length={tutorialSteps.length}
+              current={tutorialIndex}
+              nextStep={onTutorialAdvance}
+            />
+          ) : (
+            <div className={styles.tutorialIntroFooter}>
+              <div className={styles.footerCell} />
+              <div className={styles.footerCell}>
+                <Button
+                  className={styles.rightElement}
+                  link
+                  onClick={onTutorialDismiss}
+                >
+                  Got it!
+                </Button>
+              </div>
             </div>
-          </div>
-        )}
-      </div>
-    );
-
-    return (
-      <div
-        ref={it => {
-          console.log(`${id}:`, it);
-        }}
-        className={classes}
-      >
-        <div
-          className={styles.transparentOverlay}
-          style={leftOverlay}
-          onClick={onTutorialDismiss}
-        />
-        <div
-          className={styles.overlay}
-          style={rightOverlay}
-          onClick={onTutorialDismiss}
-        />
-        <div style={wrapperStyle}>
-          <div className={popupClasses} id="tutorialPopup">
-            <Icon
-              className={styles.close}
-              name="Cross"
-              onClick={onTutorialDismiss}
-            />
-            {isIntro ? asIntro : asStep}
-          </div>
-          {showArrow && (
-            <Icon
-              className={classnames(styles.arrow, {
-                [styles.reversed]: reversed,
-              })}
-              style={arrowStyle}
-              name="CurvedArrow"
-            />
           )}
         </div>
-      </div>
-    );
-  }
-}
+      );
 
-export const TutorialStep = withTutorial(TutorialStepInner);
+      return (
+        <div className={classes}>
+          <div
+            className={styles.transparentOverlay}
+            style={leftOverlay}
+            onClick={onTutorialDismiss}
+          />
+          <div
+            className={styles.overlay}
+            style={rightOverlay}
+            onClick={onTutorialDismiss}
+          />
+          <div style={wrapperStyle}>
+            <div className={popupClasses}>
+              <Icon
+                className={styles.close}
+                name="Cross"
+                onClick={onTutorialDismiss}
+              />
+              {isIntro ? asIntro : asStep}
+            </div>
+            {!!attachedDomElement && (
+              <Icon
+                className={classnames(styles.arrow, {
+                  [styles.reversed]: reversed,
+                })}
+                style={arrowStyle}
+                name="CurvedArrow"
+              />
+            )}
+          </div>
+        </div>
+      );
+    }
+  },
+);

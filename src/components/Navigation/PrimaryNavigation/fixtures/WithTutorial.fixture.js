@@ -5,7 +5,11 @@ import PrimaryNavigation from '../';
 import Button from '../../../Form/Button';
 import Icon from '../../../Icon';
 import styles from '../../../Tutorial/Tutorial.scss';
-import { TutorialHarness, TutorialStep } from '../../../Tutorial/Tutorial';
+import {
+  TutorialHarness,
+  TutorialStep,
+  withTutorial,
+} from '../../../Tutorial/Tutorial';
 
 const sharedNavProps = {
   logoutRoute: '/logout',
@@ -204,10 +208,31 @@ function NavWithTutorial({ navProps, steps, children }: any) {
     <TutorialHarness steps={steps} autoStart>
       {/* TODO: force buckets to open based on current step */}
       {children}
-      <PrimaryNavigation {...navProps} />
+      <NavTutorialAnimator {...navProps} />
     </TutorialHarness>
   );
 }
+
+const NavTutorialAnimator = withTutorial(
+  ({ tutorialSteps, tutorialIndex, ...props }) => {
+    const currentStep = tutorialSteps[tutorialIndex];
+
+    const openBucketKeyForStep = {
+      bucket1: 'BUCKET1',
+      bucket2: 'BUCKET2',
+      help: 'HELP',
+      settings: 'SETTINGS',
+    };
+
+    const openKey = openBucketKeyForStep[currentStep];
+
+    return openKey ? (
+      <PrimaryNavigation {...props} openKey={openKey} />
+    ) : (
+      <PrimaryNavigation {...props} />
+    );
+  },
+);
 
 export default {
   component: NavWithTutorial,

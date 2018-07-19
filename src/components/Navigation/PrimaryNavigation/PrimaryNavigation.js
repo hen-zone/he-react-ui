@@ -57,6 +57,7 @@ type Props = {
   loading?: boolean,
   children: any,
   tutorialProps?: any,
+  openKey?: ?string,
 };
 
 class PrimaryNavigation extends Component<Props, *> {
@@ -73,45 +74,6 @@ class PrimaryNavigation extends Component<Props, *> {
 
   state = {
     openKey: (null: ?string),
-    currentTutorialPosition: {
-      top: 76,
-      left: 76,
-      reversed: false,
-      opacity: 1,
-    },
-  };
-
-  doChangeStep = (step: any) => {
-    console.log(`Called PrimaryNavigation.doChangeStep with`, step); // FIXME
-    this.setState({
-      currentTutorialPosition: {
-        top: this.state.currentTutorialPosition.top,
-        reversed: this.state.currentTutorialPosition.reversed,
-        left: 0,
-      },
-    });
-    const openBucket = step.target.bucket && step.target.item;
-    const bucketEl = step.target.bucket
-      ? document.getElementById(`BUCKET_${step.target.bucket}`)
-      : null;
-    const el = step.target.item
-      ? document.getElementById(`NAV_${step.target.item}`)
-      : bucketEl;
-    this.closeBucket();
-    if (openBucket) {
-      this.toggleBucket(step.target.bucket);
-    }
-    if (el) {
-      const cords = el.getBoundingClientRect();
-      const newLeft = step.target.item ? 340 : cords.right;
-      this.setState({
-        currentTutorialPosition: {
-          top: cords.top + cords.height / 2,
-          reversed: cords.top > window.innerHeight / 2,
-          left: newLeft,
-        },
-      });
-    }
   };
 
   closeBucket = () => {
@@ -128,10 +90,14 @@ class PrimaryNavigation extends Component<Props, *> {
     this.setState({ openKey: null });
   };
 
+  getOpenKey() {
+    return 'openKey' in this.props ? this.props.openKey : this.state.openKey;
+  }
+
   renderSliders = () => {
     const { closeBucket } = this;
     const { bottomKeys, items, siteName } = this.props;
-    const { openKey } = this.state;
+    const openKey = this.getOpenKey();
     const topItems = items.filter(item => !bottomKeys.includes(item.key));
     const bottomItems = items.filter(item => bottomKeys.includes(item.key));
 
@@ -162,7 +128,7 @@ class PrimaryNavigation extends Component<Props, *> {
   renderBuckets = () => {
     const { closeBucket, toggleBucket } = this;
     const { bottomKeys, items, loading, logo } = this.props;
-    const { openKey } = this.state;
+    const openKey = this.getOpenKey();
     const topItems = items.filter(item => !bottomKeys.includes(item.key));
     const bottomItems = items.filter(item => bottomKeys.includes(item.key));
 
