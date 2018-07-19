@@ -31,6 +31,7 @@ exports[`<Tutorial /> rendered correctly with default fixture 1`] = `
               onClick={[Function]}
               squared={false}
               submit={false}
+              withRouter={false}
             >
               Why we changed?
             </Button>
@@ -315,21 +316,29 @@ exports[`<Tutorial /> rendered correctly with default fixture 1`] = `
           onClick={[Function]}
           squared={false}
           submit={false}
+          withRouter={false}
         >
           <div
             className="buttonContainer"
           >
-            <button
+            <InnerButton
               className="button teal"
               onClick={[Function]}
-              type="button"
+              submit={false}
+              withRouter={false}
             >
-              <div
-                className="content"
+              <button
+                className="button teal"
+                onClick={[Function]}
+                type="button"
               >
-                Take the tour
-              </div>
-            </button>
+                <div
+                  className="content"
+                >
+                  Take the tour
+                </div>
+              </button>
+            </InnerButton>
           </div>
         </Button>
         <br />
@@ -342,21 +351,29 @@ exports[`<Tutorial /> rendered correctly with default fixture 1`] = `
           onClick={[Function]}
           squared={false}
           submit={false}
+          withRouter={false}
         >
           <div
             className="buttonContainer"
           >
-            <button
+            <InnerButton
               className="button teal link"
               onClick={[Function]}
-              type="button"
+              submit={false}
+              withRouter={false}
             >
-              <div
-                className="content"
+              <button
+                className="button teal link"
+                onClick={[Function]}
+                type="button"
               >
-                Not now
-              </div>
-            </button>
+                <div
+                  className="content"
+                >
+                  Not now
+                </div>
+              </button>
+            </InnerButton>
           </div>
         </Button>
         <div
@@ -381,21 +398,29 @@ exports[`<Tutorial /> rendered correctly with default fixture 1`] = `
               onClick={[Function]}
               squared={false}
               submit={false}
+              withRouter={false}
             >
               <div
                 className="buttonContainer"
               >
-                <button
+                <InnerButton
                   className="button teal link rightElement"
                   onClick={[Function]}
-                  type="button"
+                  submit={false}
+                  withRouter={false}
                 >
-                  <div
-                    className="content"
+                  <button
+                    className="button teal link rightElement"
+                    onClick={[Function]}
+                    type="button"
                   >
-                    Why we changed?
-                  </div>
-                </button>
+                    <div
+                      className="content"
+                    >
+                      Why we changed?
+                    </div>
+                  </button>
+                </InnerButton>
               </div>
             </Button>
           </div>

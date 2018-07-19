@@ -232,6 +232,7 @@ exports[`<PrimaryNavigation /> rendered correctly with tutorial fixture 1`] = `
                 onClick={[MockFunction]}
                 squared={false}
                 submit={false}
+                withRouter={false}
               >
                 Why we changed?
               </Button>
@@ -551,6 +552,7 @@ exports[`<PrimaryNavigation /> rendered correctly with tutorial fixture 1`] = `
                   onClick={[MockFunction]}
                   squared={false}
                   submit={false}
+                  withRouter={false}
                 >
                   Why we changed?
                 </Button>
@@ -2587,7 +2589,7 @@ exports[`<PrimaryNavigation /> rendered correctly with tutorial fixture 1`] = `
                                   ignoreCase={true}
                                   inputProps={Object {}}
                                   isLoading={false}
-                                  joinValues={false}
+                                  joinValues={true}
                                   labelKey="label"
                                   matchPos="any"
                                   matchProp="any"
@@ -2634,6 +2636,12 @@ exports[`<PrimaryNavigation /> rendered correctly with tutorial fixture 1`] = `
                                   <div
                                     className="Select select is-clearable is-searchable Select--single"
                                   >
+                                    <input
+                                      disabled={false}
+                                      name="location"
+                                      type="hidden"
+                                      value=""
+                                    />
                                     <div
                                       className="Select-control"
                                       onKeyDown={[Function]}
@@ -2919,6 +2927,7 @@ exports[`<PrimaryNavigation /> rendered correctly with tutorial fixture 1`] = `
                     onClick={[MockFunction]}
                     squared={false}
                     submit={false}
+                    withRouter={false}
                   >
                     Why we changed?
                   </Button>
@@ -3218,21 +3227,29 @@ exports[`<PrimaryNavigation /> rendered correctly with tutorial fixture 1`] = `
                 onClick={[Function]}
                 squared={false}
                 submit={false}
+                withRouter={false}
               >
                 <div
                   className="buttonContainer"
                 >
-                  <button
+                  <InnerButton
                     className="button teal"
                     onClick={[Function]}
-                    type="button"
+                    submit={false}
+                    withRouter={false}
                   >
-                    <div
-                      className="content"
+                    <button
+                      className="button teal"
+                      onClick={[Function]}
+                      type="button"
                     >
-                      Take the tour
-                    </div>
-                  </button>
+                      <div
+                        className="content"
+                      >
+                        Take the tour
+                      </div>
+                    </button>
+                  </InnerButton>
                 </div>
               </Button>
               <br />
@@ -3245,21 +3262,29 @@ exports[`<PrimaryNavigation /> rendered correctly with tutorial fixture 1`] = `
                 onClick={[Function]}
                 squared={false}
                 submit={false}
+                withRouter={false}
               >
                 <div
                   className="buttonContainer"
                 >
-                  <button
+                  <InnerButton
                     className="button teal link"
                     onClick={[Function]}
-                    type="button"
+                    submit={false}
+                    withRouter={false}
                   >
-                    <div
-                      className="content"
+                    <button
+                      className="button teal link"
+                      onClick={[Function]}
+                      type="button"
                     >
-                      Not now
-                    </div>
-                  </button>
+                      <div
+                        className="content"
+                      >
+                        Not now
+                      </div>
+                    </button>
+                  </InnerButton>
                 </div>
               </Button>
               <div
@@ -3284,21 +3309,29 @@ exports[`<PrimaryNavigation /> rendered correctly with tutorial fixture 1`] = `
                     onClick={[MockFunction]}
                     squared={false}
                     submit={false}
+                    withRouter={false}
                   >
                     <div
                       className="buttonContainer"
                     >
-                      <button
+                      <InnerButton
                         className="button teal link rightElement"
                         onClick={[Function]}
-                        type="button"
+                        submit={false}
+                        withRouter={false}
                       >
-                        <div
-                          className="content"
+                        <button
+                          className="button teal link rightElement"
+                          onClick={[Function]}
+                          type="button"
                         >
-                          Why we changed?
-                        </div>
-                      </button>
+                          <div
+                            className="content"
+                          >
+                            Why we changed?
+                          </div>
+                        </button>
+                      </InnerButton>
                     </div>
                   </Button>
                 </div>
