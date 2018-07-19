@@ -25,8 +25,24 @@ function everyFrame(handler) {
   };
 }
 
+type Props = {
+  id: string,
+  centered?: boolean,
+  showCarousel: boolean,
+  children: any,
+  className?: ?string,
+  centered?: boolean,
+};
+
 export default withTutorial(
-  class TutorialStep extends React.Component<*, *> {
+  class TutorialStep extends React.Component<Props, *> {
+    static defaultProps = {
+      showCarousel: false,
+      children: null,
+      className: null,
+      centered: false,
+    };
+
     state = {
       ownDomElement: null,
       top: 100,
