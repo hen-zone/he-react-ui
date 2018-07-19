@@ -11,36 +11,26 @@
   top: 0;
   width: 100%;
   z-index: 1000;
+  pointer-events: auto;
+
+  .arrow{
+    @include transition-delay(0.1s);
+  }
+
+  .popup {    
+    transform: scale(1);
+    @include transition-delay(0.1s);
+  }
 }
 
-.overlay {
-  background-color: $he_black;
-  height: 100%;
+.fadeIn {
   opacity: 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  @include transition(all 0.4s ease-in-out);
+  transition: all .6s ease-in-out 0s;
+  &.mounted {
+    opacity: 1;
+  }
 }
 
-.transparentOverlay {
-  background-color: $white;
-  height: 100%;
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 0;
-  @include transition(all 0.4s ease-in-out);
-}
-.wrapper{
-  opacity: 0;
-  @include transition(opacity 1s);
-}
-.showStep{
-  opacity: 1;
-}
 .popup {
   background-color: $white;
   border-radius: 4px;
@@ -51,7 +41,6 @@
   max-height: 399px;
   max-width: 544px;
   min-width: 320px;
-  opacity: 0;
   overflow-y: auto;
   position: absolute;
   text-align: center;
@@ -116,8 +105,8 @@
   position: absolute;
   top: 50px;
   left: 20px;
-  opacity: 0;
 }
+
 .reversed{
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
@@ -145,22 +134,7 @@
   background: $grey_5;
 }
 
-.showing {
-  pointer-events: auto;
-  @include transition(all 0.2s);
-  .overlay {
-    opacity: 0.45;
-  }
-  .arrow{
-    opacity: 1;
-    @include transition-delay(0.1s);
-  }
-  .popup {
-    opacity: 1;
-    transform: scale(1);
-    @include transition-delay(0.1s);
-  }
-}
+
 .tutorialWrapper{
   padding: 0 15px 0 15px;
 }

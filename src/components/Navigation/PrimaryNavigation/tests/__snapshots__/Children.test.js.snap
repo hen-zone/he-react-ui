@@ -432,7 +432,6 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
     preventDefault={false}
     siteName="Your Site"
     stopPropagation={false}
-    tutorialProps={null}
   >
     <div
       className="outer"

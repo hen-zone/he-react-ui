@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 // @flow
 
 import classnames from 'classnames';
@@ -25,6 +27,35 @@ function everyFrame(handler) {
   };
 }
 
+class FadeIn extends React.Component<*, *> {
+  state = { mounted: false };
+
+  componentWillMount() {
+    requestAnimationFrame(() => {
+      this.setState({ mounted: true });
+    });
+  }
+
+  props: { children: any };
+
+  render() {
+    /* FIXME */ console.log(
+      ...[this.state.mounted, `this.state.mounted`].reverse(),
+    ); /* FIXME */
+
+    return (
+      <div
+        className={classnames(
+          styles.fadeIn,
+          this.state.mounted && styles.mounted,
+        )}
+      >
+        {this.props.children}
+      </div>
+    );
+  }
+}
+
 type Props = {
   id: string,
   centered?: boolean,
@@ -32,6 +63,11 @@ type Props = {
   children: any,
   className?: ?string,
   centered?: boolean,
+  tutorialSteps: string[],
+  onTutorialAdvance: Function,
+  onTutorialDismiss: Function,
+  tutorialIndex: number,
+  attachTo?: string,
 };
 
 export default withTutorial(
@@ -112,17 +148,11 @@ export default withTutorial(
       const { ownDomElement } = this.state;
       const { top, left, reversed, isAttached } = this.state;
 
-      const classes = classnames(styles.outer, styles.showing);
+      const classes = classnames(styles.outer);
 
       const popupClasses = classnames(styles.popup, className, {
         [styles.popupCentered]: centered,
       });
-      let wrapperStyle = {
-        position: 'absolute',
-        width: '100%',
-        height: '100%',
-        // transition: 'all 0.4s',
-      };
       let arrowStyle = {};
       let newTop = top - 75;
 
@@ -132,32 +162,19 @@ export default withTutorial(
           top: ownDomElement.getBoundingClientRect().height - 75,
         };
       }
-      wrapperStyle = {
-        ...wrapperStyle,
+      const wrapperStyle = {
+        position: 'absolute',
+        width: '100%',
+        height: '100%',
         top: newTop,
         left,
         right: 'auto',
       };
-      const rightOverlay = {
-        left,
-      };
-      const leftOverlay = {
-        width: left,
-      };
 
       return (
-        <div className={classes}>
-          <div
-            className={styles.transparentOverlay}
-            style={leftOverlay}
-            onClick={onTutorialDismiss}
-          />
-          <div
-            className={styles.transparentOverlay}
-            style={rightOverlay}
-            onClick={onTutorialDismiss}
-          />
-          <div style={wrapperStyle}>
+        <div className={classes} style={wrapperStyle}>
+              <FadeIn>
+
             <div className={popupClasses}>
               <Icon
                 className={styles.close}
@@ -190,17 +207,20 @@ export default withTutorial(
                 )}
               </div>
             </div>
+            </FadeIn>
             {isAttached && (
+              <FadeIn>
+
               <Icon
                 className={classnames(styles.arrow, {
                   [styles.reversed]: reversed,
                 })}
                 style={arrowStyle}
                 name="CurvedArrow"
-              />
+                />
+                </FadeIn>
             )}
           </div>
-        </div>
       );
     }
   },

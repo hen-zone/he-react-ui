@@ -14,5 +14,4 @@ test('<PrimaryNavigation /> rendered correctly with tutorial fixture', () => {
   component.closeBucket();
   component.toggleBucket('BUCKET1');
   component.handleClickOutside();
-  component.doChangeStep(fixture.props.tutorialProps.tutorialStages.steps[1]);
 });

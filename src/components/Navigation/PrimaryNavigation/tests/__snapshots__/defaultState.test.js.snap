@@ -432,7 +432,6 @@ exports[`<PrimaryNavigation /> rendered correctly with default fixture 1`] = `
     preventDefault={false}
     siteName="Your Site"
     stopPropagation={false}
-    tutorialProps={null}
   >
     <div
       className="outer"
