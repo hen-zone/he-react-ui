@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 // @flow
 
 import classnames from 'classnames';
@@ -7,6 +5,7 @@ import * as React from 'react';
 import Button from '../Form/Button';
 import Icon from '../Icon';
 import CarouselIndicator from '../Layout/CarouselIndicator';
+import FadeIn from './FadeIn';
 import styles from './Tutorial.scss';
 import withTutorial from './withTutorial';
 
@@ -25,35 +24,6 @@ function everyFrame(handler) {
   return function stop() {
     stopped = true;
   };
-}
-
-class FadeIn extends React.Component<*, *> {
-  state = { mounted: false };
-
-  componentWillMount() {
-    requestAnimationFrame(() => {
-      this.setState({ mounted: true });
-    });
-  }
-
-  props: { children: any };
-
-  render() {
-    /* FIXME */ console.log(
-      ...[this.state.mounted, `this.state.mounted`].reverse(),
-    ); /* FIXME */
-
-    return (
-      <div
-        className={classnames(
-          styles.fadeIn,
-          this.state.mounted && styles.mounted,
-        )}
-      >
-        {this.props.children}
-      </div>
-    );
-  }
 }
 
 type Props = {
@@ -173,8 +143,7 @@ export default withTutorial(
 
       return (
         <div className={classes} style={wrapperStyle}>
-              <FadeIn>
-
+          <FadeIn>
             <div className={popupClasses}>
               <Icon
                 className={styles.close}
@@ -207,20 +176,19 @@ export default withTutorial(
                 )}
               </div>
             </div>
-            </FadeIn>
-            {isAttached && (
-              <FadeIn>
-
+          </FadeIn>
+          {isAttached && (
+            <FadeIn>
               <Icon
                 className={classnames(styles.arrow, {
                   [styles.reversed]: reversed,
                 })}
                 style={arrowStyle}
                 name="CurvedArrow"
-                />
-                </FadeIn>
-            )}
-          </div>
+              />
+            </FadeIn>
+          )}
+        </div>
       );
     }
   },
