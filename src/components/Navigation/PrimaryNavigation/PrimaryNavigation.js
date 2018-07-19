@@ -14,7 +14,6 @@ import LoadingStrip from '../../Loading/LoadingStrip';
 import Bucket from '../Bucket';
 import Slider from '../Slider';
 import SubNavigation from '../SubNavigation';
-import Tutorial from '../../Tutorial';
 import styles from './PrimaryNavigation.scss';
 import type { NavItem } from '../NavItem';
 
@@ -56,8 +55,8 @@ type Props = {
   logoutRoute: string,
   loading?: boolean,
   children: any,
-  tutorialProps?: any,
   openKey?: ?string,
+  maskPage?: boolean,
 };
 
 class PrimaryNavigation extends Component<Props, *> {
@@ -69,12 +68,15 @@ class PrimaryNavigation extends Component<Props, *> {
       route: '/',
     },
     loading: false,
-    tutorialProps: null,
   };
 
   state = {
     openKey: (null: ?string),
   };
+
+  getOpenKey() {
+    return 'openKey' in this.props ? this.props.openKey : this.state.openKey;
+  }
 
   closeBucket = () => {
     this.setState({ openKey: null });
@@ -89,10 +91,6 @@ class PrimaryNavigation extends Component<Props, *> {
   handleClickOutside = () => {
     this.setState({ openKey: null });
   };
-
-  getOpenKey() {
-    return 'openKey' in this.props ? this.props.openKey : this.state.openKey;
-  }
 
   renderSliders = () => {
     const { closeBucket } = this;
@@ -213,30 +211,8 @@ class PrimaryNavigation extends Component<Props, *> {
     });
   };
 
-  renderTutorial = tutorialProps => {
-    const { currentTutorialPosition } = this.state;
-    const { doChangeStep } = this;
-    return (
-      <Tutorial
-        showing
-        top={currentTutorialPosition.top}
-        left={currentTutorialPosition.left}
-        reversed={currentTutorialPosition.reversed}
-        opacity={currentTutorialPosition.opacity}
-        onChangeStep={doChangeStep}
-        tutorialStages={tutorialProps.tutorialStages}
-      />
-    );
-  };
-
   render() {
-    const {
-      closeBucket,
-      renderBuckets,
-      renderSliders,
-      renderSubNav,
-      renderTutorial,
-    } = this;
+    const { closeBucket, renderBuckets, renderSliders, renderSubNav } = this;
     const {
       items,
       loading,
@@ -245,10 +221,8 @@ class PrimaryNavigation extends Component<Props, *> {
       locationValue,
       logoutRoute,
       children,
-      tutorialProps,
+      maskPage,
     } = this.props;
-
-    console.log(`PrimaryNavigation rendering with state:`, this.state); // FIXME
 
     return (
       <div className={styles.outer}>
@@ -266,8 +240,8 @@ class PrimaryNavigation extends Component<Props, *> {
             logoutRoute,
           )}
           <div className={styles.children}>{children}</div>
+          {maskPage && <div className={styles.overlay} />}
         </div>
-        {tutorialProps && renderTutorial(tutorialProps)}
       </div>
     );
   }

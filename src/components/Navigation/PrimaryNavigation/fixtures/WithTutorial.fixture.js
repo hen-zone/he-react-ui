@@ -225,11 +225,12 @@ const NavTutorialAnimator = withTutorial(
     };
 
     const openKey = openBucketKeyForStep[currentStep];
+    const maskPage = tutorialIndex !== -1;
 
     return openKey ? (
-      <PrimaryNavigation {...props} openKey={openKey} />
+      <PrimaryNavigation {...props} maskPage={maskPage} openKey={openKey} />
     ) : (
-      <PrimaryNavigation {...props} />
+      <PrimaryNavigation {...props} maskPage={maskPage} />
     );
   },
 );
@@ -289,7 +290,7 @@ export default {
 
         <TutorialStep
           id="bucket1"
-          attachTo="BUCKET_BUCKET1"
+          attachTo="NAV_NORMAL"
           showCarousel
           showArrow
           header="BUCKET1"

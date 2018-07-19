@@ -134,8 +134,6 @@ export const TutorialStep = withTutorial(
 
       const classes = classnames(styles.outer, styles.showing);
 
-      // TODO: handle opacity rules
-
       const popupClasses = classnames(styles.popup, className, {
         [styles.popupCentered]: centered,
       });
@@ -146,8 +144,6 @@ export const TutorialStep = withTutorial(
         transition: 'all 0.4s',
       };
       let arrowStyle = {};
-      let rightOverlay = {};
-      let leftOverlay = {};
       let newTop = top - 75;
 
       if (ownDomElement && reversed) {
@@ -162,10 +158,10 @@ export const TutorialStep = withTutorial(
         left,
         right: 'auto',
       };
-      rightOverlay = {
+      const rightOverlay = {
         left,
       };
-      leftOverlay = {
+      const leftOverlay = {
         width: left,
       };
 
@@ -221,7 +217,7 @@ export const TutorialStep = withTutorial(
             onClick={onTutorialDismiss}
           />
           <div
-            className={styles.overlay}
+            className={styles.transparentOverlay}
             style={rightOverlay}
             onClick={onTutorialDismiss}
           />

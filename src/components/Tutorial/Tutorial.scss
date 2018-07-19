@@ -23,6 +23,7 @@
   right: 0;
   @include transition(all 0.4s ease-in-out);
 }
+
 .transparentOverlay {
   background-color: $white;
   height: 100%;

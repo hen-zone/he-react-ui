@@ -30,6 +30,8 @@ $slider-width: 264px;
   @include transition(all 0.6s);
 }
 
+
+
 .logoBucket {
   align-items: center;
   cursor: pointer;
@@ -127,4 +129,15 @@ $slider-width: 264px;
   height: 100%;
   overflow-y: auto;
   overflow-x: auto;
+}
+
+.overlay {
+  background-color: $he_black;
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  @include transition(all 0.4s ease-in-out);
 }
