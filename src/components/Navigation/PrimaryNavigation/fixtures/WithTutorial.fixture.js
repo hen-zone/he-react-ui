@@ -5,11 +5,7 @@ import PrimaryNavigation from '../';
 import Button from '../../../Form/Button';
 import Icon from '../../../Icon';
 import styles from '../../../Tutorial/Tutorial.scss';
-import {
-  TutorialHarness,
-  TutorialStep,
-  withTutorial,
-} from '../../../Tutorial/Tutorial';
+import { TutorialOwner, TutorialStep, withTutorial } from '../../../Tutorial';
 
 const sharedNavProps = {
   logoutRoute: '/logout',
@@ -203,13 +199,11 @@ const sharedNavProps = {
 };
 
 function NavWithTutorial({ navProps, steps, children }: any) {
-  // TODO:
   return (
-    <TutorialHarness steps={steps} autoStart>
-      {/* TODO: force buckets to open based on current step */}
+    <TutorialOwner steps={steps} autoStart>
       {children}
       <NavTutorialAnimator {...navProps} />
-    </TutorialHarness>
+    </TutorialOwner>
   );
 }
 
@@ -220,8 +214,7 @@ const NavTutorialAnimator = withTutorial(
     const openBucketKeyForStep = {
       bucket1: 'BUCKET1',
       bucket2: 'BUCKET2',
-      help: 'HELP',
-      settings: 'SETTINGS',
+      settings: 'NAV_ITEM',
     };
 
     const openKey = openBucketKeyForStep[currentStep];
@@ -303,7 +296,7 @@ export default {
 
         <TutorialStep
           id="bucket2"
-          attachTo="BUCKET_BUCKET2"
+          attachTo="NAV_NEW"
           showCarousel
           showArrow
           header="BUCKET2"

@@ -12,85 +12,56 @@ import LoadingSpinner from '../Loading/LoadingSpinner';
 import Button from '../Form/Button';
 import styles from './Tutorial.scss';
 import CarouselIndicator from '../Layout/CarouselIndicator';
+import withTutorial from './withTutorial';
 
-const defaultTutorialProps = {
-  onTutorialAdvance: () => {},
-  onTutorialDismiss: () => {},
-  onTutorialJump: () => {},
-  tutorialIndex: -1,
-};
-
-const TutorialContext = React.createContext(defaultTutorialProps);
-
-export const withTutorial = (Wrapped: Function) => (props: *) => (
-  <TutorialContext.Consumer>
-    {tutorialProps => <Wrapped {...props} {...tutorialProps} />}
-  </TutorialContext.Consumer>
-);
-
-export class TutorialHarness extends React.Component<*, *> {
-  state = {
-    tutorialIndex: this.props.autoStart ? 0 : -1,
-  };
-
-  onTutorialAdvance = () => {
-    const { steps } = this.props;
-    const { tutorialIndex } = this.state;
-
-    const nexttutorialIndex = tutorialIndex + 1;
-
-    this.setState({
-      tutorialIndex: nexttutorialIndex >= steps.length ? -1 : nexttutorialIndex,
-    });
-  };
-
-  onTutorialDismiss = () => {
-    this.setState({ tutorialIndex: -1 });
-  };
-
-  onTutorialJump = (id: string) => {
-    const tutorialIndex = this.props.steps.findIndex(it => it === id);
-    this.setState({ tutorialIndex });
-  };
-
-  props: {
-    autoStart?: boolean,
-    steps: string[],
-    children: any,
-  };
-
-  render() {
-    const { children, steps } = this.props;
-    const { tutorialIndex } = this.state;
-    const { onTutorialAdvance, onTutorialDismiss, onTutorialJump } = this;
-
-    const context = {
-      tutorialIndex,
-      onTutorialAdvance,
-      onTutorialDismiss,
-      onTutorialJump,
-      tutorialSteps: steps,
-    };
-
-    return (
-      <TutorialContext.Provider value={context}>
-        {children}
-      </TutorialContext.Provider>
-    );
-  }
-}
-
-export const TutorialStep = withTutorial(
+export default withTutorial(
   class TutorialStep extends React.Component<*, *> {
     state = {
       ownDomElement: null,
+      top: 100,
+      left: 76,
+      reversed: false,
+      isAttached: false,
     };
+
+    componentWillMount() {
+      this.attachmentPollId = setInterval(this.pollAttachedElement, 200);
+    }
+
+    componentWillUnmount() {
+      if (this.attachmentPollId) clearInterval(this.attachmentPollId);
+    }
 
     receiveOwnDomElement = ownDomElement => {
       if (ownDomElement !== this.state.ownDomElement) {
         this.setState({ ownDomElement });
       }
     };
+
+    pollAttachedElement = () => {
+      const { attachTo } = this.props;
+
+      const attachedDomElement = attachTo
+        ? document.getElementById(attachTo)
+        : null;
+
+      if (attachedDomElement) {
+        const cords = attachedDomElement.getBoundingClientRect();
+        const top = cords.top + cords.height / 2;
+        const left = cords.right;
+        const reversed = cords.top > window.innerHeight / 2;
+
+        if (
+          top !== this.state.top ||
+          left !== this.state.left ||
+          reversed !== this.state.reversed
+        ) {
+          this.setState({ top, left, reversed, isAttached: true });
+        }
+      }
+    };
+
+    attachmentPollId = null;
 
     render() {
       const {
@@ -105,7 +76,6 @@ export const TutorialStep = withTutorial(
         className,
         centered,
         isIntro,
-        attachTo,
       } = this.props;
 
       const currentStep = tutorialSteps[tutorialIndex];
@@ -115,22 +85,7 @@ export const TutorialStep = withTutorial(
       }
 
       const { ownDomElement } = this.state;
-
-      const attachedDomElement = attachTo
-        ? document.getElementById(attachTo)
-        : null;
-
-      let top = 100;
-      let left = 76;
-      let reversed = false;
-
-      if (attachedDomElement) {
-        const cords = attachedDomElement.getBoundingClientRect();
-        const newLeft = cords.right;
-        top = cords.top + cords.height / 2;
-        left = newLeft;
-        reversed = cords.top > window.innerHeight / 2;
-      }
+      const { top, left, reversed, isAttached } = this.state;
 
       const classes = classnames(styles.outer, styles.showing);
 
@@ -230,7 +185,7 @@ export const TutorialStep = withTutorial(
               />
               {isIntro ? asIntro : asStep}
             </div>
-            {!!attachedDomElement && (
+            {isAttached && (
               <Icon
                 className={classnames(styles.arrow, {
                   [styles.reversed]: reversed,
