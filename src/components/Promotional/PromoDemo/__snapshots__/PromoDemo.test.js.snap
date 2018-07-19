@@ -36,21 +36,29 @@ exports[`<PromoDemo /> rendered correctly with a fixture 1`] = `
             onClick={[Function]}
             squared={false}
             submit={false}
+            withRouter={false}
           >
             <div
               className="buttonContainer large"
             >
-              <button
+              <InnerButton
                 className="button teal"
                 onClick={[Function]}
-                type="button"
+                submit={false}
+                withRouter={false}
               >
-                <div
-                  className="content"
+                <button
+                  className="button teal"
+                  onClick={[Function]}
+                  type="button"
                 >
-                  Activate now
-                </div>
-              </button>
+                  <div
+                    className="content"
+                  >
+                    Activate now
+                  </div>
+                </button>
+              </InnerButton>
             </div>
           </Button>
           <Button
@@ -63,21 +71,29 @@ exports[`<PromoDemo /> rendered correctly with a fixture 1`] = `
             onClick={[Function]}
             squared={false}
             submit={false}
+            withRouter={false}
           >
             <div
               className="buttonContainer large"
             >
-              <button
+              <InnerButton
                 className="button white keyline"
                 onClick={[Function]}
-                type="button"
+                submit={false}
+                withRouter={false}
               >
-                <div
-                  className="content"
+                <button
+                  className="button white keyline"
+                  onClick={[Function]}
+                  type="button"
                 >
-                  Find out more
-                </div>
-              </button>
+                  <div
+                    className="content"
+                  >
+                    Find out more
+                  </div>
+                </button>
+              </InnerButton>
             </div>
           </Button>
         </div>
@@ -912,21 +928,29 @@ exports[`<PromoDemo /> rendered correctly with a fixture 1`] = `
             onClick={[Function]}
             squared={false}
             submit={false}
+            withRouter={false}
           >
             <div
               className="buttonContainer large"
             >
-              <button
+              <InnerButton
                 className="button teal"
                 onClick={[Function]}
-                type="button"
+                submit={false}
+                withRouter={false}
               >
-                <div
-                  className="content"
+                <button
+                  className="button teal"
+                  onClick={[Function]}
+                  type="button"
                 >
-                  Activate now
-                </div>
-              </button>
+                  <div
+                    className="content"
+                  >
+                    Activate now
+                  </div>
+                </button>
+              </InnerButton>
             </div>
           </Button>
           <Button
@@ -939,21 +963,29 @@ exports[`<PromoDemo /> rendered correctly with a fixture 1`] = `
             onClick={[Function]}
             squared={false}
             submit={false}
+            withRouter={false}
           >
             <div
               className="buttonContainer large"
             >
-              <button
+              <InnerButton
                 className="button white keyline"
                 onClick={[Function]}
-                type="button"
+                submit={false}
+                withRouter={false}
               >
-                <div
-                  className="content"
+                <button
+                  className="button white keyline"
+                  onClick={[Function]}
+                  type="button"
                 >
-                  Find out more
-                </div>
-              </button>
+                  <div
+                    className="content"
+                  >
+                    Find out more
+                  </div>
+                </button>
+              </InnerButton>
             </div>
           </Button>
         </div>

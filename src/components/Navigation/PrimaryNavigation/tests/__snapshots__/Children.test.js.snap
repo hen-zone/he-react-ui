@@ -2395,7 +2395,7 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                                   ignoreCase={true}
                                   inputProps={Object {}}
                                   isLoading={false}
-                                  joinValues={false}
+                                  joinValues={true}
                                   labelKey="label"
                                   matchPos="any"
                                   matchProp="any"
@@ -2442,6 +2442,12 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                                   <div
                                     className="Select select is-clearable is-searchable Select--single"
                                   >
+                                    <input
+                                      disabled={false}
+                                      name="location"
+                                      type="hidden"
+                                      value=""
+                                    />
                                     <div
                                       className="Select-control"
                                       onKeyDown={[Function]}
@@ -2719,21 +2725,29 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
             onClick={[Function]}
             squared={false}
             submit={false}
+            withRouter={false}
           >
             <div
               className="buttonContainer"
             >
-              <button
+              <InnerButton
                 className="button teal"
                 onClick={[Function]}
-                type="button"
+                submit={false}
+                withRouter={false}
               >
-                <div
-                  className="content"
+                <button
+                  className="button teal"
+                  onClick={[Function]}
+                  type="button"
                 >
-                  Hello there
-                </div>
-              </button>
+                  <div
+                    className="content"
+                  >
+                    Hello there
+                  </div>
+                </button>
+              </InnerButton>
             </div>
           </Button>
         </div>

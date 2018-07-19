@@ -8,12 +8,45 @@
 
 import classnames from 'classnames';
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import Icon from '../../Icon';
 import styles from './Button.scss';
 import ButtonSpinner from './ButtonSpinner';
 
+function InnerButton(props: {
+  to: ?string,
+  withRouter: boolean,
+  submit: boolean,
+  children: any,
+  className: string,
+  onClick: ?Function,
+}) {
+  const { to, withRouter, submit, children, className, onClick } = props;
+  if (!to) {
+    return (
+      <button
+        className={className}
+        onClick={onClick}
+        type={submit ? 'submit' : 'button'}
+      >
+        {children}
+      </button>
+    );
+  }
+
+  return withRouter ? (
+    <Link to={to} className={className}>
+      {children}
+    </Link>
+  ) : (
+    <a href={to} className={className}>
+      {children}
+    </a>
+  );
+}
+
 type Props = {
-  submit?: boolean,
+  submit: boolean,
   color?: 'teal' | 'blue' | 'green' | 'red' | 'white',
   link?: boolean,
   small?: boolean,
@@ -30,6 +63,8 @@ type Props = {
   submitting?: boolean,
   done?: boolean,
   className?: string,
+  to?: string,
+  withRouter: boolean,
 };
 
 class Button extends React.Component<Props> {
@@ -42,6 +77,7 @@ class Button extends React.Component<Props> {
     disabled: false,
     squared: false,
     onClick: () => null,
+    withRouter: false,
   };
 
   handleClick = (event: SyntheticEvent<*>) => {
@@ -68,6 +104,8 @@ class Button extends React.Component<Props> {
       submit,
       submitting,
       done,
+      to,
+      withRouter,
     } = this.props;
 
     const buttonClasses = classnames(
@@ -105,9 +143,11 @@ class Button extends React.Component<Props> {
 
     return (
       <div className={containerClasses} style={style}>
-        <button
+        <InnerButton
           className={buttonClasses}
-          type={submit ? 'submit' : 'button'}
+          submit={submit}
+          to={to}
+          withRouter={withRouter}
           onClick={this.handleClick}
         >
           {statusIcon || (
@@ -123,7 +163,7 @@ class Button extends React.Component<Props> {
               {iconRight && <div className={styles.iconRight}>{iconRight}</div>}
             </Fragment>
           )}
-        </button>
+        </InnerButton>
       </div>
     );
   }

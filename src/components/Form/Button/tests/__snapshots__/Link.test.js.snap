@@ -10,21 +10,29 @@ exports[`<Button /> rendered correctly with fixture 1`] = `
   onClick={[Function]}
   squared={false}
   submit={false}
+  withRouter={false}
 >
   <div
     className="buttonContainer"
   >
-    <button
+    <InnerButton
       className="button teal link"
       onClick={[Function]}
-      type="button"
+      submit={false}
+      withRouter={false}
     >
-      <div
-        className="content"
+      <button
+        className="button teal link"
+        onClick={[Function]}
+        type="button"
       >
-        Button
-      </div>
-    </button>
+        <div
+          className="content"
+        >
+          Button
+        </div>
+      </button>
+    </InnerButton>
   </div>
 </Button>
 `;

@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> rendered correctly with toRouterUrl fixture 1`] = `
+<Button
+  color="teal"
+  disabled={false}
+  done={false}
+  icon=""
+  keyline={false}
+  link={false}
+  onClick={[Function]}
+  squared={false}
+  submit={false}
+  submitting={false}
+  to="#this-works!"
+  withRouter={true}
+>
+  <div
+    className="buttonContainer"
+  >
+    <InnerButton
+      className="button teal"
+      onClick={[Function]}
+      submit={false}
+      to="#this-works!"
+      withRouter={true}
+    >
+      <Link
+        className="button teal"
+        replace={false}
+        to="#this-works!"
+      >
+        <a
+          className="button teal"
+          href="#this-works!"
+          onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            I am a &lt;Link /&gt; tag
+          </div>
+        </a>
+      </Link>
+    </InnerButton>
+  </div>
+</Button>
+`;
+
+exports[`<Button /> rendered correctly with toUrl fixture 1`] = `
+<Button
+  color="teal"
+  disabled={false}
+  done={false}
+  icon=""
+  keyline={false}
+  link={false}
+  onClick={[Function]}
+  squared={false}
+  submit={false}
+  submitting={false}
+  to="#this-works!"
+  withRouter={true}
+>
+  <div
+    className="buttonContainer"
+  >
+    <InnerButton
+      className="button teal"
+      onClick={[Function]}
+      submit={false}
+      to="#this-works!"
+      withRouter={true}
+    >
+      <Link
+        className="button teal"
+        replace={false}
+        to="#this-works!"
+      >
+        <a
+          className="button teal"
+          href="#this-works!"
+          onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            I am a &lt;Link /&gt; tag
+          </div>
+        </a>
+      </Link>
+    </InnerButton>
+  </div>
+</Button>
+`;

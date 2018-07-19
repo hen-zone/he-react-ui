@@ -66,7 +66,7 @@ exports[`<DateRangePicker /> rendered correctly with customOnly fixture 1`] = `
               ignoreCase={true}
               inputProps={Object {}}
               isLoading={false}
-              joinValues={false}
+              joinValues={true}
               labelKey="label"
               matchPos="any"
               matchProp="any"
@@ -109,6 +109,12 @@ exports[`<DateRangePicker /> rendered correctly with customOnly fixture 1`] = `
               <div
                 className="Select select is-clearable is-searchable Select--single"
               >
+                <input
+                  disabled={false}
+                  name="date-range-picker-select-name"
+                  type="hidden"
+                  value=""
+                />
                 <div
                   className="Select-control"
                   onKeyDown={[Function]}
@@ -1654,7 +1660,7 @@ exports[`<DateRangePicker /> rendered correctly with customPlaceholder fixture 1
               ignoreCase={true}
               inputProps={Object {}}
               isLoading={false}
-              joinValues={false}
+              joinValues={true}
               labelKey="label"
               matchPos="any"
               matchProp="any"
@@ -1697,6 +1703,12 @@ exports[`<DateRangePicker /> rendered correctly with customPlaceholder fixture 1
               <div
                 className="Select select is-clearable is-searchable Select--single"
               >
+                <input
+                  disabled={false}
+                  name="date-range-picker-select-name"
+                  type="hidden"
+                  value=""
+                />
                 <div
                   className="Select-control"
                   onKeyDown={[Function]}
@@ -3242,7 +3254,7 @@ exports[`<DateRangePicker /> rendered correctly with fill fixture 1`] = `
               ignoreCase={true}
               inputProps={Object {}}
               isLoading={false}
-              joinValues={false}
+              joinValues={true}
               labelKey="label"
               matchPos="any"
               matchProp="any"
@@ -3285,6 +3297,12 @@ exports[`<DateRangePicker /> rendered correctly with fill fixture 1`] = `
               <div
                 className="Select select is-clearable is-searchable Select--single"
               >
+                <input
+                  disabled={false}
+                  name="date-range-picker-select-name"
+                  type="hidden"
+                  value=""
+                />
                 <div
                   className="Select-control"
                   onKeyDown={[Function]}
@@ -4830,7 +4848,7 @@ exports[`<DateRangePicker /> rendered correctly with keepOpenOnDateSelect fixtur
               ignoreCase={true}
               inputProps={Object {}}
               isLoading={false}
-              joinValues={false}
+              joinValues={true}
               labelKey="label"
               matchPos="any"
               matchProp="any"
@@ -4873,6 +4891,12 @@ exports[`<DateRangePicker /> rendered correctly with keepOpenOnDateSelect fixtur
               <div
                 className="Select select is-clearable is-searchable Select--single"
               >
+                <input
+                  disabled={false}
+                  name="date-range-picker-select-name"
+                  type="hidden"
+                  value=""
+                />
                 <div
                   className="Select-control"
                   onKeyDown={[Function]}
@@ -6418,7 +6442,7 @@ exports[`<DateRangePicker /> rendered correctly with noInitialValue fixture 1`] 
               ignoreCase={true}
               inputProps={Object {}}
               isLoading={false}
-              joinValues={false}
+              joinValues={true}
               labelKey="label"
               matchPos="any"
               matchProp="any"
@@ -6461,6 +6485,12 @@ exports[`<DateRangePicker /> rendered correctly with noInitialValue fixture 1`] 
               <div
                 className="Select select is-clearable is-searchable Select--single"
               >
+                <input
+                  disabled={false}
+                  name="date-range-picker-select-name"
+                  type="hidden"
+                  value=""
+                />
                 <div
                   className="Select-control"
                   onKeyDown={[Function]}
@@ -8006,7 +8036,7 @@ exports[`<DateRangePicker /> rendered correctly with presetsOnly fixture 1`] = `
               ignoreCase={true}
               inputProps={Object {}}
               isLoading={false}
-              joinValues={false}
+              joinValues={true}
               labelKey="label"
               matchPos="any"
               matchProp="any"
@@ -8049,6 +8079,12 @@ exports[`<DateRangePicker /> rendered correctly with presetsOnly fixture 1`] = `
               <div
                 className="Select select is-clearable is-searchable Select--single"
               >
+                <input
+                  disabled={false}
+                  name="date-range-picker-select-name"
+                  type="hidden"
+                  value=""
+                />
                 <div
                   className="Select-control"
                   onKeyDown={[Function]}
@@ -9594,7 +9630,7 @@ exports[`<DateRangePicker /> rendered correctly with withChoices fixture 1`] = `
               ignoreCase={true}
               inputProps={Object {}}
               isLoading={false}
-              joinValues={false}
+              joinValues={true}
               labelKey="label"
               matchPos="any"
               matchProp="any"
@@ -9637,6 +9673,12 @@ exports[`<DateRangePicker /> rendered correctly with withChoices fixture 1`] = `
               <div
                 className="Select select is-clearable is-searchable Select--single"
               >
+                <input
+                  disabled={false}
+                  name="date-range-picker-select-name"
+                  type="hidden"
+                  value=""
+                />
                 <div
                   className="Select-control"
                   onKeyDown={[Function]}

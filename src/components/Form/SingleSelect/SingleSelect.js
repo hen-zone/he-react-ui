@@ -128,6 +128,7 @@ class SingleSelect extends React.Component<Props, *> {
             })}
           >
             <Select
+              joinValues
               options={options}
               className={classnames(style.select, {
                 [style.expanded]: expanded,

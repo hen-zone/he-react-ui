@@ -81,21 +81,29 @@ exports[`<PopUp /> rendered correctly with Default fixture 1`] = `
           onClick={[Function]}
           squared={false}
           submit={false}
+          withRouter={false}
         >
           <div
             className="buttonContainer"
           >
-            <button
+            <InnerButton
               className="button teal"
               onClick={[Function]}
-              type="button"
+              submit={false}
+              withRouter={false}
             >
-              <div
-                className="content"
+              <button
+                className="button teal"
+                onClick={[Function]}
+                type="button"
               >
-                Useless button
-              </div>
-            </button>
+                <div
+                  className="content"
+                >
+                  Useless button
+                </div>
+              </button>
+            </InnerButton>
           </div>
         </Button>
       </div>
