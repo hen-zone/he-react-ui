@@ -7,6 +7,7 @@ export type TutorialProps = {
   onTutorialDismiss: Function,
   onTutorialJump: Function,
   tutorialIndex: number,
+  tutorialSteps: string[],
 };
 
 const defaultTutorialProps: TutorialProps = {
@@ -14,6 +15,7 @@ const defaultTutorialProps: TutorialProps = {
   onTutorialDismiss: () => {},
   onTutorialJump: () => {},
   tutorialIndex: -1,
+  tutorialSteps: [],
 };
 
 const TutorialContext = React.createContext(defaultTutorialProps);
