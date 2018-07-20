@@ -2,11 +2,9 @@
 
 exports[`TutorialStep should follow its target element 1`] = `
 Object {
-  "height": "100%",
   "left": 200,
   "position": "absolute",
   "right": "auto",
   "top": 175,
-  "width": "100%",
 }
 `;
