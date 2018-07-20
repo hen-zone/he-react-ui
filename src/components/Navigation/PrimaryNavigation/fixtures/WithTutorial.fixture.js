@@ -37,6 +37,19 @@ const IntroBox = withTutorial((props: TutorialProps & { id: string }) => (
         </Button>
       </div>
     </div>
+
+    <div className={styles.tutorialIntroFooter}>
+      <div className={styles.footerCell} />
+      <div className={styles.footerCell}>
+        <Button
+          className={styles.rightElement}
+          link
+          onClick={props.onTutorialDismiss}
+        >
+          Got it!
+        </Button>
+      </div>
+    </div>
   </TutorialStep>
 ));
 

@@ -2,12 +2,12 @@
 
 import classnames from 'classnames';
 import * as React from 'react';
-import Button from '../Form/Button';
 import Icon from '../Icon';
 import CarouselIndicator from '../Layout/CarouselIndicator';
 import FadeIn from './FadeIn';
 import styles from './Tutorial.scss';
 import withTutorial from './withTutorial';
+import getCoordsForElementId from './getCoordsForElementId';
 
 function everyFrame(handler) {
   let stopped = false;
@@ -58,6 +58,7 @@ export default withTutorial(
     };
 
     componentWillMount() {
+      this.pollAttachedElement();
       this.stopRepeating = everyFrame(this.pollAttachedElement);
     }
 
@@ -74,15 +75,14 @@ export default withTutorial(
     pollAttachedElement = () => {
       const { attachTo } = this.props;
 
-      const attachedDomElement = attachTo
-        ? document.getElementById(attachTo)
-        : null;
+      if (!attachTo) return;
 
-      if (attachedDomElement) {
-        const cords = attachedDomElement.getBoundingClientRect();
-        const top = cords.top + cords.height / 2;
-        const left = cords.right;
-        const reversed = cords.top > window.innerHeight / 2;
+      const coords = getCoordsForElementId(attachTo);
+
+      if (coords) {
+        const top = coords.top + coords.height / 2;
+        const left = coords.right;
+        const reversed = coords.top > window.innerHeight / 2;
 
         if (
           top !== this.state.top ||
@@ -109,16 +109,13 @@ export default withTutorial(
         centered,
       } = this.props;
 
+      const { top, left, reversed, isAttached, ownDomElement } = this.state;
+
       const currentStep = tutorialSteps[tutorialIndex];
 
       if (currentStep !== id) {
         return null;
       }
-
-      const { ownDomElement } = this.state;
-      const { top, left, reversed, isAttached } = this.state;
-
-      const classes = classnames(styles.outer);
 
       const popupClasses = classnames(styles.popup, className, {
         [styles.popupCentered]: centered,
@@ -142,41 +139,30 @@ export default withTutorial(
       };
 
       return (
-        <div className={classes} style={wrapperStyle}>
+        <div className={styles.outer} style={wrapperStyle}>
           <FadeIn>
-            <div className={popupClasses}>
+            <div className={popupClasses} ref={this.receiveOwnDomElement}>
               <Icon
                 className={styles.close}
                 name="Cross"
                 onClick={onTutorialDismiss}
               />
+
               <div className={styles.tutorialWrapper}>
                 {children}
 
-                {showCarousel ? (
+                {showCarousel && (
                   <CarouselIndicator
                     className={styles.tutorialIndicator}
                     length={tutorialSteps.length}
                     current={tutorialIndex}
                     nextStep={onTutorialAdvance}
                   />
-                ) : (
-                  <div className={styles.tutorialIntroFooter}>
-                    <div className={styles.footerCell} />
-                    <div className={styles.footerCell}>
-                      <Button
-                        className={styles.rightElement}
-                        link
-                        onClick={onTutorialDismiss}
-                      >
-                        Got it!
-                      </Button>
-                    </div>
-                  </div>
                 )}
               </div>
             </div>
           </FadeIn>
+
           {isAttached && (
             <FadeIn>
               <Icon
