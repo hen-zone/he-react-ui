@@ -2,7 +2,7 @@
 
 /* eslint-disable global-require */
 import Enzyme, { mount, render, shallow } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import Adapter from 'enzyme-react-adapter-future';
 import 'raf/polyfill';
 
 global.shallow = shallow;
