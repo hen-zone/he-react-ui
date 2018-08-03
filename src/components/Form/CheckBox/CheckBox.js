@@ -85,8 +85,8 @@ class CheckBox extends React.Component<Props> {
             name="CheckBoxChecked"
           />
           <span className={style.text}>{label}</span>
+          {warning && <Icon className={style.warning} name="Alert" />}
         </label>
-        {warning && <Icon className={style.warning} name="Alert" />}
       </div>
     );
   }

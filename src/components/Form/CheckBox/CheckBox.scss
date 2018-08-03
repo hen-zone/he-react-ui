@@ -5,6 +5,7 @@
   height: 20px;
   margin-bottom: 12px;
   user-select: none;
+
   &:not(.disabled) {
     label {
       &:hover {
@@ -27,6 +28,8 @@
 }
 
 .label {
+  display: inline-flex;
+  align-content: center;
   cursor: pointer;
   position: relative;
   &:before {
@@ -36,7 +39,6 @@
 
 .checkbox {
   fill: currentColor;
-  float: left;
   height: 20px;
   left: 0;
   position: absolute;
@@ -68,7 +70,6 @@
 
 .text {
   color: $grey_1;
-  float: left;
   font-size: $checkbox-size;
   font-weight: $regular;
   margin-top: 2px;
@@ -79,7 +80,6 @@
 .warning {
   color: $orange;
   fill: currentColor;
-  float: left;
   height: 20px;
   padding-left: 10px;
   width: 20px;
