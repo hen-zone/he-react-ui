@@ -64,6 +64,8 @@ type Props = {
 };
 
 class PrimaryNavigation extends Component<Props, *> {
+  static displayName = 'PrimaryNavigation';
+
   static defaultProps = {
     siteName: 'HealthEngine',
     bottomKeys: [],

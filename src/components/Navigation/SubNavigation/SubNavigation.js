@@ -18,7 +18,7 @@ import type { NavItem } from '../NavItem';
 type Option = { value: any, label: string };
 
 type Props = {
-  item: NavItem,
+  item?: NavItem,
   locations?: Option[],
   onLocationChange?: Function,
   onDisplayTabs?: Function,
@@ -38,7 +38,10 @@ class SubNavigation extends Component<Props> {
   }
 
   componentDidUpdate(prevProps) {
-    if (prevProps.item.items !== this.props.item.items) {
+    const prevItems = prevProps.item && prevProps.item.items;
+    const currentItems = this.props.item && this.props.item.items;
+
+    if (prevItems !== currentItems) {
       this.notifyTabDisplayChange();
     }
   }
@@ -52,7 +55,7 @@ class SubNavigation extends Component<Props> {
 
   shouldDisplayTabs() {
     const { item, loading } = this.props;
-    return !loading && item.items && item.items.length > 0;
+    return !loading && item && item.items && item.items.length > 0;
   }
 
   renderItems(items) {
@@ -109,7 +112,7 @@ class SubNavigation extends Component<Props> {
               <LoadingStrip className={style.loadingHeading} />
             </div>
           ) : (
-            <h2 className={style.heading}>{item.title}</h2>
+            <h2 className={style.heading}>{item ? item.title : ''}</h2>
           )}
           {(loading && (
             <span className={style.control}>
@@ -145,7 +148,9 @@ class SubNavigation extends Component<Props> {
           </span>
         </div>
         {displayTabs && (
-          <div className={style.items}>{this.renderItems(item.items)}</div>
+          <div className={style.items}>
+            {this.renderItems(item ? item.items : [])}
+          </div>
         )}
       </div>
     );

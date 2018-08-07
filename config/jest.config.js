@@ -50,6 +50,6 @@ global.console.error = it => {
       throwing = false;
     });
 
-    throw new Error(it);
+    expect(it).toBe('No react warnings');
   }
 };
