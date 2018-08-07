@@ -13,6 +13,6 @@ module.exports = {
     "jsx-a11y/no-static-element-interactions": 0,
     "jsx-a11y/no-noninteractive-element-interactions": 0,
     "jsx-a11y/label-has-for": 0,
+    "react/no-unescaped-entities": ["error", { "forbid": ['<', '>', '{', '}', '`'] }],
   }
 };
-  

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Section /> rendered correctly with Transparent fixture 1`] = `
+<Section
+  transparent={true}
+>
+  <div
+    className="outer transparent"
+  >
+    <Paragraph>
+      <p
+        className="paragraph"
+      >
+        This component should be used for most standard content below the hierarchical level of the entire page.
+      </p>
+    </Paragraph>
+    <Heading
+      h1={false}
+      h2={false}
+      h3={false}
+      h4={false}
+      nav={false}
+    >
+      <h1
+        className="heading"
+      >
+        Section Heading
+      </h1>
+    </Heading>
+    <Paragraph>
+      <p
+        className="paragraph"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </Paragraph>
+  </div>
+</Section>
+`;

@@ -30,7 +30,7 @@ exports[`<PopUp /> rendered correctly with Modal fixture 1`] = `
           <p
             className="paragraph"
           >
-            If only the \`showing\` property were set to false.
+            If only the showing property were set to false.
           </p>
         </Paragraph>
       </div>

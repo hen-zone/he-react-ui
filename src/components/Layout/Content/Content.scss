@@ -1,7 +1,8 @@
 @import '../../../styles/base';
 
-.content {
+.outer {
   margin: 40px;
+  font-family: $font-stack;
   max-width: 1200px;
   position: relative;
   @include breakpoint(small) {

@@ -1,15 +1,21 @@
 // @flow
 import React from 'react';
-import LoadingSpinner from '../../Loading/LoadingSpinner';
+import classnames from 'classnames';
 import style from './Content.scss';
 
-function Content(props: { children: any }) {
-  const { children } = props;
+function Content(props: {
+  children?: any,
+  className?: string,
+  loading?: boolean,
+  loadingSkeleton?: any,
+}) {
+  const { children, className, loading, loadingSkeleton, ...restProps } = props;
+  const classes = classnames(style.outer, className);
 
-  return children ? (
-    <div className={style.content}>{children}</div>
-  ) : (
-    <LoadingSpinner />
+  return (
+    <div className={classes} {...restProps}>
+      {loading ? loadingSkeleton : children}
+    </div>
   );
 }
 

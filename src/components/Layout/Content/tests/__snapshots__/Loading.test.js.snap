@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Content /> rendered correctly with Loading fixture 1`] = `
+<Content
+  loading={true}
+  loadingSkeleton={
+    <UNDEFINED>
+      <Paragraph>
+        This content is rendering as defined by the loadingSkeleton property and due to the loading property being set to true.
+      </Paragraph>
+      <LoadingStrip
+        className="loadingStrip"
+      />
+      <LoadingStrip
+        className="loadingStrip"
+      />
+      <div
+        className="sideBySide"
+      >
+        <LoadingStrip
+          className="loadingStrip"
+        />
+        <LoadingStrip
+          className="loadingStrip"
+        />
+      </div>
+    </UNDEFINED>
+  }
+>
+  <div
+    className="outer"
+  >
+    <Paragraph
+      key="1"
+    >
+      <p
+        className="paragraph"
+      >
+        This content is rendering as defined by the loadingSkeleton property and due to the loading property being set to true.
+      </p>
+    </Paragraph>
+    <LoadingStrip
+      className="loadingStrip"
+      key="2"
+    >
+      <div
+        className="outer loadingStrip"
+      >
+        <div
+          className="inner"
+        />
+      </div>
+    </LoadingStrip>
+    <LoadingStrip
+      className="loadingStrip"
+      key="3"
+    >
+      <div
+        className="outer loadingStrip"
+      >
+        <div
+          className="inner"
+        />
+      </div>
+    </LoadingStrip>
+    <div
+      className="sideBySide"
+      key="4"
+    >
+      <LoadingStrip
+        className="loadingStrip"
+        key="5"
+      >
+        <div
+          className="outer loadingStrip"
+        >
+          <div
+            className="inner"
+          />
+        </div>
+      </LoadingStrip>
+      <LoadingStrip
+        className="loadingStrip"
+        key="6"
+      >
+        <div
+          className="outer loadingStrip"
+        >
+          <div
+            className="inner"
+          />
+        </div>
+      </LoadingStrip>
+    </div>
+  </div>
+</Content>
+`;

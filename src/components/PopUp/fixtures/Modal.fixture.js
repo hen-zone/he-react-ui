@@ -14,7 +14,7 @@ export default {
       <Paragraph>
         This modal popup cannot be closed without a parent interfering.
       </Paragraph>
-      <Paragraph>If only the `showing` property were set to false.</Paragraph>
+      <Paragraph>If only the showing property were set to false.</Paragraph>
     </div>
   ),
 };

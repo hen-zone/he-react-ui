@@ -1,0 +1,16 @@
+@import '../../../styles/base';
+
+.outer {
+  background-color: $white;
+  border-radius: 4px;
+  font-family: $font-stack;
+  margin-bottom: 32px;
+  padding: 32px;
+  @include breakpoint(small) {
+    padding: 32px 16px;
+  }
+}
+
+.transparent {
+  background: none;
+}
