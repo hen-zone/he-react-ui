@@ -54,6 +54,7 @@ type Props = {
   fill: boolean,
 
   onChange: Function,
+  isOutsideRange: Function,
   placeholder: string,
   keepOpenOnDateSelect: boolean,
 };
@@ -69,6 +70,7 @@ export default class DateRangePicker extends React.Component<Props, *> {
     fill: false,
     keepOpenOnDateSelect: false,
     onChange: () => {},
+    isOutsideRange: NEVER,
     value: null,
   };
 
@@ -159,6 +161,7 @@ export default class DateRangePicker extends React.Component<Props, *> {
       id,
       fill,
       keepOpenOnDateSelect,
+      isOutsideRange,
     } = this.props;
 
     const [startDate, endDate] = value || [null, null];
@@ -206,7 +209,7 @@ export default class DateRangePicker extends React.Component<Props, *> {
             navPrev={<Icon name="ChevronLeft" />}
             focusedInput={focusedInput}
             isDayBlocked={NEVER}
-            isOutsideRange={NEVER}
+            isOutsideRange={isOutsideRange}
             keepOpenOnDateSelect={keepOpenOnDateSelect}
           />
         </div>
