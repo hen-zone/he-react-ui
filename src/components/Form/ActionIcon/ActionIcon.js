@@ -12,7 +12,7 @@ import Icon from '../../Icon';
 import style from './ActionIcon.scss';
 
 type Props = {
-  color?: 'teal' | 'blue' | 'green' | 'red' | 'white' | 'grey',
+  color?: 'teal' | 'blue' | 'green' | 'red' | 'white',
   disabled?: boolean,
   onClick: Function,
   icon: string,
