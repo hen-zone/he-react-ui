@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`anonymous 1`] = `
+<Label
+  error={false}
+  htmlFor="demo"
+>
+  <div
+    className="label"
+  >
+    <label
+      htmlFor="demo"
+    >
+      Label
+    </label>
+  </div>
+</Label>
+`;

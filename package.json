@@ -44,7 +44,7 @@
     "flow-bin": "^0.75.0",
     "is-absolute-url": "^2.1.0",
     "is-url-external": "^1.0.3",
-    "jest": "^22.4.3",
+    "jest": "^23",
     "moment": "^2.22.1",
     "nwsapi": "^2.0.4",
     "object-assign": "^4.1.1",
@@ -68,14 +68,14 @@
     "react-tippy": "^1.2.2",
     "react-youtube": "^7.6.0",
     "url-loader": "^1.0.1",
-    "whatwg-fetch": "^2.0.4"
+    "whatwg-fetch": "^2.0.4",
+    "babel-jest": "^22.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^8.0.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-eslint": "^8.1.2",
-    "babel-jest": "^22.1.0",
     "babel-loader": "^7.1.2",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
@@ -117,7 +117,7 @@
     "setupTestFrameworkScriptFile": "<rootDir>/config/jest.config.js",
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.js?(x)",
-      "<rootDir>/src/**/?(*.)(test).js?(x)"
+      "<rootDir>/src/**/?(*.)(test|fixture)?(s).js?(x)"
     ],
     "testEnvironment": "node",
     "modulePaths": [
@@ -125,7 +125,7 @@
     ],
     "testURL": "http://localhost",
     "transform": {
-      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.(js|jsx)$": "<rootDir>/config/fixtureTransform.js",
       "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/fileTransform.js"
     },
     "transformIgnorePatterns": [

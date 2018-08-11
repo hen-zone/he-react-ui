@@ -21,6 +21,7 @@ node_modules/
 launch.json
 .idea/
 .vscode/
+.eslintcache
 
 npm-debug.log*
 yarn-debug.log*

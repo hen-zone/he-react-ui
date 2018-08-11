@@ -1,0 +1,743 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`base 1`] = `
+<Popover
+  content="WOW!"
+>
+  <Tooltip
+    animateFill={true}
+    animation="shift"
+    arrow={false}
+    arrowSize="regular"
+    className=""
+    delay={100}
+    disabled={false}
+    distance={10}
+    duration={375}
+    followCursor={false}
+    hideDelay={300}
+    hideDuration={375}
+    hideOnClick={true}
+    html={
+      <PopoverDisplay>
+        WOW!
+      </PopoverDisplay>
+    }
+    inertia={false}
+    interactive={true}
+    interactiveBorder={16}
+    multiple={false}
+    offset={0}
+    onHidden={[Function]}
+    onHide={[Function]}
+    onRequestClose={[Function]}
+    onShow={[Function]}
+    onShown={[Function]}
+    popperOptions={Object {}}
+    position="bottom-start"
+    size="regular"
+    sticky={false}
+    stickyDuration={200}
+    style={Object {}}
+    theme="dark"
+    touchHold={false}
+    trigger="mouseenter"
+    unmountHTMLWhenHide={false}
+  >
+    <div
+      className=""
+      style={
+        Object {
+          "display": "inline",
+        }
+      }
+    >
+      <Icon
+        name="Help"
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        <Help
+          className="icon"
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <svg
+            className="icon"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 0C5.384 0 0 5.384 0 12s5.384 12 12 12 12-5.384 12-12S18.616 0 12 0zm0 2c5.535 0 10 4.465 10 10s-4.465 10-10 10S2 17.535 2 12 6.465 2 12 2z"
+            />
+            <path
+              d="M12 6c-1.693 0-3.094 1.114-3.709 2.52a1.001 1.001 0 1 0 1.834.802C10.41 8.672 11.305 8 12 8c1.033 0 2 .967 2 2s-.967 2-2 2a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-1.205c1.7-.46 3-1.963 3-3.795 0-2.185-1.815-4-4-4zM13 18a1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1z"
+            />
+          </svg>
+        </Help>
+      </Icon>
+    </div>
+  </Tooltip>
+</Popover>
+`;
+
+exports[`className 1`] = `
+<Popover
+  className="wideRed"
+  content="Get a load of this useful overlay!"
+>
+  <Tooltip
+    animateFill={true}
+    animation="shift"
+    arrow={false}
+    arrowSize="regular"
+    className=""
+    delay={100}
+    disabled={false}
+    distance={10}
+    duration={375}
+    followCursor={false}
+    hideDelay={300}
+    hideDuration={375}
+    hideOnClick={true}
+    html={
+      <PopoverDisplay
+        className="wideRed"
+      >
+        Get a load of this useful overlay!
+      </PopoverDisplay>
+    }
+    inertia={false}
+    interactive={true}
+    interactiveBorder={16}
+    multiple={false}
+    offset={0}
+    onHidden={[Function]}
+    onHide={[Function]}
+    onRequestClose={[Function]}
+    onShow={[Function]}
+    onShown={[Function]}
+    popperOptions={Object {}}
+    position="bottom-start"
+    size="regular"
+    sticky={false}
+    stickyDuration={200}
+    style={Object {}}
+    theme="dark"
+    touchHold={false}
+    trigger="mouseenter"
+    unmountHTMLWhenHide={false}
+  >
+    <div
+      className=""
+      style={
+        Object {
+          "display": "inline",
+        }
+      }
+    >
+      <Icon
+        name="Help"
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        <Help
+          className="icon"
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <svg
+            className="icon"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 0C5.384 0 0 5.384 0 12s5.384 12 12 12 12-5.384 12-12S18.616 0 12 0zm0 2c5.535 0 10 4.465 10 10s-4.465 10-10 10S2 17.535 2 12 6.465 2 12 2z"
+            />
+            <path
+              d="M12 6c-1.693 0-3.094 1.114-3.709 2.52a1.001 1.001 0 1 0 1.834.802C10.41 8.672 11.305 8 12 8c1.033 0 2 .967 2 2s-.967 2-2 2a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-1.205c1.7-.46 3-1.963 3-3.795 0-2.185-1.815-4-4-4zM13 18a1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1z"
+            />
+          </svg>
+        </Help>
+      </Icon>
+    </div>
+  </Tooltip>
+</Popover>
+`;
+
+exports[`complexContent 1`] = `
+<Popover
+  content={
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <div>
+        <Icon
+          name="Lock"
+        />
+      </div>
+      <div
+        style={
+          Object {
+            "padding": 4,
+          }
+        }
+      >
+        <div>
+          Web plugin currently inactive
+        </div>
+        <div>
+          Find out more about Web plugin and how to activate the feature
+        </div>
+        <div
+          style={
+            Object {
+              "fontWeight": "bold",
+              "textAlign": "right",
+            }
+          }
+        >
+          <a
+            href="#activate"
+            style={
+              Object {
+                "color": "white",
+              }
+            }
+          >
+            Activate Web plugin
+          </a>
+        </div>
+      </div>
+    </div>
+  }
+>
+  <Tooltip
+    animateFill={true}
+    animation="shift"
+    arrow={false}
+    arrowSize="regular"
+    className=""
+    delay={100}
+    disabled={false}
+    distance={10}
+    duration={375}
+    followCursor={false}
+    hideDelay={300}
+    hideDuration={375}
+    hideOnClick={true}
+    html={
+      <PopoverDisplay>
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "flexDirection": "row",
+            }
+          }
+        >
+          <div>
+            <Icon
+              name="Lock"
+            />
+          </div>
+          <div
+            style={
+              Object {
+                "padding": 4,
+              }
+            }
+          >
+            <div>
+              Web plugin currently inactive
+            </div>
+            <div>
+              Find out more about Web plugin and how to activate the feature
+            </div>
+            <div
+              style={
+                Object {
+                  "fontWeight": "bold",
+                  "textAlign": "right",
+                }
+              }
+            >
+              <a
+                href="#activate"
+                style={
+                  Object {
+                    "color": "white",
+                  }
+                }
+              >
+                Activate Web plugin
+              </a>
+            </div>
+          </div>
+        </div>
+      </PopoverDisplay>
+    }
+    inertia={false}
+    interactive={true}
+    interactiveBorder={16}
+    multiple={false}
+    offset={0}
+    onHidden={[Function]}
+    onHide={[Function]}
+    onRequestClose={[Function]}
+    onShow={[Function]}
+    onShown={[Function]}
+    popperOptions={Object {}}
+    position="bottom-start"
+    size="regular"
+    sticky={false}
+    stickyDuration={200}
+    style={Object {}}
+    theme="dark"
+    touchHold={false}
+    trigger="mouseenter"
+    unmountHTMLWhenHide={false}
+  >
+    <div
+      className=""
+      style={
+        Object {
+          "display": "inline",
+        }
+      }
+    >
+      <Icon
+        name="Help"
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        <Help
+          className="icon"
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <svg
+            className="icon"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 0C5.384 0 0 5.384 0 12s5.384 12 12 12 12-5.384 12-12S18.616 0 12 0zm0 2c5.535 0 10 4.465 10 10s-4.465 10-10 10S2 17.535 2 12 6.465 2 12 2z"
+            />
+            <path
+              d="M12 6c-1.693 0-3.094 1.114-3.709 2.52a1.001 1.001 0 1 0 1.834.802C10.41 8.672 11.305 8 12 8c1.033 0 2 .967 2 2s-.967 2-2 2a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-1.205c1.7-.46 3-1.963 3-3.795 0-2.185-1.815-4-4-4zM13 18a1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1z"
+            />
+          </svg>
+        </Help>
+      </Icon>
+    </div>
+  </Tooltip>
+</Popover>
+`;
+
+exports[`light 1`] = `
+<Popover
+  content="Get a load of this useful overlay!"
+  light={true}
+>
+  <Tooltip
+    animateFill={true}
+    animation="shift"
+    arrow={false}
+    arrowSize="regular"
+    className=""
+    delay={100}
+    disabled={false}
+    distance={10}
+    duration={375}
+    followCursor={false}
+    hideDelay={300}
+    hideDuration={375}
+    hideOnClick={true}
+    html={
+      <PopoverDisplay
+        light={true}
+      >
+        Get a load of this useful overlay!
+      </PopoverDisplay>
+    }
+    inertia={false}
+    interactive={true}
+    interactiveBorder={16}
+    multiple={false}
+    offset={0}
+    onHidden={[Function]}
+    onHide={[Function]}
+    onRequestClose={[Function]}
+    onShow={[Function]}
+    onShown={[Function]}
+    popperOptions={Object {}}
+    position="bottom-start"
+    size="regular"
+    sticky={false}
+    stickyDuration={200}
+    style={Object {}}
+    theme="dark"
+    touchHold={false}
+    trigger="mouseenter"
+    unmountHTMLWhenHide={false}
+  >
+    <div
+      className=""
+      style={
+        Object {
+          "display": "inline",
+        }
+      }
+    >
+      <Icon
+        name="Help"
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        <Help
+          className="icon"
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <svg
+            className="icon"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 0C5.384 0 0 5.384 0 12s5.384 12 12 12 12-5.384 12-12S18.616 0 12 0zm0 2c5.535 0 10 4.465 10 10s-4.465 10-10 10S2 17.535 2 12 6.465 2 12 2z"
+            />
+            <path
+              d="M12 6c-1.693 0-3.094 1.114-3.709 2.52a1.001 1.001 0 1 0 1.834.802C10.41 8.672 11.305 8 12 8c1.033 0 2 .967 2 2s-.967 2-2 2a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-1.205c1.7-.46 3-1.963 3-3.795 0-2.185-1.815-4-4-4zM13 18a1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1z"
+            />
+          </svg>
+        </Help>
+      </Icon>
+    </div>
+  </Tooltip>
+</Popover>
+`;
+
+exports[`preferRight 1`] = `
+<Popover
+  content="WOW!"
+  preferRight={true}
+>
+  <Tooltip
+    animateFill={true}
+    animation="shift"
+    arrow={false}
+    arrowSize="regular"
+    className=""
+    delay={100}
+    disabled={false}
+    distance={10}
+    duration={375}
+    followCursor={false}
+    hideDelay={300}
+    hideDuration={375}
+    hideOnClick={true}
+    html={
+      <PopoverDisplay>
+        WOW!
+      </PopoverDisplay>
+    }
+    inertia={false}
+    interactive={true}
+    interactiveBorder={16}
+    multiple={false}
+    offset={0}
+    onHidden={[Function]}
+    onHide={[Function]}
+    onRequestClose={[Function]}
+    onShow={[Function]}
+    onShown={[Function]}
+    popperOptions={Object {}}
+    position="bottom-end"
+    size="regular"
+    sticky={false}
+    stickyDuration={200}
+    style={Object {}}
+    theme="dark"
+    touchHold={false}
+    trigger="mouseenter"
+    unmountHTMLWhenHide={false}
+  >
+    <div
+      className=""
+      style={
+        Object {
+          "display": "inline",
+        }
+      }
+    >
+      <Icon
+        name="Help"
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        <Help
+          className="icon"
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <svg
+            className="icon"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 0C5.384 0 0 5.384 0 12s5.384 12 12 12 12-5.384 12-12S18.616 0 12 0zm0 2c5.535 0 10 4.465 10 10s-4.465 10-10 10S2 17.535 2 12 6.465 2 12 2z"
+            />
+            <path
+              d="M12 6c-1.693 0-3.094 1.114-3.709 2.52a1.001 1.001 0 1 0 1.834.802C10.41 8.672 11.305 8 12 8c1.033 0 2 .967 2 2s-.967 2-2 2a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-1.205c1.7-.46 3-1.963 3-3.795 0-2.185-1.815-4-4-4zM13 18a1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1z"
+            />
+          </svg>
+        </Help>
+      </Icon>
+    </div>
+  </Tooltip>
+</Popover>
+`;
+
+exports[`tooltip 1`] = `
+<Popover
+  content="I am a tooltip. I am one-line and non-interactive."
+  tooltip={true}
+>
+  <Tooltip
+    animateFill={true}
+    animation="shift"
+    arrow={false}
+    arrowSize="regular"
+    className=""
+    delay={100}
+    disabled={false}
+    distance={10}
+    duration={375}
+    followCursor={false}
+    hideDelay={300}
+    hideDuration={375}
+    hideOnClick={true}
+    html={
+      <PopoverDisplay
+        tooltip={true}
+      >
+        I am a tooltip. I am one-line and non-interactive.
+      </PopoverDisplay>
+    }
+    inertia={false}
+    interactive={false}
+    interactiveBorder={16}
+    multiple={false}
+    offset={0}
+    onHidden={[Function]}
+    onHide={[Function]}
+    onRequestClose={[Function]}
+    onShow={[Function]}
+    onShown={[Function]}
+    popperOptions={Object {}}
+    position="bottom-start"
+    size="regular"
+    sticky={false}
+    stickyDuration={200}
+    style={Object {}}
+    theme="dark"
+    touchHold={false}
+    trigger="mouseenter"
+    unmountHTMLWhenHide={false}
+  >
+    <div
+      className=""
+      style={
+        Object {
+          "display": "inline",
+        }
+      }
+    >
+      <Icon
+        name="Help"
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        <Help
+          className="icon"
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <svg
+            className="icon"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 0C5.384 0 0 5.384 0 12s5.384 12 12 12 12-5.384 12-12S18.616 0 12 0zm0 2c5.535 0 10 4.465 10 10s-4.465 10-10 10S2 17.535 2 12 6.465 2 12 2z"
+            />
+            <path
+              d="M12 6c-1.693 0-3.094 1.114-3.709 2.52a1.001 1.001 0 1 0 1.834.802C10.41 8.672 11.305 8 12 8c1.033 0 2 .967 2 2s-.967 2-2 2a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-1.205c1.7-.46 3-1.963 3-3.795 0-2.185-1.815-4-4-4zM13 18a1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1z"
+            />
+          </svg>
+        </Help>
+      </Icon>
+    </div>
+  </Tooltip>
+</Popover>
+`;
+
+exports[`triggerOnClick 1`] = `
+<Popover
+  content="WOW!"
+  triggerOnClick={true}
+>
+  <Tooltip
+    animateFill={true}
+    animation="shift"
+    arrow={false}
+    arrowSize="regular"
+    className=""
+    delay={100}
+    disabled={false}
+    distance={10}
+    duration={375}
+    followCursor={false}
+    hideDelay={300}
+    hideDuration={375}
+    hideOnClick={true}
+    html={
+      <PopoverDisplay>
+        WOW!
+      </PopoverDisplay>
+    }
+    inertia={false}
+    interactive={true}
+    interactiveBorder={16}
+    multiple={false}
+    offset={0}
+    onHidden={[Function]}
+    onHide={[Function]}
+    onRequestClose={[Function]}
+    onShow={[Function]}
+    onShown={[Function]}
+    popperOptions={Object {}}
+    position="bottom-start"
+    size="regular"
+    sticky={false}
+    stickyDuration={200}
+    style={Object {}}
+    theme="dark"
+    touchHold={false}
+    trigger="click"
+    unmountHTMLWhenHide={false}
+  >
+    <div
+      className=""
+      style={
+        Object {
+          "display": "inline",
+        }
+      }
+    >
+      <Icon
+        name="Help"
+        style={
+          Object {
+            "cursor": "pointer",
+          }
+        }
+      >
+        <Help
+          className="icon"
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <svg
+            className="icon"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 0C5.384 0 0 5.384 0 12s5.384 12 12 12 12-5.384 12-12S18.616 0 12 0zm0 2c5.535 0 10 4.465 10 10s-4.465 10-10 10S2 17.535 2 12 6.465 2 12 2z"
+            />
+            <path
+              d="M12 6c-1.693 0-3.094 1.114-3.709 2.52a1.001 1.001 0 1 0 1.834.802C10.41 8.672 11.305 8 12 8c1.033 0 2 .967 2 2s-.967 2-2 2a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-1.205c1.7-.46 3-1.963 3-3.795 0-2.185-1.815-4-4-4zM13 18a1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1z"
+            />
+          </svg>
+        </Help>
+      </Icon>
+    </div>
+  </Tooltip>
+</Popover>
+`;

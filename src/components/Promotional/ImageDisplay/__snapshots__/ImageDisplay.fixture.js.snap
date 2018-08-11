@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`anonymous 1`] = `
+<ImageDisplay
+  image={
+    Object {
+      "alt": "A bandage.",
+      "src": "http://res.publicdomainfiles.com/pdf_view/2/13491430814060.png",
+    }
+  }
+>
+  <div
+    className="outer"
+  >
+    <div
+      className="children"
+    >
+      <h2>
+        Header
+      </h2>
+      <p>
+        What a great description of this image of this product. This is paragraph of text is a more detailed description of the item being promoted.
+      </p>
+    </div>
+    <div
+      className="imageWrapper"
+    >
+      <img
+        alt="A bandage."
+        className="image"
+        src="http://res.publicdomainfiles.com/pdf_view/2/13491430814060.png"
+      />
+    </div>
+  </div>
+</ImageDisplay>
+`;

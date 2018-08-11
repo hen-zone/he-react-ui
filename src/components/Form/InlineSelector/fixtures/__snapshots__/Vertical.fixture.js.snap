@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`anonymous 1`] = `
+<InlineSelector
+  id="demo"
+  name="demo"
+  onChange={[Function]}
+  options={
+    Array [
+      Object {
+        "label": "General Exam and Clean",
+        "value": "1",
+      },
+      Object {
+        "label": "Toothache",
+        "value": "2",
+      },
+      Object {
+        "label": "Loose Filling",
+        "value": "3",
+      },
+      Object {
+        "label": "Loose Crown",
+        "value": "4",
+      },
+      Object {
+        "label": "Teeth Whitening",
+        "value": "5",
+      },
+    ]
+  }
+  value={null}
+  vertical={true}
+>
+  <div
+    className="outer vertical"
+    id="demo"
+    name="demo"
+  >
+    <div
+      className="options"
+    >
+      <div
+        className="option"
+        key="General Exam and Clean"
+        onClick={[Function]}
+      >
+        General Exam and Clean
+      </div>
+      <div
+        className="option"
+        key="Toothache"
+        onClick={[Function]}
+      >
+        Toothache
+      </div>
+      <div
+        className="option"
+        key="Loose Filling"
+        onClick={[Function]}
+      >
+        Loose Filling
+      </div>
+      <div
+        className="option"
+        key="Loose Crown"
+        onClick={[Function]}
+      >
+        Loose Crown
+      </div>
+      <div
+        className="option"
+        key="Teeth Whitening"
+        onClick={[Function]}
+      >
+        Teeth Whitening
+      </div>
+    </div>
+  </div>
+</InlineSelector>
+`;

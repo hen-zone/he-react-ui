@@ -3,11 +3,25 @@
 /* eslint-disable global-require */
 import Enzyme, { mount, render, shallow } from 'enzyme';
 import Adapter from 'enzyme-react-adapter-future';
+// Object.assign() is commonly used with React.
+// It will use the native implementation if it's present and isn't buggy.
+import objectAssign from 'object-assign';
 import 'raf/polyfill';
+import React from 'react';
+import createTestContext from 'react-cosmos-test/enzyme';
+// fetch() polyfill for making API calls.
+import 'whatwg-fetch';
+
+jest.mock('react-onclickoutside', () => Component =>
+  function MockClickOutside(props) {
+    return <Component {...props} />;
+  },
+);
 
 global.shallow = shallow;
 global.render = render;
 global.mount = mount;
+global.createTestContext = createTestContext;
 
 // React 16 Enzyme adapter
 Enzyme.configure({ adapter: new Adapter() });
@@ -19,12 +33,8 @@ if (typeof Promise === 'undefined') {
   require('promise/lib/rejection-tracking').enable();
   window.Promise = require('promise/lib/es6-extensions.js');
 }
-// fetch() polyfill for making API calls.
-require('whatwg-fetch');
 
-// Object.assign() is commonly used with React.
-// It will use the native implementation if it's present and isn't buggy.
-Object.assign = require('object-assign');
+Object.assign = objectAssign;
 
 // Hack, need to look for another solution
 window.matchMedia =

@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`anonymous 1`] = `
+Array [
+  <Button
+    color="teal"
+    disabled={false}
+    icon=""
+    keyline={false}
+    link={false}
+    newWindow={false}
+    onClick={[Function]}
+    squared={false}
+    submit={false}
+    withRouter={false}
+  >
+    <div
+      className="buttonContainer"
+    >
+      <InnerButton
+        className="button teal"
+        newWindow={false}
+        onClick={[Function]}
+        submit={false}
+        withRouter={false}
+      >
+        <button
+          className="button teal"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="content"
+          >
+            I am to the left
+          </div>
+        </button>
+      </InnerButton>
+    </div>
+  </Button>,
+  <Button
+    color="teal"
+    disabled={false}
+    done={false}
+    icon=""
+    keyline={false}
+    link={false}
+    newWindow={false}
+    onClick={[Function]}
+    squared={false}
+    submit={false}
+    submitting={false}
+    withRouter={false}
+  >
+    <div
+      className="buttonContainer"
+    >
+      <InnerButton
+        className="button teal"
+        newWindow={false}
+        onClick={[Function]}
+        submit={false}
+        withRouter={false}
+      >
+        <button
+          className="button teal"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="content"
+          >
+            Click me for action
+          </div>
+        </button>
+      </InnerButton>
+    </div>
+  </Button>,
+  <Button
+    color="teal"
+    disabled={false}
+    icon=""
+    keyline={false}
+    link={false}
+    newWindow={false}
+    onClick={[Function]}
+    squared={false}
+    submit={false}
+    withRouter={false}
+  >
+    <div
+      className="buttonContainer"
+    >
+      <InnerButton
+        className="button teal"
+        newWindow={false}
+        onClick={[Function]}
+        submit={false}
+        withRouter={false}
+      >
+        <button
+          className="button teal"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="content"
+          >
+            I am to the right
+          </div>
+        </button>
+      </InnerButton>
+    </div>
+  </Button>,
+]
+`;

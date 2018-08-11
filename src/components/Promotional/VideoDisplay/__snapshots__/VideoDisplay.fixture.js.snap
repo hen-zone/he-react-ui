@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`anonymous 1`] = `
+<VideoDisplay
+  youtubeId="iYuXzohJUFE"
+>
+  <div
+    className="outer"
+  >
+    <div
+      className="videoWrapper"
+    >
+      <YouTube
+        className="youtube"
+        containerClassName=""
+        id={null}
+        onEnd={[Function]}
+        onError={[Function]}
+        onPause={[Function]}
+        onPlay={[Function]}
+        onPlaybackQualityChange={[Function]}
+        onPlaybackRateChange={[Function]}
+        onReady={[Function]}
+        onStateChange={[Function]}
+        opts={
+          Object {
+            "playerVars": Object {
+              "color": "white",
+              "rel": 0,
+              "showinfo": 0,
+            },
+          }
+        }
+        videoId="iYuXzohJUFE"
+      >
+        <span
+          className=""
+        >
+          <div
+            className="youtube"
+            id={null}
+          />
+        </span>
+      </YouTube>
+    </div>
+    <div
+      className="children"
+    >
+      <h2>
+        Header
+      </h2>
+      <p>
+        What a great description of this image of this product. This is paragraph of text is a more detailed description of the item being promoted.
+      </p>
+    </div>
+  </div>
+</VideoDisplay>
+`;

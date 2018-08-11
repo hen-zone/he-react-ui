@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toNewWindowUrl 1`] = `
+<Button
+  color="teal"
+  disabled={false}
+  icon=""
+  keyline={false}
+  link={false}
+  newWindow={true}
+  onClick={[Function]}
+  squared={false}
+  submit={false}
+  to="#this-works!"
+  withRouter={false}
+>
+  <div
+    className="buttonContainer"
+  >
+    <InnerButton
+      className="button teal"
+      newWindow={true}
+      onClick={[Function]}
+      submit={false}
+      to="#this-works!"
+      withRouter={false}
+    >
+      <a
+        className="button teal"
+        href="#this-works!"
+        target="_blank"
+      >
+        <div
+          className="content"
+        >
+          I am an &lt;a  target="_blank" /&gt; tag
+        </div>
+      </a>
+    </InnerButton>
+  </div>
+</Button>
+`;
+
+exports[`toRouterUrl 1`] = `
+<Button
+  color="teal"
+  disabled={false}
+  done={false}
+  icon=""
+  keyline={false}
+  link={false}
+  newWindow={false}
+  onClick={[Function]}
+  squared={false}
+  submit={false}
+  submitting={false}
+  to="#this-works!"
+  withRouter={true}
+>
+  <div
+    className="buttonContainer"
+  >
+    <InnerButton
+      className="button teal"
+      newWindow={false}
+      onClick={[Function]}
+      submit={false}
+      to="#this-works!"
+      withRouter={true}
+    >
+      <Link
+        className="button teal"
+        replace={false}
+        to="#this-works!"
+      >
+        <a
+          className="button teal"
+          href="#this-works!"
+          onClick={[Function]}
+        >
+          <div
+            className="content"
+          >
+            I am a &lt;Link /&gt; tag
+          </div>
+        </a>
+      </Link>
+    </InnerButton>
+  </div>
+</Button>
+`;
+
+exports[`toUrl 1`] = `
+<Button
+  color="teal"
+  disabled={false}
+  icon=""
+  keyline={false}
+  link={false}
+  newWindow={false}
+  onClick={[Function]}
+  squared={false}
+  submit={false}
+  to="#this-works!"
+  withRouter={false}
+>
+  <div
+    className="buttonContainer"
+  >
+    <InnerButton
+      className="button teal"
+      newWindow={false}
+      onClick={[Function]}
+      submit={false}
+      to="#this-works!"
+      withRouter={false}
+    >
+      <a
+        className="button teal"
+        href="#this-works!"
+      >
+        <div
+          className="content"
+        >
+          I am an &lt;a /&gt; tag
+        </div>
+      </a>
+    </InnerButton>
+  </div>
+</Button>
+`;

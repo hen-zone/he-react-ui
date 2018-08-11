@@ -1,9 +1,6 @@
 // @flow
 import createTestContext from 'react-cosmos-test/enzyme';
-import testFixture from '../../../../../config/testFixture';
 import fixture from '../fixtures/Default.fixture.js';
-
-testFixture(fixture, 'Default');
 
 test('Radio should change when clicked', () => {
   const { mount, getWrapper } = createTestContext({ fixture });

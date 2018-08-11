@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image 1`] = `
+<Highlight
+  image={
+    Object {
+      "alt": "A bandage.",
+      "src": "http://res.publicdomainfiles.com/pdf_view/2/13491430814060.png",
+    }
+  }
+>
+  <div
+    className="outer"
+  >
+    <div
+      className="imageWrapper"
+    >
+      <img
+        alt="A bandage."
+        className="image"
+        src="http://res.publicdomainfiles.com/pdf_view/2/13491430814060.png"
+      />
+    </div>
+    <div
+      className="description"
+    >
+      <div>
+        <p>
+          What a great description of 
+          <em>
+            this product
+          </em>
+          . This is a paragraph of text made to emulate a more detailed description of the item being promoted.
+        </p>
+        <p>
+          It is just so versatile!
+        </p>
+        <p>
+          What a great description of this product. This is a paragraph of text made to emulate a more detailed description of the item being promoted. It is really good if you take the time to check it out.
+        </p>
+      </div>
+    </div>
+  </div>
+</Highlight>
+`;
+
+exports[`YouTube 1`] = `
+<Highlight
+  youtubeId="iYuXzohJUFE"
+>
+  <div
+    className="outer"
+  >
+    <div
+      className="videoWrapper"
+    >
+      <YouTube
+        className="youtube"
+        containerClassName=""
+        id={null}
+        onEnd={[Function]}
+        onError={[Function]}
+        onPause={[Function]}
+        onPlay={[Function]}
+        onPlaybackQualityChange={[Function]}
+        onPlaybackRateChange={[Function]}
+        onReady={[Function]}
+        onStateChange={[Function]}
+        opts={
+          Object {
+            "playerVars": Object {
+              "color": "white",
+              "rel": 0,
+              "showinfo": 0,
+            },
+          }
+        }
+        videoId="iYuXzohJUFE"
+      >
+        <span
+          className=""
+        >
+          <div
+            className="youtube"
+            id={null}
+          />
+        </span>
+      </YouTube>
+    </div>
+    <div
+      className="description"
+    >
+      <div>
+        <p>
+          What a great description of 
+          <em>
+            this product
+          </em>
+          . This is a paragraph of text made to emulate a more detailed description of the item being promoted.
+        </p>
+        <p>
+          It is just so versatile!
+        </p>
+        <p>
+          What a great description of this product. This is a paragraph of text made to emulate a more detailed description of the item being promoted. It is really good if you take the time to check it out.
+        </p>
+      </div>
+    </div>
+  </div>
+</Highlight>
+`;

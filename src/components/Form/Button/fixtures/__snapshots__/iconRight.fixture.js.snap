@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`anonymous 1`] = `
+<Button
+  color="teal"
+  disabled={false}
+  done={false}
+  icon=""
+  iconRight={
+    <Icon
+      name="ArrowRight"
+    />
+  }
+  keyline={false}
+  link={false}
+  newWindow={false}
+  onClick={[Function]}
+  squared={false}
+  submit={false}
+  submitting={false}
+  withRouter={false}
+>
+  <div
+    className="buttonContainer"
+  >
+    <InnerButton
+      className="button teal"
+      newWindow={false}
+      onClick={[Function]}
+      submit={false}
+      withRouter={false}
+    >
+      <button
+        className="button teal"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="content"
+        >
+          Button
+        </div>
+        <div
+          className="iconRight"
+        >
+          <Icon
+            name="ArrowRight"
+          >
+            <ArrowRight
+              className="icon"
+            >
+              <svg
+                className="icon"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18.586 13H3a1 1 0 1 1 0-2h15.586l-4.293-4.293a1 1 0 1 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L18.586 13z"
+                />
+              </svg>
+            </ArrowRight>
+          </Icon>
+        </div>
+      </button>
+    </InnerButton>
+  </div>
+</Button>
+`;

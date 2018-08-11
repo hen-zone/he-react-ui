@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<Footer /> rendered correctly with Default fixture 1`] = `
-<Footer>
-  <div
-    className="footer"
-  />
-</Footer>
-`;

@@ -40,3 +40,44 @@ exports[`<TextField /> rendered correctly with fixture 1`] = `
   </div>
 </TextField>
 `;
+
+exports[`anonymous 1`] = `
+<TextField
+  disabled={false}
+  id="demo"
+  inline={false}
+  isValid={true}
+  label="First Name"
+  marker={false}
+  name="demo"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  value=""
+>
+  <div
+    className="outer"
+  >
+    <div
+      className="block"
+    >
+      <input
+        className="input"
+        disabled={false}
+        id="demo"
+        name="demo"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        value=""
+      />
+      <label
+        className="label"
+        htmlFor="demo"
+      >
+        First Name
+      </label>
+    </div>
+  </div>
+</TextField>
+`;

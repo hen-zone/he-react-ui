@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`anonymous 1`] = `
+<Notification
+  canClose={false}
+  closed={false}
+  onClose={[Function]}
+  type="error"
+>
+  <div
+    className="notification error"
+  >
+    <Cross
+      className="icon error"
+    >
+      <svg
+        className="icon error"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"
+        />
+      </svg>
+    </Cross>
+    <div
+      className="message"
+    >
+      Error text. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.
+    </div>
+  </div>
+</Notification>
+`;

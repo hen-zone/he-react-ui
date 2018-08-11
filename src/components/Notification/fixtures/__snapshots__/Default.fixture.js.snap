@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`anonymous 1`] = `
+<Notification
+  canClose={false}
+  closed={false}
+  onClose={[Function]}
+  type="default"
+>
+  <div
+    className="notification default"
+  >
+    <div
+      className="message"
+    >
+      Practice Admin is getting a style refresh! To get a sneak-peek at the upcoming changes or find out more, 
+      <a
+        key="clickHere"
+      >
+        click here
+      </a>
+      .
+    </div>
+  </div>
+</Notification>
+`;

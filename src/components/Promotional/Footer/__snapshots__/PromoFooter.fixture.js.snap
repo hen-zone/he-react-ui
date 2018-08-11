@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`anonymous 1`] = `
+<Footer
+  header="Ready for this product?"
+>
+  <div
+    className="outer"
+  >
+    <h2
+      className="header"
+    >
+      Ready for this product?
+    </h2>
+    <div
+      className="content"
+    >
+      <p>
+        This product will change everything.
+      </p>
+      <Button
+        color="teal"
+        disabled={false}
+        icon=""
+        keyline={false}
+        large={true}
+        link={false}
+        newWindow={false}
+        onClick={[Function]}
+        squared={false}
+        submit={false}
+        withRouter={false}
+      >
+        <div
+          className="buttonContainer large"
+        >
+          <InnerButton
+            className="button teal"
+            newWindow={false}
+            onClick={[Function]}
+            submit={false}
+            withRouter={false}
+          >
+            <button
+              className="button teal"
+              onClick={[Function]}
+              type="button"
+            >
+              <div
+                className="content"
+              >
+                Activate now
+              </div>
+            </button>
+          </InnerButton>
+        </div>
+      </Button>
+      <Button
+        color="white"
+        disabled={false}
+        icon=""
+        keyline={true}
+        large={true}
+        link={false}
+        newWindow={false}
+        onClick={[Function]}
+        squared={false}
+        submit={false}
+        withRouter={false}
+      >
+        <div
+          className="buttonContainer large"
+        >
+          <InnerButton
+            className="button white keyline"
+            newWindow={false}
+            onClick={[Function]}
+            submit={false}
+            withRouter={false}
+          >
+            <button
+              className="button white keyline"
+              onClick={[Function]}
+              type="button"
+            >
+              <div
+                className="content"
+              >
+                Find out more
+              </div>
+            </button>
+          </InnerButton>
+        </div>
+      </Button>
+    </div>
+  </div>
+</Footer>
+`;

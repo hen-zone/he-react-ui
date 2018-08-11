@@ -27,13 +27,13 @@ type Width = 'extraNarrow' | 'narrow' | 'wide' | 'extraWide';
 type Props = {
   columns: {
     title: string,
-    width: Width,
-    sortable: boolean,
-    sortFunction: Function,
+    width?: Width,
+    sortable?: boolean,
+    sortFunction?: Function,
   }[],
 
   body: {
-    inactive: boolean,
+    inactive?: boolean,
     content: any[],
   }[],
 };
@@ -82,9 +82,10 @@ class Table extends Component<Props, *> {
         >
           {row.content.map((cell, cellIndex) => (
             <div
-              className={classnames(style.cell, {
-                [style[columns[cellIndex].width]]: columns[cellIndex].width,
-              })}
+              className={classnames(
+                style.cell,
+                columns[cellIndex].width && style[columns[cellIndex].width],
+              )}
               key={cellIndex} // eslint-disable-line react/no-array-index-key
             >
               {cell}
@@ -106,12 +107,15 @@ class Table extends Component<Props, *> {
         <React.Fragment>
           {columns.map((column, index) => (
             <div
-              className={classnames(style.heading, {
-                [style[column.width]]: column.width,
-                [style.sortable]: column.sortable,
-                [style.ascending]: sortColumn === index && sortAscending,
-                [style.descending]: sortColumn === index && !sortAscending,
-              })}
+              className={classnames(
+                style.heading,
+                column.width && style[column.width],
+                {
+                  [style.sortable]: column.sortable,
+                  [style.ascending]: sortColumn === index && sortAscending,
+                  [style.descending]: sortColumn === index && !sortAscending,
+                },
+              )}
               onClick={() =>
                 column.sortable &&
                 sortBody(index, column.sortFunction || defaultSort)

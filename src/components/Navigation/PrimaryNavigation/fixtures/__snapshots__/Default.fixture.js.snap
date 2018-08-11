@@ -1,0 +1,2621 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`anonymous 1`] = `
+<MockClickOutside
+  bottomKeys={
+    Array [
+      "HELP",
+      "SETTINGS",
+    ]
+  }
+  items={
+    Array [
+      Object {
+        "exact": true,
+        "icon": "Home",
+        "items": null,
+        "key": "HOME",
+        "label": "Home",
+        "route": "/",
+        "title": "Homepage",
+      },
+      Object {
+        "icon": "Engage",
+        "items": Array [
+          Object {
+            "items": Array [
+              Object {
+                "key": "MAIN",
+                "label": "Main",
+                "route": "/normal",
+              },
+              Object {
+                "key": "SECOND",
+                "label": "Second",
+                "route": "/normal/second",
+              },
+            ],
+            "key": "NORMAL",
+            "label": "Normal item",
+            "route": "/normal",
+            "title": "Normal stuff",
+          },
+          Object {
+            "items": Array [
+              Object {
+                "key": "MAIN",
+                "label": "Main",
+                "route": "/notifications",
+              },
+              Object {
+                "key": "SECOND",
+                "label": "Second",
+                "route": "/notifications/second",
+              },
+              Object {
+                "key": "THIRD",
+                "label": "Third",
+                "route": "/notifications/third",
+              },
+            ],
+            "key": "NOTIFICATIONS",
+            "label": "Notifications",
+            "notifications": 23,
+            "route": "/notifications",
+            "title": "Notifications",
+          },
+        ],
+        "key": "BUCKET1",
+        "label": "Bucket 1",
+        "title": "Your first bucket",
+      },
+      Object {
+        "icon": "Megaphone",
+        "items": Array [
+          Object {
+            "badge": "FREE",
+            "items": Array [
+              Object {
+                "key": "MAIN",
+                "label": "Main",
+                "route": "/free",
+              },
+              Object {
+                "key": "SECOND",
+                "label": "Second",
+                "route": "/free/second",
+              },
+            ],
+            "key": "FREE",
+            "label": "Free item",
+            "route": "/free",
+            "title": "Free item",
+          },
+          Object {
+            "badge": "NEW",
+            "items": Array [
+              Object {
+                "key": "MAIN",
+                "label": "Main",
+                "route": "/new",
+              },
+              Object {
+                "key": "SECOND",
+                "label": "Second",
+                "route": "/new/second",
+              },
+            ],
+            "key": "NEW",
+            "label": "New item",
+            "route": "/new",
+            "title": "New item",
+          },
+        ],
+        "key": "BUCKET2",
+        "label": "Bucket 2",
+        "title": "Your second bucket",
+      },
+      Object {
+        "icon": "Help",
+        "key": "HELP",
+        "label": "Help",
+        "route": "https://external.url/",
+        "title": "Help",
+      },
+      Object {
+        "icon": "Settings",
+        "items": Array [
+          Object {
+            "items": Array [
+              Object {
+                "key": "MAIN",
+                "label": "Main",
+                "route": "/settings-1",
+              },
+              Object {
+                "key": "SECOND",
+                "label": "Second",
+                "route": "/settings-1/second",
+              },
+            ],
+            "key": "ITEM1",
+            "label": "Item 1",
+            "route": "/settings-1",
+            "title": "Item 1",
+          },
+          Object {
+            "items": Array [
+              Object {
+                "key": "MAIN",
+                "label": "Main",
+                "route": "/settings-2",
+              },
+              Object {
+                "key": "SECOND",
+                "label": "Second",
+                "route": "/settings-2/second",
+              },
+            ],
+            "key": "ITEM2",
+            "label": "Item 2",
+            "route": "/settings-2",
+            "title": "Item 2",
+          },
+          Object {
+            "items": Array [
+              Object {
+                "key": "MAIN",
+                "label": "Main",
+                "route": "/settings-3",
+              },
+              Object {
+                "key": "SECOND",
+                "label": "Second",
+                "route": "/settings-3/second",
+              },
+            ],
+            "key": "ITEM3",
+            "label": "Item 3",
+            "route": "/settings-3",
+            "title": "Item 3",
+          },
+        ],
+        "key": "SETTINGS",
+        "label": "Settings",
+        "title": "Settings",
+      },
+    ]
+  }
+  locations={
+    Array [
+      Object {
+        "label": "Location A",
+        "value": "Location A",
+      },
+      Object {
+        "label": "Location B",
+        "value": "Location B",
+      },
+    ]
+  }
+  logoutRoute="/logout"
+  siteName="Your Site"
+>
+  <PrimaryNavigation
+    bottomKeys={
+      Array [
+        "HELP",
+        "SETTINGS",
+      ]
+    }
+    items={
+      Array [
+        Object {
+          "exact": true,
+          "icon": "Home",
+          "items": null,
+          "key": "HOME",
+          "label": "Home",
+          "route": "/",
+          "title": "Homepage",
+        },
+        Object {
+          "icon": "Engage",
+          "items": Array [
+            Object {
+              "items": Array [
+                Object {
+                  "key": "MAIN",
+                  "label": "Main",
+                  "route": "/normal",
+                },
+                Object {
+                  "key": "SECOND",
+                  "label": "Second",
+                  "route": "/normal/second",
+                },
+              ],
+              "key": "NORMAL",
+              "label": "Normal item",
+              "route": "/normal",
+              "title": "Normal stuff",
+            },
+            Object {
+              "items": Array [
+                Object {
+                  "key": "MAIN",
+                  "label": "Main",
+                  "route": "/notifications",
+                },
+                Object {
+                  "key": "SECOND",
+                  "label": "Second",
+                  "route": "/notifications/second",
+                },
+                Object {
+                  "key": "THIRD",
+                  "label": "Third",
+                  "route": "/notifications/third",
+                },
+              ],
+              "key": "NOTIFICATIONS",
+              "label": "Notifications",
+              "notifications": 23,
+              "route": "/notifications",
+              "title": "Notifications",
+            },
+          ],
+          "key": "BUCKET1",
+          "label": "Bucket 1",
+          "title": "Your first bucket",
+        },
+        Object {
+          "icon": "Megaphone",
+          "items": Array [
+            Object {
+              "badge": "FREE",
+              "items": Array [
+                Object {
+                  "key": "MAIN",
+                  "label": "Main",
+                  "route": "/free",
+                },
+                Object {
+                  "key": "SECOND",
+                  "label": "Second",
+                  "route": "/free/second",
+                },
+              ],
+              "key": "FREE",
+              "label": "Free item",
+              "route": "/free",
+              "title": "Free item",
+            },
+            Object {
+              "badge": "NEW",
+              "items": Array [
+                Object {
+                  "key": "MAIN",
+                  "label": "Main",
+                  "route": "/new",
+                },
+                Object {
+                  "key": "SECOND",
+                  "label": "Second",
+                  "route": "/new/second",
+                },
+              ],
+              "key": "NEW",
+              "label": "New item",
+              "route": "/new",
+              "title": "New item",
+            },
+          ],
+          "key": "BUCKET2",
+          "label": "Bucket 2",
+          "title": "Your second bucket",
+        },
+        Object {
+          "icon": "Help",
+          "key": "HELP",
+          "label": "Help",
+          "route": "https://external.url/",
+          "title": "Help",
+        },
+        Object {
+          "icon": "Settings",
+          "items": Array [
+            Object {
+              "items": Array [
+                Object {
+                  "key": "MAIN",
+                  "label": "Main",
+                  "route": "/settings-1",
+                },
+                Object {
+                  "key": "SECOND",
+                  "label": "Second",
+                  "route": "/settings-1/second",
+                },
+              ],
+              "key": "ITEM1",
+              "label": "Item 1",
+              "route": "/settings-1",
+              "title": "Item 1",
+            },
+            Object {
+              "items": Array [
+                Object {
+                  "key": "MAIN",
+                  "label": "Main",
+                  "route": "/settings-2",
+                },
+                Object {
+                  "key": "SECOND",
+                  "label": "Second",
+                  "route": "/settings-2/second",
+                },
+              ],
+              "key": "ITEM2",
+              "label": "Item 2",
+              "route": "/settings-2",
+              "title": "Item 2",
+            },
+            Object {
+              "items": Array [
+                Object {
+                  "key": "MAIN",
+                  "label": "Main",
+                  "route": "/settings-3",
+                },
+                Object {
+                  "key": "SECOND",
+                  "label": "Second",
+                  "route": "/settings-3/second",
+                },
+              ],
+              "key": "ITEM3",
+              "label": "Item 3",
+              "route": "/settings-3",
+              "title": "Item 3",
+            },
+          ],
+          "key": "SETTINGS",
+          "label": "Settings",
+          "title": "Settings",
+        },
+      ]
+    }
+    loading={false}
+    locations={
+      Array [
+        Object {
+          "label": "Location A",
+          "value": "Location A",
+        },
+        Object {
+          "label": "Location B",
+          "value": "Location B",
+        },
+      ]
+    }
+    logo={
+      Object {
+        "icon": <Icon
+          className="logo"
+          inverted={true}
+          name="HealthEngine"
+        />,
+        "route": "/",
+      }
+    }
+    logoutRoute="/logout"
+    siteName="Your Site"
+  >
+    <div
+      className="outer"
+    >
+      <div
+        className="nav"
+      >
+        <div
+          className="buckets"
+        >
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            className="logoBucket"
+            onClick={[Function]}
+            to="/"
+          >
+            <Route
+              path="/"
+            >
+              <Link
+                aria-current="true"
+                className="logoBucket active"
+                onClick={[Function]}
+                replace={false}
+                style={Object {}}
+                to="/"
+              >
+                <a
+                  aria-current="true"
+                  className="logoBucket active"
+                  href="/"
+                  onClick={[Function]}
+                  style={Object {}}
+                >
+                  <div
+                    className="logo"
+                  >
+                    <Icon
+                      className="logo"
+                      inverted={true}
+                      name="HealthEngine"
+                    >
+                      <HealthEngine
+                        inverted={true}
+                      >
+                        <svg
+                          viewBox="0 0 48 38"
+                        >
+                          <path
+                            d="M12.895 32.745a5.689 5.689 0 0 0 11.33 0V25.16h-11.33v7.585zM24.225 6.216a5.689 5.689 0 1 0-11.33 0v7.585h11.33V6.216z"
+                            fill="#5BC0C9"
+                          />
+                          <path
+                            d="M37.49 25.141h-5.689v7.585a5.689 5.689 0 0 0 11.33 0V19.452a5.689 5.689 0 0 1-5.641 5.69z"
+                            fill="#C6E400"
+                          />
+                          <path
+                            d="M37.49.546a5.689 5.689 0 0 0-5.689 5.689v7.585h5.689a5.689 5.689 0 0 1 5.689 5.69V6.234A5.689 5.689 0 0 0 37.49.546z"
+                            fill="#C6E400"
+                          />
+                          <path
+                            d="M5.17 14.043a5.689 5.689 0 0 0 0 11.33h7.585v-11.33H5.17zM24.225 13.82h7.605v11.33h-7.605z"
+                            fill="#FFF"
+                          />
+                          <path
+                            d="M12.895 13.82h11.33v11.33h-11.33z"
+                            fill="#008EC8"
+                          />
+                          <path
+                            d="M37.764 13.82h-5.963v11.321h5.963c3.047-.292 5.367-2.739 5.367-5.66 0-2.922-2.32-5.369-5.367-5.66z"
+                            fill="#48B400"
+                          />
+                        </svg>
+                      </HealthEngine>
+                    </Icon>
+                  </div>
+                </a>
+              </Link>
+            </Route>
+          </NavLink>
+          <withRouter(Bucket)
+            exact={true}
+            icon="Home"
+            itemKey="HOME"
+            items={null}
+            key="HOME"
+            label="Home"
+            onClickParent={[Function]}
+            onClickRoute={[Function]}
+            open={false}
+            route="/"
+            title="Homepage"
+          >
+            <Route
+              render={[Function]}
+            >
+              <Bucket
+                exact={true}
+                history={
+                  Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "canGo": [Function],
+                    "createHref": [Function],
+                    "entries": Array [
+                      Object {
+                        "hash": "",
+                        "key": "mocked",
+                        "pathname": "/",
+                        "search": "",
+                        "state": undefined,
+                      },
+                    ],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "index": 0,
+                    "length": 1,
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "key": "mocked",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                    "push": [Function],
+                    "replace": [Function],
+                  }
+                }
+                icon="Home"
+                itemKey="HOME"
+                items={null}
+                label="Home"
+                location={
+                  Object {
+                    "hash": "",
+                    "key": "mocked",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  }
+                }
+                match={
+                  Object {
+                    "isExact": true,
+                    "params": Object {},
+                    "path": "/",
+                    "url": "/",
+                  }
+                }
+                onClickParent={[Function]}
+                onClickRoute={[Function]}
+                open={false}
+                route="/"
+                title="Homepage"
+              >
+                <NavLink
+                  activeClassName="current"
+                  ariaCurrent="true"
+                  className="bucket"
+                  exact={true}
+                  id="BUCKET_HOME"
+                  key="HOME"
+                  onClick={[Function]}
+                  title="Home"
+                  to="/"
+                >
+                  <Route
+                    exact={true}
+                    path="/"
+                  >
+                    <Link
+                      aria-current="true"
+                      className="bucket current"
+                      id="BUCKET_HOME"
+                      onClick={[Function]}
+                      replace={false}
+                      style={Object {}}
+                      title="Home"
+                      to="/"
+                    >
+                      <a
+                        aria-current="true"
+                        className="bucket current"
+                        href="/"
+                        id="BUCKET_HOME"
+                        onClick={[Function]}
+                        style={Object {}}
+                        title="Home"
+                      >
+                        <Icon
+                          className="icon"
+                          name="Home"
+                        >
+                          <Help
+                            className="icon icon"
+                          >
+                            <svg
+                              className="icon icon"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M4.984 11.486A1 1 0 0 0 4 12.5v10a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-7h2v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-10a1 1 0 1 0-2 0v9h-3v-7a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v7H6v-9a1 1 0 0 0-1.016-1.014z"
+                              />
+                              <path
+                                d="M12.037.5a1 1 0 0 0-.709.26l-11 10a1 1 0 1 0 1.344 1.48L12 2.852l10.328 9.388a1 1 0 1 0 1.344-1.48l-11-10a1 1 0 0 0-.635-.26z"
+                              />
+                            </svg>
+                          </Help>
+                        </Icon>
+                        <span
+                          className="label"
+                        >
+                          Home
+                        </span>
+                      </a>
+                    </Link>
+                  </Route>
+                </NavLink>
+              </Bucket>
+            </Route>
+          </withRouter(Bucket)>
+          <withRouter(Bucket)
+            icon="Engage"
+            itemKey="BUCKET1"
+            items={
+              Array [
+                Object {
+                  "items": Array [
+                    Object {
+                      "key": "MAIN",
+                      "label": "Main",
+                      "route": "/normal",
+                    },
+                    Object {
+                      "key": "SECOND",
+                      "label": "Second",
+                      "route": "/normal/second",
+                    },
+                  ],
+                  "key": "NORMAL",
+                  "label": "Normal item",
+                  "route": "/normal",
+                  "title": "Normal stuff",
+                },
+                Object {
+                  "items": Array [
+                    Object {
+                      "key": "MAIN",
+                      "label": "Main",
+                      "route": "/notifications",
+                    },
+                    Object {
+                      "key": "SECOND",
+                      "label": "Second",
+                      "route": "/notifications/second",
+                    },
+                    Object {
+                      "key": "THIRD",
+                      "label": "Third",
+                      "route": "/notifications/third",
+                    },
+                  ],
+                  "key": "NOTIFICATIONS",
+                  "label": "Notifications",
+                  "notifications": 23,
+                  "route": "/notifications",
+                  "title": "Notifications",
+                },
+              ]
+            }
+            key="BUCKET1"
+            label="Bucket 1"
+            onClickParent={[Function]}
+            onClickRoute={[Function]}
+            open={false}
+            title="Your first bucket"
+          >
+            <Route
+              render={[Function]}
+            >
+              <Bucket
+                history={
+                  Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "canGo": [Function],
+                    "createHref": [Function],
+                    "entries": Array [
+                      Object {
+                        "hash": "",
+                        "key": "mocked",
+                        "pathname": "/",
+                        "search": "",
+                        "state": undefined,
+                      },
+                    ],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "index": 0,
+                    "length": 1,
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "key": "mocked",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                    "push": [Function],
+                    "replace": [Function],
+                  }
+                }
+                icon="Engage"
+                itemKey="BUCKET1"
+                items={
+                  Array [
+                    Object {
+                      "items": Array [
+                        Object {
+                          "key": "MAIN",
+                          "label": "Main",
+                          "route": "/normal",
+                        },
+                        Object {
+                          "key": "SECOND",
+                          "label": "Second",
+                          "route": "/normal/second",
+                        },
+                      ],
+                      "key": "NORMAL",
+                      "label": "Normal item",
+                      "route": "/normal",
+                      "title": "Normal stuff",
+                    },
+                    Object {
+                      "items": Array [
+                        Object {
+                          "key": "MAIN",
+                          "label": "Main",
+                          "route": "/notifications",
+                        },
+                        Object {
+                          "key": "SECOND",
+                          "label": "Second",
+                          "route": "/notifications/second",
+                        },
+                        Object {
+                          "key": "THIRD",
+                          "label": "Third",
+                          "route": "/notifications/third",
+                        },
+                      ],
+                      "key": "NOTIFICATIONS",
+                      "label": "Notifications",
+                      "notifications": 23,
+                      "route": "/notifications",
+                      "title": "Notifications",
+                    },
+                  ]
+                }
+                label="Bucket 1"
+                location={
+                  Object {
+                    "hash": "",
+                    "key": "mocked",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  }
+                }
+                match={
+                  Object {
+                    "isExact": true,
+                    "params": Object {},
+                    "path": "/",
+                    "url": "/",
+                  }
+                }
+                onClickParent={[Function]}
+                onClickRoute={[Function]}
+                open={false}
+                title="Your first bucket"
+              >
+                <div
+                  className="bucket"
+                  id="BUCKET_BUCKET1"
+                  key="BUCKET1"
+                  onClick={[Function]}
+                  title="Bucket 1"
+                >
+                  <Icon
+                    className="icon"
+                    name="Engage"
+                  >
+                    <Engage
+                      className="icon icon"
+                    >
+                      <svg
+                        className="icon icon"
+                        viewBox="0 0 26 26"
+                      >
+                        <path
+                          d="M19.576 19.342a1 1 0 0 0-.623.209l-2.408 1.812c-.8.6-1.272 1.545-1.272 2.545V25a1 1 0 0 0 1 1H25a1 1 0 0 0 1-1v-1.092c0-1-.472-1.942-1.271-2.543l-2.409-1.814a1 1 0 1 0-1.203 1.597l2.408 1.815a1 1 0 0 0 .002 0c.3.224.473.571.473.945V24h-6.727v-.092c0-.374.174-.72.473-.945a1 1 0 0 0 .002 0l2.408-1.815a1 1 0 0 0-.58-1.806z"
+                        />
+                        <path
+                          d="M20.637 14.182a3.197 3.197 0 0 0-3.182 3.181v1.092a3.197 3.197 0 0 0 3.182 3.182 3.197 3.197 0 0 0 3.181-3.182v-1.092a3.197 3.197 0 0 0-3.181-3.181zm0 2c.665 0 1.181.516 1.181 1.181v1.092c0 .666-.516 1.182-1.181 1.182a1.166 1.166 0 0 1-1.182-1.182v-1.092c0-.665.516-1.181 1.182-1.181zM4.303 5.158a1 1 0 0 0-.623.211L1.273 7.182C.473 7.782 0 8.726 0 9.727v1.091a1 1 0 0 0 1 1h8.727a1 1 0 0 0 1-1V9.727c0-1-.47-1.943-1.27-2.543l-2.41-1.815a1 1 0 1 0-1.203 1.598L8.252 8.78a1 1 0 0 0 .002 0c.3.225.473.572.473.946v.091H2v-.091c0-.374.173-.721.473-.946a1 1 0 0 0 .002 0l2.408-1.814a1 1 0 0 0-.58-1.809z"
+                        />
+                        <path
+                          d="M5.363 0a3.197 3.197 0 0 0-3.181 3.182v1.091a3.197 3.197 0 0 0 3.181 3.182 3.197 3.197 0 0 0 3.182-3.182V3.182A3.197 3.197 0 0 0 5.363 0zm0 2c.666 0 1.182.516 1.182 1.182v1.091c0 .666-.516 1.182-1.182 1.182a1.166 1.166 0 0 1-1.181-1.182V3.182C4.182 2.516 4.698 2 5.363 2z"
+                        />
+                        <g>
+                          <path
+                            d="M13 4.75a1 1 0 1 0 0 2h5c2.22 0 4 1.78 4 4v.625a1 1 0 1 0 2 0v-.625c0-3.302-2.698-6-6-6z"
+                          />
+                          <path
+                            d="M16.73.99a1 1 0 0 0-.687.303l-3.75 3.75a1 1 0 0 0 0 1.414l3.75 3.75a1 1 0 1 0 1.414-1.414L14.414 5.75l3.043-3.043A1 1 0 0 0 16.73.99z"
+                          />
+                        </g>
+                        <g>
+                          <path
+                            d="M13 21.25a1 1 0 1 0 0-2H8c-2.22 0-4-1.78-4-4v-.625a1 1 0 1 0-2 0v.625c0 3.302 2.698 6 6 6z"
+                          />
+                          <path
+                            d="M9.27 25.01a1 1 0 0 0 .687-.303l3.75-3.75a1 1 0 0 0 0-1.414l-3.75-3.75a1 1 0 1 0-1.414 1.414l3.043 3.043-3.043 3.043a1 1 0 0 0 .727 1.717z"
+                          />
+                        </g>
+                      </svg>
+                    </Engage>
+                  </Icon>
+                  <span
+                    className="label"
+                  >
+                    Bucket 1
+                  </span>
+                  <div
+                    className="notification"
+                  />
+                </div>
+              </Bucket>
+            </Route>
+          </withRouter(Bucket)>
+          <withRouter(Bucket)
+            icon="Megaphone"
+            itemKey="BUCKET2"
+            items={
+              Array [
+                Object {
+                  "badge": "FREE",
+                  "items": Array [
+                    Object {
+                      "key": "MAIN",
+                      "label": "Main",
+                      "route": "/free",
+                    },
+                    Object {
+                      "key": "SECOND",
+                      "label": "Second",
+                      "route": "/free/second",
+                    },
+                  ],
+                  "key": "FREE",
+                  "label": "Free item",
+                  "route": "/free",
+                  "title": "Free item",
+                },
+                Object {
+                  "badge": "NEW",
+                  "items": Array [
+                    Object {
+                      "key": "MAIN",
+                      "label": "Main",
+                      "route": "/new",
+                    },
+                    Object {
+                      "key": "SECOND",
+                      "label": "Second",
+                      "route": "/new/second",
+                    },
+                  ],
+                  "key": "NEW",
+                  "label": "New item",
+                  "route": "/new",
+                  "title": "New item",
+                },
+              ]
+            }
+            key="BUCKET2"
+            label="Bucket 2"
+            onClickParent={[Function]}
+            onClickRoute={[Function]}
+            open={false}
+            title="Your second bucket"
+          >
+            <Route
+              render={[Function]}
+            >
+              <Bucket
+                history={
+                  Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "canGo": [Function],
+                    "createHref": [Function],
+                    "entries": Array [
+                      Object {
+                        "hash": "",
+                        "key": "mocked",
+                        "pathname": "/",
+                        "search": "",
+                        "state": undefined,
+                      },
+                    ],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "index": 0,
+                    "length": 1,
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "key": "mocked",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                    "push": [Function],
+                    "replace": [Function],
+                  }
+                }
+                icon="Megaphone"
+                itemKey="BUCKET2"
+                items={
+                  Array [
+                    Object {
+                      "badge": "FREE",
+                      "items": Array [
+                        Object {
+                          "key": "MAIN",
+                          "label": "Main",
+                          "route": "/free",
+                        },
+                        Object {
+                          "key": "SECOND",
+                          "label": "Second",
+                          "route": "/free/second",
+                        },
+                      ],
+                      "key": "FREE",
+                      "label": "Free item",
+                      "route": "/free",
+                      "title": "Free item",
+                    },
+                    Object {
+                      "badge": "NEW",
+                      "items": Array [
+                        Object {
+                          "key": "MAIN",
+                          "label": "Main",
+                          "route": "/new",
+                        },
+                        Object {
+                          "key": "SECOND",
+                          "label": "Second",
+                          "route": "/new/second",
+                        },
+                      ],
+                      "key": "NEW",
+                      "label": "New item",
+                      "route": "/new",
+                      "title": "New item",
+                    },
+                  ]
+                }
+                label="Bucket 2"
+                location={
+                  Object {
+                    "hash": "",
+                    "key": "mocked",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  }
+                }
+                match={
+                  Object {
+                    "isExact": true,
+                    "params": Object {},
+                    "path": "/",
+                    "url": "/",
+                  }
+                }
+                onClickParent={[Function]}
+                onClickRoute={[Function]}
+                open={false}
+                title="Your second bucket"
+              >
+                <div
+                  className="bucket"
+                  id="BUCKET_BUCKET2"
+                  key="BUCKET2"
+                  onClick={[Function]}
+                  title="Bucket 2"
+                >
+                  <Icon
+                    className="icon"
+                    name="Megaphone"
+                  >
+                    <Megaphone
+                      className="icon icon"
+                    >
+                      <svg
+                        className="icon icon"
+                        viewBox="0 0 23 23"
+                      >
+                        <path
+                          d="M6.025 12.988a1 1 0 0 0-.877 1.535l4 6.5a1 1 0 0 0 .004.006c.822 1.315 2.636 1.756 3.948.772 1.205-.904 1.53-2.58.748-3.83a1 1 0 0 0-.016-.026l-3-4.5a1 1 0 1 0-1.664 1.11l2.984 4.476c.217.35.142.873-.252 1.168-.288.216-.874.057-1.052-.228l-3.996-6.494a1 1 0 0 0-.827-.489z"
+                        />
+                        <path
+                          d="M21.97 0a1 1 0 0 0-.456.125L12.738 5H5c-2.745 0-5 2.255-5 5s2.255 5 5 5h7.74l8.774 4.875A1 1 0 0 0 23 19V1a1 1 0 0 0-1.03-1zM21 2.701V17.3l-7.514-4.174A1 1 0 0 0 13 13H5c-1.655 0-3-1.345-3-3s1.345-3 3-3h8a1 1 0 0 0 .486-.125z"
+                        />
+                      </svg>
+                    </Megaphone>
+                  </Icon>
+                  <span
+                    className="label"
+                  >
+                    Bucket 2
+                  </span>
+                </div>
+              </Bucket>
+            </Route>
+          </withRouter(Bucket)>
+          <div
+            className="bucketFiller"
+            onClick={[Function]}
+          />
+          <withRouter(Bucket)
+            icon="Help"
+            itemKey="HELP"
+            key="HELP"
+            label="Help"
+            onClickParent={[Function]}
+            onClickRoute={[Function]}
+            open={false}
+            route="https://external.url/"
+            title="Help"
+          >
+            <Route
+              render={[Function]}
+            >
+              <Bucket
+                history={
+                  Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "canGo": [Function],
+                    "createHref": [Function],
+                    "entries": Array [
+                      Object {
+                        "hash": "",
+                        "key": "mocked",
+                        "pathname": "/",
+                        "search": "",
+                        "state": undefined,
+                      },
+                    ],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "index": 0,
+                    "length": 1,
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "key": "mocked",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                    "push": [Function],
+                    "replace": [Function],
+                  }
+                }
+                icon="Help"
+                itemKey="HELP"
+                label="Help"
+                location={
+                  Object {
+                    "hash": "",
+                    "key": "mocked",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  }
+                }
+                match={
+                  Object {
+                    "isExact": true,
+                    "params": Object {},
+                    "path": "/",
+                    "url": "/",
+                  }
+                }
+                onClickParent={[Function]}
+                onClickRoute={[Function]}
+                open={false}
+                route="https://external.url/"
+                title="Help"
+              >
+                <a
+                  className="bucket external"
+                  href="https://external.url/"
+                  id="BUCKET_HELP"
+                  key="HELP"
+                  onClick={[Function]}
+                  target="_blank"
+                  title="Help"
+                >
+                  <Icon
+                    className="icon"
+                    name="Help"
+                  >
+                    <Help
+                      className="icon icon"
+                    >
+                      <svg
+                        className="icon icon"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 0C5.384 0 0 5.384 0 12s5.384 12 12 12 12-5.384 12-12S18.616 0 12 0zm0 2c5.535 0 10 4.465 10 10s-4.465 10-10 10S2 17.535 2 12 6.465 2 12 2z"
+                        />
+                        <path
+                          d="M12 6c-1.693 0-3.094 1.114-3.709 2.52a1.001 1.001 0 1 0 1.834.802C10.41 8.672 11.305 8 12 8c1.033 0 2 .967 2 2s-.967 2-2 2a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-1.205c1.7-.46 3-1.963 3-3.795 0-2.185-1.815-4-4-4zM13 18a1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1z"
+                        />
+                      </svg>
+                    </Help>
+                  </Icon>
+                  <span
+                    className="label"
+                  >
+                    Help
+                  </span>
+                </a>
+              </Bucket>
+            </Route>
+          </withRouter(Bucket)>
+          <withRouter(Bucket)
+            icon="Settings"
+            itemKey="SETTINGS"
+            items={
+              Array [
+                Object {
+                  "items": Array [
+                    Object {
+                      "key": "MAIN",
+                      "label": "Main",
+                      "route": "/settings-1",
+                    },
+                    Object {
+                      "key": "SECOND",
+                      "label": "Second",
+                      "route": "/settings-1/second",
+                    },
+                  ],
+                  "key": "ITEM1",
+                  "label": "Item 1",
+                  "route": "/settings-1",
+                  "title": "Item 1",
+                },
+                Object {
+                  "items": Array [
+                    Object {
+                      "key": "MAIN",
+                      "label": "Main",
+                      "route": "/settings-2",
+                    },
+                    Object {
+                      "key": "SECOND",
+                      "label": "Second",
+                      "route": "/settings-2/second",
+                    },
+                  ],
+                  "key": "ITEM2",
+                  "label": "Item 2",
+                  "route": "/settings-2",
+                  "title": "Item 2",
+                },
+                Object {
+                  "items": Array [
+                    Object {
+                      "key": "MAIN",
+                      "label": "Main",
+                      "route": "/settings-3",
+                    },
+                    Object {
+                      "key": "SECOND",
+                      "label": "Second",
+                      "route": "/settings-3/second",
+                    },
+                  ],
+                  "key": "ITEM3",
+                  "label": "Item 3",
+                  "route": "/settings-3",
+                  "title": "Item 3",
+                },
+              ]
+            }
+            key="SETTINGS"
+            label="Settings"
+            onClickParent={[Function]}
+            onClickRoute={[Function]}
+            open={false}
+            title="Settings"
+          >
+            <Route
+              render={[Function]}
+            >
+              <Bucket
+                history={
+                  Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "canGo": [Function],
+                    "createHref": [Function],
+                    "entries": Array [
+                      Object {
+                        "hash": "",
+                        "key": "mocked",
+                        "pathname": "/",
+                        "search": "",
+                        "state": undefined,
+                      },
+                    ],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "index": 0,
+                    "length": 1,
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "key": "mocked",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                    "push": [Function],
+                    "replace": [Function],
+                  }
+                }
+                icon="Settings"
+                itemKey="SETTINGS"
+                items={
+                  Array [
+                    Object {
+                      "items": Array [
+                        Object {
+                          "key": "MAIN",
+                          "label": "Main",
+                          "route": "/settings-1",
+                        },
+                        Object {
+                          "key": "SECOND",
+                          "label": "Second",
+                          "route": "/settings-1/second",
+                        },
+                      ],
+                      "key": "ITEM1",
+                      "label": "Item 1",
+                      "route": "/settings-1",
+                      "title": "Item 1",
+                    },
+                    Object {
+                      "items": Array [
+                        Object {
+                          "key": "MAIN",
+                          "label": "Main",
+                          "route": "/settings-2",
+                        },
+                        Object {
+                          "key": "SECOND",
+                          "label": "Second",
+                          "route": "/settings-2/second",
+                        },
+                      ],
+                      "key": "ITEM2",
+                      "label": "Item 2",
+                      "route": "/settings-2",
+                      "title": "Item 2",
+                    },
+                    Object {
+                      "items": Array [
+                        Object {
+                          "key": "MAIN",
+                          "label": "Main",
+                          "route": "/settings-3",
+                        },
+                        Object {
+                          "key": "SECOND",
+                          "label": "Second",
+                          "route": "/settings-3/second",
+                        },
+                      ],
+                      "key": "ITEM3",
+                      "label": "Item 3",
+                      "route": "/settings-3",
+                      "title": "Item 3",
+                    },
+                  ]
+                }
+                label="Settings"
+                location={
+                  Object {
+                    "hash": "",
+                    "key": "mocked",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  }
+                }
+                match={
+                  Object {
+                    "isExact": true,
+                    "params": Object {},
+                    "path": "/",
+                    "url": "/",
+                  }
+                }
+                onClickParent={[Function]}
+                onClickRoute={[Function]}
+                open={false}
+                title="Settings"
+              >
+                <div
+                  className="bucket"
+                  id="BUCKET_SETTINGS"
+                  key="SETTINGS"
+                  onClick={[Function]}
+                  title="Settings"
+                >
+                  <Icon
+                    className="icon"
+                    name="Settings"
+                  >
+                    <Settings
+                      className="icon icon"
+                    >
+                      <svg
+                        className="icon icon"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M18.875 15.38l1.1 1.432a1 1 0 0 1 .005 1.213 10.062 10.062 0 0 1-1.952 1.952 1 1 0 0 1-1.212-.004l-1.432-1.1c-.296.145-.6.272-.913.378l-.234 1.791a1 1 0 0 1-.854.86c-.936.13-1.829.13-2.762 0a1 1 0 0 1-.854-.86l-.234-1.789a7.592 7.592 0 0 1-.915-.379l-1.433 1.102a1 1 0 0 1-1.213.004 10.142 10.142 0 0 1-1.952-1.95 1 1 0 0 1 .005-1.213l1.1-1.432a7.585 7.585 0 0 1-.38-.917l-1.79-.234a1 1 0 0 1-.86-.855 10.118 10.118 0 0 1 0-2.758 1 1 0 0 1 .86-.855l1.79-.234c.107-.314.234-.62.38-.917l-1.1-1.432a1 1 0 0 1-.004-1.213 10.14 10.14 0 0 1 1.952-1.95 1 1 0 0 1 1.212.004l1.434 1.101c.295-.145.6-.272.914-.378l.234-1.79a1 1 0 0 1 .855-.86 9.889 9.889 0 0 1 2.76 0 1 1 0 0 1 .855.861l.234 1.791c.313.106.617.233.912.378l1.433-1.1a1 1 0 0 1 1.212-.004 10.04 10.04 0 0 1 1.953 1.953 1 1 0 0 1-.005 1.212l-1.101 1.433c.145.294.27.598.377.91l1.79.234a1 1 0 0 1 .861.855c.13.938.129 1.83 0 2.76a1 1 0 0 1-.86.855l-1.791.234a7.622 7.622 0 0 1-.377.91zm-1.984.7a1 1 0 0 1-.06-1.13 5.63 5.63 0 0 0 .672-1.622 1 1 0 0 1 .842-.757l1.647-.216c.01-.237.01-.473 0-.71l-1.647-.216a1 1 0 0 1-.842-.757 5.63 5.63 0 0 0-.672-1.621 1 1 0 0 1 .06-1.131l1.012-1.317a8.04 8.04 0 0 0-.502-.503l-1.318 1.012a1 1 0 0 1-1.131.059 5.618 5.618 0 0 0-1.622-.673 1 1 0 0 1-.757-.842l-.216-1.648a7.712 7.712 0 0 0-.71 0l-.216 1.646a1 1 0 0 1-.758.843 5.621 5.621 0 0 0-1.624.672 1 1 0 0 1-1.13-.06L6.6 6.097c-.174.16-.342.327-.503.502L7.11 7.915a1 1 0 0 1 .06 1.133 5.594 5.594 0 0 0-.675 1.624 1 1 0 0 1-.842.758l-1.645.215c-.01.236-.01.473 0 .71l1.645.215a1 1 0 0 1 .842.758c.139.576.366 1.122.674 1.624a1 1 0 0 1-.06 1.133L6.1 17.401c.159.174.327.342.501.502l1.318-1.013a1 1 0 0 1 1.132-.06 5.6 5.6 0 0 0 1.623.673 1 1 0 0 1 .758.843l.216 1.646c.237.01.473.01.71 0l.216-1.648a1 1 0 0 1 .757-.842 5.597 5.597 0 0 0 1.62-.673 1 1 0 0 1 1.134.059L17.4 17.9c.174-.16.342-.328.502-.503l-1.012-1.317zM16 12a4 4 0 1 1-7.999 0A4 4 0 0 1 16 12zm-2 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0z"
+                        />
+                      </svg>
+                    </Settings>
+                  </Icon>
+                  <span
+                    className="label"
+                  >
+                    Settings
+                  </span>
+                </div>
+              </Bucket>
+            </Route>
+          </withRouter(Bucket)>
+        </div>
+        <div
+          className="sliders"
+        >
+          <Slider
+            bottom={false}
+            exact={true}
+            icon="Home"
+            itemKey="HOME"
+            items={null}
+            key="HOME"
+            label="Home"
+            onSelect={[Function]}
+            open={false}
+            route="/"
+            siteName="Your Site"
+            title="Homepage"
+          >
+            <div
+              className="slider"
+              key="HOME"
+            >
+              <div
+                className="filler"
+              >
+                <div
+                  className="sitename"
+                >
+                  Your Site
+                </div>
+              </div>
+              <List
+                className="list"
+                exact={true}
+                icon="Home"
+                itemKey="HOME"
+                items={null}
+                label="Home"
+                onSelect={[Function]}
+                route="/"
+                title="Homepage"
+              >
+                <div
+                  className="list"
+                  key="HOME"
+                />
+              </List>
+            </div>
+          </Slider>
+          <Slider
+            bottom={false}
+            icon="Engage"
+            itemKey="BUCKET1"
+            items={
+              Array [
+                Object {
+                  "items": Array [
+                    Object {
+                      "key": "MAIN",
+                      "label": "Main",
+                      "route": "/normal",
+                    },
+                    Object {
+                      "key": "SECOND",
+                      "label": "Second",
+                      "route": "/normal/second",
+                    },
+                  ],
+                  "key": "NORMAL",
+                  "label": "Normal item",
+                  "route": "/normal",
+                  "title": "Normal stuff",
+                },
+                Object {
+                  "items": Array [
+                    Object {
+                      "key": "MAIN",
+                      "label": "Main",
+                      "route": "/notifications",
+                    },
+                    Object {
+                      "key": "SECOND",
+                      "label": "Second",
+                      "route": "/notifications/second",
+                    },
+                    Object {
+                      "key": "THIRD",
+                      "label": "Third",
+                      "route": "/notifications/third",
+                    },
+                  ],
+                  "key": "NOTIFICATIONS",
+                  "label": "Notifications",
+                  "notifications": 23,
+                  "route": "/notifications",
+                  "title": "Notifications",
+                },
+              ]
+            }
+            key="BUCKET1"
+            label="Bucket 1"
+            onSelect={[Function]}
+            open={false}
+            siteName="Your Site"
+            title="Your first bucket"
+          >
+            <div
+              className="slider"
+              key="BUCKET1"
+            >
+              <div
+                className="filler"
+              >
+                <div
+                  className="sitename"
+                >
+                  Your Site
+                </div>
+              </div>
+              <List
+                className="list"
+                icon="Engage"
+                itemKey="BUCKET1"
+                items={
+                  Array [
+                    Object {
+                      "items": Array [
+                        Object {
+                          "key": "MAIN",
+                          "label": "Main",
+                          "route": "/normal",
+                        },
+                        Object {
+                          "key": "SECOND",
+                          "label": "Second",
+                          "route": "/normal/second",
+                        },
+                      ],
+                      "key": "NORMAL",
+                      "label": "Normal item",
+                      "route": "/normal",
+                      "title": "Normal stuff",
+                    },
+                    Object {
+                      "items": Array [
+                        Object {
+                          "key": "MAIN",
+                          "label": "Main",
+                          "route": "/notifications",
+                        },
+                        Object {
+                          "key": "SECOND",
+                          "label": "Second",
+                          "route": "/notifications/second",
+                        },
+                        Object {
+                          "key": "THIRD",
+                          "label": "Third",
+                          "route": "/notifications/third",
+                        },
+                      ],
+                      "key": "NOTIFICATIONS",
+                      "label": "Notifications",
+                      "notifications": 23,
+                      "route": "/notifications",
+                      "title": "Notifications",
+                    },
+                  ]
+                }
+                label="Bucket 1"
+                onSelect={[Function]}
+                title="Your first bucket"
+              >
+                <div
+                  className="list"
+                  key="BUCKET1"
+                >
+                  <span
+                    className="heading"
+                  >
+                    Your first bucket
+                  </span>
+                  <NavLink
+                    activeClassName="current"
+                    ariaCurrent="true"
+                    className="item"
+                    id="NAV_NORMAL"
+                    key="NORMAL"
+                    onClick={[Function]}
+                    to="/normal"
+                  >
+                    <Route
+                      path="/normal"
+                    >
+                      <Link
+                        aria-current={false}
+                        className="item"
+                        id="NAV_NORMAL"
+                        onClick={[Function]}
+                        replace={false}
+                        to="/normal"
+                      >
+                        <a
+                          aria-current={false}
+                          className="item"
+                          href="/normal"
+                          id="NAV_NORMAL"
+                          onClick={[Function]}
+                        >
+                          Normal item
+                        </a>
+                      </Link>
+                    </Route>
+                  </NavLink>
+                  <NavLink
+                    activeClassName="current"
+                    ariaCurrent="true"
+                    className="item"
+                    id="NAV_NOTIFICATIONS"
+                    key="NOTIFICATIONS"
+                    onClick={[Function]}
+                    to="/notifications"
+                  >
+                    <Route
+                      path="/notifications"
+                    >
+                      <Link
+                        aria-current={false}
+                        className="item"
+                        id="NAV_NOTIFICATIONS"
+                        onClick={[Function]}
+                        replace={false}
+                        to="/notifications"
+                      >
+                        <a
+                          aria-current={false}
+                          className="item"
+                          href="/notifications"
+                          id="NAV_NOTIFICATIONS"
+                          onClick={[Function]}
+                        >
+                          Notifications
+                          <div
+                            className="badge notification"
+                          >
+                            23
+                          </div>
+                        </a>
+                      </Link>
+                    </Route>
+                  </NavLink>
+                </div>
+              </List>
+            </div>
+          </Slider>
+          <Slider
+            bottom={false}
+            icon="Megaphone"
+            itemKey="BUCKET2"
+            items={
+              Array [
+                Object {
+                  "badge": "FREE",
+                  "items": Array [
+                    Object {
+                      "key": "MAIN",
+                      "label": "Main",
+                      "route": "/free",
+                    },
+                    Object {
+                      "key": "SECOND",
+                      "label": "Second",
+                      "route": "/free/second",
+                    },
+                  ],
+                  "key": "FREE",
+                  "label": "Free item",
+                  "route": "/free",
+                  "title": "Free item",
+                },
+                Object {
+                  "badge": "NEW",
+                  "items": Array [
+                    Object {
+                      "key": "MAIN",
+                      "label": "Main",
+                      "route": "/new",
+                    },
+                    Object {
+                      "key": "SECOND",
+                      "label": "Second",
+                      "route": "/new/second",
+                    },
+                  ],
+                  "key": "NEW",
+                  "label": "New item",
+                  "route": "/new",
+                  "title": "New item",
+                },
+              ]
+            }
+            key="BUCKET2"
+            label="Bucket 2"
+            onSelect={[Function]}
+            open={false}
+            siteName="Your Site"
+            title="Your second bucket"
+          >
+            <div
+              className="slider"
+              key="BUCKET2"
+            >
+              <div
+                className="filler"
+              >
+                <div
+                  className="sitename"
+                >
+                  Your Site
+                </div>
+              </div>
+              <List
+                className="list"
+                icon="Megaphone"
+                itemKey="BUCKET2"
+                items={
+                  Array [
+                    Object {
+                      "badge": "FREE",
+                      "items": Array [
+                        Object {
+                          "key": "MAIN",
+                          "label": "Main",
+                          "route": "/free",
+                        },
+                        Object {
+                          "key": "SECOND",
+                          "label": "Second",
+                          "route": "/free/second",
+                        },
+                      ],
+                      "key": "FREE",
+                      "label": "Free item",
+                      "route": "/free",
+                      "title": "Free item",
+                    },
+                    Object {
+                      "badge": "NEW",
+                      "items": Array [
+                        Object {
+                          "key": "MAIN",
+                          "label": "Main",
+                          "route": "/new",
+                        },
+                        Object {
+                          "key": "SECOND",
+                          "label": "Second",
+                          "route": "/new/second",
+                        },
+                      ],
+                      "key": "NEW",
+                      "label": "New item",
+                      "route": "/new",
+                      "title": "New item",
+                    },
+                  ]
+                }
+                label="Bucket 2"
+                onSelect={[Function]}
+                title="Your second bucket"
+              >
+                <div
+                  className="list"
+                  key="BUCKET2"
+                >
+                  <span
+                    className="heading"
+                  >
+                    Your second bucket
+                  </span>
+                  <NavLink
+                    activeClassName="current"
+                    ariaCurrent="true"
+                    className="item"
+                    id="NAV_FREE"
+                    key="FREE"
+                    onClick={[Function]}
+                    to="/free"
+                  >
+                    <Route
+                      path="/free"
+                    >
+                      <Link
+                        aria-current={false}
+                        className="item"
+                        id="NAV_FREE"
+                        onClick={[Function]}
+                        replace={false}
+                        to="/free"
+                      >
+                        <a
+                          aria-current={false}
+                          className="item"
+                          href="/free"
+                          id="NAV_FREE"
+                          onClick={[Function]}
+                        >
+                          Free item
+                          <div
+                            className="badge free"
+                          >
+                            FREE
+                          </div>
+                        </a>
+                      </Link>
+                    </Route>
+                  </NavLink>
+                  <NavLink
+                    activeClassName="current"
+                    ariaCurrent="true"
+                    className="item"
+                    id="NAV_NEW"
+                    key="NEW"
+                    onClick={[Function]}
+                    to="/new"
+                  >
+                    <Route
+                      path="/new"
+                    >
+                      <Link
+                        aria-current={false}
+                        className="item"
+                        id="NAV_NEW"
+                        onClick={[Function]}
+                        replace={false}
+                        to="/new"
+                      >
+                        <a
+                          aria-current={false}
+                          className="item"
+                          href="/new"
+                          id="NAV_NEW"
+                          onClick={[Function]}
+                        >
+                          New item
+                          <div
+                            className="badge new"
+                          >
+                            NEW
+                          </div>
+                        </a>
+                      </Link>
+                    </Route>
+                  </NavLink>
+                </div>
+              </List>
+            </div>
+          </Slider>
+          <Slider
+            bottom={true}
+            icon="Help"
+            itemKey="HELP"
+            key="HELP"
+            label="Help"
+            onSelect={[Function]}
+            open={false}
+            route="https://external.url/"
+            title="Help"
+          >
+            <div
+              className="slider bottom"
+              key="HELP"
+            >
+              <div
+                className="filler"
+              />
+              <List
+                className="list"
+                icon="Help"
+                itemKey="HELP"
+                label="Help"
+                onSelect={[Function]}
+                route="https://external.url/"
+                title="Help"
+              >
+                <div
+                  className="list"
+                  key="HELP"
+                />
+              </List>
+            </div>
+          </Slider>
+          <Slider
+            bottom={true}
+            icon="Settings"
+            itemKey="SETTINGS"
+            items={
+              Array [
+                Object {
+                  "items": Array [
+                    Object {
+                      "key": "MAIN",
+                      "label": "Main",
+                      "route": "/settings-1",
+                    },
+                    Object {
+                      "key": "SECOND",
+                      "label": "Second",
+                      "route": "/settings-1/second",
+                    },
+                  ],
+                  "key": "ITEM1",
+                  "label": "Item 1",
+                  "route": "/settings-1",
+                  "title": "Item 1",
+                },
+                Object {
+                  "items": Array [
+                    Object {
+                      "key": "MAIN",
+                      "label": "Main",
+                      "route": "/settings-2",
+                    },
+                    Object {
+                      "key": "SECOND",
+                      "label": "Second",
+                      "route": "/settings-2/second",
+                    },
+                  ],
+                  "key": "ITEM2",
+                  "label": "Item 2",
+                  "route": "/settings-2",
+                  "title": "Item 2",
+                },
+                Object {
+                  "items": Array [
+                    Object {
+                      "key": "MAIN",
+                      "label": "Main",
+                      "route": "/settings-3",
+                    },
+                    Object {
+                      "key": "SECOND",
+                      "label": "Second",
+                      "route": "/settings-3/second",
+                    },
+                  ],
+                  "key": "ITEM3",
+                  "label": "Item 3",
+                  "route": "/settings-3",
+                  "title": "Item 3",
+                },
+              ]
+            }
+            key="SETTINGS"
+            label="Settings"
+            onSelect={[Function]}
+            open={false}
+            title="Settings"
+          >
+            <div
+              className="slider bottom"
+              key="SETTINGS"
+            >
+              <div
+                className="filler"
+              />
+              <List
+                className="list"
+                icon="Settings"
+                itemKey="SETTINGS"
+                items={
+                  Array [
+                    Object {
+                      "items": Array [
+                        Object {
+                          "key": "MAIN",
+                          "label": "Main",
+                          "route": "/settings-1",
+                        },
+                        Object {
+                          "key": "SECOND",
+                          "label": "Second",
+                          "route": "/settings-1/second",
+                        },
+                      ],
+                      "key": "ITEM1",
+                      "label": "Item 1",
+                      "route": "/settings-1",
+                      "title": "Item 1",
+                    },
+                    Object {
+                      "items": Array [
+                        Object {
+                          "key": "MAIN",
+                          "label": "Main",
+                          "route": "/settings-2",
+                        },
+                        Object {
+                          "key": "SECOND",
+                          "label": "Second",
+                          "route": "/settings-2/second",
+                        },
+                      ],
+                      "key": "ITEM2",
+                      "label": "Item 2",
+                      "route": "/settings-2",
+                      "title": "Item 2",
+                    },
+                    Object {
+                      "items": Array [
+                        Object {
+                          "key": "MAIN",
+                          "label": "Main",
+                          "route": "/settings-3",
+                        },
+                        Object {
+                          "key": "SECOND",
+                          "label": "Second",
+                          "route": "/settings-3/second",
+                        },
+                      ],
+                      "key": "ITEM3",
+                      "label": "Item 3",
+                      "route": "/settings-3",
+                      "title": "Item 3",
+                    },
+                  ]
+                }
+                label="Settings"
+                onSelect={[Function]}
+                title="Settings"
+              >
+                <div
+                  className="list"
+                  key="SETTINGS"
+                >
+                  <span
+                    className="heading"
+                  >
+                    Settings
+                  </span>
+                  <NavLink
+                    activeClassName="current"
+                    ariaCurrent="true"
+                    className="item"
+                    id="NAV_ITEM1"
+                    key="ITEM1"
+                    onClick={[Function]}
+                    to="/settings-1"
+                  >
+                    <Route
+                      path="/settings-1"
+                    >
+                      <Link
+                        aria-current={false}
+                        className="item"
+                        id="NAV_ITEM1"
+                        onClick={[Function]}
+                        replace={false}
+                        to="/settings-1"
+                      >
+                        <a
+                          aria-current={false}
+                          className="item"
+                          href="/settings-1"
+                          id="NAV_ITEM1"
+                          onClick={[Function]}
+                        >
+                          Item 1
+                        </a>
+                      </Link>
+                    </Route>
+                  </NavLink>
+                  <NavLink
+                    activeClassName="current"
+                    ariaCurrent="true"
+                    className="item"
+                    id="NAV_ITEM2"
+                    key="ITEM2"
+                    onClick={[Function]}
+                    to="/settings-2"
+                  >
+                    <Route
+                      path="/settings-2"
+                    >
+                      <Link
+                        aria-current={false}
+                        className="item"
+                        id="NAV_ITEM2"
+                        onClick={[Function]}
+                        replace={false}
+                        to="/settings-2"
+                      >
+                        <a
+                          aria-current={false}
+                          className="item"
+                          href="/settings-2"
+                          id="NAV_ITEM2"
+                          onClick={[Function]}
+                        >
+                          Item 2
+                        </a>
+                      </Link>
+                    </Route>
+                  </NavLink>
+                  <NavLink
+                    activeClassName="current"
+                    ariaCurrent="true"
+                    className="item"
+                    id="NAV_ITEM3"
+                    key="ITEM3"
+                    onClick={[Function]}
+                    to="/settings-3"
+                  >
+                    <Route
+                      path="/settings-3"
+                    >
+                      <Link
+                        aria-current={false}
+                        className="item"
+                        id="NAV_ITEM3"
+                        onClick={[Function]}
+                        replace={false}
+                        to="/settings-3"
+                      >
+                        <a
+                          aria-current={false}
+                          className="item"
+                          href="/settings-3"
+                          id="NAV_ITEM3"
+                          onClick={[Function]}
+                        >
+                          Item 3
+                        </a>
+                      </Link>
+                    </Route>
+                  </NavLink>
+                </div>
+              </List>
+            </div>
+          </Slider>
+        </div>
+      </div>
+      <div
+        className="spacer"
+      />
+      <div
+        className="content"
+        onClick={[Function]}
+      >
+        <HashRoute
+          exact={true}
+          key="Subnav_HOME"
+          path="/"
+          render={[Function]}
+        >
+          <Route
+            render={[Function]}
+          >
+            <withRouter(SubNavigation)
+              item={
+                Object {
+                  "exact": true,
+                  "icon": "Home",
+                  "items": null,
+                  "key": "HOME",
+                  "label": "Home",
+                  "route": "/",
+                  "title": "Homepage",
+                }
+              }
+              locations={
+                Array [
+                  Object {
+                    "label": "Location A",
+                    "value": "Location A",
+                  },
+                  Object {
+                    "label": "Location B",
+                    "value": "Location B",
+                  },
+                ]
+              }
+              logoutRoute="/logout"
+            >
+              <Route
+                render={[Function]}
+              >
+                <SubNavigation
+                  history={
+                    Object {
+                      "action": "POP",
+                      "block": [Function],
+                      "canGo": [Function],
+                      "createHref": [Function],
+                      "entries": Array [
+                        Object {
+                          "hash": "",
+                          "key": "mocked",
+                          "pathname": "/",
+                          "search": "",
+                          "state": undefined,
+                        },
+                      ],
+                      "go": [Function],
+                      "goBack": [Function],
+                      "goForward": [Function],
+                      "index": 0,
+                      "length": 1,
+                      "listen": [Function],
+                      "location": Object {
+                        "hash": "",
+                        "key": "mocked",
+                        "pathname": "/",
+                        "search": "",
+                        "state": undefined,
+                      },
+                      "push": [Function],
+                      "replace": [Function],
+                    }
+                  }
+                  item={
+                    Object {
+                      "exact": true,
+                      "icon": "Home",
+                      "items": null,
+                      "key": "HOME",
+                      "label": "Home",
+                      "route": "/",
+                      "title": "Homepage",
+                    }
+                  }
+                  loading={false}
+                  location={
+                    Object {
+                      "hash": "",
+                      "key": "mocked",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    }
+                  }
+                  locations={
+                    Array [
+                      Object {
+                        "label": "Location A",
+                        "value": "Location A",
+                      },
+                      Object {
+                        "label": "Location B",
+                        "value": "Location B",
+                      },
+                    ]
+                  }
+                  logoutRoute="/logout"
+                  match={
+                    Object {
+                      "isExact": true,
+                      "params": Object {},
+                      "path": "/",
+                      "url": "/",
+                    }
+                  }
+                >
+                  <div
+                    className="bar"
+                  >
+                    <div
+                      className="top"
+                    >
+                      <h2
+                        className="heading"
+                      >
+                        Homepage
+                      </h2>
+                      <span
+                        className="control selector"
+                      >
+                        <SingleSelect
+                          disabled={false}
+                          error=""
+                          fill={true}
+                          id="locationSelector"
+                          inline={false}
+                          name="location"
+                          onBeforeOpen={[Function]}
+                          onChange={[Function]}
+                          onClose={[Function]}
+                          options={
+                            Array [
+                              Object {
+                                "label": "Location A",
+                                "value": "Location A",
+                              },
+                              Object {
+                                "label": "Location B",
+                                "value": "Location B",
+                              },
+                            ]
+                          }
+                          value={null}
+                        >
+                          <div
+                            className="outer fill"
+                          >
+                            <div
+                              className="relative"
+                            >
+                              <div
+                                className="container fill"
+                              >
+                                <Select
+                                  arrowRenderer={[Function]}
+                                  autosize={true}
+                                  backspaceRemoves={true}
+                                  backspaceToRemoveMessage="Press backspace to remove {label}"
+                                  className="select"
+                                  clearAllText="Clear all"
+                                  clearRenderer={[Function]}
+                                  clearValueText="Clear value"
+                                  clearable={true}
+                                  closeOnSelect={true}
+                                  deleteRemoves={true}
+                                  delimiter=","
+                                  disabled={false}
+                                  escapeClearsValue={true}
+                                  filterOptions={[Function]}
+                                  id="locationSelector"
+                                  ignoreAccents={true}
+                                  ignoreCase={true}
+                                  inputProps={Object {}}
+                                  isLoading={false}
+                                  joinValues={true}
+                                  labelKey="label"
+                                  matchPos="any"
+                                  matchProp="any"
+                                  menuBuffer={0}
+                                  menuRenderer={[Function]}
+                                  multi={false}
+                                  name="location"
+                                  noResultsText="No results found"
+                                  onBlurResetsInput={true}
+                                  onChange={[Function]}
+                                  onClose={[Function]}
+                                  onCloseResetsInput={true}
+                                  onOpen={[Function]}
+                                  onSelectResetsInput={true}
+                                  openOnClick={true}
+                                  optionComponent={[Function]}
+                                  options={
+                                    Array [
+                                      Object {
+                                        "label": "Location A",
+                                        "value": "Location A",
+                                      },
+                                      Object {
+                                        "label": "Location B",
+                                        "value": "Location B",
+                                      },
+                                    ]
+                                  }
+                                  pageSize={5}
+                                  placeholder="Select..."
+                                  removeSelected={true}
+                                  required={false}
+                                  rtl={false}
+                                  scrollMenuIntoView={true}
+                                  searchable={true}
+                                  simpleValue={false}
+                                  tabSelectsValue={true}
+                                  trimFilter={true}
+                                  value={null}
+                                  valueComponent={[Function]}
+                                  valueKey="value"
+                                  valueRenderer={[Function]}
+                                >
+                                  <div
+                                    className="Select select is-clearable is-searchable Select--single"
+                                  >
+                                    <input
+                                      disabled={false}
+                                      name="location"
+                                      type="hidden"
+                                      value=""
+                                    />
+                                    <div
+                                      className="Select-control"
+                                      onKeyDown={[Function]}
+                                      onMouseDown={[Function]}
+                                      onTouchEnd={[Function]}
+                                      onTouchMove={[Function]}
+                                      onTouchStart={[Function]}
+                                    >
+                                      <span
+                                        className="Select-multi-value-wrapper"
+                                        id="react-select-2--value"
+                                      >
+                                        <div
+                                          className="Select-placeholder"
+                                        >
+                                          Select...
+                                        </div>
+                                        <AutosizeInput
+                                          aria-activedescendant="react-select-2--value"
+                                          aria-expanded="false"
+                                          aria-haspopup="false"
+                                          aria-owns=""
+                                          className="Select-input"
+                                          id="locationSelector"
+                                          injectStyles={true}
+                                          minWidth="5"
+                                          onBlur={[Function]}
+                                          onChange={[Function]}
+                                          onFocus={[Function]}
+                                          required={false}
+                                          role="combobox"
+                                          value=""
+                                        >
+                                          <div
+                                            className="Select-input"
+                                            style={
+                                              Object {
+                                                "display": "inline-block",
+                                              }
+                                            }
+                                          >
+                                            <input
+                                              aria-activedescendant="react-select-2--value"
+                                              aria-expanded="false"
+                                              aria-haspopup="false"
+                                              aria-owns=""
+                                              id="locationSelector"
+                                              onBlur={[Function]}
+                                              onChange={[Function]}
+                                              onFocus={[Function]}
+                                              required={false}
+                                              role="combobox"
+                                              style={
+                                                Object {
+                                                  "boxSizing": "content-box",
+                                                  "width": "5px",
+                                                }
+                                              }
+                                              value=""
+                                            />
+                                            <div
+                                              style={
+                                                Object {
+                                                  "height": 0,
+                                                  "left": 0,
+                                                  "overflow": "scroll",
+                                                  "position": "absolute",
+                                                  "top": 0,
+                                                  "visibility": "hidden",
+                                                  "whiteSpace": "pre",
+                                                }
+                                              }
+                                            />
+                                          </div>
+                                        </AutosizeInput>
+                                      </span>
+                                      <span
+                                        className="Select-arrow-zone"
+                                        onMouseDown={[Function]}
+                                      >
+                                        <span
+                                          className="Select-arrow"
+                                          onMouseDown={[Function]}
+                                        />
+                                      </span>
+                                    </div>
+                                  </div>
+                                </Select>
+                                <Icon
+                                  className="caret"
+                                  name="DropDown"
+                                >
+                                  <DropDown
+                                    className="icon caret"
+                                  >
+                                    <svg
+                                      className="icon caret"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path
+                                        d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
+                                      />
+                                    </svg>
+                                  </DropDown>
+                                </Icon>
+                              </div>
+                            </div>
+                          </div>
+                        </SingleSelect>
+                      </span>
+                      <span
+                        className="control logout"
+                      >
+                        <NavLink
+                          activeClassName="active"
+                          ariaCurrent="true"
+                          className="navLink"
+                          key="logout"
+                          target="_self"
+                          title="Logout"
+                          to="/logout"
+                        >
+                          <Route
+                            path="/logout"
+                          >
+                            <Link
+                              aria-current={false}
+                              className="navLink"
+                              replace={false}
+                              target="_self"
+                              title="Logout"
+                              to="/logout"
+                            >
+                              <a
+                                aria-current={false}
+                                className="navLink"
+                                href="/logout"
+                                onClick={[Function]}
+                                target="_self"
+                                title="Logout"
+                              >
+                                <Icon
+                                  className="icon"
+                                  name="Logout"
+                                >
+                                  <Logout
+                                    className="icon icon"
+                                  >
+                                    <svg
+                                      className="icon icon"
+                                      viewBox="0 1 16 16"
+                                    >
+                                      <path
+                                        d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
+                                      />
+                                    </svg>
+                                  </Logout>
+                                </Icon>
+                                Logout
+                              </a>
+                            </Link>
+                          </Route>
+                        </NavLink>
+                      </span>
+                    </div>
+                  </div>
+                </SubNavigation>
+              </Route>
+            </withRouter(SubNavigation)>
+          </Route>
+        </HashRoute>
+        <HashRoute
+          key="Subnav_NORMAL"
+          path="/normal"
+          render={[Function]}
+        >
+          <Route
+            render={[Function]}
+          />
+        </HashRoute>
+        <HashRoute
+          key="Subnav_NOTIFICATIONS"
+          path="/notifications"
+          render={[Function]}
+        >
+          <Route
+            render={[Function]}
+          />
+        </HashRoute>
+        <HashRoute
+          key="Subnav_FREE"
+          path="/free"
+          render={[Function]}
+        >
+          <Route
+            render={[Function]}
+          />
+        </HashRoute>
+        <HashRoute
+          key="Subnav_NEW"
+          path="/new"
+          render={[Function]}
+        >
+          <Route
+            render={[Function]}
+          />
+        </HashRoute>
+        <HashRoute
+          key="Subnav_HELP"
+          path="https://external.url/"
+          render={[Function]}
+        >
+          <Route
+            render={[Function]}
+          />
+        </HashRoute>
+        <HashRoute
+          key="Subnav_ITEM1"
+          path="/settings-1"
+          render={[Function]}
+        >
+          <Route
+            render={[Function]}
+          />
+        </HashRoute>
+        <HashRoute
+          key="Subnav_ITEM2"
+          path="/settings-2"
+          render={[Function]}
+        >
+          <Route
+            render={[Function]}
+          />
+        </HashRoute>
+        <HashRoute
+          key="Subnav_ITEM3"
+          path="/settings-3"
+          render={[Function]}
+        >
+          <Route
+            render={[Function]}
+          />
+        </HashRoute>
+        <div
+          className="children"
+        />
+      </div>
+    </div>
+  </PrimaryNavigation>
+</MockClickOutside>
+`;

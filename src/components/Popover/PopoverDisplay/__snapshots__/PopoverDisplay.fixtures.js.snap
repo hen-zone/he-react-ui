@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`base 1`] = `
+<PopoverDisplay>
+  <div
+    className="popover"
+    role="tooltip"
+  >
+    <div
+      className="content"
+    >
+      <div>
+        <b>
+          I can contain any content you desire
+        </b>
+        <p>
+          Just watch me
+        </p>
+      </div>
+    </div>
+  </div>
+</PopoverDisplay>
+`;
+
+exports[`light 1`] = `
+<PopoverDisplay
+  light={true}
+>
+  <div
+    className="popover light"
+    role="tooltip"
+  >
+    <div
+      className="content"
+    >
+      <div>
+        <b>
+          I can contain any content you desire
+        </b>
+        <p>
+          Just watch me
+        </p>
+      </div>
+    </div>
+  </div>
+</PopoverDisplay>
+`;
+
+exports[`tooltip 1`] = `
+<PopoverDisplay
+  tooltip={true}
+>
+  <div
+    className="popover tooltip"
+    role="tooltip"
+  >
+    <div
+      className="content tooltip"
+    >
+      I am a single-line tooltip
+    </div>
+  </div>
+</PopoverDisplay>
+`;

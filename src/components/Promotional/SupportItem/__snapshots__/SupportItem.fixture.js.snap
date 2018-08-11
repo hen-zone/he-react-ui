@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`anonymous 1`] = `
+<SupportItem
+  extra="Adhesive only"
+  image={
+    Object {
+      "alt": "A bandage.",
+      "src": "http://res.publicdomainfiles.com/pdf_view/2/13491430814060.png",
+    }
+  }
+  name="Medical Bandages"
+>
+  <div
+    className="outer"
+  >
+    <div
+      className="imageWrapper"
+    >
+      <img
+        alt="A bandage."
+        className="image"
+        src="http://res.publicdomainfiles.com/pdf_view/2/13491430814060.png"
+      />
+    </div>
+    <div
+      className="name"
+    >
+      Medical Bandages
+    </div>
+    <div
+      className="extra"
+    >
+      Adhesive only
+    </div>
+  </div>
+</SupportItem>
+`;

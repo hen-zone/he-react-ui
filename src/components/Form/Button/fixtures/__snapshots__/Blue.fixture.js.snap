@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`anonymous 1`] = `
+<Button
+  color="blue"
+  disabled={false}
+  done={false}
+  icon=""
+  keyline={false}
+  link={false}
+  newWindow={false}
+  onClick={[Function]}
+  squared={false}
+  submit={false}
+  submitting={false}
+  withRouter={false}
+>
+  <div
+    className="buttonContainer"
+  >
+    <InnerButton
+      className="button blue"
+      newWindow={false}
+      onClick={[Function]}
+      submit={false}
+      withRouter={false}
+    >
+      <button
+        className="button blue"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="content"
+        >
+          Button
+        </div>
+      </button>
+    </InnerButton>
+  </div>
+</Button>
+`;

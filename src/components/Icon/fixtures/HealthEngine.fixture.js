@@ -1,17 +1,22 @@
 // @flow
 import Icon from '../';
 
-export const normal = {
-  component: Icon,
-  props: {
-    name: 'HealthEngine',
+export default [
+  {
+    name: 'normal',
+    component: Icon,
+    props: {
+      name: 'HealthEngine',
+      className: 'fuck',
+    },
   },
-};
 
-export const inverted = {
-  component: Icon,
-  props: {
-    name: 'HealthEngine',
-    inverted: true,
+  {
+    name: 'inverted',
+    component: Icon,
+    props: {
+      name: 'HealthEngine',
+      inverted: true,
+    },
   },
-};
+];

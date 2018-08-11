@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`anonymous 1`] = `
+<Button
+  color="teal"
+  disabled={false}
+  done={true}
+  icon=""
+  iconLeft={
+    <Icon
+      name="Settings"
+    />
+  }
+  keyline={false}
+  link={false}
+  newWindow={false}
+  onClick={[Function]}
+  squared={false}
+  submit={false}
+  withRouter={false}
+>
+  <div
+    className="buttonContainer"
+  >
+    <InnerButton
+      className="button done"
+      newWindow={false}
+      onClick={[Function]}
+      submit={false}
+      withRouter={false}
+    >
+      <button
+        className="button done"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="iconCenter"
+        >
+          <Icon
+            name="Tick"
+          >
+            <Tick
+              className="icon"
+            >
+              <svg
+                className="icon"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17.207 7.707a1 1 0 0 1 1.415 1.414l-7.998 8.003a1 1 0 0 1-1.414 0l-4.003-4.003a1 1 0 1 1 1.414-1.414l3.296 3.296 7.29-7.296z"
+                />
+              </svg>
+            </Tick>
+          </Icon>
+        </div>
+      </button>
+    </InnerButton>
+  </div>
+</Button>
+`;

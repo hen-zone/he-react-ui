@@ -60,7 +60,7 @@ class ActionSet extends React.Component<Props, *> {
       ...rest
     } = this.props;
     const { open } = this.state;
-    const expandable = children.length > 2 && !expanded;
+    const expandable = React.Children.count(children) > 2 && !expanded;
     const classes = classnames(
       style.outer,
       {

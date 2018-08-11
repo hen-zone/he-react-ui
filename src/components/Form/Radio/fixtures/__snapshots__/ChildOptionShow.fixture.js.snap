@@ -1,0 +1,557 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`anonymous 1`] = `
+<Radio
+  error=""
+  id="demo"
+  inline={false}
+  name="demo"
+  onChange={[Function]}
+  options={
+    Array [
+      Object {
+        "label": "Option 1",
+        "value": "1",
+      },
+      Object {
+        "label": "Option 2",
+        "value": "2",
+      },
+      Object {
+        "label": "Option 3",
+        "value": "3",
+      },
+      Object {
+        "child": <SingleSelect
+          disabled={false}
+          error=""
+          id="demo"
+          inline={false}
+          name="demo"
+          onBeforeOpen={[MockFunction]}
+          onChange={[MockFunction]}
+          onClose={[MockFunction]}
+          options={
+            Array [
+              Object {
+                "label": "A",
+                "value": "A",
+              },
+              Object {
+                "label": "B",
+                "value": "B",
+              },
+              Object {
+                "label": "C",
+                "value": "C",
+              },
+            ]
+          }
+          value={null}
+        />,
+        "label": "Other...",
+        "showChild": true,
+        "value": "4",
+      },
+    ]
+  }
+>
+  <div
+    className="outer"
+    id="demo"
+    name="demo"
+    options={
+      Array [
+        Object {
+          "label": "Option 1",
+          "value": "1",
+        },
+        Object {
+          "label": "Option 2",
+          "value": "2",
+        },
+        Object {
+          "label": "Option 3",
+          "value": "3",
+        },
+        Object {
+          "child": <SingleSelect
+            disabled={false}
+            error=""
+            id="demo"
+            inline={false}
+            name="demo"
+            onBeforeOpen={[MockFunction]}
+            onChange={[MockFunction]}
+            onClose={[MockFunction]}
+            options={
+              Array [
+                Object {
+                  "label": "A",
+                  "value": "A",
+                },
+                Object {
+                  "label": "B",
+                  "value": "B",
+                },
+                Object {
+                  "label": "C",
+                  "value": "C",
+                },
+              ]
+            }
+            value={null}
+          />,
+          "label": "Other...",
+          "showChild": true,
+          "value": "4",
+        },
+      ]
+    }
+  >
+    <div
+      className="options"
+    >
+      <div
+        className="option"
+        key="1"
+        onClick={[Function]}
+      >
+        <input
+          checked={false}
+          className="input"
+          name="demo"
+          onChange={[Function]}
+          type="radio"
+          value="1"
+        />
+        <Icon
+          className="icon empty"
+          name="RadioUnchecked"
+        >
+          <RadioUnchecked
+            className="icon icon empty"
+          >
+            <svg
+              className="icon icon empty"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M12.66.36l1.23.43 1.16.58 1.06.71.96.85.85.96.71 1.06.58 1.16.43 1.23.27 1.3L20 10l-.09 1.36-.27 1.3-.43 1.23-.58 1.16-.71 1.06-.85.96-.96.85-1.06.71-1.16.58-1.23.43-1.3.27L10 20l-1.36-.09-1.3-.27-1.23-.43-1.16-.58-1.06-.71-.96-.85-.85-.96-.71-1.06-.58-1.16-.43-1.23-.27-1.3L0 10l.09-1.36.27-1.3.43-1.23.58-1.16.71-1.06.85-.96.96-.85 1.06-.71L6.11.79 7.34.36l1.3-.27L10 0l1.36.09 1.3.27zM7.46 2.4l-1.15.49-1.04.65-.93.8-.8.93-.65 1.04-.49 1.15-.3 1.23-.11 1.29.11 1.3.3 1.23.49 1.14.65 1.05.8.93.93.8 1.04.65 1.15.48 1.23.31 1.29.1 1.3-.1 1.23-.31 1.14-.48 1.05-.65.93-.8.8-.93.65-1.05.48-1.14.31-1.23.1-1.3-.1-1.29-.31-1.23-.48-1.15-.65-1.04-.8-.93-.93-.8-1.05-.65-1.14-.49-1.23-.3-1.3-.11-1.29.11-1.23.3z"
+              />
+            </svg>
+          </RadioUnchecked>
+        </Icon>
+        <Icon
+          className="icon full"
+          name="RadioChecked"
+        >
+          <RadioChecked
+            className="icon icon full"
+          >
+            <svg
+              className="icon icon full"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M12.66.36l1.23.43 1.16.58 1.06.71.96.85.85.96.71 1.06.58 1.16.43 1.23.27 1.3L20 10l-.09 1.36-.27 1.3-.43 1.23-.58 1.16-.71 1.06-.85.96-.96.85-1.06.71-1.16.58-1.23.43-1.3.27L10 20l-1.36-.09-1.3-.27-1.23-.43-1.16-.58-1.06-.71-.96-.85-.85-.96-.71-1.06-.58-1.16-.43-1.23-.27-1.3L0 10l.09-1.36.27-1.3.43-1.23.58-1.16.71-1.06.85-.96.96-.85 1.06-.71L6.11.79 7.34.36l1.3-.27L10 0l1.36.09 1.3.27zM7.64 6.77l-.87.87-.57 1.1L6 10l.2 1.26.57 1.1.87.87 1.1.57L10 14l1.26-.2 1.1-.57.87-.87.57-1.1L14 10l-.2-1.26-.57-1.1-.87-.87-1.1-.57L10 6l-1.26.2-1.1.57z"
+              />
+            </svg>
+          </RadioChecked>
+        </Icon>
+        <label
+          className="tag"
+        >
+          Option 1
+        </label>
+      </div>
+      <div
+        className="option"
+        key="2"
+        onClick={[Function]}
+      >
+        <input
+          checked={false}
+          className="input"
+          name="demo"
+          onChange={[Function]}
+          type="radio"
+          value="2"
+        />
+        <Icon
+          className="icon empty"
+          name="RadioUnchecked"
+        >
+          <RadioUnchecked
+            className="icon icon empty"
+          >
+            <svg
+              className="icon icon empty"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M12.66.36l1.23.43 1.16.58 1.06.71.96.85.85.96.71 1.06.58 1.16.43 1.23.27 1.3L20 10l-.09 1.36-.27 1.3-.43 1.23-.58 1.16-.71 1.06-.85.96-.96.85-1.06.71-1.16.58-1.23.43-1.3.27L10 20l-1.36-.09-1.3-.27-1.23-.43-1.16-.58-1.06-.71-.96-.85-.85-.96-.71-1.06-.58-1.16-.43-1.23-.27-1.3L0 10l.09-1.36.27-1.3.43-1.23.58-1.16.71-1.06.85-.96.96-.85 1.06-.71L6.11.79 7.34.36l1.3-.27L10 0l1.36.09 1.3.27zM7.46 2.4l-1.15.49-1.04.65-.93.8-.8.93-.65 1.04-.49 1.15-.3 1.23-.11 1.29.11 1.3.3 1.23.49 1.14.65 1.05.8.93.93.8 1.04.65 1.15.48 1.23.31 1.29.1 1.3-.1 1.23-.31 1.14-.48 1.05-.65.93-.8.8-.93.65-1.05.48-1.14.31-1.23.1-1.3-.1-1.29-.31-1.23-.48-1.15-.65-1.04-.8-.93-.93-.8-1.05-.65-1.14-.49-1.23-.3-1.3-.11-1.29.11-1.23.3z"
+              />
+            </svg>
+          </RadioUnchecked>
+        </Icon>
+        <Icon
+          className="icon full"
+          name="RadioChecked"
+        >
+          <RadioChecked
+            className="icon icon full"
+          >
+            <svg
+              className="icon icon full"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M12.66.36l1.23.43 1.16.58 1.06.71.96.85.85.96.71 1.06.58 1.16.43 1.23.27 1.3L20 10l-.09 1.36-.27 1.3-.43 1.23-.58 1.16-.71 1.06-.85.96-.96.85-1.06.71-1.16.58-1.23.43-1.3.27L10 20l-1.36-.09-1.3-.27-1.23-.43-1.16-.58-1.06-.71-.96-.85-.85-.96-.71-1.06-.58-1.16-.43-1.23-.27-1.3L0 10l.09-1.36.27-1.3.43-1.23.58-1.16.71-1.06.85-.96.96-.85 1.06-.71L6.11.79 7.34.36l1.3-.27L10 0l1.36.09 1.3.27zM7.64 6.77l-.87.87-.57 1.1L6 10l.2 1.26.57 1.1.87.87 1.1.57L10 14l1.26-.2 1.1-.57.87-.87.57-1.1L14 10l-.2-1.26-.57-1.1-.87-.87-1.1-.57L10 6l-1.26.2-1.1.57z"
+              />
+            </svg>
+          </RadioChecked>
+        </Icon>
+        <label
+          className="tag"
+        >
+          Option 2
+        </label>
+      </div>
+      <div
+        className="option"
+        key="3"
+        onClick={[Function]}
+      >
+        <input
+          checked={false}
+          className="input"
+          name="demo"
+          onChange={[Function]}
+          type="radio"
+          value="3"
+        />
+        <Icon
+          className="icon empty"
+          name="RadioUnchecked"
+        >
+          <RadioUnchecked
+            className="icon icon empty"
+          >
+            <svg
+              className="icon icon empty"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M12.66.36l1.23.43 1.16.58 1.06.71.96.85.85.96.71 1.06.58 1.16.43 1.23.27 1.3L20 10l-.09 1.36-.27 1.3-.43 1.23-.58 1.16-.71 1.06-.85.96-.96.85-1.06.71-1.16.58-1.23.43-1.3.27L10 20l-1.36-.09-1.3-.27-1.23-.43-1.16-.58-1.06-.71-.96-.85-.85-.96-.71-1.06-.58-1.16-.43-1.23-.27-1.3L0 10l.09-1.36.27-1.3.43-1.23.58-1.16.71-1.06.85-.96.96-.85 1.06-.71L6.11.79 7.34.36l1.3-.27L10 0l1.36.09 1.3.27zM7.46 2.4l-1.15.49-1.04.65-.93.8-.8.93-.65 1.04-.49 1.15-.3 1.23-.11 1.29.11 1.3.3 1.23.49 1.14.65 1.05.8.93.93.8 1.04.65 1.15.48 1.23.31 1.29.1 1.3-.1 1.23-.31 1.14-.48 1.05-.65.93-.8.8-.93.65-1.05.48-1.14.31-1.23.1-1.3-.1-1.29-.31-1.23-.48-1.15-.65-1.04-.8-.93-.93-.8-1.05-.65-1.14-.49-1.23-.3-1.3-.11-1.29.11-1.23.3z"
+              />
+            </svg>
+          </RadioUnchecked>
+        </Icon>
+        <Icon
+          className="icon full"
+          name="RadioChecked"
+        >
+          <RadioChecked
+            className="icon icon full"
+          >
+            <svg
+              className="icon icon full"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M12.66.36l1.23.43 1.16.58 1.06.71.96.85.85.96.71 1.06.58 1.16.43 1.23.27 1.3L20 10l-.09 1.36-.27 1.3-.43 1.23-.58 1.16-.71 1.06-.85.96-.96.85-1.06.71-1.16.58-1.23.43-1.3.27L10 20l-1.36-.09-1.3-.27-1.23-.43-1.16-.58-1.06-.71-.96-.85-.85-.96-.71-1.06-.58-1.16-.43-1.23-.27-1.3L0 10l.09-1.36.27-1.3.43-1.23.58-1.16.71-1.06.85-.96.96-.85 1.06-.71L6.11.79 7.34.36l1.3-.27L10 0l1.36.09 1.3.27zM7.64 6.77l-.87.87-.57 1.1L6 10l.2 1.26.57 1.1.87.87 1.1.57L10 14l1.26-.2 1.1-.57.87-.87.57-1.1L14 10l-.2-1.26-.57-1.1-.87-.87-1.1-.57L10 6l-1.26.2-1.1.57z"
+              />
+            </svg>
+          </RadioChecked>
+        </Icon>
+        <label
+          className="tag"
+        >
+          Option 3
+        </label>
+      </div>
+      <div
+        className="option"
+        key="4"
+        onClick={[Function]}
+      >
+        <input
+          checked={false}
+          className="input"
+          name="demo"
+          onChange={[Function]}
+          type="radio"
+          value="4"
+        />
+        <Icon
+          className="icon empty"
+          name="RadioUnchecked"
+        >
+          <RadioUnchecked
+            className="icon icon empty"
+          >
+            <svg
+              className="icon icon empty"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M12.66.36l1.23.43 1.16.58 1.06.71.96.85.85.96.71 1.06.58 1.16.43 1.23.27 1.3L20 10l-.09 1.36-.27 1.3-.43 1.23-.58 1.16-.71 1.06-.85.96-.96.85-1.06.71-1.16.58-1.23.43-1.3.27L10 20l-1.36-.09-1.3-.27-1.23-.43-1.16-.58-1.06-.71-.96-.85-.85-.96-.71-1.06-.58-1.16-.43-1.23-.27-1.3L0 10l.09-1.36.27-1.3.43-1.23.58-1.16.71-1.06.85-.96.96-.85 1.06-.71L6.11.79 7.34.36l1.3-.27L10 0l1.36.09 1.3.27zM7.46 2.4l-1.15.49-1.04.65-.93.8-.8.93-.65 1.04-.49 1.15-.3 1.23-.11 1.29.11 1.3.3 1.23.49 1.14.65 1.05.8.93.93.8 1.04.65 1.15.48 1.23.31 1.29.1 1.3-.1 1.23-.31 1.14-.48 1.05-.65.93-.8.8-.93.65-1.05.48-1.14.31-1.23.1-1.3-.1-1.29-.31-1.23-.48-1.15-.65-1.04-.8-.93-.93-.8-1.05-.65-1.14-.49-1.23-.3-1.3-.11-1.29.11-1.23.3z"
+              />
+            </svg>
+          </RadioUnchecked>
+        </Icon>
+        <Icon
+          className="icon full"
+          name="RadioChecked"
+        >
+          <RadioChecked
+            className="icon icon full"
+          >
+            <svg
+              className="icon icon full"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M12.66.36l1.23.43 1.16.58 1.06.71.96.85.85.96.71 1.06.58 1.16.43 1.23.27 1.3L20 10l-.09 1.36-.27 1.3-.43 1.23-.58 1.16-.71 1.06-.85.96-.96.85-1.06.71-1.16.58-1.23.43-1.3.27L10 20l-1.36-.09-1.3-.27-1.23-.43-1.16-.58-1.06-.71-.96-.85-.85-.96-.71-1.06-.58-1.16-.43-1.23-.27-1.3L0 10l.09-1.36.27-1.3.43-1.23.58-1.16.71-1.06.85-.96.96-.85 1.06-.71L6.11.79 7.34.36l1.3-.27L10 0l1.36.09 1.3.27zM7.64 6.77l-.87.87-.57 1.1L6 10l.2 1.26.57 1.1.87.87 1.1.57L10 14l1.26-.2 1.1-.57.87-.87.57-1.1L14 10l-.2-1.26-.57-1.1-.87-.87-1.1-.57L10 6l-1.26.2-1.1.57z"
+              />
+            </svg>
+          </RadioChecked>
+        </Icon>
+        <label
+          className="tag"
+        >
+          Other...
+        </label>
+        <div
+          className="child"
+        >
+          <SingleSelect
+            disabled={false}
+            error=""
+            id="demo"
+            inline={false}
+            name="demo"
+            onBeforeOpen={[MockFunction]}
+            onChange={[MockFunction]}
+            onClose={[MockFunction]}
+            options={
+              Array [
+                Object {
+                  "label": "A",
+                  "value": "A",
+                },
+                Object {
+                  "label": "B",
+                  "value": "B",
+                },
+                Object {
+                  "label": "C",
+                  "value": "C",
+                },
+              ]
+            }
+            value={null}
+          >
+            <div
+              className="outer"
+            >
+              <div
+                className="relative"
+              >
+                <div
+                  className="container"
+                >
+                  <Select
+                    arrowRenderer={[Function]}
+                    autosize={true}
+                    backspaceRemoves={true}
+                    backspaceToRemoveMessage="Press backspace to remove {label}"
+                    className="select"
+                    clearAllText="Clear all"
+                    clearRenderer={[Function]}
+                    clearValueText="Clear value"
+                    clearable={true}
+                    closeOnSelect={true}
+                    deleteRemoves={true}
+                    delimiter=","
+                    disabled={false}
+                    escapeClearsValue={true}
+                    filterOptions={[Function]}
+                    id="demo"
+                    ignoreAccents={true}
+                    ignoreCase={true}
+                    inputProps={Object {}}
+                    isLoading={false}
+                    joinValues={true}
+                    labelKey="label"
+                    matchPos="any"
+                    matchProp="any"
+                    menuBuffer={0}
+                    menuRenderer={[Function]}
+                    multi={false}
+                    name="demo"
+                    noResultsText="No results found"
+                    onBlurResetsInput={true}
+                    onChange={[Function]}
+                    onClose={[Function]}
+                    onCloseResetsInput={true}
+                    onOpen={[Function]}
+                    onSelectResetsInput={true}
+                    openOnClick={true}
+                    optionComponent={[Function]}
+                    options={
+                      Array [
+                        Object {
+                          "label": "A",
+                          "value": "A",
+                        },
+                        Object {
+                          "label": "B",
+                          "value": "B",
+                        },
+                        Object {
+                          "label": "C",
+                          "value": "C",
+                        },
+                      ]
+                    }
+                    pageSize={5}
+                    placeholder="Select..."
+                    removeSelected={true}
+                    required={false}
+                    rtl={false}
+                    scrollMenuIntoView={true}
+                    searchable={true}
+                    simpleValue={false}
+                    tabSelectsValue={true}
+                    trimFilter={true}
+                    value={null}
+                    valueComponent={[Function]}
+                    valueKey="value"
+                    valueRenderer={[Function]}
+                  >
+                    <div
+                      className="Select select is-clearable is-searchable Select--single"
+                    >
+                      <input
+                        disabled={false}
+                        name="demo"
+                        type="hidden"
+                        value=""
+                      />
+                      <div
+                        className="Select-control"
+                        onKeyDown={[Function]}
+                        onMouseDown={[Function]}
+                        onTouchEnd={[Function]}
+                        onTouchMove={[Function]}
+                        onTouchStart={[Function]}
+                      >
+                        <span
+                          className="Select-multi-value-wrapper"
+                          id="react-select-2--value"
+                        >
+                          <div
+                            className="Select-placeholder"
+                          >
+                            Select...
+                          </div>
+                          <AutosizeInput
+                            aria-activedescendant="react-select-2--value"
+                            aria-expanded="false"
+                            aria-haspopup="false"
+                            aria-owns=""
+                            className="Select-input"
+                            id="demo"
+                            injectStyles={true}
+                            minWidth="5"
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            onFocus={[Function]}
+                            required={false}
+                            role="combobox"
+                            value=""
+                          >
+                            <div
+                              className="Select-input"
+                              style={
+                                Object {
+                                  "display": "inline-block",
+                                }
+                              }
+                            >
+                              <input
+                                aria-activedescendant="react-select-2--value"
+                                aria-expanded="false"
+                                aria-haspopup="false"
+                                aria-owns=""
+                                id="demo"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                onFocus={[Function]}
+                                required={false}
+                                role="combobox"
+                                style={
+                                  Object {
+                                    "boxSizing": "content-box",
+                                    "width": "5px",
+                                  }
+                                }
+                                value=""
+                              />
+                              <div
+                                style={
+                                  Object {
+                                    "height": 0,
+                                    "left": 0,
+                                    "overflow": "scroll",
+                                    "position": "absolute",
+                                    "top": 0,
+                                    "visibility": "hidden",
+                                    "whiteSpace": "pre",
+                                  }
+                                }
+                              />
+                            </div>
+                          </AutosizeInput>
+                        </span>
+                        <span
+                          className="Select-arrow-zone"
+                          onMouseDown={[Function]}
+                        >
+                          <span
+                            className="Select-arrow"
+                            onMouseDown={[Function]}
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </Select>
+                  <Icon
+                    className="caret"
+                    name="DropDown"
+                  >
+                    <DropDown
+                      className="icon caret"
+                    >
+                      <svg
+                        className="icon caret"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
+                        />
+                      </svg>
+                    </DropDown>
+                  </Icon>
+                </div>
+              </div>
+            </div>
+          </SingleSelect>
+        </div>
+      </div>
+    </div>
+  </div>
+</Radio>
+`;

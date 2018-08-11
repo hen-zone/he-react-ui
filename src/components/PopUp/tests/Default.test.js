@@ -1,11 +1,7 @@
 // @flow
 import { shallow } from 'enzyme';
 import React from 'react';
-import testFixture from '../../../../config/testFixture';
-import fixture from '../fixtures/Default.fixture.js';
 import PopUp from '../PopUp.js';
-
-testFixture(fixture, 'Default');
 
 test('PopUp calls its handlers', () => {
   const onOpen = jest.fn();
