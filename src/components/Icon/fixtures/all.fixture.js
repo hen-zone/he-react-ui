@@ -1,61 +1,99 @@
 // @flow
-import Icon from '../';
+import Add from '../Add';
+import Alarm from '../Alarm';
+import Alert from '../Alert';
+import {
+  ArrowLeft,
+  ArrowRight,
+  ArrowUp,
+  ArrowDown,
+  CurvedArrow,
+} from '../Arrows';
+import Bookings from '../Bookings';
+import Calendar from '../Calendar';
+import CaretRight from '../CaretRight';
+import {
+  CheckBoxChecked,
+  CheckBoxUnchecked,
+  RadioChecked,
+  RadioUnchecked,
+} from '../CheckBoxes';
+import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp } from '../Chevrons';
+import Clock from '../Clock';
+import Cross from '../Cross';
+import Delete from '../Delete';
+import DropDown from '../DropDown';
+import Edit from '../Edit';
+import Ellipsis from '../Ellipsis';
+import Engage from '../Engage';
+import HealthEngine from '../HealthEngine';
+import HealthEngineWithText from '../HealthEngineWithText';
+import Help from '../Help';
+import Home from '../Home';
+import Logout from '../Logout';
+import Megaphone from '../Megaphone';
+import Patients from '../Patients';
+import Search from '../Search';
+import Settings from '../Settings';
+import Sync from '../Sync';
+import Tick from '../Tick';
+import View from '../View';
 
 export default [
-  { name: 'Add', component: Icon, props: { name: 'Add' } },
-  { name: 'Alarm', component: Icon, props: { name: 'Alarm' } },
-  { name: 'Alert', component: Icon, props: { name: 'Alert' } },
-  { name: 'Arr', component: Icon, props: { name: 'Arr' } },
-  { name: 'ArrowLeft', component: Icon, props: { name: 'ArrowLeft' } },
-  { name: 'Bookings', component: Icon, props: { name: 'Bookings' } },
-  { name: 'Calendar', component: Icon, props: { name: 'Calendar' } },
-  { name: 'CaretRight', component: Icon, props: { name: 'CaretRight' } },
-  { name: 'Clock', component: Icon, props: { name: 'Clock' } },
-  { name: 'CurvedArrow', component: Icon, props: { name: 'CurvedArrow' } },
-  { name: 'Cross', component: Icon, props: { name: 'Cross' } },
-  { name: 'Delete', component: Icon, props: { name: 'Delete' } },
-  { name: 'DropDown', component: Icon, props: { name: 'DropDown' } },
-  { name: 'Edit', component: Icon, props: { name: 'Edit' } },
-  { name: 'Ellipsis', component: Icon, props: { name: 'Ellipsis' } },
-  { name: 'Engage', component: Icon, props: { name: 'Engage' } },
-  { name: 'HealthEngine', component: Icon, props: { name: 'HealthEngine' } },
+  { name: 'Add', component: Add, props: {} },
+  { name: 'Alarm', component: Alarm, props: {} },
+  { name: 'Alert', component: Alert, props: {} },
+  { name: 'ArrowRight', component: ArrowRight, props: {} },
+  { name: 'ArrowLeft', component: ArrowLeft, props: {} },
+  { name: 'Bookings', component: Bookings, props: {} },
+  { name: 'Calendar', component: Calendar, props: {} },
+  { name: 'CaretRight', component: CaretRight, props: {} },
+  { name: 'Clock', component: Clock, props: {} },
+  { name: 'CurvedArrow', component: CurvedArrow, props: {} },
+  { name: 'Cross', component: Cross, props: {} },
+  { name: 'Delete', component: Delete, props: {} },
+  { name: 'DropDown', component: DropDown, props: {} },
+  { name: 'Edit', component: Edit, props: {} },
+  { name: 'Ellipsis', component: Ellipsis, props: {} },
+  { name: 'Engage', component: Engage, props: {} },
+  { name: 'HealthEngine', component: HealthEngine, props: {} },
   {
     name: 'HealthEngineWithText',
-    component: Icon,
-    props: { name: 'HealthEngineWithText' },
+    component: HealthEngineWithText,
+    props: {},
   },
-  { name: 'Help', component: Icon, props: { name: 'Help' } },
-  { name: 'Home', component: Icon, props: { name: 'Home' } },
-  { name: 'Logout', component: Icon, props: { name: 'Logout' } },
-  { name: 'Megaphone', component: Icon, props: { name: 'Megaphone' } },
-  { name: 'Patients', component: Icon, props: { name: 'Patients' } },
-  { name: 'Search', component: Icon, props: { name: 'Search' } },
-  { name: 'Settings', component: Icon, props: { name: 'Settings' } },
-  { name: 'Sync', component: Icon, props: { name: 'Sync' } },
-  { name: 'Tick', component: Icon, props: { name: 'Tick' } },
-  { name: 'View', component: Icon, props: { name: 'View' } },
-  { name: 'ChevronUp', component: Icon, props: { name: 'ChevronUp' } },
-  { name: 'ChevronDown', component: Icon, props: { name: 'ChevronDown' } },
-  { name: 'ChevronLeft', component: Icon, props: { name: 'ChevronLeft' } },
-  { name: 'ChevronRight', component: Icon, props: { name: 'ChevronRight' } },
+  { name: 'Help', component: Help, props: {} },
+  { name: 'Home', component: Home, props: {} },
+  { name: 'Logout', component: Logout, props: {} },
+  { name: 'Megaphone', component: Megaphone, props: {} },
+  { name: 'Patients', component: Patients, props: {} },
+  { name: 'Search', component: Search, props: {} },
+  { name: 'Settings', component: Settings, props: {} },
+  { name: 'Sync', component: Sync, props: {} },
+  { name: 'Tick', component: Tick, props: {} },
+  { name: 'View', component: View, props: {} },
+  { name: 'ChevronUp', component: ChevronUp, props: {} },
+  { name: 'ChevronDown', component: ChevronDown, props: {} },
+  { name: 'ChevronLeft', component: ChevronLeft, props: {} },
+  { name: 'ChevronRight', component: ChevronRight, props: {} },
   {
     name: 'CheckBoxChecked',
-    component: Icon,
-    props: { name: 'CheckBoxChecked' },
+    component: CheckBoxChecked,
+    props: {},
   },
   {
     name: 'CheckBoxUnchecked',
-    component: Icon,
-    props: { name: 'CheckBoxUnchecked' },
+    component: CheckBoxUnchecked,
+    props: {},
   },
-  { name: 'RadioChecked', component: Icon, props: { name: 'RadioChecked' } },
+  { name: 'RadioChecked', component: RadioChecked, props: {} },
   {
     name: 'RadioUnchecked',
-    component: Icon,
-    props: { name: 'RadioUnchecked' },
+    component: RadioUnchecked,
+    props: {},
   },
-  { name: 'ArrowDown', component: Icon, props: { name: 'ArrowDown' } },
-  { name: 'ArrowLeft', component: Icon, props: { name: 'ArrowLeft' } },
-  { name: 'ArrowRight', component: Icon, props: { name: 'ArrowRight' } },
-  { name: 'ArrowUp', component: Icon, props: { name: 'ArrowUp' } },
+  { name: 'ArrowDown', component: ArrowDown, props: {} },
+  { name: 'ArrowLeft', component: ArrowLeft, props: {} },
+  { name: 'ArrowRight', component: ArrowRight, props: {} },
+  { name: 'ArrowUp', component: ArrowUp, props: {} },
 ];

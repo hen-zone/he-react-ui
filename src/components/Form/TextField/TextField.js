@@ -7,7 +7,8 @@
 
 import React from 'react';
 import classnames from 'classnames';
-import Icon from '../../Icon';
+import Tick from '../../Icon/Tick';
+import Cross from '../../Icon/Cross';
 import style from './TextField.scss';
 
 type Props = {
@@ -122,12 +123,12 @@ class TextField extends React.Component<Props, *> {
             value={value}
           />
           {marker &&
-            value !== '' && (
-              <Icon
-                name={isValid ? 'Tick' : 'Cross'}
-                className={style.marker}
-              />
-            )}
+            value !== '' &&
+            (isValid ? (
+              <Tick className={style.marker} />
+            ) : (
+              <Cross className={style.marker} />
+            ))}
           <label
             className={classnames(style.label, { [style.floating]: floating })}
             htmlFor={id}

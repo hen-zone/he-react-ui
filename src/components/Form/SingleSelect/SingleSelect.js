@@ -8,7 +8,7 @@
 import classnames from 'classnames';
 import React from 'react';
 import Select from 'react-select';
-import Icon from '../../Icon';
+import DropDown from '../../Icon/DropDown';
 import Label from '../Label';
 import style from './SingleSelect.scss';
 
@@ -147,7 +147,7 @@ class SingleSelect extends React.Component<Props, *> {
               name={name}
               required={required}
             />
-            <Icon className={style.caret} name="DropDown" />
+            <DropDown className={style.caret} />
           </div>
         </div>
       </div>

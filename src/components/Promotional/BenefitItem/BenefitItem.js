@@ -5,7 +5,7 @@
  *
  */
 import React from 'react';
-import Icon from '../../Icon';
+import Tick from '../../Icon/Tick';
 import styles from './BenefitItem.scss';
 
 export default function BenefitItem(props: { children: any }) {
@@ -13,7 +13,7 @@ export default function BenefitItem(props: { children: any }) {
 
   return (
     <div className={styles.outer}>
-      <Icon className={styles.tick} name="Tick" />
+      <Tick className={styles.tick} />
       <div className={styles.content}>{children}</div>
     </div>
   );

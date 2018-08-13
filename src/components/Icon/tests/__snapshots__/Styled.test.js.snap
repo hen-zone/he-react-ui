@@ -16,6 +16,7 @@ exports[`<Icon /> rendered correctly with Styled fixture 1`] = `
 >
   <Delete
     className="icon red"
+    fill="currentColor"
     height={32}
     style={
       Object {
@@ -28,6 +29,7 @@ exports[`<Icon /> rendered correctly with Styled fixture 1`] = `
   >
     <svg
       className="icon red"
+      fill="currentColor"
       height={32}
       style={
         Object {

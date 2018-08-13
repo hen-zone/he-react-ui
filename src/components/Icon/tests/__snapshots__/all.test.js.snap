@@ -1,761 +1,98 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Icon /> rendered correctly with Add fixture 1`] = `
-<Icon
-  name="ArrowUp"
+exports[`<Add /> rendered correctly with Add fixture 1`] = `null`;
+
+exports[`<Alarm /> rendered correctly with Alarm fixture 1`] = `null`;
+
+exports[`<Alert /> rendered correctly with Alert fixture 1`] = `null`;
+
+exports[`<ArrowDown /> rendered correctly with ArrowDown fixture 1`] = `null`;
+
+exports[`<ArrowLeft /> rendered correctly with ArrowLeft fixture 1`] = `null`;
+
+exports[`<ArrowLeft /> rendered correctly with ArrowLeft fixture 2`] = `null`;
+
+exports[`<ArrowRight /> rendered correctly with ArrowRight fixture 1`] = `null`;
+
+exports[`<ArrowRight /> rendered correctly with ArrowRight fixture 2`] = `null`;
+
+exports[`<ArrowUp /> rendered correctly with ArrowUp fixture 1`] = `
+<ArrowUp
+  fill="currentColor"
+  height={32}
+  width={32}
 >
-  <ArrowUp
-    className="icon"
+  <svg
+    fill="currentColor"
+    height={32}
+    viewBox="0 0 24 24"
+    width={32}
   >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
+    <path
+      d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+    />
+  </svg>
+</ArrowUp>
 `;
 
-exports[`<Icon /> rendered correctly with Alarm fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<Bookings /> rendered correctly with Bookings fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with Alert fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<Calendar /> rendered correctly with Calendar fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with Arr fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<CaretRight /> rendered correctly with CaretRight fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with ArrowDown fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<CheckBoxChecked /> rendered correctly with CheckBoxChecked fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with ArrowLeft fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<CheckBoxUnchecked /> rendered correctly with CheckBoxUnchecked fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with ArrowLeft fixture 2`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<ChevronDown /> rendered correctly with ChevronDown fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with ArrowRight fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<ChevronLeft /> rendered correctly with ChevronLeft fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with ArrowUp fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<ChevronRight /> rendered correctly with ChevronRight fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with Bookings fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<ChevronUp /> rendered correctly with ChevronUp fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with Calendar fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<Clock /> rendered correctly with Clock fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with CaretRight fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<Cross /> rendered correctly with Cross fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with CheckBoxChecked fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<CurvedArrow /> rendered correctly with CurvedArrow fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with CheckBoxUnchecked fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<Delete /> rendered correctly with Delete fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with ChevronDown fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<DropDown /> rendered correctly with DropDown fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with ChevronLeft fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<Edit /> rendered correctly with Edit fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with ChevronRight fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<Ellipsis /> rendered correctly with Ellipsis fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with ChevronUp fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<Engage /> rendered correctly with Engage fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with Clock fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<HealthEngine /> rendered correctly with HealthEngine fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with Cross fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<HealthEngineWithText /> rendered correctly with HealthEngineWithText fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with CurvedArrow fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<Help /> rendered correctly with Help fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with Delete fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<Help /> rendered correctly with Home fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with DropDown fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<Logout /> rendered correctly with Logout fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with Edit fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<Megaphone /> rendered correctly with Megaphone fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with Ellipsis fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<Patients /> rendered correctly with Patients fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with Engage fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<RadioChecked /> rendered correctly with RadioChecked fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with HealthEngine fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<RadioUnchecked /> rendered correctly with RadioUnchecked fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with HealthEngineWithText fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<Search /> rendered correctly with Search fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with Help fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<Settings /> rendered correctly with Settings fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with Home fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<Sync /> rendered correctly with Sync fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with Logout fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<Tick /> rendered correctly with Tick fixture 1`] = `null`;
 
-exports[`<Icon /> rendered correctly with Megaphone fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
-
-exports[`<Icon /> rendered correctly with Patients fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
-
-exports[`<Icon /> rendered correctly with RadioChecked fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
-
-exports[`<Icon /> rendered correctly with RadioUnchecked fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
-
-exports[`<Icon /> rendered correctly with Search fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
-
-exports[`<Icon /> rendered correctly with Settings fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
-
-exports[`<Icon /> rendered correctly with Sync fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
-
-exports[`<Icon /> rendered correctly with Tick fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
-
-exports[`<Icon /> rendered correctly with View fixture 1`] = `
-<Icon
-  name="ArrowUp"
->
-  <ArrowUp
-    className="icon"
-  >
-    <svg
-      className="icon"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
-      />
-    </svg>
-  </ArrowUp>
-</Icon>
-`;
+exports[`<View /> rendered correctly with View fixture 1`] = `null`;

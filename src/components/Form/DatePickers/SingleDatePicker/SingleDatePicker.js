@@ -12,7 +12,9 @@ import { SingleDatePicker as Picker } from 'react-dates';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 import Media from 'react-media';
-import Icon from '../../../Icon';
+import ChevronRight from '../../../Icon/Chevrons/ChevronRight';
+import ChevronLeft from '../../../Icon/Chevrons/ChevronLeft';
+import Calendar from '../../../Icon/Calendar';
 import Label from '../../Label';
 import styles from './SingleDatePicker.scss';
 
@@ -137,8 +139,8 @@ class SingleDatePicker extends React.Component<Props, *> {
                 onDateChange={this.handleDateChange}
                 focused={this.state.focused}
                 onFocusChange={this.handleFocusChange}
-                navNext={<Icon name="ChevronRight" />}
-                navPrev={<Icon name="ChevronLeft" />}
+                navNext={<ChevronRight />}
+                navPrev={<ChevronLeft />}
                 anchorDirection={anchorDirection}
                 displayFormat={displayFormat}
                 isOutsideRange={isOutsideRange}
@@ -147,7 +149,7 @@ class SingleDatePicker extends React.Component<Props, *> {
               />
             )}
           </Media>
-          <Icon className={styles.icon} name="Calendar" />
+          <Calendar className={styles.icon} />
         </div>
         {error && (
           <Label className={styles.errorMessage} htmlFor={id} error>

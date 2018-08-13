@@ -44,7 +44,7 @@ import View from './View';
 
 type Color = 'teal' | 'blue' | 'green' | 'red' | 'white';
 
-export default function Icon(props: {
+function Icon(props: {
   width?: number,
   height?: number,
   color?: Color,
@@ -145,3 +145,5 @@ export default function Icon(props: {
 Icon.defaultProps = {
   name: 'Cross',
 };
+
+export default Icon;

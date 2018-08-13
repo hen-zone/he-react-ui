@@ -31,23 +31,24 @@ exports[`<BackView /> rendered correctly with Default fixture 1`] = `
               <h1
                 className="heading h1 nav heading"
               >
-                <Icon
+                <ArrowLeft
                   className="arrow"
-                  name="ArrowLeft"
+                  fill="currentColor"
+                  height={32}
+                  width={32}
                 >
-                  <ArrowLeft
-                    className="icon arrow"
+                  <svg
+                    className="arrow"
+                    fill="currentColor"
+                    height={32}
+                    viewBox="0 0 24 24"
+                    width={32}
                   >
-                    <svg
-                      className="icon arrow"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M5.414 13H21a1 1 0 1 0 0-2H5.414l4.293-4.293a1 1 0 1 0-1.414-1.414l-6 6a1 1 0 0 0 0 1.414l6 6a1 1 0 0 0 1.414-1.414L5.414 13z"
-                      />
-                    </svg>
-                  </ArrowLeft>
-                </Icon>
+                    <path
+                      d="M5.414 13H21a1 1 0 1 0 0-2H5.414l4.293-4.293a1 1 0 1 0-1.414-1.414l-6 6a1 1 0 0 0 0 1.414l6 6a1 1 0 0 0 1.414-1.414L5.414 13z"
+                    />
+                  </svg>
+                </ArrowLeft>
                 Heading
               </h1>
             </Heading>

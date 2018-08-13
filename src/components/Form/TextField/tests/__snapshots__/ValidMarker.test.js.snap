@@ -30,23 +30,24 @@ exports[`<TextField /> rendered correctly with ValidMarker fixture 1`] = `
         onFocus={[Function]}
         value="Bruce"
       />
-      <Icon
+      <Tick
         className="marker"
-        name="Tick"
+        fill="currentColor"
+        height={32}
+        width={32}
       >
-        <Tick
-          className="icon marker"
+        <svg
+          className="marker"
+          fill="currentColor"
+          height={32}
+          viewBox="0 0 24 24"
+          width={32}
         >
-          <svg
-            className="icon marker"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M17.207 7.707a1 1 0 0 1 1.415 1.414l-7.998 8.003a1 1 0 0 1-1.414 0l-4.003-4.003a1 1 0 1 1 1.414-1.414l3.296 3.296 7.29-7.296z"
-            />
-          </svg>
-        </Tick>
-      </Icon>
+          <path
+            d="M17.207 7.707a1 1 0 0 1 1.415 1.414l-7.998 8.003a1 1 0 0 1-1.414 0l-4.003-4.003a1 1 0 1 1 1.414-1.414l3.296 3.296 7.29-7.296z"
+          />
+        </svg>
+      </Tick>
       <label
         className="label floating"
         htmlFor="demo"

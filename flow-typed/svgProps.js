@@ -4,9 +4,8 @@
 // https://github.com/facebook/flow/pull/4551
 // So make our own here for now and add as we need to
 // Base attributes added from the typescript definitions
-declare interface SVGProps {
+declare type SVGProps = {
   // Attributes which also defined in HTMLAttributes
-  // See comment in SVGDOMPropertyConfig.js
   className?: string,
   color?: string,
   height?: number | string,

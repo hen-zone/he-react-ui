@@ -6,7 +6,7 @@
  */
 import classnames from 'classnames';
 import React from 'react';
-import Icon from '../Icon';
+import Cross from '../Icon/Cross';
 import LoadingSpinner from '../Loading/LoadingSpinner';
 import styles from './PopUp.scss';
 
@@ -82,11 +82,7 @@ class PopUp extends React.Component<Props, *> {
         <div className={styles.overlay} onClick={this.handleClose} />
         <div className={popupClasses} style={style}>
           {!modal && (
-            <Icon
-              className={styles.close}
-              name="Cross"
-              onClick={this.handleClose}
-            />
+            <Cross className={styles.close} onClick={this.handleClose} />
           )}
           {children || <LoadingSpinner />}
         </div>

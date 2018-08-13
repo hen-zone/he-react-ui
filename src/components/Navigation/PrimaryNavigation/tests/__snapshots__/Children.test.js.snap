@@ -419,10 +419,9 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
     }
     logo={
       Object {
-        "icon": <Icon
+        "icon": <HealthEngine
           className="logo"
           inverted={true}
-          name="HealthEngine"
         />,
         "route": "/",
       }
@@ -470,44 +469,40 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                   <div
                     className="logo"
                   >
-                    <Icon
+                    <HealthEngine
                       className="logo"
                       inverted={true}
-                      name="HealthEngine"
                     >
-                      <HealthEngine
-                        inverted={true}
+                      <svg
+                        className="logo"
+                        viewBox="0 0 48 38"
                       >
-                        <svg
-                          viewBox="0 0 48 38"
-                        >
-                          <path
-                            d="M12.895 32.745a5.689 5.689 0 0 0 11.33 0V25.16h-11.33v7.585zM24.225 6.216a5.689 5.689 0 1 0-11.33 0v7.585h11.33V6.216z"
-                            fill="#5BC0C9"
-                          />
-                          <path
-                            d="M37.49 25.141h-5.689v7.585a5.689 5.689 0 0 0 11.33 0V19.452a5.689 5.689 0 0 1-5.641 5.69z"
-                            fill="#C6E400"
-                          />
-                          <path
-                            d="M37.49.546a5.689 5.689 0 0 0-5.689 5.689v7.585h5.689a5.689 5.689 0 0 1 5.689 5.69V6.234A5.689 5.689 0 0 0 37.49.546z"
-                            fill="#C6E400"
-                          />
-                          <path
-                            d="M5.17 14.043a5.689 5.689 0 0 0 0 11.33h7.585v-11.33H5.17zM24.225 13.82h7.605v11.33h-7.605z"
-                            fill="#FFF"
-                          />
-                          <path
-                            d="M12.895 13.82h11.33v11.33h-11.33z"
-                            fill="#008EC8"
-                          />
-                          <path
-                            d="M37.764 13.82h-5.963v11.321h5.963c3.047-.292 5.367-2.739 5.367-5.66 0-2.922-2.32-5.369-5.367-5.66z"
-                            fill="#48B400"
-                          />
-                        </svg>
-                      </HealthEngine>
-                    </Icon>
+                        <path
+                          d="M12.895 32.745a5.689 5.689 0 0 0 11.33 0V25.16h-11.33v7.585zM24.225 6.216a5.689 5.689 0 1 0-11.33 0v7.585h11.33V6.216z"
+                          fill="#5BC0C9"
+                        />
+                        <path
+                          d="M37.49 25.141h-5.689v7.585a5.689 5.689 0 0 0 11.33 0V19.452a5.689 5.689 0 0 1-5.641 5.69z"
+                          fill="#C6E400"
+                        />
+                        <path
+                          d="M37.49.546a5.689 5.689 0 0 0-5.689 5.689v7.585h5.689a5.689 5.689 0 0 1 5.689 5.69V6.234A5.689 5.689 0 0 0 37.49.546z"
+                          fill="#C6E400"
+                        />
+                        <path
+                          d="M5.17 14.043a5.689 5.689 0 0 0 0 11.33h7.585v-11.33H5.17zM24.225 13.82h7.605v11.33h-7.605z"
+                          fill="#FFF"
+                        />
+                        <path
+                          d="M12.895 13.82h11.33v11.33h-11.33z"
+                          fill="#008EC8"
+                        />
+                        <path
+                          d="M37.764 13.82h-5.963v11.321h5.963c3.047-.292 5.367-2.739 5.367-5.66 0-2.922-2.32-5.369-5.367-5.66z"
+                          fill="#48B400"
+                        />
+                      </svg>
+                    </HealthEngine>
                   </div>
                 </a>
               </Link>
@@ -630,10 +625,16 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                         >
                           <Help
                             className="icon icon"
+                            fill="currentColor"
+                            height={32}
+                            width={32}
                           >
                             <svg
                               className="icon icon"
+                              fill="currentColor"
+                              height={32}
                               viewBox="0 0 24 24"
+                              width={32}
                             >
                               <path
                                 d="M4.984 11.486A1 1 0 0 0 4 12.5v10a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-7h2v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-10a1 1 0 1 0-2 0v9h-3v-7a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v7H6v-9a1 1 0 0 0-1.016-1.014z"
@@ -832,10 +833,16 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                   >
                     <Engage
                       className="icon icon"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
                       <svg
                         className="icon icon"
+                        fill="currentColor"
+                        height={32}
                         viewBox="0 0 26 26"
+                        width={32}
                       >
                         <path
                           d="M19.576 19.342a1 1 0 0 0-.623.209l-2.408 1.812c-.8.6-1.272 1.545-1.272 2.545V25a1 1 0 0 0 1 1H25a1 1 0 0 0 1-1v-1.092c0-1-.472-1.942-1.271-2.543l-2.409-1.814a1 1 0 1 0-1.203 1.597l2.408 1.815a1 1 0 0 0 .002 0c.3.224.473.571.473.945V24h-6.727v-.092c0-.374.174-.72.473-.945a1 1 0 0 0 .002 0l2.408-1.815a1 1 0 0 0-.58-1.806z"
@@ -1045,10 +1052,16 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                   >
                     <Megaphone
                       className="icon icon"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
                       <svg
                         className="icon icon"
+                        fill="currentColor"
+                        height={32}
                         viewBox="0 0 23 23"
+                        width={32}
                       >
                         <path
                           d="M6.025 12.988a1 1 0 0 0-.877 1.535l4 6.5a1 1 0 0 0 .004.006c.822 1.315 2.636 1.756 3.948.772 1.205-.904 1.53-2.58.748-3.83a1 1 0 0 0-.016-.026l-3-4.5a1 1 0 1 0-1.664 1.11l2.984 4.476c.217.35.142.873-.252 1.168-.288.216-.874.057-1.052-.228l-3.996-6.494a1 1 0 0 0-.827-.489z"
@@ -1160,10 +1173,16 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                   >
                     <Help
                       className="icon icon"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
                       <svg
                         className="icon icon"
+                        fill="currentColor"
+                        height={32}
                         viewBox="0 0 24 24"
+                        width={32}
                       >
                         <path
                           d="M12 0C5.384 0 0 5.384 0 12s5.384 12 12 12 12-5.384 12-12S18.616 0 12 0zm0 2c5.535 0 10 4.465 10 10s-4.465 10-10 10S2 17.535 2 12 6.465 2 12 2z"
@@ -1383,10 +1402,16 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                   >
                     <Settings
                       className="icon icon"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
                       <svg
                         className="icon icon"
+                        fill="currentColor"
+                        height={32}
                         viewBox="0 0 24 24"
+                        width={32}
                       >
                         <path
                           d="M18.875 15.38l1.1 1.432a1 1 0 0 1 .005 1.213 10.062 10.062 0 0 1-1.952 1.952 1 1 0 0 1-1.212-.004l-1.432-1.1c-.296.145-.6.272-.913.378l-.234 1.791a1 1 0 0 1-.854.86c-.936.13-1.829.13-2.762 0a1 1 0 0 1-.854-.86l-.234-1.789a7.592 7.592 0 0 1-.915-.379l-1.433 1.102a1 1 0 0 1-1.213.004 10.142 10.142 0 0 1-1.952-1.95 1 1 0 0 1 .005-1.213l1.1-1.432a7.585 7.585 0 0 1-.38-.917l-1.79-.234a1 1 0 0 1-.86-.855 10.118 10.118 0 0 1 0-2.758 1 1 0 0 1 .86-.855l1.79-.234c.107-.314.234-.62.38-.917l-1.1-1.432a1 1 0 0 1-.004-1.213 10.14 10.14 0 0 1 1.952-1.95 1 1 0 0 1 1.212.004l1.434 1.101c.295-.145.6-.272.914-.378l.234-1.79a1 1 0 0 1 .855-.86 9.889 9.889 0 0 1 2.76 0 1 1 0 0 1 .855.861l.234 1.791c.313.106.617.233.912.378l1.433-1.1a1 1 0 0 1 1.212-.004 10.04 10.04 0 0 1 1.953 1.953 1 1 0 0 1-.005 1.212l-1.101 1.433c.145.294.27.598.377.91l1.79.234a1 1 0 0 1 .861.855c.13.938.129 1.83 0 2.76a1 1 0 0 1-.86.855l-1.791.234a7.622 7.622 0 0 1-.377.91zm-1.984.7a1 1 0 0 1-.06-1.13 5.63 5.63 0 0 0 .672-1.622 1 1 0 0 1 .842-.757l1.647-.216c.01-.237.01-.473 0-.71l-1.647-.216a1 1 0 0 1-.842-.757 5.63 5.63 0 0 0-.672-1.621 1 1 0 0 1 .06-1.131l1.012-1.317a8.04 8.04 0 0 0-.502-.503l-1.318 1.012a1 1 0 0 1-1.131.059 5.618 5.618 0 0 0-1.622-.673 1 1 0 0 1-.757-.842l-.216-1.648a7.712 7.712 0 0 0-.71 0l-.216 1.646a1 1 0 0 1-.758.843 5.621 5.621 0 0 0-1.624.672 1 1 0 0 1-1.13-.06L6.6 6.097c-.174.16-.342.327-.503.502L7.11 7.915a1 1 0 0 1 .06 1.133 5.594 5.594 0 0 0-.675 1.624 1 1 0 0 1-.842.758l-1.645.215c-.01.236-.01.473 0 .71l1.645.215a1 1 0 0 1 .842.758c.139.576.366 1.122.674 1.624a1 1 0 0 1-.06 1.133L6.1 17.401c.159.174.327.342.501.502l1.318-1.013a1 1 0 0 1 1.132-.06 5.6 5.6 0 0 0 1.623.673 1 1 0 0 1 .758.843l.216 1.646c.237.01.473.01.71 0l.216-1.648a1 1 0 0 1 .757-.842 5.597 5.597 0 0 0 1.62-.673 1 1 0 0 1 1.134.059L17.4 17.9c.174-.16.342-.328.502-.503l-1.012-1.317zM16 12a4 4 0 1 1-7.999 0A4 4 0 0 1 16 12zm-2 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0z"
@@ -2477,23 +2502,24 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                                     </div>
                                   </div>
                                 </Select>
-                                <Icon
+                                <DropDown
                                   className="caret"
-                                  name="DropDown"
+                                  fill="currentColor"
+                                  height={32}
+                                  width={32}
                                 >
-                                  <DropDown
-                                    className="icon caret"
+                                  <svg
+                                    className="caret"
+                                    fill="currentColor"
+                                    height={32}
+                                    viewBox="0 0 24 24"
+                                    width={32}
                                   >
-                                    <svg
-                                      className="icon caret"
-                                      viewBox="0 0 24 24"
-                                    >
-                                      <path
-                                        d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
-                                      />
-                                    </svg>
-                                  </DropDown>
-                                </Icon>
+                                    <path
+                                      d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
+                                    />
+                                  </svg>
+                                </DropDown>
                               </div>
                             </div>
                           </div>
@@ -2530,23 +2556,24 @@ exports[`<OnClickOutside(PrimaryNavigation) /> rendered correctly with Children 
                                 target="_self"
                                 title="Logout"
                               >
-                                <Icon
+                                <Logout
                                   className="icon"
-                                  name="Logout"
+                                  fill="currentColor"
+                                  height={32}
+                                  width={32}
                                 >
-                                  <Logout
-                                    className="icon icon"
+                                  <svg
+                                    className="icon"
+                                    fill="currentColor"
+                                    height={32}
+                                    viewBox="0 1 16 16"
+                                    width={32}
                                   >
-                                    <svg
-                                      className="icon icon"
-                                      viewBox="0 1 16 16"
-                                    >
-                                      <path
-                                        d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
-                                      />
-                                    </svg>
-                                  </Logout>
-                                </Icon>
+                                    <path
+                                      d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
+                                    />
+                                  </svg>
+                                </Logout>
                                 Logout
                               </a>
                             </Link>

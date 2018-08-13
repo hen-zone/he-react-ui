@@ -3,7 +3,8 @@
 import classnames from 'classnames';
 import * as React from 'react';
 import onClickOutside from 'react-onclickoutside';
-import Icon from '../Icon';
+import Cross from '../Icon/Cross';
+import CurvedArrow from '../Icon/Arrows/CurvedArrow';
 import FadeIn from './FadeIn';
 import getCoordsForElementId from './getCoordsForElementId';
 import styles from './Tutorial.scss';
@@ -155,11 +156,7 @@ export default withTutorial(
                 ref={this.receiveOwnDomElement}
                 onClick={cancelClick}
               >
-                <Icon
-                  className={styles.close}
-                  name="Cross"
-                  onClick={onTutorialDismiss}
-                />
+                <Cross className={styles.close} onClick={onTutorialDismiss} />
 
                 <div className={styles.tutorialWrapper}>
                   {children}
@@ -173,12 +170,11 @@ export default withTutorial(
 
             {isAttached && (
               <FadeIn>
-                <Icon
+                <CurvedArrow
                   className={classnames(styles.arrow, {
                     [styles.reversed]: reversed,
                   })}
                   style={arrowStyle}
-                  name="CurvedArrow"
                 />
               </FadeIn>
             )}

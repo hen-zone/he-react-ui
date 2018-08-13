@@ -6,7 +6,7 @@
 // Vendor
 import classnames from 'classnames';
 import React, { Component } from 'react';
-import Icon from '../../Icon';
+import DropDown from '../../Icon/DropDown';
 import { LoadingSpinner, LoadingStrip } from '../../Loading';
 import style from './Table.scss';
 
@@ -119,9 +119,7 @@ class Table extends Component<Props, *> {
               key={column.title}
             >
               <span className={style.title}>{column.title}</span>
-              {sortColumn === index && (
-                <Icon className={style.caret} name="DropDown" />
-              )}
+              {sortColumn === index && <DropDown className={style.caret} />}
             </div>
           ))}
         </React.Fragment>

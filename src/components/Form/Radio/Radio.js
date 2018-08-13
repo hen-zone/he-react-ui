@@ -8,7 +8,8 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import Icon from '../../Icon';
+import RadioUnchecked from '../../Icon/CheckBoxes/RadioUnchecked';
+import RadioChecked from '../../Icon/CheckBoxes/RadioChecked';
 import Label from '../Label';
 import style from './Radio.scss';
 
@@ -55,11 +56,11 @@ class Radio extends React.Component<Props> {
           checked={value === option.value}
           onChange={() => null}
         />
-        <Icon
+        <RadioUnchecked
           className={classnames(style.icon, style.empty)}
           name="RadioUnchecked"
         />
-        <Icon
+        <RadioChecked
           className={classnames(style.icon, style.full)}
           name="RadioChecked"
         />

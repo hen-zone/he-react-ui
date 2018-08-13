@@ -7,7 +7,7 @@ import Icon from '../../../Icon';
 import styles from '../../../Tutorial/Tutorial.scss';
 import { TutorialOwner, TutorialStep, withTutorial } from '../../../Tutorial';
 import type { TutorialProps } from '../../../Tutorial/TutorialContext';
-import sharedProps from './sharedProps.fixture';
+import sharedProps from './sharedProps.fixtureData';
 
 const IntroBox = withTutorial((props: TutorialProps & { id: string }) => (
   <TutorialStep id={props.id} centered>

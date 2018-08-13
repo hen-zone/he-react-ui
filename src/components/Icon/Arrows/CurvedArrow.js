@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-export default function CurvedArrow(props: SVGProps) {
+function CurvedArrow(props: SVGProps) {
   return (
     <svg {...props} viewBox="0 0 113 43">
       <defs>
@@ -46,3 +46,11 @@ export default function CurvedArrow(props: SVGProps) {
     </svg>
   );
 }
+
+CurvedArrow.defaultProps = {
+  height: 32,
+  width: 32,
+  fill: 'currentColor',
+};
+
+export default CurvedArrow;

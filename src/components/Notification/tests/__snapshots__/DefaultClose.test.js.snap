@@ -23,12 +23,18 @@ exports[`<Notification canClose=true type="default" /> rendered correctly with f
     </div>
     <Cross
       className="closeIcon default"
+      fill="currentColor"
+      height={32}
       onClick={[Function]}
+      width={32}
     >
       <svg
         className="closeIcon default"
+        fill="currentColor"
+        height={32}
         onClick={[Function]}
         viewBox="0 0 24 24"
+        width={32}
       >
         <path
           d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"
@@ -62,12 +68,18 @@ exports[`can close 1`] = `
     </div>
     <Cross
       className="closeIcon default"
+      fill="currentColor"
+      height={32}
       onClick={[Function]}
+      width={32}
     >
       <svg
         className="closeIcon default"
+        fill="currentColor"
+        height={32}
         onClick={[Function]}
         viewBox="0 0 24 24"
+        width={32}
       >
         <path
           d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"
@@ -101,12 +113,18 @@ exports[`can close 2`] = `
     </div>
     <Cross
       className="closeIcon default"
+      fill="currentColor"
+      height={32}
       onClick={[Function]}
+      width={32}
     >
       <svg
         className="closeIcon default"
+        fill="currentColor"
+        height={32}
         onClick={[Function]}
         viewBox="0 0 24 24"
+        width={32}
       >
         <path
           d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"

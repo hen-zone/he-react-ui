@@ -7,7 +7,7 @@
 
 import classnames from 'classnames';
 import React from 'react';
-import Icon from '../../Icon';
+import Alert from '../../Icon/Alert';
 import LoadingStrip from '../../Loading/LoadingStrip';
 import style from './Label.scss';
 
@@ -29,7 +29,7 @@ function Label(props: Props) {
 
   return (
     <div className={classes} {...restProps}>
-      {error && <Icon className={style.icon} name="Alert" />}
+      {error && <Alert className={style.icon} />}
       {children ? (
         <label {...htmlForProp}>{children}</label>
       ) : (

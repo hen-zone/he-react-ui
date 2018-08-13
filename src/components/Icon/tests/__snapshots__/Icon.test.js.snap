@@ -1,0 +1,1001 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Icon /> rendered correctly with Add fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Alarm fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Alert fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Arr fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with ArrowDown fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with ArrowLeft fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with ArrowLeft fixture 2`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with ArrowRight fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with ArrowUp fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Bookings fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Calendar fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with CaretRight fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with CheckBoxChecked fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with CheckBoxUnchecked fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with ChevronDown fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with ChevronLeft fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with ChevronRight fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with ChevronUp fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Clock fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Cross fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with CurvedArrow fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Delete fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with DropDown fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Edit fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Ellipsis fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Engage fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with HealthEngine fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with HealthEngineWithText fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Help fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Home fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Logout fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Megaphone fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Patients fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with RadioChecked fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with RadioUnchecked fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Search fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Settings fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Sync fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with Tick fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with View fixture 1`] = `
+<Icon
+  name="ArrowUp"
+>
+  <ArrowUp
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  >
+    <svg
+      className="icon"
+      fill="currentColor"
+      height={32}
+      viewBox="0 0 24 24"
+      width={32}
+    >
+      <path
+        d="M13 5.414V21a1 1 0 1 1-2 0V5.414L6.707 9.707a1 1 0 1 1-1.414-1.414l6-6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L13 5.414z"
+      />
+    </svg>
+  </ArrowUp>
+</Icon>
+`;

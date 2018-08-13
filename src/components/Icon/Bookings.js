@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-export default function Bookings(props: SVGProps) {
+function Bookings(props: SVGProps) {
   return (
     <svg {...props} viewBox="0 0 24 24">
       <path d="M.984 7.986A1 1 0 0 0 0 9v14a1 1 0 0 0 1 1h22a1 1 0 0 0 1-1V9a1 1 0 1 0-2 0v13H2V9A1 1 0 0 0 .984 7.986z" />
@@ -10,3 +10,11 @@ export default function Bookings(props: SVGProps) {
     </svg>
   );
 }
+
+Bookings.defaultProps = {
+  height: 32,
+  width: 32,
+  fill: 'currentColor',
+};
+
+export default Bookings;

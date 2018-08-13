@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Icon from '../../Icon';
+import ArrowLeft from '../../Icon/Arrows/ArrowLeft';
 import Heading from '../Heading';
 import style from './BackView.scss';
 
@@ -15,7 +15,7 @@ function BackView(props: { heading: string, route: string }) {
         <div className={style.barInner}>
           <Link to={route}>
             <Heading h1 nav className={style.heading}>
-              <Icon className={style.arrow} name="ArrowLeft" />
+              <ArrowLeft className={style.arrow} />
               {heading}
             </Heading>
           </Link>

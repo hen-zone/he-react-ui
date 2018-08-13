@@ -1,12 +1,11 @@
 // @flow
 import React from 'react';
 
-// eslint-disable-next-line
-interface Props extends SVGProps {
-  inverted?: boolean;
-}
+type Props = {
+  inverted?: boolean,
+};
 
-export default function HealthEngine(props: Props) {
+export default function HealthEngine(props: Props & SVGProps) {
   const { inverted, ...restProps } = props;
 
   return inverted ? (

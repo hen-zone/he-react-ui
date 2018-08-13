@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-export default function Engage(props: SVGProps) {
+function Engage(props: SVGProps) {
   return (
     <svg {...props} viewBox="0 0 26 26">
       <path d="M19.576 19.342a1 1 0 0 0-.623.209l-2.408 1.812c-.8.6-1.272 1.545-1.272 2.545V25a1 1 0 0 0 1 1H25a1 1 0 0 0 1-1v-1.092c0-1-.472-1.942-1.271-2.543l-2.409-1.814a1 1 0 1 0-1.203 1.597l2.408 1.815a1 1 0 0 0 .002 0c.3.224.473.571.473.945V24h-6.727v-.092c0-.374.174-.72.473-.945a1 1 0 0 0 .002 0l2.408-1.815a1 1 0 0 0-.58-1.806z" />
@@ -18,3 +18,11 @@ export default function Engage(props: SVGProps) {
     </svg>
   );
 }
+
+Engage.defaultProps = {
+  height: 32,
+  width: 32,
+  fill: 'currentColor',
+};
+
+export default Engage;

@@ -32,10 +32,9 @@ exports[`<PrimaryNavigation /> rendered correctly with loading fixture 1`] = `
     locations={Array []}
     logo={
       Object {
-        "icon": <Icon
+        "icon": <HealthEngine
           className="logo"
           inverted={true}
-          name="HealthEngine"
         />,
         "route": "/",
       }
@@ -83,44 +82,40 @@ exports[`<PrimaryNavigation /> rendered correctly with loading fixture 1`] = `
                   <div
                     className="logo"
                   >
-                    <Icon
+                    <HealthEngine
                       className="logo"
                       inverted={true}
-                      name="HealthEngine"
                     >
-                      <HealthEngine
-                        inverted={true}
+                      <svg
+                        className="logo"
+                        viewBox="0 0 48 38"
                       >
-                        <svg
-                          viewBox="0 0 48 38"
-                        >
-                          <path
-                            d="M12.895 32.745a5.689 5.689 0 0 0 11.33 0V25.16h-11.33v7.585zM24.225 6.216a5.689 5.689 0 1 0-11.33 0v7.585h11.33V6.216z"
-                            fill="#5BC0C9"
-                          />
-                          <path
-                            d="M37.49 25.141h-5.689v7.585a5.689 5.689 0 0 0 11.33 0V19.452a5.689 5.689 0 0 1-5.641 5.69z"
-                            fill="#C6E400"
-                          />
-                          <path
-                            d="M37.49.546a5.689 5.689 0 0 0-5.689 5.689v7.585h5.689a5.689 5.689 0 0 1 5.689 5.69V6.234A5.689 5.689 0 0 0 37.49.546z"
-                            fill="#C6E400"
-                          />
-                          <path
-                            d="M5.17 14.043a5.689 5.689 0 0 0 0 11.33h7.585v-11.33H5.17zM24.225 13.82h7.605v11.33h-7.605z"
-                            fill="#FFF"
-                          />
-                          <path
-                            d="M12.895 13.82h11.33v11.33h-11.33z"
-                            fill="#008EC8"
-                          />
-                          <path
-                            d="M37.764 13.82h-5.963v11.321h5.963c3.047-.292 5.367-2.739 5.367-5.66 0-2.922-2.32-5.369-5.367-5.66z"
-                            fill="#48B400"
-                          />
-                        </svg>
-                      </HealthEngine>
-                    </Icon>
+                        <path
+                          d="M12.895 32.745a5.689 5.689 0 0 0 11.33 0V25.16h-11.33v7.585zM24.225 6.216a5.689 5.689 0 1 0-11.33 0v7.585h11.33V6.216z"
+                          fill="#5BC0C9"
+                        />
+                        <path
+                          d="M37.49 25.141h-5.689v7.585a5.689 5.689 0 0 0 11.33 0V19.452a5.689 5.689 0 0 1-5.641 5.69z"
+                          fill="#C6E400"
+                        />
+                        <path
+                          d="M37.49.546a5.689 5.689 0 0 0-5.689 5.689v7.585h5.689a5.689 5.689 0 0 1 5.689 5.69V6.234A5.689 5.689 0 0 0 37.49.546z"
+                          fill="#C6E400"
+                        />
+                        <path
+                          d="M5.17 14.043a5.689 5.689 0 0 0 0 11.33h7.585v-11.33H5.17zM24.225 13.82h7.605v11.33h-7.605z"
+                          fill="#FFF"
+                        />
+                        <path
+                          d="M12.895 13.82h11.33v11.33h-11.33z"
+                          fill="#008EC8"
+                        />
+                        <path
+                          d="M37.764 13.82h-5.963v11.321h5.963c3.047-.292 5.367-2.739 5.367-5.66 0-2.922-2.32-5.369-5.367-5.66z"
+                          fill="#48B400"
+                        />
+                      </svg>
+                    </HealthEngine>
                   </div>
                 </a>
               </Link>
@@ -320,23 +315,24 @@ exports[`<PrimaryNavigation /> rendered correctly with loading fixture 1`] = `
                             target="_self"
                             title="Logout"
                           >
-                            <Icon
+                            <Logout
                               className="icon"
-                              name="Logout"
+                              fill="currentColor"
+                              height={32}
+                              width={32}
                             >
-                              <Logout
-                                className="icon icon"
+                              <svg
+                                className="icon"
+                                fill="currentColor"
+                                height={32}
+                                viewBox="0 1 16 16"
+                                width={32}
                               >
-                                <svg
-                                  className="icon icon"
-                                  viewBox="0 1 16 16"
-                                >
-                                  <path
-                                    d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
-                                  />
-                                </svg>
-                              </Logout>
-                            </Icon>
+                                <path
+                                  d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
+                                />
+                              </svg>
+                            </Logout>
                             Logout
                           </a>
                         </Link>

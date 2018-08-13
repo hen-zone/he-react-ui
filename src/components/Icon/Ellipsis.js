@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-export default function Ellipsis(props: SVGProps) {
+function Ellipsis(props: SVGProps) {
   return (
     <svg {...props} viewBox="0 0 24 24">
       <g transform="translate(0 8)">
@@ -12,3 +12,11 @@ export default function Ellipsis(props: SVGProps) {
     </svg>
   );
 }
+
+Ellipsis.defaultProps = {
+  height: 32,
+  width: 32,
+  fill: 'currentColor',
+};
+
+export default Ellipsis;

@@ -335,23 +335,24 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with OnePracticeWithCh
                         </div>
                       </div>
                     </Select>
-                    <Icon
+                    <DropDown
                       className="caret"
-                      name="DropDown"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
-                      <DropDown
-                        className="icon caret"
+                      <svg
+                        className="caret"
+                        fill="currentColor"
+                        height={32}
+                        viewBox="0 0 24 24"
+                        width={32}
                       >
-                        <svg
-                          className="icon caret"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
-                          />
-                        </svg>
-                      </DropDown>
-                    </Icon>
+                        <path
+                          d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
+                        />
+                      </svg>
+                    </DropDown>
                   </div>
                 </div>
               </div>
@@ -388,23 +389,24 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with OnePracticeWithCh
                     target="_self"
                     title="Logout"
                   >
-                    <Icon
+                    <Logout
                       className="icon"
-                      name="Logout"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
-                      <Logout
-                        className="icon icon"
+                      <svg
+                        className="icon"
+                        fill="currentColor"
+                        height={32}
+                        viewBox="0 1 16 16"
+                        width={32}
                       >
-                        <svg
-                          className="icon icon"
-                          viewBox="0 1 16 16"
-                        >
-                          <path
-                            d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
-                          />
-                        </svg>
-                      </Logout>
-                    </Icon>
+                        <path
+                          d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
+                        />
+                      </svg>
+                    </Logout>
                     Logout
                   </a>
                 </Link>
@@ -825,23 +827,24 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with default fixture 1
                         </div>
                       </div>
                     </Select>
-                    <Icon
+                    <DropDown
                       className="caret"
-                      name="DropDown"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
-                      <DropDown
-                        className="icon caret"
+                      <svg
+                        className="caret"
+                        fill="currentColor"
+                        height={32}
+                        viewBox="0 0 24 24"
+                        width={32}
                       >
-                        <svg
-                          className="icon caret"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
-                          />
-                        </svg>
-                      </DropDown>
-                    </Icon>
+                        <path
+                          d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
+                        />
+                      </svg>
+                    </DropDown>
                   </div>
                 </div>
               </div>
@@ -878,23 +881,24 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with default fixture 1
                     target="_self"
                     title="Logout"
                   >
-                    <Icon
+                    <Logout
                       className="icon"
-                      name="Logout"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
-                      <Logout
-                        className="icon icon"
+                      <svg
+                        className="icon"
+                        fill="currentColor"
+                        height={32}
+                        viewBox="0 1 16 16"
+                        width={32}
                       >
-                        <svg
-                          className="icon icon"
-                          viewBox="0 1 16 16"
-                        >
-                          <path
-                            d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
-                          />
-                        </svg>
-                      </Logout>
-                    </Icon>
+                        <path
+                          d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
+                        />
+                      </svg>
+                    </Logout>
                     Logout
                   </a>
                 </Link>
@@ -1315,23 +1319,24 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with loading fixture 1
                         </div>
                       </div>
                     </Select>
-                    <Icon
+                    <DropDown
                       className="caret"
-                      name="DropDown"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
-                      <DropDown
-                        className="icon caret"
+                      <svg
+                        className="caret"
+                        fill="currentColor"
+                        height={32}
+                        viewBox="0 0 24 24"
+                        width={32}
                       >
-                        <svg
-                          className="icon caret"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
-                          />
-                        </svg>
-                      </DropDown>
-                    </Icon>
+                        <path
+                          d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
+                        />
+                      </svg>
+                    </DropDown>
                   </div>
                 </div>
               </div>
@@ -1368,23 +1373,24 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with loading fixture 1
                     target="_self"
                     title="Logout"
                   >
-                    <Icon
+                    <Logout
                       className="icon"
-                      name="Logout"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
-                      <Logout
-                        className="icon icon"
+                      <svg
+                        className="icon"
+                        fill="currentColor"
+                        height={32}
+                        viewBox="0 1 16 16"
+                        width={32}
                       >
-                        <svg
-                          className="icon icon"
-                          viewBox="0 1 16 16"
-                        >
-                          <path
-                            d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
-                          />
-                        </svg>
-                      </Logout>
-                    </Icon>
+                        <path
+                          d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
+                        />
+                      </svg>
+                    </Logout>
                     Logout
                   </a>
                 </Link>
@@ -1805,23 +1811,24 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with multiPracticeNoCh
                         </div>
                       </div>
                     </Select>
-                    <Icon
+                    <DropDown
                       className="caret"
-                      name="DropDown"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
-                      <DropDown
-                        className="icon caret"
+                      <svg
+                        className="caret"
+                        fill="currentColor"
+                        height={32}
+                        viewBox="0 0 24 24"
+                        width={32}
                       >
-                        <svg
-                          className="icon caret"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
-                          />
-                        </svg>
-                      </DropDown>
-                    </Icon>
+                        <path
+                          d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
+                        />
+                      </svg>
+                    </DropDown>
                   </div>
                 </div>
               </div>
@@ -1858,23 +1865,24 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with multiPracticeNoCh
                     target="_self"
                     title="Logout"
                   >
-                    <Icon
+                    <Logout
                       className="icon"
-                      name="Logout"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
-                      <Logout
-                        className="icon icon"
+                      <svg
+                        className="icon"
+                        fill="currentColor"
+                        height={32}
+                        viewBox="0 1 16 16"
+                        width={32}
                       >
-                        <svg
-                          className="icon icon"
-                          viewBox="0 1 16 16"
-                        >
-                          <path
-                            d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
-                          />
-                        </svg>
-                      </Logout>
-                    </Icon>
+                        <path
+                          d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
+                        />
+                      </svg>
+                    </Logout>
                     Logout
                   </a>
                 </Link>
@@ -2295,23 +2303,24 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with noChildren fixtur
                         </div>
                       </div>
                     </Select>
-                    <Icon
+                    <DropDown
                       className="caret"
-                      name="DropDown"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
-                      <DropDown
-                        className="icon caret"
+                      <svg
+                        className="caret"
+                        fill="currentColor"
+                        height={32}
+                        viewBox="0 0 24 24"
+                        width={32}
                       >
-                        <svg
-                          className="icon caret"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
-                          />
-                        </svg>
-                      </DropDown>
-                    </Icon>
+                        <path
+                          d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
+                        />
+                      </svg>
+                    </DropDown>
                   </div>
                 </div>
               </div>
@@ -2348,23 +2357,24 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with noChildren fixtur
                     target="_self"
                     title="Logout"
                   >
-                    <Icon
+                    <Logout
                       className="icon"
-                      name="Logout"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
-                      <Logout
-                        className="icon icon"
+                      <svg
+                        className="icon"
+                        fill="currentColor"
+                        height={32}
+                        viewBox="0 1 16 16"
+                        width={32}
                       >
-                        <svg
-                          className="icon icon"
-                          viewBox="0 1 16 16"
-                        >
-                          <path
-                            d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
-                          />
-                        </svg>
-                      </Logout>
-                    </Icon>
+                        <path
+                          d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
+                        />
+                      </svg>
+                    </Logout>
                     Logout
                   </a>
                 </Link>
@@ -2785,23 +2795,24 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with noItem fixture 1`
                         </div>
                       </div>
                     </Select>
-                    <Icon
+                    <DropDown
                       className="caret"
-                      name="DropDown"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
-                      <DropDown
-                        className="icon caret"
+                      <svg
+                        className="caret"
+                        fill="currentColor"
+                        height={32}
+                        viewBox="0 0 24 24"
+                        width={32}
                       >
-                        <svg
-                          className="icon caret"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
-                          />
-                        </svg>
-                      </DropDown>
-                    </Icon>
+                        <path
+                          d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
+                        />
+                      </svg>
+                    </DropDown>
                   </div>
                 </div>
               </div>
@@ -2838,23 +2849,24 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with noItem fixture 1`
                     target="_self"
                     title="Logout"
                   >
-                    <Icon
+                    <Logout
                       className="icon"
-                      name="Logout"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
-                      <Logout
-                        className="icon icon"
+                      <svg
+                        className="icon"
+                        fill="currentColor"
+                        height={32}
+                        viewBox="0 1 16 16"
+                        width={32}
                       >
-                        <svg
-                          className="icon icon"
-                          viewBox="0 1 16 16"
-                        >
-                          <path
-                            d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
-                          />
-                        </svg>
-                      </Logout>
-                    </Icon>
+                        <path
+                          d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
+                        />
+                      </svg>
+                    </Logout>
                     Logout
                   </a>
                 </Link>
@@ -3275,23 +3287,24 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with onePractice fixtu
                         </div>
                       </div>
                     </Select>
-                    <Icon
+                    <DropDown
                       className="caret"
-                      name="DropDown"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
-                      <DropDown
-                        className="icon caret"
+                      <svg
+                        className="caret"
+                        fill="currentColor"
+                        height={32}
+                        viewBox="0 0 24 24"
+                        width={32}
                       >
-                        <svg
-                          className="icon caret"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
-                          />
-                        </svg>
-                      </DropDown>
-                    </Icon>
+                        <path
+                          d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
+                        />
+                      </svg>
+                    </DropDown>
                   </div>
                 </div>
               </div>
@@ -3328,23 +3341,24 @@ exports[`<withRouter(SubNavigation) /> rendered correctly with onePractice fixtu
                     target="_self"
                     title="Logout"
                   >
-                    <Icon
+                    <Logout
                       className="icon"
-                      name="Logout"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
-                      <Logout
-                        className="icon icon"
+                      <svg
+                        className="icon"
+                        fill="currentColor"
+                        height={32}
+                        viewBox="0 1 16 16"
+                        width={32}
                       >
-                        <svg
-                          className="icon icon"
-                          viewBox="0 1 16 16"
-                        >
-                          <path
-                            d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
-                          />
-                        </svg>
-                      </Logout>
-                    </Icon>
+                        <path
+                          d="M7.5 1.666c-.823 0-1.5.677-1.5 1.5v3h1v-3c0-.281.219-.5.5-.5h7c.281 0 .5.219.5.5v12c0 .281-.219.5-.5.5h-7a.493.493 0 0 1-.5-.5v-3H6v3c0 .823.677 1.5 1.5 1.5h7c.823 0 1.5-.677 1.5-1.5v-12c0-.823-.677-1.5-1.5-1.5h-7zM3.146 5.813L-.207 9.165l3.353 3.354.708-.707-2.147-2.147H11.5v-1H1.707L3.854 6.52l-.708-.707z"
+                        />
+                      </svg>
+                    </Logout>
                     Logout
                   </a>
                 </Link>

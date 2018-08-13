@@ -59,10 +59,16 @@ exports[`<Footer /> rendered correctly with withChild fixture 1`] = `
                   >
                     <ArrowRight
                       className="icon legacyIcon"
+                      fill="currentColor"
+                      height={32}
+                      width={32}
                     >
                       <svg
                         className="icon legacyIcon"
+                        fill="currentColor"
+                        height={32}
                         viewBox="0 0 24 24"
+                        width={32}
                       >
                         <path
                           d="M18.586 13H3a1 1 0 1 1 0-2h15.586l-4.293-4.293a1 1 0 1 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L18.586 13z"

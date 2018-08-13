@@ -219,23 +219,24 @@ exports[`<SingleSelect /> rendered correctly with label fixture 1`] = `
             </div>
           </div>
         </Select>
-        <Icon
+        <DropDown
           className="caret"
-          name="DropDown"
+          fill="currentColor"
+          height={32}
+          width={32}
         >
-          <DropDown
-            className="icon caret"
+          <svg
+            className="caret"
+            fill="currentColor"
+            height={32}
+            viewBox="0 0 24 24"
+            width={32}
           >
-            <svg
-              className="icon caret"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
-              />
-            </svg>
-          </DropDown>
-        </Icon>
+            <path
+              d="M8.068 9h7.864a.5.5 0 0 1 .385.82l-3.933 4.72a.5.5 0 0 1-.768 0L7.683 9.82A.5.5 0 0 1 8.068 9z"
+            />
+          </svg>
+        </DropDown>
       </div>
     </div>
   </div>

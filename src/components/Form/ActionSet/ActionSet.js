@@ -9,7 +9,7 @@
 import classnames from 'classnames';
 import React from 'react';
 import onClickOutside from 'react-onclickoutside';
-import Icon from '../../Icon';
+import Ellipsis from '../../Icon/Ellipsis';
 import style from './ActionSet.scss';
 
 type Props = {
@@ -78,9 +78,8 @@ class ActionSet extends React.Component<Props, *> {
         {...rest}
       >
         {expandable && (
-          <Icon
+          <Ellipsis
             className={style.ellipsis}
-            name="Ellipsis"
             width={36}
             height={36}
             onClick={this.open}

@@ -7,7 +7,9 @@
 
 import classnames from 'classnames';
 import React from 'react';
-import Icon from '../../Icon';
+import CheckBoxChecked from '../../Icon/CheckBoxes/CheckBoxChecked';
+import CheckBoxUnchecked from '../../Icon/CheckBoxes/CheckBoxUnchecked';
+import Alert from '../../Icon/Alert';
 import style from './CheckBox.scss';
 
 type Props = {
@@ -71,13 +73,13 @@ class CheckBox extends React.Component<Props> {
         {...restProps}
       >
         <label className={style.label} htmlFor={id} onClick={handleClick}>
-          <Icon
+          <CheckBoxUnchecked
             className={classnames(style.checkbox, style.empty, {
               [style.special]: special,
             })}
             name="CheckBoxUnchecked"
           />
-          <Icon
+          <CheckBoxChecked
             className={classnames(style.checkbox, style.full, {
               [style.checked]: value,
               [style.special]: special,
@@ -85,7 +87,7 @@ class CheckBox extends React.Component<Props> {
             name="CheckBoxChecked"
           />
           <span className={style.text}>{label}</span>
-          {warning && <Icon className={style.warning} name="Alert" />}
+          {warning && <Alert className={style.warning} />}
         </label>
       </div>
     );

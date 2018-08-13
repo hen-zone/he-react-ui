@@ -394,20 +394,24 @@ exports[`<TimeSelector /> rendered correctly with fixture 1`] = `
         <span>
           0:00
         </span>
-        <Icon
+        <Clock
           className="clock"
-          name="Clock"
+          fill="currentColor"
+          height={32}
+          width={32}
         >
-          <Clock>
-            <svg
-              viewBox="0 0 26 26"
-            >
-              <path
-                d="M14.25 11.75V8a1.25 1.25 0 0 0-2.5 0v5c0 .69.56 1.25 1.25 1.25h5a1.25 1.25 0 0 0 0-2.5h-3.75zM13 22.375a9.375 9.375 0 1 1 0-18.75 9.375 9.375 0 0 1 0 18.75z"
-              />
-            </svg>
-          </Clock>
-        </Icon>
+          <svg
+            className="clock"
+            fill="currentColor"
+            height={32}
+            viewBox="0 0 26 26"
+            width={32}
+          >
+            <path
+              d="M14.25 11.75V8a1.25 1.25 0 0 0-2.5 0v5c0 .69.56 1.25 1.25 1.25h5a1.25 1.25 0 0 0 0-2.5h-3.75zM13 22.375a9.375 9.375 0 1 1 0-18.75 9.375 9.375 0 0 1 0 18.75z"
+            />
+          </svg>
+        </Clock>
         <div
           className="options"
         >

@@ -61,10 +61,16 @@ exports[`<OnClickOutside(ActionSet) /> rendered correctly with LessThanTwo fixtu
               >
                 <Delete
                   className="icon icon"
+                  fill="currentColor"
+                  height={32}
+                  width={32}
                 >
                   <svg
                     className="icon icon"
+                    fill="currentColor"
+                    height={32}
                     viewBox="0 0 24 24"
+                    width={32}
                   >
                     <path
                       d="M7.5 5.5V3a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v2.5H21a1 1 0 0 1 0 2h-1.5v14a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1v-14H3a1 1 0 1 1 0-2h4.5zm8 2h-9v13h11v-13h-2zM11 11a1 1 0 1 1 2 0v5a1 1 0 0 1-2 0v-5zm-3 0a1 1 0 1 1 2 0v5a1 1 0 0 1-2 0v-5zm6 0a1 1 0 0 1 2 0v5a1 1 0 0 1-2 0v-5zM9.5 5.5h5V4h-5v1.5z"
@@ -100,10 +106,16 @@ exports[`<OnClickOutside(ActionSet) /> rendered correctly with LessThanTwo fixtu
               >
                 <Edit
                   className="icon icon"
+                  fill="currentColor"
+                  height={32}
+                  width={32}
                 >
                   <svg
                     className="icon icon"
+                    fill="currentColor"
+                    height={32}
                     viewBox="0 0 24 24"
+                    width={32}
                   >
                     <path
                       d="M17.5 10.086L19.086 8.5 15.5 4.914 13.914 6.5l3.586 3.586zM16.086 11.5L12.5 7.914l-8 8V19.5h3.586l8-8zM8.5 21.5h-5a1 1 0 0 1-1-1v-5a1 1 0 0 1 .293-.707l12-12a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-12 12a1 1 0 0 1-.707.293z"

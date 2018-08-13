@@ -10,7 +10,7 @@ import React, { Component } from 'react';
 import { matchPath, withRouter } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import SingleSelect from '../../Form/SingleSelect';
-import Icon from '../../Icon';
+import Logout from '../../Icon/Logout';
 import LoadingStrip from '../../Loading/LoadingStrip';
 import style from './SubNavigation.scss';
 import type { NavItem } from '../NavItem';
@@ -143,7 +143,7 @@ class SubNavigation extends Component<Props> {
               title="Logout"
               target="_self"
             >
-              <Icon className={style.icon} name="Logout" />Logout
+              <Logout className={style.icon} />Logout
             </NavLink>
           </span>
         </div>

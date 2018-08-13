@@ -9,7 +9,7 @@ import React, { Component, Fragment } from 'react';
 import onClickOutside from 'react-onclickoutside';
 import { NavLink } from 'react-router-dom';
 import HashRoute from '../../HashRoute';
-import Icon from '../../Icon';
+import HealthEngine from '../../Icon/HealthEngine';
 import LoadingStrip from '../../Loading/LoadingStrip';
 import Bucket from '../Bucket';
 import Slider from '../Slider';
@@ -70,7 +70,7 @@ class PrimaryNavigation extends Component<Props, *> {
     siteName: 'HealthEngine',
     bottomKeys: [],
     logo: {
-      icon: <Icon className={styles.logo} name="HealthEngine" inverted />,
+      icon: <HealthEngine className={styles.logo} inverted />,
       route: '/',
     },
     loading: false,

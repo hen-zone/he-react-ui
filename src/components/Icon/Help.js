@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-export default function Help(props: SVGProps) {
+function Help(props: SVGProps) {
   return (
     <svg {...props} viewBox="0 0 24 24">
       <path d="M12 0C5.384 0 0 5.384 0 12s5.384 12 12 12 12-5.384 12-12S18.616 0 12 0zm0 2c5.535 0 10 4.465 10 10s-4.465 10-10 10S2 17.535 2 12 6.465 2 12 2z" />
@@ -9,3 +9,11 @@ export default function Help(props: SVGProps) {
     </svg>
   );
 }
+
+Help.defaultProps = {
+  height: 32,
+  width: 32,
+  fill: 'currentColor',
+};
+
+export default Help;

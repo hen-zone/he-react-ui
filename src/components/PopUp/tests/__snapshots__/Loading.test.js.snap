@@ -18,26 +18,26 @@ exports[`<PopUp /> rendered correctly with Loading fixture 1`] = `
     <div
       className="popup popupWithPadding"
     >
-      <Icon
+      <Cross
         className="close"
-        name="Cross"
+        fill="currentColor"
+        height={32}
         onClick={[Function]}
+        width={32}
       >
-        <Cross
-          className="icon close"
+        <svg
+          className="close"
+          fill="currentColor"
+          height={32}
           onClick={[Function]}
+          viewBox="0 0 24 24"
+          width={32}
         >
-          <svg
-            className="icon close"
-            onClick={[Function]}
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"
-            />
-          </svg>
-        </Cross>
-      </Icon>
+          <path
+            d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"
+          />
+        </svg>
+      </Cross>
       <LoadingSpinner
         color="teal"
         fidget={false}

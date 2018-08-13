@@ -9,7 +9,7 @@ import React from 'react';
 import classnames from 'classnames';
 import onClickOutside from 'react-onclickoutside';
 
-import Icon from '../../Icon';
+import Clock from '../../Icon/Clock';
 import Label from '../Label';
 import style from './TimeSelector.scss';
 
@@ -199,7 +199,7 @@ class TimeSelector extends React.Component<Props, *> {
           onClick={this.toggleExpand}
         >
           <span>{this.getDisplay()}</span>
-          <Icon className={style.clock} name="Clock" />
+          <Clock className={style.clock} />
           <div className={style.options}>
             <ul>{this.generateList(hours, this.selectHour)}</ul>
             {!hourly && (
