@@ -124,6 +124,20 @@ export default [
   {
     component,
 
+    name: 'disallowFuture',
+
+    props: {
+      isOutsideRange: (date: moment) => date.isAfter(TODAY, 'day'),
+    },
+
+    parentLayout,
+
+    formWrapper,
+  },
+
+  {
+    component,
+
     name: 'presetsOnly',
 
     parentLayout,

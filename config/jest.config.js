@@ -8,6 +8,7 @@ import 'raf/polyfill';
 global.shallow = shallow;
 global.render = render;
 global.mount = mount;
+global.requestAnimationFrame = handler => setTimeout(handler, 10);
 
 // React 16 Enzyme adapter
 Enzyme.configure({ adapter: new Adapter() });
